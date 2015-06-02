@@ -1,0 +1,43 @@
+{
+    "name": "p2made/yii2-p2y2-things",
+    "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles &/or Widgets.",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2", "yii", "extension", "PHP",
+        "asset", "bundle", "widget",
+        "menu", "metisMenu",
+        "Bootstrap Social", "social",
+        "dataTables", "data", "tables",
+        "Flot", "Morris", "Morris.JS", "charts", "excanvas",
+        "raphael", "graphics", "vector", "vector graphics",
+        "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image",
+        "moment.js", "time", "moment", "timezone", "moment-timezone",
+        "FullCalendar", "calendar",
+        "html5shiv", "Respond.JS"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Plowman",
+            "email": "p2opensource@gmail.com",
+            "homepage": "https://github.com/p2made"
+        }
+    ],
+
+    "version": "1.0.0-dev",
+    "minimum-stability": "dev",
+
+    "require": {
+        "yiisoft/yii2": "2.*",
+        "components/flag-icon-css": "*",
+        "fortawesome/font-awesome": "*",
+        "imsky/holder": "*",
+        "onokumus/metismenu": "*",
+        "philippfrenzel/yii2fullcalendar": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "p2made\\": ""
+        }
+    }
+}

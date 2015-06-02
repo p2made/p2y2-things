@@ -1,8 +1,5 @@
-P2Y2Things v1.0.0-dev
-=====================
-
-Assets
-------
+P2Y2Things Assets
+=================
 
 Resource | Asset Class
 -------- | -----------

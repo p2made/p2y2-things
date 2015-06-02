@@ -4,7 +4,7 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
- * @package p2made/yii2-asset-collection
+ * @package p2made/yii2-p2y2-things
  * @license MIT
  */
 
@@ -131,7 +131,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected static function ownPath()
 	{
-		return '@vendor/p2made/yii2-asset-collection/assets/lib/';
+		return '@vendor/p2made/yii2-p2y2-things/assets/lib/';
 	}
 
 	protected static function cdnEnd()

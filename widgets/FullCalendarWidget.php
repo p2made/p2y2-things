@@ -4,7 +4,7 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
- * @package p2made/yii2-full-calendar
+ * @package p2made/yii2-p2y2-things
  * @license MIT
  */
 

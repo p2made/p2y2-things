@@ -4,7 +4,7 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
- * @package p2made/yii2-asset-collection
+ * @package p2made/yii2-p2y2-things
  * @license MIT
  */
 
@@ -30,7 +30,7 @@ class BootstrapAsset extends P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
-			$this->resourceData['sourcePath'] = '@vendor/p2made/yii2-asset-collection/assets/lib/bootswatch-3.3.4-1/' . $themeName;
+			$this->resourceData['sourcePath'] = '@vendor/p2made/yii2-p2y2-things/assets/lib/bootswatch-3.3.4-1/' . $themeName;
 			$this->resourceData['pub-css'] = [
 				'bootstrap.min.css',
 			];

@@ -5,7 +5,7 @@ A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
 This package replaces my yii2-asset-collection, including in all my other projects which had yii2-asset-collection as a dependancy.
 
-[Assets](./Assets.md)
+[Assets](./docs/Assets.md)
 
 Installation
 ------------

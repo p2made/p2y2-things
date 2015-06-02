@@ -1,5 +1,5 @@
-P2Y2Things Assets
-=================
+P2Y2Things – Assets
+===================
 
 Resource | Asset Class
 -------- | -----------

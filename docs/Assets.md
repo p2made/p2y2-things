@@ -1,35 +1,45 @@
 P2Y2Things v1.0.0-dev
 =====================
 
-A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
+Assets
+------
 
-This package replaces my yii2-asset-collection, including in all my other projects which had yii2-asset-collection as a dependancy.
+Resource | Asset Class
+-------- | -----------
+[Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
+[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset`, `p2made\assets\BootstrapPluginAsset`
+[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
+[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
+[Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
+[dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
+[excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
+[flag-icon-css](https://github.com/lipis/flag-icon-css) | `p2made\assets\FlagIconCssAsset`
+[FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
+[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
+Flot tooltip | `p2made\assets\FlotTooltipAsset` |
+[FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
+[FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
+[GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
+[Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
+[Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
+[jQuery](http://jquery.com) | `p2made\assets\JqueryAsset`
+[jquery-countTo](https://github.com/mhuggins/jquery-countTo) | `p2made\assets\JqueryCountToAsset`
+[jQuery Migrate](http://jquery.com) | `p2made\assets\JqueryMigrateAsset`
+[jQuery-ui](http://jqueryui.com) | `p2made\assets\JuiAsset`
+[Masonry](http://masonry.desandro.com) | `p2made\assets\MasonryAsset`
+[metisMenu](https://github.com/onokumus/metisMenu) | `p2made\assets\MetisMenuAsset`
+[Moment.js](http://momentjs.com/) | `p2made\assets\MomentAsset`
+[MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`
+[Morris.JS](http://morrisjs.github.io/morris.js/) | `p2made\assets\MorrisAsset`
+[prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/) | `p2made\assets\PrettyPhotoAsset`
+[Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
+[SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
+timeline | `p2made\assets\TimelineAsset`
+[WOW.js](http://mynameismatthieu.com/WOW/) | `p2made\assets\WowAsset`
+[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
+[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
 
-[Assets](./Assets.md)
-
-Installation
-------------
-
-The preferred way to install p2y2-things is through [composer](http://getcomposer.org/download/).
-Depending on your composer installation, run *one* of the following commands:
-
-```
-composer require p2made/yii2-p2y2-things "2.*"
-```
-
-or
-
-```
-php composer.phar require p2made/yii2-p2y2-things "2.*"
-```
-
-Alternatively add:
-
-```
-	"p2made/yii2-p2y2-things": "2.*"
-```
-
-to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.
+The asset collection gives the option of using either published assets or assets from CDNs.
 
 Usage
 -----

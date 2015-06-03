@@ -13,15 +13,16 @@ namespace p2made\assets;
 class WowAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/WOW/dist',
 		'pub' => [
+			'sourcePath' => '#/WOW/dist',
 			'js' => [
 				'wow.min.js',
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/wow/1.1.2',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+				'wow.min.js',
 			],
 		],
 		'depends' => [

@@ -13,15 +13,16 @@ namespace p2made\assets;
 class MomentAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/moment-2.10.3',
 		'pub' => [
+			'sourcePath' => '#/moment-2.10.3',
 			'js' => [
 				'moment.js'
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/moment.js/2.10.2',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js',
+				'moment.min.js',
 			],
 		],
 	);

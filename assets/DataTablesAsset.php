@@ -13,8 +13,8 @@ namespace p2made\assets;
 class DataTablesAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/DataTables-1.10.7',
 		'pub' => [
+			'sourcePath' => '#/DataTables-1.10.7',
 			'css' => [
 				'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
 				'extensions/Responsive/css/dataTables.responsive.css',
@@ -25,13 +25,14 @@ class DataTablesAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'datatables#/',
 			'css' => [
-				'//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css',
-				'//cdn.datatables.net/responsive/1.0.3/css/dataTables.responsive.css',
+				'plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css',
+				'responsive/1.0.3/css/dataTables.responsive.css',
 			],
 			'js' => [
-				'//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js',
-				'//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js',
+				'1.10.7/js/jquery.dataTables.min.js',
+				'plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js',
 			],
 		],
 		'depends' => [

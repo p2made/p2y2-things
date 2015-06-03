@@ -13,17 +13,18 @@ namespace p2made\assets;
 class Html5shivAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/shiv',
 		'pub' => [
+			'sourcePath' => '#/shiv',
 			'js' => [
 				'html5shiv-3.7.2/dist/html5shiv.min.js',
 				'Respond-1.4.2/dest/respond.min.js',
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
+				'html5shiv/3.7.2/html5shiv.min.js',
+				'respond.js/1.4.2/respond.min.js',
 			],
 		],
 		'jsOptions' => [

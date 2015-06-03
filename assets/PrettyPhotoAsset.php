@@ -13,8 +13,8 @@ namespace p2made\assets;
 class PrettyPhotoAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/prettyPhoto_3.1.6',
 		'pub' => [
+			'sourcePath' => '#/prettyPhoto_3.1.6',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],
@@ -23,11 +23,12 @@ class PrettyPhotoAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'jsdelivr#/prettyphoto/3.1.5',
 			'css' => [
-				'//cdn.jsdelivr.net/prettyphoto/3.1.5/css/prettyPhoto.css',
+				'css/prettyPhoto.css',
 			],
 			'js' => [
-				'//cdn.jsdelivr.net/prettyphoto/3.1.5/js/jquery.prettyPhoto.js',
+				'js/jquery.prettyPhoto.js',
 			],
 		],
 	);

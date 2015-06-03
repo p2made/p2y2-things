@@ -13,15 +13,16 @@ namespace p2made\assets;
 class ExcanvasAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/flot-0.8.3',
 		'pub' => [
+			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
 				'excanvas.min.js',
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/flot/0.8.3',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
+				'excanvas.min.js',
 			],
 		],
 		'jsOptions' => [

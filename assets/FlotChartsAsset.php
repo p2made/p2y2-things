@@ -13,8 +13,8 @@ namespace p2made\assets;
 class FlotChartsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/flot-0.8.3',
 		'pub' => [
+			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
 				'jquery.flot.js',
 				'jquery.flot.pie.js',
@@ -23,11 +23,12 @@ class FlotChartsAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/flot/0.8.3',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.pie.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.time.min.js',
+				'jquery.flot.min.js',
+				'jquery.flot.pie.min.js',
+				'jquery.flot.resize.min.js',
+				'jquery.flot.time.min.js',
 			],
 		],
 		'depends' => [

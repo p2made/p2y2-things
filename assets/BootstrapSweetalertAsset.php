@@ -13,8 +13,8 @@ namespace p2made\assets;
 class BootstrapSweetalertAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/bootstrap-sweetalert-0.4.3/lib',
 		'pub' => [
+			'sourcePath' => '#/bootstrap-sweetalert-0.4.3/lib',
 			'css' => [
 				'sweet-alert.css',
 			],

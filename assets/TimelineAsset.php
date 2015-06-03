@@ -13,8 +13,8 @@ namespace p2made\assets;
 class TimelineAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/timeline',
 		'pub' => [
+			'sourcePath' => '#/timeline',
 			'css' => [
 				'timeline.css',
 			],

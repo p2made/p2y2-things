@@ -31,8 +31,8 @@ class FullCalendarAsset extends P2AssetBundle
 	public $googleCalendar = false;
 
 	private $resourceData = array(
-		'sourcePath' => '#/fullcalendar-2.3.1',
 		'pub' => [
+			'sourcePath' => '#/fullcalendar-2.3.1',
 			'css' => [
 				'fullcalendar.min.css',
 			],
@@ -41,11 +41,12 @@ class FullCalendarAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/fullcalendar/2.3.1',
 			'css' => [
-				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css',
+				'fullcalendar.min.css',
 			],
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js',
+				'fullcalendar.min.js',
 			],
 		],
 		'depends' => [
@@ -61,7 +62,7 @@ class FullCalendarAsset extends P2AssetBundle
 	public function registerAssetFiles($view)
 	{
 		$language = $this->language ? $this->language : \Yii::$app->language;
-		$cdnJs = '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/';
+		$cdnJs = 'fullcalendar/2.3.1/';
 		if ($language != 'en-us'){
 			$jsTemp = (P2AssetBundle::useCdn() ? $cdnJs : '') . "lang/{$language}.js";
 			$this->js[] = $jsTemp;

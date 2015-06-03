@@ -48,10 +48,16 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	 */
 	public $depends = [];
 
+	private $_cdnServers = array(
+		['server' => '//maxcdn.bootstrapcdn.com/', 'shortcode' => 'bootstrap#/'],
+		['server' => '//code.jquery.com/', 'shortcode' => 'jquery#/'],
+		['server' => '//cdnjs.cloudflare.com/ajax/libs/', 'shortcode' => 'cdnjs#/'],
+		['server' => '//cdn.datatables.net/', 'shortcode' => 'datatables#/'],
+		['server' => '//cdn.jsdelivr.net/', 'shortcode' => 'jsdelivr#/'],
+	);
+
 	private static $_cdnEnd;
 	private static $_useCdn;
-
-	const CDNJS = '//cdnjs.cloudflare.com/ajax/libs/';
 
 	protected function configureAsset($resourceData)
 	{
@@ -76,7 +82,9 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected function configurePubAsset($resourceData, $fallOut = false)
 	{
-		if(!isset($resourceData['pub'])) { // no published asset data
+		if(isset($resourceData['pub'])) {
+			$thisData = $resourceData['pub'];
+		} else { // no published asset data
 			if($fallOut) {
 				return;
 			} else {
@@ -84,24 +92,26 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			}
 		}
 
-		$currentPath = $resourceData['sourcePath'];
+		$thisPath = $thisData['sourcePath'];
 		if(P2AssetBundle::cdnEnd()) {
-			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd(), $currentPath);
+			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd(), $thisPath);
 		} else {
-			$this->sourcePath = str_replace( '#/', P2AssetBundle::ownPath(), $currentPath);
+			$this->sourcePath = str_replace('#/', P2AssetBundle::ownPath(), $thisPath);
 		}
 
-		if(isset($resourceData['pub']['css'])) {
-			$this->css = $resourceData['pub']['css'];
+		if(isset($thisData['css'])) {
+			$this->css = $thisData['css'];
 		}
-		if(isset($resourceData['pub']['js'])) {
-			$this->js = $resourceData['pub']['js'];
+		if(isset($thisData['js'])) {
+			$this->js = $thisData['js'];
 		}
 	}
 
 	protected function configureCdnAsset($resourceData, $fallOut = false)
 	{
-		if(!isset($resourceData['cdn'])) { // no CDN asset data
+		if(isset($resourceData['cdn'])) {
+			$thisData = $resourceData['cdn'];
+		} else { // no CDN asset data
 			if($fallOut) {
 				return;
 			} else {
@@ -109,16 +119,19 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			}
 		}
 
-		$cdnData = $resourceData['cdn'];
-
-		if(!isset($resourceData[''])) {
+		if(isset($thisData['baseUrl'])) {
+			$baseUrlOut = $thisData['baseUrl'];
+			foreach($this->_cdnServers as $server) {
+				$baseUrlOut = str_replace($server['shortcode'], $server['server'], $baseUrlOut);
+			}
+			$this->baseUrl = $baseUrlOut;
 		}
 
-		if(isset($resourceData['cdn']['css'])) {
-			$this->css = $resourceData['cdn']['css'];
+		if(isset($thisData['css'])) {
+			$this->css = $thisData['css'];
 		}
-		if(isset($resourceData['cdn']['js'])) {
-			$this->js = $resourceData['cdn']['js'];
+		if(isset($thisData['js'])) {
+			$this->js = $thisData['js'];
 		}
 	}
 
@@ -158,8 +171,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 /* --- asset template --- */
 /*
 	private $resourceData = array(
-		'sourcePath' => '#/folderName',
 		'pub' => [
+			'sourcePath' => '#/folderName',
 			'css' => [
 			],
 			'js' => [

@@ -13,8 +13,8 @@ namespace p2made\assets;
 class BootstrapSwitchAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/bootstrap-switch-3.3.2/dist',
 		'pub' => [
+			'sourcePath' => '#/bootstrap-switch-3.3.2/dist',
 			'css' => [
 				'css/bootstrap3/bootstrap-switch.min.css',
 			],
@@ -23,11 +23,12 @@ class BootstrapSwitchAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/bootstrap-switch/3.3.2/css/bootstrap3',
 			'css' => [
-				'//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css',
+				'bootstrap-switch.min.css',
 			],
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js',
+				'bootstrap-switch/3.3.2/js/bootstrap-switch.min.js',
 			],
 		],
 		'depends' => [

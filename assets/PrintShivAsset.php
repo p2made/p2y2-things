@@ -13,15 +13,16 @@ namespace p2made\assets;
 class PrintShivAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/shiv',
 		'pub' => [
+			'sourcePath' => '#/shiv',
 			'js' => [
 				'html5shiv-3.7.2/dist/html5shiv-printshiv.min.js',
 			],
 		],
 		'cdn' => [
+			'baseUrl' => 'cdnjs#/',
 			'js' => [
-				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js',
+				'html5shiv/3.7.2/html5shiv-printshiv.min.js',
 			],
 		],
 		'jsOptions' => [

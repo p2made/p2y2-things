@@ -51,6 +51,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	private static $_cdnEnd;
 	private static $_useCdn;
 
+	const CDNJS = '//cdnjs.cloudflare.com/ajax/libs/';
+
 	protected function configureAsset($resourceData)
 	{
 		if(isset($resourceData['cssOptions'])) {
@@ -84,7 +86,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 		$currentPath = $resourceData['sourcePath'];
 		if(P2AssetBundle::cdnEnd()) {
-			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd() , $currentPath);
+			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd(), $currentPath);
 		} else {
 			$this->sourcePath = str_replace( '#/', P2AssetBundle::ownPath(), $currentPath);
 		}
@@ -105,6 +107,11 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			} else {
 				$this->configurePubAsset($resourceData, true);
 			}
+		}
+
+		$cdnData = $resourceData['cdn'];
+
+		if(!isset($resourceData[''])) {
 		}
 
 		if(isset($resourceData['cdn']['css'])) {

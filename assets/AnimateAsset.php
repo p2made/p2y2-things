@@ -20,7 +20,7 @@ class AnimateAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/animate.css/3.2.6',
+			'baseUrl' => 'cdnjs#/animate.css/3.3.0',
 			'css' => [
 				'animate.min.css',
 			],

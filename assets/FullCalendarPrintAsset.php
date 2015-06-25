@@ -14,13 +14,13 @@ class FullCalendarPrintAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/fullcalendar-2.3.1',
+			'sourcePath' => '#/fullcalendar-2.3.2',
 			'css' => [
 				'fullcalendar.print.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/fullcalendar/2.3.1',
+			'baseUrl' => 'cdnjs#/fullcalendar/2.3.2',
 			'css' => [
 				'fullcalendar.print.css',
 			],

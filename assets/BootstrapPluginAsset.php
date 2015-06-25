@@ -14,13 +14,13 @@ class BootstrapPluginAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-3.3.4/dist',
+			'sourcePath' => '#/bootstrap-3.3.5/dist',
 			'js' => [
 				'js/bootstrap.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/bootstrap/3.3.4',
+			'baseUrl' => 'bootstrap#/bootstrap/3.3.5',
 			'js' => [
 				'js/bootstrap.min.js',
 			],

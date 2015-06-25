@@ -14,13 +14,13 @@ class BootstrapAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-3.3.4/dist',
+			'sourcePath' => '#/bootstrap-3.3.5/dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/bootstrap/3.3.4',
+			'baseUrl' => 'bootstrap#/bootstrap/3.3.5',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -31,9 +31,9 @@ class BootstrapAsset extends P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
-			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.4-1/' . $themeName;
+			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.5/' . $themeName;
 			$this->resourceData['pub']['baseUrl'] = [
-				'bootswatch/3.3.4/' . $themeName,
+				'bootswatch/3.3.5/' . $themeName,
 			];
 			$this->resourceData['pub']['css'] = [
 				'bootstrap.min.css',
@@ -51,10 +51,10 @@ class BootstrapAsset extends P2AssetBundle
 /* params
 	'p2assets' => [
 		'useCdn' => true, // false or not set to use published assets
-		'bwTheme' = 'cerulean', // set to one of:
-									'cerulean', 'cosmo', 'cyborg', 'darkly',
-									'flatly', 'journal', 'lumen', 'paper',
-									'readable', 'sandstone', 'simplex', 'slate',
-									'spacelab', 'superhero', 'united', 'yeti',
+		'bwTheme' = 'cerulean', // set to _one_ of:
+			'cerulean', 'cosmo', 'cyborg', 'darkly',
+			'flatly', 'journal', 'lumen', 'paper',
+			'readable', 'sandstone', 'simplex', 'slate',
+			'spacelab', 'superhero', 'united', 'yeti',
 	],
 */

@@ -14,13 +14,13 @@ class BootstrapSocialAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-social-4.9.0',
+			'sourcePath' => '#/bootstrap-social-4.9.1',
 			'css' => [
 				'bootstrap-social.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/bootstrap-social/4.9.0',
+			'baseUrl' => 'cdnjs#/bootstrap-social/4.9.1',
 			'css' => [
 				'bootstrap-social.min.css',
 			],

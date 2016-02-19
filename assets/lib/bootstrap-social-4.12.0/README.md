@@ -1,5 +1,7 @@
 Social Buttons for Bootstrap
 ============================
+[![npm version](https://badge.fury.io/js/bootstrap-social.svg)](https://badge.fury.io/js/bootstrap-social)
+[![Bower version](https://badge.fury.io/bo/bootstrap-social.svg)](https://badge.fury.io/bo/bootstrap-social)
 
 Social Buttons made in pure CSS based on
 [Bootstrap](http://twbs.github.io/bootstrap/) and
@@ -28,6 +30,7 @@ Available classes
  - `btn-instagram`
  - `btn-linkedin`
  - `btn-microsoft`
+ - `btn-odnoklassniki`
  - `btn-openid`
  - `btn-pinterest`
  - `btn-reddit`
@@ -43,12 +46,12 @@ Examples
 
 ```html
 <a class="btn btn-block btn-social btn-twitter">
-  <i class="fa fa-twitter"></i>
+  <span class="fa fa-twitter"></span>
   Sign in with Twitter
 </a>
 
 <a class="btn btn-social-icon btn-twitter">
-  <i class="fa fa-twitter"></i>
+  <span class="fa fa-twitter"></span>
 </a>
 ```
 

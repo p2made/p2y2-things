@@ -14,15 +14,9 @@ class FlotTooltipAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/jquery.flot.tooltip-0.8.5',
+			'sourcePath' => '#/flot.tooltip/js',
 			'js' => [
-				'jquery.flot.tooltip.min.js',
-			],
-		],
-		'cdn' => [
-			'baseUrl' => 'cdnjs#/flot.tooltip/0.8.5',
-			'js' => [
-				'jquery.flot.tooltip.min.js',
+				'js/jquery.flot.tooltip.min.js',
 			],
 		],
 	);

@@ -17,8 +17,7 @@ Resource | Asset Class
 [Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) v0.4.5 | `p2made\assets\BootstrapSweetalertAsset`
 [Bootstrap Switch](http://www.bootstrap-switch.org) v3.3.2 | `p2made\assets\BootstrapSwitchAsset`
 [dataTables](http://datatables.net) v1.10.11 | `p2made\assets\DataTablesAsset`
-[excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
-[flag-icon-css](https://github.com/lipis/flag-icon-css) | `p2made\assets\FlagIconCssAsset`
+[flag-icon-css](https://github.com/lipis/flag-icon-css) v1.2.0 | `p2made\assets\FlagIconCssAsset`
 [FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |

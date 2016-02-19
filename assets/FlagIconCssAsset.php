@@ -14,13 +14,13 @@ class FlagIconCssAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/flag-icon-css-0.7.1',
+			'sourcePath' => '#/flag-icon-css-1.2.0',
 			'css' => [
 				'css/flag-icon.min.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jsdelivr#/flag-icon-css/0.7.1',
+			'baseUrl' => 'jsdelivr#/flag-icon-css/1.2.0',
 			'css' => [
 				'css/flag-icon.min.css',
 			],

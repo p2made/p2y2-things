@@ -14,13 +14,13 @@ class AnimateAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/animate.css-3.3.0',
+			'sourcePath' => '#/animate.css-3.5.1',
 			'css' => [
 				'animate.min.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/animate.css/3.3.0',
+			'baseUrl' => 'cdnjs#/animate.css/3.5.1',
 			'css' => [
 				'animate.min.css',
 			],

@@ -14,13 +14,13 @@ class BootstrapAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-3.3.5/dist',
+			'sourcePath' => '#/bootstrap-3.3.6/dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/bootstrap/3.3.5',
+			'baseUrl' => 'bootstrap#/bootstrap/3.3.6',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -31,9 +31,9 @@ class BootstrapAsset extends P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
-			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.5/' . $themeName;
+			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.6/' . $themeName;
 			$this->resourceData['pub']['baseUrl'] = [
-				'bootswatch/3.3.5/' . $themeName,
+				'bootswatch/3.3.6/' . $themeName,
 			];
 			$this->resourceData['pub']['css'] = [
 				'bootstrap.min.css',

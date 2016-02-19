@@ -14,7 +14,7 @@ class BootstrapAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-3.3.6/dist',
+			'sourcePath' => '@vendor/twbs/bootstrap/dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],

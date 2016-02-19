@@ -77,7 +77,6 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		} else {
 			$this->configurePubAsset($resourceData);
 		}
-
 	}
 
 	protected function configurePubAsset($resourceData, $fallOut = false)

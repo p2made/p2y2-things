@@ -7,14 +7,14 @@
  * @package p2made/yii2-p2y2-things
  * @license MIT
  */
-
+z
 namespace p2made\assets;
 
 class AnimateAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/animate.css-3.5.1',
+			'sourcePath' => '@vendor/drmonty/animate.css/css',
 			'css' => [
 				'animate.min.css',
 			],

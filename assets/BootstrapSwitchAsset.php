@@ -14,7 +14,7 @@ class BootstrapSwitchAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-switch-3.3.2/dist',
+			'sourcePath' => '@vendor/nostalgiaz/bootstrap-switch/dist',
 			'css' => [
 				'css/bootstrap3/bootstrap-switch.min.css',
 			],

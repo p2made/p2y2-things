@@ -31,7 +31,7 @@ class BootstrapAsset extends P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
-			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.6/' . $themeName;
+			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.6-1/' . $themeName;
 			$this->resourceData['pub']['baseUrl'] = [
 				'bootswatch/3.3.6/' . $themeName,
 			];

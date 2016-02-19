@@ -17,10 +17,10 @@ Resource | Asset Class
 [Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) v0.4.5 | `p2made\assets\BootstrapSweetalertAsset`
 [Bootstrap Switch](http://www.bootstrap-switch.org) v3.3.2 | `p2made\assets\BootstrapSwitchAsset`
 [dataTables](http://datatables.net) v1.10.11 | `p2made\assets\DataTablesAsset`
-[FitVids.js](http://fitvidsjs.com) v1.1.0 | `p2made\assets\FitvidsAsset`
 [flag-icon-css](https://github.com/lipis/flag-icon-css) v1.2.0 | `p2made\assets\FlagIconCssAsset`
-[Flot Charts](http://www.flotcharts.org) v0.8.3 | `p2made\assets\FlotChartsAsset`
-[Flot tooltip](https://github.com/krzysu/flot.tooltip) v0.8.5 | `p2made\assets\FlotTooltipAsset` |
+[FitVids.js](http://fitvidsjs.com) v1.1.0 | `p2made\assets\FitvidsAsset`
+[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
+Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`

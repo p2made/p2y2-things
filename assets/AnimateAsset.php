@@ -7,7 +7,7 @@
  * @package p2made/yii2-p2y2-things
  * @license MIT
  */
-z
+
 namespace p2made\assets;
 
 class AnimateAsset extends P2AssetBundle

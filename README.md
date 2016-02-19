@@ -10,13 +10,13 @@ Assets
 
 Resource | Asset Class
 -------- | -----------
-[Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
-[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
-[Bootswatch Themes](http://bootswatch.com) | As over-ride settings on `p2made\assets\BootstrapAsset`
-[Bootstrap Social](https://lipis.github.io/bootstrap-social/) | `p2made\assets\BootstrapSocialAsset`
-[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
-[Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
-[dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
+[Animate.css](http://daneden.github.io/animate.css/) v3.5.1 | `p2made\assets\AnimateAsset`
+[Bootstrap](http://getbootstrap.com) v3.3.6 | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
+[Bootswatch Themes](http://bootswatch.com) v3.3.6+1 | As over-ride settings on `p2made\assets\BootstrapAsset`
+[Bootstrap Social](https://lipis.github.io/bootstrap-social/) v4.12.0 | `p2made\assets\BootstrapSocialAsset`
+[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) v0.4.5 | `p2made\assets\BootstrapSweetalertAsset`
+[Bootstrap Switch](http://www.bootstrap-switch.org) v3.3.2 | `p2made\assets\BootstrapSwitchAsset`
+[dataTables](http://datatables.net) v1.10.11 | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
 [flag-icon-css](https://github.com/lipis/flag-icon-css) | `p2made\assets\FlagIconCssAsset`
 [FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`

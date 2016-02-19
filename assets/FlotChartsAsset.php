@@ -32,7 +32,6 @@ class FlotChartsAsset extends P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\ExcanvasAsset',
 			'p2made\assets\FlotTooltipAsset',
 		],
 	);

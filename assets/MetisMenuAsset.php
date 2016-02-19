@@ -23,7 +23,7 @@ class MetisMenuAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/metisMenu/2.0.0',
+			'baseUrl' => 'cdnjs#/metisMenu/2.0.2',
 			'css' => [
 				'metisMenu.min.css',
 			],

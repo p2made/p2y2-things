@@ -14,7 +14,7 @@ class GMapsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/gmaps',
+			'sourcePath' => '#/gmaps-0.4.18',
 			'js' => [
 				'gmaps.js',
 			],

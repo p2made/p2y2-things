@@ -20,7 +20,7 @@ class FlagIconCssAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jsdelivr#/flag-icon-css/0.6.0',
+			'baseUrl' => 'jsdelivr#/flag-icon-css/0.7.1',
 			'css' => [
 				'css/flag-icon.min.css',
 			],

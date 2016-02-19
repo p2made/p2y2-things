@@ -4,12 +4,10 @@
     module.exports = factory();
   }
   else if(typeof define === 'function' && define.amd) {
-    define(['jquery', 'googlemaps!'], factory);
-  }
-  else {
-    root.GMaps = factory();
+    define('GMaps', [], factory);
   }
 
+  root.GMaps = factory();
 
 }(this, function() {
 
@@ -2201,6 +2199,6 @@ if (!Array.prototype.indexOf) {
       return -1;
   }
 }
-
+  
 return GMaps;
 }));

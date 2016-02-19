@@ -11,7 +11,8 @@ Assets
 Resource | Asset Class
 -------- | -----------
 [Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
-[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset`, `p2made\assets\BootstrapPluginAsset`
+[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
+[Bootswatch Themes](http://bootswatch.com) | As over-ride settings on `p2made\assets\BootstrapAsset`
 [Bootstrap Social](https://lipis.github.io/bootstrap-social/) | `p2made\assets\BootstrapSocialAsset`
 [Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
 [Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`

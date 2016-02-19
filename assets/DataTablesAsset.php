@@ -14,7 +14,7 @@ class DataTablesAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/DataTables-1.10.7',
+			'sourcePath' => '#/DataTables-1.10.11',
 			'css' => [
 				'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
 				'extensions/Responsive/css/dataTables.responsive.css',
@@ -31,7 +31,7 @@ class DataTablesAsset extends P2AssetBundle
 				'responsive/1.0.3/css/dataTables.responsive.css',
 			],
 			'js' => [
-				'1.10.7/js/jquery.dataTables.min.js',
+				'1.10.11/js/jquery.dataTables.min.js',
 				'plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js',
 			],
 		],

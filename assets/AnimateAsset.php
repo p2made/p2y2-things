@@ -15,7 +15,6 @@ class AnimateAsset extends P2AssetBundle
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/drmonty/animate.css/css',
-//			'sourcePath' => '#/animate.css-3.5.1',
 			'css' => [
 				'animate.min.css',
 			],

@@ -14,7 +14,7 @@ class BootstrapSocialAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-social-4.12.0',
+			'sourcePath' => '@vendor/bower/bootstrap-social',
 			'css' => [
 				'bootstrap-social.css',
 			],

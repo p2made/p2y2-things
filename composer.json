@@ -24,22 +24,22 @@
         }
     ],
 
-    "version": "1.0.5",
+    "version": "1.0.6",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": ">=2.0.6",
-        "p2made/yii2-is-gd": ">=1.0.3",
-        "p2made/yii2-uuid": ">=3.0.0",
-        "components/flag-icon-css": ">=1.2.0",
-        "datatables/datatables": ">=1.10.11",
-        "drmonty/animate.css": ">=3.5.1",
-        "fortawesome/font-awesome": ">=4.5.0",
+        "fxp/composer-asset-plugin": "~1.1",
+        "bower-asset/bootstrap": "~3.3",
+        "bower-asset/animate.css": "~3.5",
+        "bower-asset/bootstrap-social": "~4.12",
+        "components/flag-icon-css": "~1.2.0",
+        "datatables/datatables": "~1.10",
+        "fortawesome/font-awesome": "~4.5",
         "imsky/holder": "*",
-        "nostalgiaz/bootstrap-switch": ">=3.3.2",
+        "nostalgiaz/bootstrap-switch": "~3.3",
         "onokumus/metismenu": "*",
-        "philippfrenzel/yii2fullcalendar": "*",
-        "twbs/bootstrap": ">=3.3.6"
+        "philippfrenzel/yii2fullcalendar": "*"
     },
     "autoload": {
         "psr-4": {

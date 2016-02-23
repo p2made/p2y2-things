@@ -1,4 +1,4 @@
-P2Y2Things v1.0.5
+P2Y2Things v1.0.6
 =================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.

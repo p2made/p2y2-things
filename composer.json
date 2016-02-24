@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "1.0.6",
+    "version": "1.0.7",
     "minimum-stability": "dev",
 
     "require": {
@@ -33,9 +33,10 @@
         "bower-asset/bootstrap": "~3.3",
         "bower-asset/animate.css": "~3.5",
         "bower-asset/bootstrap-social": "~4.12",
+        "rmrevin/yii2-fontawesome": "~2.13",
+        "fortawesome/font-awesome": "~4.5",
         "components/flag-icon-css": "~1.2.0",
         "datatables/datatables": "~1.10",
-        "fortawesome/font-awesome": "~4.5",
         "imsky/holder": "*",
         "nostalgiaz/bootstrap-switch": "~3.3",
         "onokumus/metismenu": "*",

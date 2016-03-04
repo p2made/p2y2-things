@@ -15,7 +15,7 @@ class BootstrapSweetalertAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/bootstrap-sweetalert-0.4.3/lib',
+			'sourcePath' => '@vendor/bower/bootstrap-sweetalert/lib',
 			'css' => [
 				'sweet-alert.css',
 			],

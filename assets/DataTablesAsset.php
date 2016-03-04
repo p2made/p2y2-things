@@ -47,5 +47,3 @@ class DataTablesAsset extends P2AssetBundle
 		parent::init();
 	}
 }
-//@vendor/datatables/datatables/media/css
-//@vendor/datatables/datatables/media/js

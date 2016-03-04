@@ -15,7 +15,7 @@ class FitvidsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/FitVids.js',
+			'sourcePath' => '@vendor/bower/jquery.fitvids',
 			'js' => [
 				'jquery.fitvids.js',
 			],

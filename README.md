@@ -152,9 +152,12 @@ The `register` lines for all assets...
 	p2made\assets\RaphaelAsset::register($this);
 	p2made\assets\SweetAlertAsset::register($this);
 	p2made\assets\TimelineAsset::register($this);
+	p2made\assets\TimelineCssAsset::register($this);
 	p2made\assets\WowAsset::register($this);
+
 	p2made\assets\Html5shivAsset::register($this);
 	p2made\assets\PrintShivAsset::register($this);
+	p2made\assets\RespondAsset::register($this);
 ```
 
 & the dependency lines for all assets...
@@ -189,9 +192,12 @@ The `register` lines for all assets...
 	'p2made\assets\RaphaelAsset',
 	'p2made\assets\SweetAlertAsset',
 	'p2made\assets\TimelineAsset',
+	'p2made\assets\TimelineCssAsset',
 	'p2made\assets\WowAsset',
+
 	'p2made\assets\Html5shivAsset',
 	'p2made\assets\PrintShivAsset',
+	'p2made\assets\RespondAsset',
 ```
 
 For usage of the asset resources see their web pages.
@@ -199,12 +205,12 @@ For usage of the asset resources see their web pages.
 Sources
 -------
 
-In order of preference, the following sources are used for published assets...
+The following sources are used for published assets...
 
-- a trusted `bower` package as a dependancy
-- a trusted `composer` package as a dependancy (1st preference for PHP packages)
-- a trusted `npm` package as a dependancy
-- downloaded files included in this package
+- for PHP packages, a trusted `composer` package as a dependancy
+- for CSS &/or JS packages, a trusted `bower` package as a dependancy
+
+- downloaded files included in this package if a suitable package is not available.
 
 In order of preference, the CDNs used are...
 

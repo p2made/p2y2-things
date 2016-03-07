@@ -20,6 +20,7 @@
         {
             "name": "Pedro Plowman",
             "email": "p2opensource@gmail.com",
+            "issues": "https://github.com/p2made/yii2-p2y2-things/issues?state=open",
             "homepage": "https://github.com/p2made"
         }
     ],

@@ -1,5 +1,5 @@
-P2Y2Things v1.0.9
-=================
+P2Y2Things v1.0.10
+==================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
@@ -52,19 +52,19 @@ The preferred way to install p2y2-things is through [composer](http://getcompose
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things ">=1.0.9"
+composer require p2made/yii2-p2y2-things ">=1.0.10"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things ">=1.0.9"
+php composer.phar require p2made/yii2-p2y2-things ">=1.0.10"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": ">=1.0.9"
+	"p2made/yii2-p2y2-things": ">=1.0.10"
 ```
 
 to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.

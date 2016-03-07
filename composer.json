@@ -24,12 +24,12 @@
         }
     ],
 
-    "version": "1.0.9",
+    "version": "1.0.10",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": "~2.0.6",
-        "fxp/composer-asset-plugin": "~1.1",
+        "fxp/composer-asset-plugin": ">=1.1",
         "bower-asset/bootstrap": "~3.3.6",
         "bower-asset/bootswatch": "~3.3.6",
         "bower-asset/animate.css": "~3.5.1",

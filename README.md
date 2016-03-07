@@ -1,4 +1,4 @@
-P2Y2Things v1.0.10
+P2Y2Things v1.0.12
 ==================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -10,18 +10,18 @@ Assets
 
 Resource | Asset Class
 -------- | -----------
-[Animate.css](http://daneden.github.io/animate.css/) v3.5.1 | `p2made\assets\AnimateAsset`
-[Bootstrap](http://getbootstrap.com) v3.3.6 | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
-[Bootswatch Themes](http://bootswatch.com) v3.3.6+1 | As over-ride settings on `p2made\assets\BootstrapAsset`
-[Bootstrap Social](https://lipis.github.io/bootstrap-social/) v4.12.0 | `p2made\assets\BootstrapSocialAsset`
-[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) v0.4.5 | `p2made\assets\BootstrapSweetalertAsset`
-[Bootstrap Switch](http://www.bootstrap-switch.org) v3.3.2 | `p2made\assets\BootstrapSwitchAsset`
-[dataTables](http://datatables.net) v1.10.11 | `p2made\assets\DataTablesAsset`
-[flag-icon-css](https://lipis.github.io/flag-icon-css/) v1.2.0 | `p2made\assets\FlagIconCssAsset`
-[FitVids.js](http://fitvidsjs.com) v1.4.0  | `p2made\assets\FitvidsAsset`
-[Flot Charts](http://www.flotcharts.org) v0.8.3 | `p2made\assets\FlotChartsAsset`
-[Flot tooltip](https://github.com/krzysu/flot.tooltip) v0.8.6 | `p2made\assets\FlotTooltipAsset` |
-[FontAwesome](http://fortawesome.github.io/Font-Awesome/) v4.5.0 | `p2made\assets\FontAwesomeAsset`
+[Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
+[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
+[Bootswatch Themes](http://bootswatch.com) | As over-ride settings on `p2made\assets\BootstrapAsset`
+[Bootstrap Social](https://lipis.github.io/bootstrap-social/) | `p2made\assets\BootstrapSocialAsset`
+[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
+[Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
+[dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
+[flag-icon-css](https://lipis.github.io/flag-icon-css/) | `p2made\assets\FlagIconCssAsset`
+[FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
+[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
+[Flot tooltip](https://github.com/krzysu/flot.tooltip) | `p2made\assets\FlotTooltipAsset` |
+[FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
@@ -52,19 +52,19 @@ The preferred way to install p2y2-things is through [composer](http://getcompose
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things ">=1.0.10"
+composer require p2made/yii2-p2y2-things ">=1.0.12"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things ">=1.0.10"
+php composer.phar require p2made/yii2-p2y2-things ">=1.0.12"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": ">=1.0.10"
+	"p2made/yii2-p2y2-things": ">=1.0.12"
 ```
 
 to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.

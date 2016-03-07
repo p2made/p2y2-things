@@ -24,11 +24,10 @@
         }
     ],
 
-    "version": "1.0.12",
+    "version": "1.1.0",
     "minimum-stability": "dev",
 
     "require": {
-        "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2": ">=2.0.7",
         "fxp/composer-asset-plugin": ">=v1.1.2",
         "bower-asset/animate.css": "3.5.1",
@@ -38,12 +37,26 @@
         "bower-asset/bootswatch": "v3.3.5",
         "bower-asset/datatables": "1.10.11",
         "bower-asset/flag-icon-css": "1.4.0",
+        "bower-asset/flot.tooltip": "0.8.6",
+        "bower-asset/gmaps": "0.4.22",
         "bower-asset/holderjs": "v2.9.3",
+        "bower-asset/html5shiv": "3.7.3",
+        "bower-asset/isotope": "v1.5.26",
+        "bower-asset/jquery-countto": "v1.2.0",
+        "bower-asset/jquery-migrate": "1.3.0",
+        "bower-asset/jquery-ui": "1.11.4",
         "bower-asset/jquery.fitvids": "v1.1.0",
+        "bower-asset/masonry": "v4.0.0",
         "bower-asset/metismenu": "v2.4.2",
+        "bower-asset/moment-timezone": "0.5.1",
+        "bower-asset/morrisjs": "0.5.1",
+        "bower-asset/qunit": "1.22.0",
+        "bower-asset/raphael": "v2.1.4",
+        "bower-asset/respond": "1.4.2",
         "bower-asset/sweetalert": "v1.1.3",
+        "bower-asset/wow": "1.1.2",
         "philippfrenzel/yii2fullcalendar": "2.5.0",
-        "rmrevin/yii2-fontawesome": "2.13.*"
+        "rmrevin/yii2-fontawesome": "2.13.0"
     },
     "autoload": {
         "psr-4": {

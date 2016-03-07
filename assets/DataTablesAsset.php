@@ -13,27 +13,27 @@ namespace p2made\assets;
 
 class DataTablesAsset extends P2AssetBundle
 {
+	private $libVersion = '1.10.11';
+
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/DataTables-1.10.11',
+			'sourcePath' => '@vendor/bower/datatables/media',
 			'css' => [
-				'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
-				'extensions/Responsive/css/dataTables.responsive.css',
+				'css/dataTables.bootstrap.min.css',
 			],
 			'js' => [
-				'media/js/jquery.dataTables.min.js',
-				'plugins/integration/bootstrap/3/dataTables.bootstrap.min.js',
+				'js/jquery.dataTables.min.js',
+				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'datatables#/',
+			'baseUrl' => '//cdn.datatables.net/' . $this->libVersion,
 			'css' => [
-				'plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css',
-				'responsive/1.0.3/css/dataTables.responsive.css',
+				'css/dataTables.bootstrap.min.css',
 			],
 			'js' => [
-				'1.10.11/js/jquery.dataTables.min.js',
-				'plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js',
+				'js/jquery.dataTables.min.js',
+				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'depends' => [
@@ -47,3 +47,46 @@ class DataTablesAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+
+/*
+		files
+
+			'sourcePath' => '@vendor/bower/datatables/media',
+			'baseUrl' => '//cdn.datatables.net/' . $this->libVersion,
+
+				'css/dataTables.bootstrap.css',
+				'css/dataTables.bootstrap.min.css',
+				'css/dataTables.bootstrap4.css',
+				'css/dataTables.bootstrap4.min.css',
+				'css/dataTables.foundation.css',
+				'css/dataTables.foundation.min.css',
+				'css/dataTables.jqueryui.css',
+				'css/dataTables.jqueryui.min.css',
+				'css/dataTables.material.css',
+				'css/dataTables.material.min.css',
+				'css/dataTables.semanticui.css',
+				'css/dataTables.semanticui.min.css',
+				'css/dataTables.uikit.css',
+				'css/dataTables.uikit.min.css',
+				'css/jquery.dataTables_themeroller.css',
+				'css/jquery.dataTables.css',
+				'css/jquery.dataTables.min.css',
+
+				'js/dataTables.bootstrap.js',
+				'js/dataTables.bootstrap.min.js',
+				'js/dataTables.bootstrap4.js',
+				'js/dataTables.bootstrap4.min.js',
+				'js/dataTables.foundation.js',
+				'js/dataTables.foundation.min.js',
+				'js/dataTables.jqueryui.js',
+				'js/dataTables.jqueryui.min.js',
+				'js/dataTables.material.js',
+				'js/dataTables.material.min.js',
+				'js/dataTables.semanticui.js',
+				'js/dataTables.semanticui.min.js',
+				'js/dataTables.uikit.js',
+				'js/dataTables.uikit.min.js',
+				'js/jquery.dataTables.js',
+				'js/jquery.dataTables.min.js',
+				'js/jquery.js',
+*/

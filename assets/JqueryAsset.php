@@ -15,15 +15,15 @@ class JqueryAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/jquery',
+			'sourcePath' => '@vendor/bower/jquery/dist',
 			'js' => [
-				'jquery-1.11.3.min.js',
+				'jquery.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jquery#/',
+			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'jquery-1.11.3.min.js',
+				'jquery-2.2.1.min.js',
 			],
 		],
 	);

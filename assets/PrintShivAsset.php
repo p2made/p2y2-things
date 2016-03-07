@@ -13,17 +13,19 @@ namespace p2made\assets;
 
 class PrintShivAsset extends P2AssetBundle
 {
+	private $libVersion = '3.7.3';
+
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/shiv',
+			'sourcePath' => '@vendor/bower/html5shiv/dist',
 			'js' => [
-				'html5shiv-3.7.2/dist/html5shiv-printshiv.min.js',
+				'html5shiv-printshiv.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/html5shiv/' . $this->libVersion,
 			'js' => [
-				'html5shiv/3.7.2/html5shiv-printshiv.min.js',
+				'html5shiv-printshiv.min.js',
 			],
 		],
 		'jsOptions' => [

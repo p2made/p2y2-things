@@ -21,7 +21,7 @@ class FitvidsAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/fitvids/1.1.0',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0',
 			'js' => [
 				'jquery.fitvids.min.js',
 			],

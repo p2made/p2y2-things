@@ -15,15 +15,15 @@ class JuiAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/jquery-ui-1.11.4',
+			'sourcePath' => '@vendor/bower/jquery-ui',
 			'js' => [
 				'jquery-ui.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jquery#/ui/1.11.4',
+			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'jquery-ui.min.js',
+				'ui/1.11.4/jquery-ui.min.js',
 			],
 		],
 		'depends' => [

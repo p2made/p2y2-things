@@ -13,15 +13,17 @@ namespace p2made\assets;
 
 class MomentAsset extends P2AssetBundle
 {
+	private $libVersion = '2.11.2';
+
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/moment-2.10.3',
+			'sourcePath' => '@vendor/bower/moment/min',
 			'js' => [
-				'moment.js'
+				'moment.min.js'
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/moment.js/2.10.2',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/' . $this->libVersion,
 			'js' => [
 				'moment.min.js',
 			],

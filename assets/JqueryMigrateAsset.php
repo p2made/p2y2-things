@@ -15,15 +15,15 @@ class JqueryMigrateAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/jquery',
+			'sourcePath' => '@vendor/bower/jquery-migrate',
 			'js' => [
-				'jquery-migrate-1.2.1.min.js',
+				'jquery-migrate.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jquery#/',
+			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'jquery-migrate-1.2.1.min.js',
+				'jquery-migrate-1.4.0.min.js',
 			],
 		],
 		'depends' => [

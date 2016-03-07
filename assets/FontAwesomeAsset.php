@@ -21,7 +21,7 @@ class FontAwesomeAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/font-awesome/4.5.0',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0',
 			'css' => [
 				'css/font-awesome.min.css',
 			],
@@ -34,3 +34,4 @@ class FontAwesomeAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+

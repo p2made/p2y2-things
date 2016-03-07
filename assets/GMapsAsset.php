@@ -13,15 +13,17 @@ namespace p2made\assets;
 
 class GMapsAsset extends P2AssetBundle
 {
+	private $libVersion = '0.4.22';
+
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/gmaps-0.4.18',
+			'sourcePath' => '@vendor/bower/gmaps',
 			'js' => [
-				'gmaps.js',
+				'gmaps.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/gmaps.js/0.4.12',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/' . $this->libVersion,
 			'js' => [
 				'gmaps.min.js',
 			],

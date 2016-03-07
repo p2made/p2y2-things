@@ -1,6 +1,6 @@
 <?php
 /**
- * MasonryAsset.php
+ * TimelineCssAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,21 +11,21 @@
 
 namespace p2made\assets;
 
-class MasonryAsset extends P2AssetBundle
+class TimelineCssAsset extends P2AssetBundle
 {
-	private $libVersion = '4.0.0';
+	private $libVersion = '1.0.0';
 
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/masonry/dist',
-			'js' => [
-				'masonry.pkgd.min.js',
+			'sourcePath' => '#/Timeline.css-1.0',
+			'css' => [
+				'css/timeline.css',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/' . $this->libVersion,
-			'js' => [
-				'masonry.pkgd.min.js',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/' . $this->libVersion,
+			'css' => [
+				'timeline.min.css',
 			],
 		],
 	);

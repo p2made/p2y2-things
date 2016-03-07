@@ -13,6 +13,8 @@ namespace p2made\assets;
 
 class BootstrapAsset extends P2AssetBundle
 {
+	private $libVersion = '3.3.6';
+
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
@@ -21,7 +23,7 @@ class BootstrapAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/bootstrap/3.3.6',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -48,6 +50,11 @@ class BootstrapAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+
+
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+
+
 
 /* params
 	'p2assets' => [

@@ -15,21 +15,21 @@ class MorrisAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/qunit',
+			'sourcePath' => '@vendor/bower/qunit/qunit',
 			'css' => [
-				'qunit-1.18.0.css',
+				'qunit.css',
 			],
 			'js' => [
-				'qunit-1.18.0.js',
+				'qunit.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'jquery#/qunit',
+			'baseUrl' => '//code.jquery.com/qunit',
 			'css' => [
-				'qunit-1.18.0.css',
+				'qunit-1.22.0.css',
 			],
 			'js' => [
-				'qunit-1.18.0.js',
+				'qunit-1.22.0.js',
 			],
 		],
 		'depends' => [

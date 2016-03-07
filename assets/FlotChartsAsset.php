@@ -24,7 +24,7 @@ class FlotChartsAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/flot/0.8.3',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3',
 			'js' => [
 				'jquery.flot.min.js',
 				'jquery.flot.pie.min.js',

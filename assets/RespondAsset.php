@@ -1,6 +1,6 @@
 <?php
 /**
- * MasonryAsset.php
+ * RespondAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,22 +11,26 @@
 
 namespace p2made\assets;
 
-class MasonryAsset extends P2AssetBundle
+class RespondAsset extends P2AssetBundle
 {
-	private $libVersion = '4.0.0';
+	private $libVersion = '1.4.2';
 
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/masonry/dist',
+			'sourcePath' => '@vendor/bower/respond/dest',
 			'js' => [
-				'masonry.pkgd.min.js',
+				'respond.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/' . $this->libVersion,
 			'js' => [
-				'masonry.pkgd.min.js',
+				'respond.min.js',
 			],
+		],
+		'jsOptions' => [
+			'condition' => 'lte IE9',
+			'position' => \yii\web\View::POS_HEAD,
 		],
 	);
 

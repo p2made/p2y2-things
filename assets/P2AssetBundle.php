@@ -49,14 +49,6 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	 */
 	public $depends = [];
 
-	private $_cdnServers = array(
-		['server' => '//maxcdn.bootstrapcdn.com/', 'shortcode' => 'bootstrap#/'],
-		['server' => '//code.jquery.com/', 'shortcode' => 'jquery#/'],
-		['server' => '//cdnjs.cloudflare.com/ajax/libs/', 'shortcode' => 'cdnjs#/'],
-		['server' => '//cdn.datatables.net/', 'shortcode' => 'datatables#/'],
-		['server' => '//cdn.jsdelivr.net/', 'shortcode' => 'jsdelivr#/'],
-	);
-
 	private static $_cdnEnd;
 	private static $_useCdn;
 
@@ -120,13 +112,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		}
 
 		if(isset($thisData['baseUrl'])) {
-			$baseUrlOut = $thisData['baseUrl'];
-			foreach($this->_cdnServers as $server) {
-				$baseUrlOut = str_replace($server['shortcode'], $server['server'], $baseUrlOut);
-			}
-			$this->baseUrl = $baseUrlOut;
+			$this->baseUrl = $thisData['baseUrl'];
 		}
-
 		if(isset($thisData['css'])) {
 			$this->css = $thisData['css'];
 		}
@@ -172,16 +159,21 @@ class P2AssetBundle extends \yii\web\AssetBundle
 /*
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/folderName',
+			'sourcePath' => '',
 			'css' => [
+				'',
 			],
 			'js' => [
+				'',
 			],
 		],
 		'cdn' => [
+			'baseUrl' => '',
 			'css' => [
+				'',
 			],
 			'js' => [
+				'',
 			],
 		],
 		'cssOptions' => [

@@ -13,6 +13,8 @@ namespace p2made\assets;
 
 class WowAsset extends P2AssetBundle
 {
+	private $libVersion = '1.1.2';
+
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '#/WOW/dist',
@@ -21,7 +23,7 @@ class WowAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/wow/1.1.2',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/' . $this->libVersion,
 			'js' => [
 				'wow.min.js',
 			],
@@ -37,3 +39,6 @@ class WowAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+
+//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js
+

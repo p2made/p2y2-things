@@ -1,7 +1,7 @@
-P2Y2Things v1.0.12
-==================
+P2Y2Things v1.1.0
+=================
 
-A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
+A kitchen-sink full of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
 This package replaces my yii2-asset-collection, including in all my other projects which had yii2-asset-collection as a dependancy.
 
@@ -39,11 +39,22 @@ Resource | Asset Class
 [Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
 [SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
 timeline | `p2made\assets\TimelineAsset`
+[Timeline.css](https://github.com/christian-fei/Timeline.css) | `p2made\assets\TimelineCssAsset`
 [WOW.js](http://mynameismatthieu.com/WOW/) | `p2made\assets\WowAsset`
-[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
-[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
 
 The asset collection gives the option of using either published assets or assets from CDNs.
+
+Deprecated
+----------
+
+These assets support IE. I will not be maintaining them any further, & will eventually remove them.
+
+Resource | Asset Class
+-------- | -----------
+[html5shiv](https://github.com/afarkas/html5shiv) | `p2made\assets\Html5shivAsset`
+[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
+[Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\RespondAsset`
+
 
 Installation
 ------------
@@ -52,19 +63,19 @@ The preferred way to install p2y2-things is through [composer](http://getcompose
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things ">=1.0.12"
+composer require p2made/yii2-p2y2-things ">=1.1.0"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things ">=1.0.12"
+php composer.phar require p2made/yii2-p2y2-things ">=1.1.0"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": ">=1.0.12"
+	"p2made/yii2-p2y2-things": ">=1.1.0"
 ```
 
 to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.
@@ -190,8 +201,8 @@ Sources
 
 In order of preference, the following sources are used for published assets...
 
-- a trusted `composer` package as a dependancy
 - a trusted `bower` package as a dependancy
+- a trusted `composer` package as a dependancy (1st preference for PHP packages)
 - a trusted `npm` package as a dependancy
 - downloaded files included in this package
 

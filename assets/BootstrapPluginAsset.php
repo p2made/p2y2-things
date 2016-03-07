@@ -21,7 +21,7 @@ class BootstrapPluginAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'bootstrap#/bootstrap/3.3.6',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
 			'js' => [
 				'js/bootstrap.min.js',
 			],

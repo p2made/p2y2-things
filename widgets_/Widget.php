@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget.php
+ * P2Widget.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -10,6 +10,9 @@
  */
 
 namespace p2made\widgets;
+
+use yii\base\Widget;
+use yii\helpers\Html;
 
 /**
  * Base widget class for yii2-widgets
@@ -35,7 +38,7 @@ namespace p2made\widgets;
  * @var protected $_encOptions = '';
  */
 
-class Widget extends \kartik\base\Widget
+class P2Widget extends Widget{
 {
 
 	/**
@@ -49,3 +52,81 @@ class Widget extends \kartik\base\Widget
 		}
 	}
 }
+?>
+
+
+<?php
+namespace app\components;
+
+class Mywidget extends Widget{
+
+	public $message;
+
+	public function init(){
+		// your logic here
+
+		parent::init();
+
+		if($this->message===null) {
+			$this->message= 'Welcome Guest';
+		}else{
+			$this->message= 'Welcome '.$this->message;
+		}
+	}
+
+	public function run(){
+		// you can load & return the view or you can return the output variable
+
+		return $this->render('myWidget',['message' => $this->message]);
+	}
+
+}
+?>
+
+
+
+<?php
+namespace app\components;
+
+use yii\base\Widget;
+use yii\helpers\Html;
+
+class RecentPostWidget extends Widget{
+
+	public function init(){
+		// add your logic here
+	}
+
+	public function run(){
+		return $this->render('myWidget');
+	}
+}
+?>
+
+
+<?php
+namespace app\components;
+
+use yii\base\Widget;
+use yii\helpers\Html;
+
+class RecentPostWidget extends Widget{
+
+	public $limit=5;
+	public $posts;
+
+	public function init(){
+
+		parent::init();
+
+		$this->posts = \app\models\Post::find()->limit($this->limit)->all();
+	}
+
+	public function run(){
+		return $this->render('recentPostWidget',['posts'=>$this->posts]);
+	}
+
+}
+?>
+
+

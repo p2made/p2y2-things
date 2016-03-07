@@ -1,4 +1,4 @@
-P2Y2Things v1.0.7
+P2Y2Things v1.0.8
 =================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -21,7 +21,7 @@ Resource | Asset Class
 [FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
 [Flot tooltip](https://github.com/krzysu/flot.tooltip) | `p2made\assets\FlotTooltipAsset` |
-[FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
+[FontAwesome](http://fortawesome.github.io/Font-Awesome/) v4.5.0 | `p2made\assets\FontAwesomeAsset`
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
@@ -52,19 +52,19 @@ The preferred way to install p2y2-things is through [composer](http://getcompose
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things ">=1.0.7"
+composer require p2made/yii2-p2y2-things ">=1.0.8"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things ">=1.0.7"
+php composer.phar require p2made/yii2-p2y2-things ">=1.0.8"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": ">=1.0.7"
+	"p2made/yii2-p2y2-things": ">=1.0.8"
 ```
 
 to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.

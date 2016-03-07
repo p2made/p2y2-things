@@ -15,7 +15,7 @@ class SweetAlertAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '#/sweetalert-1.0.0/dist',
+			'sourcePath' => '@vendor/bower/sweetalert/dist',
 			'css' => [
 				'sweetalert.css',
 			],
@@ -24,7 +24,7 @@ class SweetAlertAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => 'cdnjs#/sweetalert/0.5.0',
+			'baseUrl' => 'cdnjs#/sweetalert/1.1.3',
 			'css' => [
 				'sweet-alert.css',
 			],

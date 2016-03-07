@@ -1,4 +1,4 @@
-P2Y2Things v1.0.8
+P2Y2Things v1.0.9
 =================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -18,9 +18,9 @@ Resource | Asset Class
 [Bootstrap Switch](http://www.bootstrap-switch.org) v3.3.2 | `p2made\assets\BootstrapSwitchAsset`
 [dataTables](http://datatables.net) v1.10.11 | `p2made\assets\DataTablesAsset`
 [flag-icon-css](https://lipis.github.io/flag-icon-css/) v1.2.0 | `p2made\assets\FlagIconCssAsset`
-[FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
-[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
-[Flot tooltip](https://github.com/krzysu/flot.tooltip) | `p2made\assets\FlotTooltipAsset` |
+[FitVids.js](http://fitvidsjs.com) v1.1.0  | `p2made\assets\FitvidsAsset`
+[Flot Charts](http://www.flotcharts.org) v0.8.3 | `p2made\assets\FlotChartsAsset`
+[Flot tooltip](https://github.com/krzysu/flot.tooltip) v0.8.6 | `p2made\assets\FlotTooltipAsset` |
 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) v4.5.0 | `p2made\assets\FontAwesomeAsset`
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
@@ -52,19 +52,19 @@ The preferred way to install p2y2-things is through [composer](http://getcompose
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things ">=1.0.8"
+composer require p2made/yii2-p2y2-things ">=1.0.9"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things ">=1.0.8"
+php composer.phar require p2made/yii2-p2y2-things ">=1.0.9"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": ">=1.0.8"
+	"p2made/yii2-p2y2-things": ">=1.0.9"
 ```
 
 to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.

@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class FlagIconCssAsset extends P2AssetBundle
 {
-	private $libVersion = '1.4.0';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/flag-icon-css',
@@ -23,7 +21,7 @@ class FlagIconCssAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/' . $this->libVersion,
+			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/1.4.0',
 			'css' => [
 				'css/flag-icon.min.css',
 			],

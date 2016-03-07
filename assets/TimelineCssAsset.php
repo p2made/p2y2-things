@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class TimelineCssAsset extends P2AssetBundle
 {
-	private $libVersion = '1.0.0';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '#/Timeline.css-1.0',
@@ -23,7 +21,7 @@ class TimelineCssAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/1.0.0',
 			'css' => [
 				'timeline.min.css',
 			],

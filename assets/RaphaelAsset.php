@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class RaphaelAsset extends P2AssetBundle
 {
-	private $libVersion = '2.1.4';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/raphael',
@@ -23,7 +21,7 @@ class RaphaelAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4',
 			'js' => [
 				'raphael-min.js',
 			],

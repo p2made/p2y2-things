@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class MomentTimezoneAsset extends P2AssetBundle
 {
-	private $libVersion = '0.5.1';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/moment-timezone/build',
@@ -23,7 +21,7 @@ class MomentTimezoneAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.1',
 			'js' => [
 				'moment-timezone.min.js',
 			],

@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class MorrisAsset extends P2AssetBundle
 {
-	private $libVersion = '0.5.1';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/morrisjs',
@@ -26,7 +24,7 @@ class MorrisAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1',
 			'css' => [
 				'morris.css',
 			],

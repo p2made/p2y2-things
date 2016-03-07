@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class FullCalendarPrintAsset extends P2AssetBundle
 {
-	private $libVersion = '2.6.1';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/fullcalendar/dist',
@@ -23,7 +21,7 @@ class FullCalendarPrintAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1',
 			'css' => [
 				'fullcalendar.print.css',
 			],

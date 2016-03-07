@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class Html5shivAsset extends P2AssetBundle
 {
-	private $libVersion = '3.7.3';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/html5shiv/dist',
@@ -23,7 +21,7 @@ class Html5shivAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/html5shiv/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3',
 			'js' => [
 				'html5shiv.min.js',
 			],
@@ -43,9 +41,3 @@ class Html5shivAsset extends P2AssetBundle
 		parent::init();
 	}
 }
-
-
-https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js
-
-
-/WWW/yii.development/vendor/bower/html5shiv/dist/html5shiv.min.js

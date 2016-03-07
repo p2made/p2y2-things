@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class MasonryAsset extends P2AssetBundle
 {
-	private $libVersion = '4.0.0';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/masonry/dist',
@@ -23,7 +21,7 @@ class MasonryAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0',
 			'js' => [
 				'masonry.pkgd.min.js',
 			],

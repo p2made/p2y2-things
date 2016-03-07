@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class HolderAsset extends P2AssetBundle
 {
-	private $libVersion = '2.9.3';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/holderjs',
@@ -23,7 +21,7 @@ class HolderAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/2.9.3',
 			'js' => [
 				'holder.min.js',
 			],

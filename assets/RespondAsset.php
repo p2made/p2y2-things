@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class RespondAsset extends P2AssetBundle
 {
-	private $libVersion = '1.4.2';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/respond/dest',
@@ -23,7 +21,7 @@ class RespondAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2',
 			'js' => [
 				'respond.min.js',
 			],

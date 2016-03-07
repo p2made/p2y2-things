@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class IsotopeAsset extends P2AssetBundle
 {
-	private $libVersion = '2.2.2';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/isotope',
@@ -23,7 +21,7 @@ class IsotopeAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2',
 			'js' => [
 				'isotope.pkgd.min.js',
 			],

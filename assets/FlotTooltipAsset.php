@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class FlotTooltipAsset extends P2AssetBundle
 {
-	private $libVersion = '0.8.6';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/flot.tooltip',
@@ -23,7 +21,7 @@ class FlotTooltipAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/0.8.6',
 			'js' => [
 				'jquery.flot.tooltip.min.js',
 			],

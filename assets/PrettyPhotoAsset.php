@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class PrettyPhotoAsset extends P2AssetBundle
 {
-	private $libVersion = '3.1.6';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '#/prettyPhoto_3.1.6',
@@ -26,7 +24,7 @@ class PrettyPhotoAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdn.jsdelivr.net/prettyphoto/' . $this->libVersion,
+			'baseUrl' => '//cdn.jsdelivr.net/prettyphoto/3.1.6',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],

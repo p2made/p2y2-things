@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class SweetAlertAsset extends P2AssetBundle
 {
-	private $libVersion = '1.1.3';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/sweetalert/dist',
@@ -26,7 +24,7 @@ class SweetAlertAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3',
 			'css' => [
 				'sweet-alert.css',
 			],

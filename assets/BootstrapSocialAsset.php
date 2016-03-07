@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class BootstrapSocialAsset extends P2AssetBundle
 {
-	private $libVersion = '4.12.0';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/bootstrap-social',
@@ -23,7 +21,7 @@ class BootstrapSocialAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/' . $this->libVersion,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0',
 			'css' => [
 				'bootstrap-social.min.css',
 			],

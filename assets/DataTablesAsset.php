@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class DataTablesAsset extends P2AssetBundle
 {
-	private $libVersion = '1.10.11';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables/media',
@@ -27,7 +25,7 @@ class DataTablesAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdn.datatables.net/' . $this->libVersion,
+			'baseUrl' => '//cdn.datatables.net/1.10.11',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',
 			],
@@ -52,7 +50,7 @@ class DataTablesAsset extends P2AssetBundle
 		files
 
 			'sourcePath' => '@vendor/bower/datatables/media',
-			'baseUrl' => '//cdn.datatables.net/' . $this->libVersion,
+			'baseUrl' => '//cdn.datatables.net/1.10.11',
 
 				'css/dataTables.bootstrap.css',
 				'css/dataTables.bootstrap.min.css',

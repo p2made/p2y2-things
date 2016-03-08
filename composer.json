@@ -55,7 +55,7 @@
         "bower-asset/raphael": "v2.1.4",
         "bower-asset/respond": "1.4.2",
         "bower-asset/sweetalert": "v1.1.3",
-        "bower-asset/wow": "1.1.3",
+        "bower-asset/wow": ">=1.1.0",
         "philippfrenzel/yii2fullcalendar": "2.5.0",
         "rmrevin/yii2-fontawesome": "2.13.0"
     },

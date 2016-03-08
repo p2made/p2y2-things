@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget.php
+ * P2Widget.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,7 +11,6 @@
 
 namespace p2made\widgets;
 
-use yii\base\Widget;
 use yii\helpers\Html;
 
 /**
@@ -38,7 +37,7 @@ use yii\helpers\Html;
  * @var protected $_encOptions = '';
  */
 
-class Widget extends Widget
+class P2Widget extends \yii\base\Widget
 {
 
 	/**

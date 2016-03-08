@@ -37,6 +37,3 @@ class WowAsset extends P2AssetBundle
 		parent::init();
 	}
 }
-
-//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js
-

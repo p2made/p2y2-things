@@ -219,6 +219,3 @@ In order of preference, the CDNs used are...
 - [jsDelivr](http://www.jsdelivr.com/)
 
 Very occasionally the CDN version of a resource may be a little behind the published version.
-
-
-

@@ -25,24 +25,24 @@
         }
     ],
 
-    "version": "1.1.2",
+    "version": "1.1.3",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": ">=2.0.7",
-        "fxp/composer-asset-plugin": ">=v1.1.2",
+        "fxp/composer-asset-plugin": ">=v1.1.3",
         "bower-asset/animate.css": "3.5.1",
         "bower-asset/bootstrap-social": "4.12.0",
         "bower-asset/bootstrap-sweetalert": "0.4.5",
         "bower-asset/bootstrap-switch": "v3.3.2",
-        "bower-asset/bootswatch": "v3.3.6",
+        "bower-asset/bootswatch": "v3.3.5",
         "bower-asset/datatables": "1.10.11",
         "bower-asset/flag-icon-css": "1.4.0",
         "bower-asset/flot.tooltip": "0.8.6",
         "bower-asset/gmaps": "0.4.22",
         "bower-asset/holderjs": "v2.9.3",
         "bower-asset/html5shiv": "3.7.3",
-        "bower-asset/isotope": "v2.2.2",
+        "bower-asset/isotope": "v1.5.26",
         "bower-asset/jquery-countto": "v1.2.0",
         "bower-asset/jquery-migrate": "1.3.0",
         "bower-asset/jquery-ui": "1.11.4",
@@ -55,7 +55,7 @@
         "bower-asset/raphael": "v2.1.4",
         "bower-asset/respond": "1.4.2",
         "bower-asset/sweetalert": "v1.1.3",
-        "bower-asset/wow": "1.1.2",
+        "bower-asset/wow": "1.1.3",
         "philippfrenzel/yii2fullcalendar": "2.5.0",
         "rmrevin/yii2-fontawesome": "2.13.0"
     },

@@ -30,7 +30,7 @@
 
     "require": {
         "yiisoft/yii2": ">=2.0.7",
-        "fxp/composer-asset-plugin": ">=v1.1.3",
+        "fxp/composer-asset-plugin": ">=v1.1.2",
         "bower-asset/animate.css": "3.5.1",
         "bower-asset/bootstrap-social": "4.12.0",
         "bower-asset/bootstrap-sweetalert": "0.4.5",

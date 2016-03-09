@@ -13,8 +13,6 @@ namespace p2made\assets;
 
 class BootstrapAsset extends P2AssetBundle
 {
-	private $libVersion = '3.3.6';
-
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
@@ -34,7 +32,7 @@ class BootstrapAsset extends P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
-			$this->resourceData['sourcePath'] = '#/bootswatch-3.3.6-1/' . $themeName;
+			$this->resourceData['sourcePath'] = '@vendor/bower/bootswatch/' . $themeName;
 			$this->resourceData['pub']['baseUrl'] = [
 				'bootswatch/3.3.6/' . $themeName,
 			];
@@ -50,10 +48,6 @@ class BootstrapAsset extends P2AssetBundle
 		parent::init();
 	}
 }
-
-
-https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
-
 
 
 /* params

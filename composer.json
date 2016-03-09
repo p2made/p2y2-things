@@ -25,7 +25,7 @@
         }
     ],
 
-    "version": "1.1.4",
+    "version": "1.1.5",
     "minimum-stability": "dev",
 
     "require": {
@@ -35,7 +35,7 @@
         "bower-asset/bootstrap-social": "4.12.0",
         "bower-asset/bootstrap-sweetalert": "0.4.5",
         "bower-asset/bootstrap-switch": "v3.3.2",
-        "bower-asset/bootswatch": "v3.3.5",
+        "bower-asset/bootswatch": "v3.3.6",
         "bower-asset/datatables": "1.10.11",
         "bower-asset/flag-icon-css": "1.4.0",
         "bower-asset/flot.tooltip": "0.8.6",

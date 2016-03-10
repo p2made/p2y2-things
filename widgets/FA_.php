@@ -1,21 +1,17 @@
 <?php
 /**
  * FA.php
- *
- * @copyright Copyright &copy; Pedro Plowman, 2016
- * @author Pedro Plowman
- * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @license MIT
+ * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
-namespace p2made\widgets;
+namespace rmrevin\yii\fontawesome;
 
 /**
  * Class FA
- * @package p2made\yii2-p2y2-things
+ * @package rmrevin\yii\fontawesome
  */
-class FA extends IconWidget
+class FA extends FontAwesome
 {
 
 	/**

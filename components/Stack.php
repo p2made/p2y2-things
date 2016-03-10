@@ -1,17 +1,19 @@
 <?php
 /**
  * Stack.php
- * @author Revin Roman
- * @link https://rmrevin.ru
+ *
+ * @copyright Copyright &copy; Pedro Plowman, 2016
+ * @author Pedro Plowman
+ * @link https://github.com/p2made
+ * @package p2made/yii2-p2y2-things
+ * @license MIT
  */
 
-namespace rmrevin\yii\fontawesome\component;
-
-use yii\helpers\Html;
+namespace p2made\components;
 
 /**
  * Class Stack
- * @package rmrevin\yii\fontawesome\component
+ * @package p2made\yii2-p2y2-things
  */
 class Stack
 {

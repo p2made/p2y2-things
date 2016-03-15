@@ -11,6 +11,8 @@
 
 namespace p2made\components;
 
+use yii\helpers\Html;
+
 /**
  * Class Stack
  * @package p2made\yii2-p2y2-things

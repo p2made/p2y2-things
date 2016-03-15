@@ -1,6 +1,6 @@
 <?php
 /**
- * PrintShivAsset.php
+ * FlotCanvasAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,28 +11,22 @@
 
 namespace p2made\assets;
 
-class PrintShivAsset extends P2AssetBundle
+class FlotCanvasAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/html5shiv/dist',
+			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
-				'html5shiv-printshiv.min.js',
+				'jquery.flot.canvas.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3',
 			'js' => [
-				'html5shiv-printshiv.min.js',
+				'jquery.flot.canvas.min.js',
 			],
 		],
-		'jsOptions' => [
-			'condition' => 'lte IE9',
-			'media' => 'print',
-			'position' => \yii\web\View::POS_HEAD,
-		],
 		'depends' => [
-			'p2made\assets\Html5shivAsset',
 		],
 	);
 

@@ -11,6 +11,9 @@
 
 namespace p2made\components;
 
+use p2made\widgets\FA;
+use yii\helpers\Html;
+
 /**
  * Class Icon
  * @package p2made\yii2-p2y2-things

@@ -1,6 +1,6 @@
 <?php
 /**
- * GMapsAsset.php
+ * RespondAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -9,25 +9,26 @@
  * @license MIT
  */
 
-namespace p2made\assets;
+namespace p2made\assets\compatibility;
 
-class GMapsAsset extends P2AssetBundle
+class RespondAsset extends \p2made\assets\P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/gmaps',
+			'sourcePath' => '@vendor/bower/respond/dest',
 			'js' => [
-				'gmaps.min.js',
+				'respond.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.23',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2',
 			'js' => [
-				'gmaps.min.js',
+				'respond.min.js',
 			],
 		],
-		'depends' => [
-			'p2made\assets\GMapsApiAsset',
+		'jsOptions' => [
+			'condition' => 'lte IE9',
+			'position' => \yii\web\View::POS_HEAD,
 		],
 	);
 

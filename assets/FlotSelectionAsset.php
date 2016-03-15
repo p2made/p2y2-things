@@ -1,6 +1,6 @@
 <?php
 /**
- * RespondAsset.php
+ * FlotSelectionAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,24 +11,22 @@
 
 namespace p2made\assets;
 
-class RespondAsset extends P2AssetBundle
+class FlotSelectionAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/respond/dest',
+			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
-				'respond.min.js',
+				'jquery.flot.selection.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3',
 			'js' => [
-				'respond.min.js',
+				'jquery.flot.selection.min.js',
 			],
 		],
-		'jsOptions' => [
-			'condition' => 'lte IE9',
-			'position' => \yii\web\View::POS_HEAD,
+		'depends' => [
 		],
 	);
 

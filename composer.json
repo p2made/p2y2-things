@@ -28,7 +28,7 @@
         "source": "https://github.com/p2made/yii2-p2y2-things"
     },
 
-    "version": "1.2.2",
+    "version": "1.2.5",
     "minimum-stability": "dev",
 
     "require": {
@@ -39,9 +39,19 @@
         "bower-asset/bootstrap-switch": "v3.3.2",
         "bower-asset/bootswatch": "v3.3.5",
         "bower-asset/datatables": "1.10.11",
+        "bower-asset/datatables-autofill": "2.1.1",
+        "bower-asset/datatables-buttons": "1.1.2",
+        "bower-asset/datatables-colreorder": "1.3.1",
+        "bower-asset/datatables-fixedcolumns": "3.2.1",
+        "bower-asset/datatables-fixedheader": "3.1.1",
+        "bower-asset/datatables-keytable": "2.1.1",
+        "bower-asset/datatables-responsive": "2.0.2",
+        "bower-asset/datatables-rowreorder": "1.1.1",
+        "bower-asset/datatables-scroller": "1.4.1",
+        "bower-asset/datatables-select": "1.1.2",
         "bower-asset/flag-icon-css": "1.4.0",
         "bower-asset/flot.tooltip": "0.8.6",
-        "bower-asset/gmaps": "0.4.22",
+        "bower-asset/gmaps": "0.4.23",
         "bower-asset/holderjs": "v2.9.3",
         "bower-asset/html5shiv": "3.7.3",
         "bower-asset/isotope": "v1.5.26",
@@ -50,7 +60,7 @@
         "bower-asset/jquery-ui": "1.11.4",
         "bower-asset/jquery.fitvids": "v1.1.0",
         "bower-asset/masonry": "v4.0.0",
-        "bower-asset/metismenu": "v2.4.2",
+        "bower-asset/metismenu": "v2.4.3",
         "bower-asset/moment-timezone": "0.5.1",
         "bower-asset/morrisjs": "0.5.1",
         "bower-asset/qunit": "1.22.0",

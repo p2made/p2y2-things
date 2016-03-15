@@ -1,6 +1,6 @@
 <?php
 /**
- * TimelineAsset.php
+ * FlotChartsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,17 +11,22 @@
 
 namespace p2made\assets;
 
-class TimelineAsset extends P2AssetBundle
+class FlotChartsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/p2made/yii2-p2y2-things/assets/lib/pub',
-			'css' => [
-				'css/timeline.css',
+			'sourcePath' => '#/pub',
+			'js' => [
+				'js/jquery.colorhelpers.min.js',
+			],
+		],
+		'cdn' => [
+			'baseUrl' => '',
+			'js' => [
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapPluginAsset',
+			'p2made\assets\FlotTooltipAsset',
 		],
 	);
 

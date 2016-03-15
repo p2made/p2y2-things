@@ -1,6 +1,6 @@
 <?php
 /**
- * GMapsAsset.php
+ * DataTablesSelectAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,23 +11,29 @@
 
 namespace p2made\assets;
 
-class GMapsAsset extends P2AssetBundle
+class DataTablesSelectAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/gmaps',
+			'sourcePath' => '@vendor/bower/datatables-select',
+			'css' => [
+				'css/select.dataTables.scss',
+			],
 			'js' => [
-				'gmaps.min.js',
+				'js/dataTables.select.min.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.23',
+			'baseUrl' => '//cdn.datatables.net/select/1.1.2',
+			'css' => [
+				'css/select.dataTables.min.css',
+			],
 			'js' => [
-				'gmaps.min.js',
+				'js/dataTables.select.min.js',
 			],
 		],
 		'depends' => [
-			'p2made\assets\GMapsApiAsset',
+			'p2made\assets\JqueryAsset',
 		],
 	);
 

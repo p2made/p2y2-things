@@ -1,6 +1,6 @@
 <?php
 /**
- * MetisMenuAsset.php
+ * DataTablesScrollerAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,26 +11,30 @@
 
 namespace p2made\assets;
 
-class MetisMenuAsset extends P2AssetBundle
+class DataTablesScrollerAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
-			'sourcePath' => '@vendor/bower/metisMenu/dist',
+			'sourcePath' => '@vendor/bower/datatables-scroller',
 			'css' => [
-				'metisMenu.min.css',
+				'css/scroller.dataTables.scss',
+				//'css/scroller.bootstrap.scss',
 			],
 			'js' => [
-				'metisMenu.min.js',
+				'js/dataTables.scroller.js',
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.4.3',
+			'baseUrl' => '//cdn.datatables.net/scroller/1.4.1',
 			'css' => [
-				'metisMenu.min.css',
+				'css/scroller.dataTables.min.css',
 			],
 			'js' => [
-				'metisMenu.min.js',
+				'js/dataTables.scroller.min.js',
 			],
+		],
+		'depends' => [
+			'p2made\assets\JqueryAsset',
 		],
 	);
 

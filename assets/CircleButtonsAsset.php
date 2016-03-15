@@ -1,6 +1,6 @@
 <?php
 /**
- * TimelineAsset.php
+ * CircleButtonsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -11,17 +11,33 @@
 
 namespace p2made\assets;
 
-class TimelineAsset extends P2AssetBundle
+class CircleButtonsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [
 			'sourcePath' => '@vendor/p2made/yii2-p2y2-things/assets/lib/pub',
 			'css' => [
-				'css/timeline.css',
+				'css/circle-buttons.css',
+			],
+			/*
+			'js' => [
+				'js/bootstrap-switch.min.js',
+			],
+			 */
+		],
+		/*
+		'cdn' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2',
+			'css' => [
+				'css/bootstrap3/bootstrap-switch.min.css',
+			],
+			'js' => [
+				'js/bootstrap-switch.min.js',
 			],
 		],
+		 */
 		'depends' => [
-			'p2made\assets\BootstrapPluginAsset',
+			'p2made\assets\BootstrapAsset',
 		],
 	);
 

@@ -17,21 +17,19 @@ class DataTablesAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables/media',
 			'css' => [
-				'css/dataTables.bootstrap.min.css',
+				'css/jquery.dataTables.min.css',
 			],
 			'js' => [
 				'js/jquery.dataTables.min.js',
-				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/1.10.11',
 			'css' => [
-				'css/dataTables.bootstrap.min.css',
+				'css/jquery.dataTables.min.css',
 			],
 			'js' => [
 				'js/jquery.dataTables.min.js',
-				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'depends' => [
@@ -50,41 +48,28 @@ class DataTablesAsset extends P2AssetBundle
 		files
 
 			'sourcePath' => '@vendor/bower/datatables/media',
-			'baseUrl' => '//cdn.datatables.net/1.10.11',
+				'css/jquery.dataTables.min.css',
+				'js/jquery.dataTables.min.js',
 
-				'css/dataTables.bootstrap.css',
 				'css/dataTables.bootstrap.min.css',
-				'css/dataTables.bootstrap4.css',
 				'css/dataTables.bootstrap4.min.css',
-				'css/dataTables.foundation.css',
 				'css/dataTables.foundation.min.css',
-				'css/dataTables.jqueryui.css',
 				'css/dataTables.jqueryui.min.css',
-				'css/dataTables.material.css',
 				'css/dataTables.material.min.css',
-				'css/dataTables.semanticui.css',
 				'css/dataTables.semanticui.min.css',
-				'css/dataTables.uikit.css',
 				'css/dataTables.uikit.min.css',
 				'css/jquery.dataTables_themeroller.css',
-				'css/jquery.dataTables.css',
-				'css/jquery.dataTables.min.css',
 
-				'js/dataTables.bootstrap.js',
 				'js/dataTables.bootstrap.min.js',
-				'js/dataTables.bootstrap4.js',
 				'js/dataTables.bootstrap4.min.js',
-				'js/dataTables.foundation.js',
 				'js/dataTables.foundation.min.js',
-				'js/dataTables.jqueryui.js',
 				'js/dataTables.jqueryui.min.js',
-				'js/dataTables.material.js',
 				'js/dataTables.material.min.js',
-				'js/dataTables.semanticui.js',
 				'js/dataTables.semanticui.min.js',
-				'js/dataTables.uikit.js',
 				'js/dataTables.uikit.min.js',
-				'js/jquery.dataTables.js',
+
+			'baseUrl' => '//cdn.datatables.net/1.10.11',
+				'css/jquery.dataTables.min.css',
 				'js/jquery.dataTables.min.js',
-				'js/jquery.js',
-*/
+
+ */

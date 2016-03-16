@@ -21,7 +21,7 @@ class FlotTooltipAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/0.8.6',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/0.8.7',
 			'js' => [
 				'jquery.flot.tooltip.min.js',
 			],

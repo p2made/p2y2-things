@@ -17,17 +17,16 @@ class DataTablesFixedHeaderAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-fixedheader',
 			'css' => [
-				'css/fixedHeader.dataTables.scss',
-				//'css/fixedHeader.bootstrap.scss',
+				'css/fixedHeader.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.fixedHeader.js',
+				'js/dataTables.fixedHeader.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/fixedheader/3.1.1',
 			'css' => [
-				'css/fixedHeader.dataTables.min.css',
+				'css/fixedHeader.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.fixedHeader.min.js',

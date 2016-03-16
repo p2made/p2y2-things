@@ -17,21 +17,21 @@ class DataTablesAutoFillAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-autofill',
 			'css' => [
-				'css/autoFill.dataTables.scss',
-				//'css/autoFill.bootstrap.scss',
+				'css/autoFill.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.autoFill.js',
-				//'js/autoFill.bootstrap.js',
+				'js/dataTables.autoFill.min.js',
+				'js/autoFill.bootstrap.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/autofill/2.1.1',
 			'css' => [
-				'css/autoFill.dataTables.min.css',
+				'css/autoFill.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.autoFill.min.js',
+				'js/autoFill.bootstrap.min.js',
 			],
 		],
 		'depends' => [

@@ -17,17 +17,16 @@ class DataTablesKeyTableAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-keytable',
 			'css' => [
-				'css/keyTable.dataTables.scss',
-				//'css/keyTable.bootstrap.scss',
+				'css/keyTable.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.keyTable.js',
+				'js/dataTables.keyTable.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/keytable/2.1.1',
 			'css' => [
-				'css/keyTable.dataTables.min.css',
+				'css/keyTable.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.keyTable.min.js',

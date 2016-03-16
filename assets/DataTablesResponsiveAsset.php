@@ -17,21 +17,21 @@ class DataTablesResponsiveAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-responsive',
 			'css' => [
-				'css/responsive.dataTables.scss',
-				//'css/responsive.bootstrap.scss',
+				'css/responsive.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.responsive.js',
-				//'js/responsive.bootstrap.js',
+				'js/dataTables.responsive.min.js',
+				'js/responsive.bootstrap.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/responsive/2.0.2',
 			'css' => [
-				'css/responsive.dataTables.min.css',
+				'css/responsive.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.responsive.min.js',
+				'js/responsive.bootstrap.min.js',
 			],
 		],
 		'depends' => [

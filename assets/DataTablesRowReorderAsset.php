@@ -17,17 +17,16 @@ class DataTablesRowReorderAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-rowreorder',
 			'css' => [
-				'css/rowReorder.dataTables.scss',
-				//'css/rowReorder.bootstrap.scss',
+				'css/rowReorder.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.rowReorder.js',
+				'js/dataTables.rowReorder.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/rowreorder/1.1.1',
 			'css' => [
-				'css/rowReorder.dataTables.min.css',
+				'css/rowReorder.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.rowReorder.min.js',

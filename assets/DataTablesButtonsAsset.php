@@ -17,25 +17,25 @@ class DataTablesButtonsAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-buttons',
 			'css' => [
-				'css/buttons.dataTables.scss',
-				//'css/buttons.bootstrap.scss',
+				'css/buttons.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.buttons.js',
-				//'js/buttons.bootstrap.js',
-				//'js/buttons.colVis.js',
-				//'js/buttons.flash.js',
-				//'js/buttons.html5.js',
-				//'js/buttons.print.js',
+				'js/dataTables.buttons.min.js',
+				'js/buttons.bootstrap.min.js',
+				//'js/buttons.colVis.min.js',
+				//'js/buttons.flash.min.js',
+				//'js/buttons.html5.min.js',
+				//'js/buttons.print.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/buttons/1.1.2',
 			'css' => [
-				'css/buttons.dataTables.min.css',
+				'css/buttons.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.buttons.min.js',
+				'js/buttons.bootstrap.min.js',
 				//'js/buttons.colVis.min.js',
 				//'js/buttons.flash.min.js',
 				//'js/buttons.html5.min.js',

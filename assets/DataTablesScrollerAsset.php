@@ -17,17 +17,16 @@ class DataTablesScrollerAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-scroller',
 			'css' => [
-				'css/scroller.dataTables.scss',
-				//'css/scroller.bootstrap.scss',
+				'css/scroller.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.scroller.js',
+				'js/dataTables.scroller.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/scroller/1.4.1',
 			'css' => [
-				'css/scroller.dataTables.min.css',
+				'css/scroller.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.scroller.min.js',

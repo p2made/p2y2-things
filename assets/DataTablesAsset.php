@@ -17,19 +17,21 @@ class DataTablesAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables/media',
 			'css' => [
-				'css/jquery.dataTables.min.css',
+				'css/dataTables.bootstrap.min.css',
 			],
 			'js' => [
 				'js/jquery.dataTables.min.js',
+				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/1.10.11',
 			'css' => [
-				'css/jquery.dataTables.min.css',
+				'css/dataTables.bootstrap.min.css',
 			],
 			'js' => [
 				'js/jquery.dataTables.min.js',
+				'js/dataTables.bootstrap.min.js',
 			],
 		],
 		'depends' => [

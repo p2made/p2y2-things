@@ -17,7 +17,7 @@ class DataTablesSelectAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-select',
 			'css' => [
-				'css/select.dataTables.scss',
+				'css/select.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.select.min.js',
@@ -26,7 +26,7 @@ class DataTablesSelectAsset extends P2AssetBundle
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/select/1.1.2',
 			'css' => [
-				'css/select.dataTables.min.css',
+				'css/select.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.select.min.js',

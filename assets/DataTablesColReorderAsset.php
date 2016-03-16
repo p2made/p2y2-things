@@ -17,17 +17,16 @@ class DataTablesColReorderAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-colreorder',
 			'css' => [
-				'css/colReorder.dataTables.scss',
-				//'css/colReorder.bootstrap.scss',
+				'css/colReorder.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.colReorder.js',
+				'js/dataTables.colReorder.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/colreorder/1.3.1',
 			'css' => [
-				'css/colReorder.dataTables.min.css',
+				'css/colReorder.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.colReorder.min.js',

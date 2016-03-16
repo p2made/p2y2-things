@@ -17,17 +17,16 @@ class DataTablesFixedColumnsAsset extends P2AssetBundle
 		'pub' => [
 			'sourcePath' => '@vendor/bower/datatables-fixedcolumns',
 			'css' => [
-				'css/fixedColumns.dataTables.scss',
-				//'css/fixedColumns.bootstrap.scss',
+				'css/fixedColumns.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.fixedColumns.js',
+				'js/dataTables.fixedColumns.min.js',
 			],
 		],
 		'cdn' => [
 			'baseUrl' => '//cdn.datatables.net/fixedcolumns/3.2.1',
 			'css' => [
-				'css/fixedColumns.dataTables.min.css',
+				'css/fixedColumns.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.fixedColumns.min.js',

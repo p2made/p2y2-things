@@ -24,7 +24,7 @@ class Lightbox2Asset extends \yii\web\AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2',
 			'css' => [
 				'css/lightbox.min.css',
 			],

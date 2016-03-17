@@ -21,7 +21,7 @@ class MomentAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0',
 			'js' => [
 				'moment.min.js',
 			],

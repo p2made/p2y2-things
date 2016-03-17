@@ -21,7 +21,7 @@ class MomentTimezoneAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.1',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.2',
 			'js' => [
 				'moment-timezone.min.js',
 			],

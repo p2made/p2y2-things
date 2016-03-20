@@ -11,7 +11,7 @@
 
 namespace p2made\assets;
 
-class Lightbox2Asset extends \yii\web\AssetBundle
+class Lightbox2Asset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [

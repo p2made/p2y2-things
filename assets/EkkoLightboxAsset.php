@@ -11,7 +11,7 @@
 
 namespace p2made\assets;
 
-class EkkoLightboxAsset extends \yii\web\AssetBundle
+class EkkoLightboxAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'pub' => [

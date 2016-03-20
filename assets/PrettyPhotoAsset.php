@@ -24,7 +24,7 @@ class PrettyPhotoAsset extends P2AssetBundle
 			],
 		],
 		'cdn' => [
-			'baseUrl' => '//cdn.jsdelivr.net/prettyphoto/3.1.6',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],

@@ -26,6 +26,9 @@ class BootstrapAsset extends P2AssetBundle
 				'css/bootstrap.min.css',
 			],
 		],
+		'depends' => [
+			'p2made\assets\BootstrapPluginAsset',
+		],
 	);
 
 	public function init()

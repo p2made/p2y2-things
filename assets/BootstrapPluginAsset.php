@@ -27,7 +27,6 @@ class BootstrapPluginAsset extends P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapAsset',
 			'p2made\assets\JqueryAsset',
 		],
 	);

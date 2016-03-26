@@ -28,7 +28,7 @@
         "source": "https://github.com/p2made/yii2-p2y2-things"
     },
 
-    "version": "1.3.8",
+    "version": "1.3.9",
     "minimum-stability": "dev",
 
     "require": {
@@ -63,7 +63,7 @@
         "bower-asset/lightbox2": "v2.8.2",
         "bower-asset/masonry": "v4.0.0",
         "bower-asset/metismenu": "v2.4.3",
-        "bower-asset/moment-timezone": "0.5.2",
+        "bower-asset/moment-timezone": "0.5.3",
         "bower-asset/moment": "2.12.0",
         "bower-asset/morrisjs": "0.5.1",
         "bower-asset/qunit": "1.22.0",
@@ -72,8 +72,8 @@
         "bower-asset/sweetalert": "v1.1.3",
         "bower-asset/wow": "1.1.2",
         "philippfrenzel/yii2fullcalendar": "2.5.0",
-        "ramsey/uuid": ">=3.3",
-        "moontoast/math": "~1.1",
+        "ramsey/uuid": "3.3.0",
+        "moontoast/math": "1.1.0",
         "rmrevin/yii2-fontawesome": "2.13.0"
     },
     "require-dev": {

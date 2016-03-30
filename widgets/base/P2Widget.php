@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\widgets;
+namespace p2made\widgets\base;
 
 use yii\helpers\Html;
 
@@ -46,8 +46,6 @@ class P2Widget extends \yii\base\Widget
 	public function init()
 	{
 		parent::init();
-		if (empty($this->options['id'])) {
-			$this->options['id'] = $this->getId();
-		}
+
 	}
 }

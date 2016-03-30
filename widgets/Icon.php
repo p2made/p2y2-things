@@ -15,7 +15,7 @@ namespace p2made\widgets;
  * Class Icon
  * @package p2made\yii2-p2y2-things
  */
-class Icon extends IconWidget
+class Icon extends \p2made\widgets\base\IconWidget
 {
 
 

@@ -17,7 +17,7 @@ namespace p2made\widgets;
  * @package p2made\yii2-p2y2-things
  */
 
-class FlagIconCssWidget extends P2Widget
+class FlagIconCssWidget extends \p2made\widgets\base\P2Widget
 {
 
 /**

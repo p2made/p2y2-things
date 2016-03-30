@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\widgets;
+namespace p2made\widgets\base;
 
 use p2made\components;
 
@@ -17,7 +17,7 @@ use p2made\components;
  * Class FontAwesomeWidget
  * @package p2made\yii2-p2y2-things
  */
-class IconWidget extends P2Widget
+class IconWidget extends \p2made\widgets\base\P2Widget
 {
 
 	/** @var string CSS Class prefix */

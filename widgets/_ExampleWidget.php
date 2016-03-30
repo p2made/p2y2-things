@@ -1,6 +1,6 @@
 <?php
 /**
- * GI.php
+ * _ExampleWidget.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman
@@ -12,12 +12,11 @@
 namespace p2made\widgets;
 
 /**
- * Class GI
+ * Class _ExampleWidget
  * @package p2made\yii2-p2y2-things
  */
-class GI extends \p2made\widgets\base\IconWidget
+class _ExampleWidget extends \p2made\widgets\base\P2Widget
 {
-
 
 
 }

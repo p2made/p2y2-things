@@ -21,7 +21,7 @@ class TimelineAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapPluginAsset',
+			'p2made\assets\BootstrapAsset',
 		],
 	);
 

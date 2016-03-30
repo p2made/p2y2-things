@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class AnimateAsset extends P2AssetBundle
+class AnimateAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/animate.css',
 			'css' => [
 				'animate.min.css',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1',
 			'css' => [
 				'animate.min.css',

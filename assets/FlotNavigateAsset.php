@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class FlotNavigateAsset extends P2AssetBundle
+class FlotNavigateAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
 				'jquery.flot.navigate.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3',
 			'js' => [
 				'jquery.flot.navigate.min.js',

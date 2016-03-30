@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class GMapsApiAsset extends P2AssetBundle
+class GMapsApiAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'cdn' => [
+		'static' => [
 			'js' => [
 				'http://maps.google.com/maps/api/js?sensor=true',
 			],

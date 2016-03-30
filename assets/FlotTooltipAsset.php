@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class FlotTooltipAsset extends P2AssetBundle
+class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/flot.tooltip',
 			'js' => [
 				'js/jquery.flot.tooltip.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/0.8.7',
 			'js' => [
 				'jquery.flot.tooltip.min.js',

@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class FlotChartsAsset extends P2AssetBundle
+class FlotChartsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '#/flot-0.8.3',
 			'js' => [
 				'jquery.flot.min.js',
@@ -35,7 +35,7 @@ class FlotChartsAsset extends P2AssetBundle
 				'jquery.flot.time.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3',
 			'js' => [
 				'jquery.flot.min.js',

@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class EkkoLightboxAsset extends P2AssetBundle
+class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/ekko-lightbox/dist',
 			'css' => [
 				'ekko-lightbox.min.css',
@@ -23,7 +23,7 @@ class EkkoLightboxAsset extends P2AssetBundle
 				'ekko-lightbox.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1',
 			'css' => [
 				'ekko-lightbox.min.css',

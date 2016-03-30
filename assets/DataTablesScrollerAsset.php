@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesScrollerAsset extends P2AssetBundle
+class DataTablesScrollerAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-scroller',
 			'css' => [
 				'css/scroller.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesScrollerAsset extends P2AssetBundle
 				'js/dataTables.scroller.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/scroller/1.4.1',
 			'css' => [
 				'css/scroller.bootstrap.min.css',

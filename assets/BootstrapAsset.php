@@ -11,23 +11,23 @@
 
 namespace p2made\assets;
 
-class BootstrapAsset extends P2AssetBundle
+class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapPluginAsset',
+			'p2made\assets\base\BootstrapPluginAsset',
 		],
 	);
 
@@ -36,13 +36,13 @@ class BootstrapAsset extends P2AssetBundle
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
 			$this->resourceData['sourcePath'] = '@vendor/bower/bootswatch/' . $themeName;
-			$this->resourceData['pub']['baseUrl'] = [
+			$this->resourceData['published']['baseUrl'] = [
 				'bootswatch/3.3.6/' . $themeName,
 			];
-			$this->resourceData['pub']['css'] = [
+			$this->resourceData['published']['css'] = [
 				'bootstrap.min.css',
 			];
-			$this->resourceData['cdn']['css'] = [
+			$this->resourceData['static']['css'] = [
 				'bootstrap.min.css',
 			];
 		}
@@ -51,7 +51,6 @@ class BootstrapAsset extends P2AssetBundle
 		parent::init();
 	}
 }
-
 
 /* params
 	'p2assets' => [

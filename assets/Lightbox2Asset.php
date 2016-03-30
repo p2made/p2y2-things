@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class Lightbox2Asset extends P2AssetBundle
+class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/lightbox2/dist',
 			'css' => [
 				'css/lightbox.min.css',
@@ -23,7 +23,7 @@ class Lightbox2Asset extends P2AssetBundle
 				'js/lightbox.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2',
 			'css' => [
 				'css/lightbox.min.css',

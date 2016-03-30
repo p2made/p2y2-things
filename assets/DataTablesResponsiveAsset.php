@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesResponsiveAsset extends P2AssetBundle
+class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-responsive',
 			'css' => [
 				'css/responsive.bootstrap.min.css',
@@ -24,7 +24,7 @@ class DataTablesResponsiveAsset extends P2AssetBundle
 				'js/responsive.bootstrap.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/responsive/2.0.2',
 			'css' => [
 				'css/responsive.bootstrap.min.css',

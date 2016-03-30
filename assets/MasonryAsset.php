@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class MasonryAsset extends P2AssetBundle
+class MasonryAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/masonry/dist',
 			'js' => [
 				'masonry.pkgd.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0',
 			'js' => [
 				'masonry.pkgd.min.js',

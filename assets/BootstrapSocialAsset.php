@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class BootstrapSocialAsset extends P2AssetBundle
+class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap-social',
 			'css' => [
 				'bootstrap-social.css',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0',
 			'css' => [
 				'bootstrap-social.min.css',

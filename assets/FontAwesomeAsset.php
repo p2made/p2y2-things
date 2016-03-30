@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class FontAwesomeAsset extends P2AssetBundle
+class FontAwesomeAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@bower/fontawesome',
 			'css' => [
 				'css/font-awesome.min.css',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0',
 			'css' => [
 				'css/font-awesome.min.css',

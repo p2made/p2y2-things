@@ -9,18 +9,18 @@
  * @license MIT
  */
 
-namespace p2made\assets;
+namespace p2made\assets\base;
 
-class BootstrapPluginAsset extends P2AssetBundle
+class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
 			'js' => [
 				'js/bootstrap.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
 			'js' => [
 				'js/bootstrap.min.js',

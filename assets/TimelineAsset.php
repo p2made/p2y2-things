@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class TimelineAsset extends P2AssetBundle
+class TimelineAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-p2y2-things/assets/lib/pub',
 			'css' => [
 				'css/timeline.css',

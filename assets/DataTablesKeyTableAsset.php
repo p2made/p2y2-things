@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesKeyTableAsset extends P2AssetBundle
+class DataTablesKeyTableAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-keytable',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesKeyTableAsset extends P2AssetBundle
 				'js/dataTables.keyTable.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/keytable/2.1.1',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',

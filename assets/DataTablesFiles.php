@@ -1,7 +1,7 @@
 <?php
 namespace p2made\assets;
 
-class DataTablesAsset extends P2AssetBundle
+class DataTablesAsset extends \p2made\assets\base\P2AssetBundle
 {
 	// DataTables
 	'//cdn.datatables.net/1.10.11/css/dataTables.bootstrap.css'

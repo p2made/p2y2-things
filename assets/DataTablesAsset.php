@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesAsset extends P2AssetBundle
+class DataTablesAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables/media',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',
@@ -24,7 +24,7 @@ class DataTablesAsset extends P2AssetBundle
 				'js/dataTables.bootstrap.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/1.10.11',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',

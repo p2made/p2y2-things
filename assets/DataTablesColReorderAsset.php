@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesColReorderAsset extends P2AssetBundle
+class DataTablesColReorderAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-colreorder',
 			'css' => [
 				'css/colReorder.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesColReorderAsset extends P2AssetBundle
 				'js/dataTables.colReorder.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/colreorder/1.3.1',
 			'css' => [
 				'css/colReorder.bootstrap.min.css',

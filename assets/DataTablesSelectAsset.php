@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesSelectAsset extends P2AssetBundle
+class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-select',
 			'css' => [
 				'css/select.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesSelectAsset extends P2AssetBundle
 				'js/dataTables.select.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/select/1.1.2',
 			'css' => [
 				'css/select.bootstrap.min.css',

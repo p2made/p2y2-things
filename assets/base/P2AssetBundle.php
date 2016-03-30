@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\assets;
+namespace p2made\assets\base;
 
 class P2AssetBundle extends \yii\web\AssetBundle
 {
@@ -49,8 +49,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	 */
 	public $depends = [];
 
-	private static $_cdnEnd;
-	private static $_useCdn;
+	private static $_staticEnd;
+	private static $_useStatic;
 
 	protected function configureAsset($resourceData)
 	{
@@ -64,29 +64,29 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			$this->depends = $resourceData['depends'];
 		}
 
-		if(P2AssetBundle::useCdn()) {
-			$this->configureCdnAsset($resourceData);
-		} elseif(P2AssetBundle::cdnEnd() !== false) {
+		if(P2AssetBundle::useStatic()) {
+			$this->configureStaticAsset($resourceData);
+		} elseif(P2AssetBundle::staticEnd() !== false) {
 		} else {
-			$this->configurePubAsset($resourceData);
+			$this->configurePublishedAsset($resourceData);
 		}
 	}
 
-	protected function configurePubAsset($resourceData, $fallOut = false)
+	protected function configurePublishedAsset($resourceData, $fallOut = false)
 	{
-		if(isset($resourceData['pub'])) {
-			$thisData = $resourceData['pub'];
+		if(isset($resourceData['published'])) {
+			$thisData = $resourceData['published'];
 		} else { // no published asset data
 			if($fallOut) {
 				return;
 			} else {
-				$this->configureCdnAsset($resourceData, true);
+				$this->configureStaticAsset($resourceData, true);
 			}
 		}
 
 		$thisPath = $thisData['sourcePath'];
-		if(P2AssetBundle::cdnEnd()) {
-			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd(), $thisPath);
+		if(P2AssetBundle::staticEnd()) {
+			$this->baseUrl = str_replace('#/', P2AssetBundle::staticEnd(), $thisPath);
 		} else {
 			$this->sourcePath = str_replace('#/', P2AssetBundle::ownPath(), $thisPath);
 		}
@@ -99,15 +99,15 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		}
 	}
 
-	protected function configureCdnAsset($resourceData, $fallOut = false)
+	protected function configureStaticAsset($resourceData, $fallOut = false)
 	{
-		if(isset($resourceData['cdn'])) {
-			$thisData = $resourceData['cdn'];
-		} else { // no CDN asset data
+		if(isset($resourceData['static'])) {
+			$thisData = $resourceData['static'];
+		} else { // no static asset data
 			if($fallOut) {
 				return;
 			} else {
-				$this->configurePubAsset($resourceData, true);
+				$this->configurePublishedAsset($resourceData, true);
 			}
 		}
 
@@ -122,18 +122,18 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		}
 	}
 
-	protected static function useCdn()
+	protected static function useStatic()
 	{
-		if(isset($_useCdn)) { return $_useCdn; }
+		if(isset($_useStatic)) { return $_useStatic; }
 
 		// using 'p2made' as param space to allow for my other bits
-		if(isset(\Yii::$app->params['p2made']['useCdn'])) {
-			$_useCdn = \Yii::$app->params['p2made']['useCdn'];
+		if(isset(\Yii::$app->params['p2made']['useStatic'])) {
+			$_useStatic = \Yii::$app->params['p2made']['useStatic'];
 		} else {
-			$_useCdn = false;
+			$_useStatic = false;
 		}
 
-		return $_useCdn;
+		return $_useStatic;
 	}
 
 	protected static function ownPath()
@@ -141,24 +141,24 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		return '@vendor/p2made/yii2-p2y2-things/assets/lib/';
 	}
 
-	protected static function cdnEnd()
+	protected static function staticEnd()
 	{
-		if(isset($_cdnEnd)) { return $_cdnEnd; }
+		if(isset($_staticEnd)) { return $_staticEnd; }
 
 		// using 'p2made' as param space to allow for my other bits
-		if(isset(\Yii::$app->params['p2made']['cdnEnd'])) {
-			$_cdnEnd = \Yii::$app->params['p2made']['cdnEnd'] . '/lib/';
+		if(isset(\Yii::$app->params['p2made']['staticEnd'])) {
+			$_staticEnd = \Yii::$app->params['p2made']['staticEnd'] . '/lib/';
 		} else {
-			$_cdnEnd = false;
+			$_staticEnd = false;
 		}
 
-		return $_cdnEnd;
+		return $_staticEnd;
 	}
 
 /* --- asset template --- */
 /*
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '',
 			'css' => [
 				'',
@@ -167,7 +167,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 				'',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '',
 			'css' => [
 				'',

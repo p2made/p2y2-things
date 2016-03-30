@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class HolderAsset extends P2AssetBundle
+class HolderAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/holderjs',
 			'js' => [
 				'holder.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/2.9.3',
 			'js' => [
 				'holder.min.js',

@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class GMapsAsset extends P2AssetBundle
+class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/gmaps',
 			'js' => [
 				'gmaps.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.23',
 			'js' => [
 				'gmaps.min.js',

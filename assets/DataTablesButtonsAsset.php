@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesButtonsAsset extends P2AssetBundle
+class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-buttons',
 			'css' => [
 				'css/buttons.bootstrap.min.css',
@@ -28,7 +28,7 @@ class DataTablesButtonsAsset extends P2AssetBundle
 				//'js/buttons.print.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/buttons/1.1.2',
 			'css' => [
 				'css/buttons.bootstrap.min.css',

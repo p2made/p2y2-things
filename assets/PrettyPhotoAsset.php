@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class PrettyPhotoAsset extends P2AssetBundle
+class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '#/prettyPhoto_3.1.6',
 			'css' => [
 				'css/prettyPhoto.min.css',
@@ -23,7 +23,7 @@ class PrettyPhotoAsset extends P2AssetBundle
 				'js/jquery.prettyPhoto.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6',
 			'css' => [
 				'css/prettyPhoto.min.css',

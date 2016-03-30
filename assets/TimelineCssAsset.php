@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class TimelineCssAsset extends P2AssetBundle
+class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '#/Timeline.css-1.0',
 			'css' => [
 				'css/timeline.css',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/1.0.0',
 			'css' => [
 				'timeline.min.css',

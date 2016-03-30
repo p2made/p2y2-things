@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class FlotChartsAsset extends P2AssetBundle
+class FlotChartsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '#/pub',
 			'js' => [
 				'js/jquery.colorhelpers.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '',
 			'js' => [
 			],

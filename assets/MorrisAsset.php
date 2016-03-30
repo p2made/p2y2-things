@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class MorrisAsset extends P2AssetBundle
+class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/morrisjs',
 			'css' => [
 				'morris.css',
@@ -23,7 +23,7 @@ class MorrisAsset extends P2AssetBundle
 				'morris.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1',
 			'css' => [
 				'morris.css',

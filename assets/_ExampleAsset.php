@@ -1,96 +1,74 @@
-P2Y2 Assets
-===========
+<?php
+/**
+ * _ExampleAsset.php
+ *
+ * @copyright Copyright &copy; Pedro Plowman, 2016
+ * @author Pedro Plowman
+ * @link https://github.com/p2made
+ * @package p2made/yii2-p2y2-things
+ * @license MIT
+ */
 
-Resource | Asset Class
--------- | -----------
-[Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
-[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset` & `p2made\assets\BootstrapPluginAsset`
-[Bootswatch Themes](http://bootswatch.com) | As over-ride settings on `p2made\assets\BootstrapAsset`
-[Bootstrap Social](https://lipis.github.io/bootstrap-social/) | `p2made\assets\BootstrapSocialAsset`
-[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
-[Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
-[dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
-[flag-icon-css](https://lipis.github.io/flag-icon-css/) | `p2made\assets\FlagIconCssAsset`
-[FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
-[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
-[Flot tooltip](https://github.com/krzysu/flot.tooltip) | `p2made\assets\FlotTooltipAsset` |
-[FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
-[FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
-[GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
-[Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
-[Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
-[jQuery](http://jquery.com) | `p2made\assets\JqueryAsset`
-[jquery-countTo](https://github.com/mhuggins/jquery-countTo) | `p2made\assets\JqueryCountToAsset`
-[jQuery Migrate](http://jquery.com) | `p2made\assets\JqueryMigrateAsset`
-[jQuery-ui](http://jqueryui.com) | `p2made\assets\JuiAsset`
-[Masonry](http://masonry.desandro.com) | `p2made\assets\MasonryAsset`
-[metisMenu](https://github.com/onokumus/metisMenu) | `p2made\assets\MetisMenuAsset`
-[Moment.js](http://momentjs.com/) | `p2made\assets\MomentAsset`
-[MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`
-[Morris.JS](http://morrisjs.github.io/morris.js/) | `p2made\assets\MorrisAsset`
-[prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/) | `p2made\assets\PrettyPhotoAsset`
-[Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
-[SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
-timeline | `p2made\assets\TimelineAsset`
-[Timeline.css](https://github.com/christian-fei/Timeline.css) | `p2made\assets\TimelineCssAsset`
-[WOW.js](http://mynameismatthieu.com/WOW/) | `p2made\assets\WowAsset`
+namespace p2made\assets; /* edit this if using elsewhere */
 
-The asset collection gives the option of using either published assets or assets from CDNs.
+class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
+{
+	private $resourceData = array(
 
-Deprecated
-----------
+		/**
+		 * 'published' section
+		 * use this for published version of assets
+		 * leave out if there's no published version
+		 */
+		'published' => [
+			'sourcePath' => '@path/to/assets/folder',
+			'css' => [
+				'css/css_file.css',
+			],
+			'js' => [
+				'js/js_file.js',
+			],
+		],
 
-These assets support IE. I will not be maintaining them any further, & will eventually remove them.
+		/**
+		 * 'static' section
+		 * use this for static version of assets
+		 * leave out if there's no static version
+		 */
+		'static' => [
+			'baseUrl' => '//example.com/path_to_asset',
+			'css' => [
+				'css/css_file.css',
+			],
+			'js' => [
+				'js/js_file.js',
+			],
+		],
 
-Resource | Asset Class
--------- | -----------
-[html5shiv](https://github.com/afarkas/html5shiv) | `p2made\assets\Html5shivAsset`
-[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
-[Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\RespondAsset`
+		'cssOptions' => [
+			// cssOptions like any other assets
+			// or leave out if no cssOptions
+		],
+		'jsOptions' => [
+			// jsOptions like any other assets
+			// or leave out if no jsOptions
+		],
+		'depends' => [
+			// depends like any other assets
+			// or leave out if no depends
+		],
 
-Usage
------
+	);
 
-First add these lines to the `params` section of your config file.
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
+}
 
-```
-	'p2made' => [
-		'useStatic' => true, // false or not set to use published assets
-	],
-```
-
-You can substitute any of the themes from [Bootswatch](http://bootswatch.com) by setting:
-
-```
-	'p2made' => [
-		...
-		'bwTheme' = 'cerulean',
-
-	],
-```
-
-Using one of: `'cerulean'`, `'cosmo'`, `'cyborg'`, `'darkly'`, `'flatly'`, `'journal'`, `'lumen'`, `'paper'`, `'readable'`, `'sandstone'`, `'simplex'`, `'slate'`, `'spacelab'`, `'superhero'`, `'united'`, `'yeti'`.
-
-
-Register assets in views with:
-
-```
-p2made\assets\AssetNameAsset::register($this);
-```
-
-& as a dependancy in assets with:
-
-```
-	public $depends = [
-		// ...
-	'p2made\assets\AssetNameAsset',
-		// ...
-	];
-```
-
-The `register` lines for all assets...
-
-```
+/* register lines for all assets... */
+/**
 	p2made\assets\_ExampleAsset::register($this);
 	p2made\assets\AnimateAsset::register($this);
 	p2made\assets\BootstrapAsset::register($this);
@@ -161,11 +139,10 @@ The `register` lines for all assets...
 	p2made\assets\compatibility\Html5shivAsset::register($this);
 	p2made\assets\compatibility\PrintShivAsset::register($this);
 	p2made\assets\compatibility\RespondAsset::register($this);
-```
+ */
 
-& the `depends` lines for all assets...
-
-```
+/* dependency lines for all assets... */
+/**
 	'p2made\assets\_ExampleAsset',
 	'p2made\assets\AnimateAsset',
 	'p2made\assets\BootstrapAsset',
@@ -236,37 +213,4 @@ The `register` lines for all assets...
 	'p2made\assets\compatibility\Html5shivAsset',
 	'p2made\assets\compatibility\PrintShivAsset',
 	'p2made\assets\compatibility\RespondAsset',
-```
-
-For usage of the asset resources see their web pages.
-
-Sub-Classing
-------------
-
-Copy `@vendor/p2made/yii2-p2y2-things/assets/_ExampleAsset.php` to your own assets directory & customise as needed.
-
-You can have a `published` version of your asset &/or a `static` version.
-
-- The `published` version is just like any other published assets.
-- The `static` version could be a CDN, or it could be your own static source, which could be as simple as files & folders in a sub-domain.
-
-- If only one asset version if provided, only that version can be used.
-- If both are provided, the setting of `useStatic`, as described above, will determine which is used.
-
-Sources
--------
-
-The following sources are used for published assets...
-
-- for PHP packages, a trusted `composer` package as a dependancy
-- for CSS &/or JS packages, a trusted `bower` package as a dependancy
-
-- downloaded files included in this package if a suitable package is not available.
-
-In order of preference, the CDNs used are...
-
-- vendor CDN
-- [cdnjs](https://cdnjs.com/)
-- [jsDelivr](http://www.jsdelivr.com/)
-
-Very occasionally the CDN version of a resource may be a little behind the published version.
+ */

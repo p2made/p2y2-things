@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class MomentTimezoneAsset extends P2AssetBundle
+class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/moment-timezone/build',
 			'js' => [
 				'moment-timezone.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.2',
 			'js' => [
 				'moment-timezone.min.js',

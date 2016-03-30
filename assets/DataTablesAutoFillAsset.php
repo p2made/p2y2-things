@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesAutoFillAsset extends P2AssetBundle
+class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-autofill',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
@@ -24,7 +24,7 @@ class DataTablesAutoFillAsset extends P2AssetBundle
 				'js/autoFill.bootstrap.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/autofill/2.1.1',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',

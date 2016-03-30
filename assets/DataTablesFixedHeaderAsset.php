@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesFixedHeaderAsset extends P2AssetBundle
+class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-fixedheader',
 			'css' => [
 				'css/fixedHeader.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesFixedHeaderAsset extends P2AssetBundle
 				'js/dataTables.fixedHeader.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/fixedheader/3.1.1',
 			'css' => [
 				'css/fixedHeader.bootstrap.min.css',

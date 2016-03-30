@@ -11,7 +11,7 @@
 
 namespace p2made\assets;
 
-class FullCalendarAsset extends P2AssetBundle
+class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 {
 	/**
 	 * the language the calender will be displayed in
@@ -32,7 +32,7 @@ class FullCalendarAsset extends P2AssetBundle
 	public $googleCalendar = false;
 
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/fullcalendar/dist',
 			'css' => [
 				'fullcalendar.min.css',
@@ -41,7 +41,7 @@ class FullCalendarAsset extends P2AssetBundle
 				'fullcalendar.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1',
 			'css' => [
 				'fullcalendar.min.css',

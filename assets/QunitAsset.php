@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class MorrisAsset extends P2AssetBundle
+class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/qunit/qunit',
 			'css' => [
 				'qunit.css',
@@ -23,7 +23,7 @@ class MorrisAsset extends P2AssetBundle
 				'qunit.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//code.jquery.com/qunit',
 			'css' => [
 				'qunit-1.22.0.css',

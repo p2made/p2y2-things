@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class CircleButtonsAsset extends P2AssetBundle
+class CircleButtonsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-p2y2-things/assets/lib/pub',
 			'css' => [
 				'css/circle-buttons.css',
@@ -26,7 +26,7 @@ class CircleButtonsAsset extends P2AssetBundle
 			 */
 		],
 		/*
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2',
 			'css' => [
 				'css/bootstrap3/bootstrap-switch.min.css',

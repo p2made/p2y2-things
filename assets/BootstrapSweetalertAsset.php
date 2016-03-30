@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class BootstrapSweetalertAsset extends P2AssetBundle
+class BootstrapSweetalertAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap-sweetalert/lib',
 			'css' => [
 				'sweet-alert.css',

@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class MetisMenuAsset extends P2AssetBundle
+class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/metisMenu/dist',
 			'css' => [
 				'metisMenu.min.css',
@@ -23,7 +23,7 @@ class MetisMenuAsset extends P2AssetBundle
 				'metisMenu.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.4.3',
 			'css' => [
 				'metisMenu.min.css',

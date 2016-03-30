@@ -11,16 +11,16 @@
 
 namespace p2made\assets\compatibility;
 
-class RespondAsset extends \p2made\assets\P2AssetBundle
+class RespondAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/respond/dest',
 			'js' => [
 				'respond.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2',
 			'js' => [
 				'respond.min.js',

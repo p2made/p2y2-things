@@ -11,10 +11,10 @@
 
 namespace p2made\assets;
 
-class DataTablesFixedColumnsAsset extends P2AssetBundle
+class DataTablesFixedColumnsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/datatables-fixedcolumns',
 			'css' => [
 				'css/fixedColumns.bootstrap.min.css',
@@ -23,7 +23,7 @@ class DataTablesFixedColumnsAsset extends P2AssetBundle
 				'js/dataTables.fixedColumns.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//cdn.datatables.net/fixedcolumns/3.2.1',
 			'css' => [
 				'css/fixedColumns.bootstrap.min.css',

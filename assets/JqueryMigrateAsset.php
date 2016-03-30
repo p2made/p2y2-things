@@ -11,16 +11,16 @@
 
 namespace p2made\assets;
 
-class JqueryMigrateAsset extends P2AssetBundle
+class JqueryMigrateAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
-		'pub' => [
+		'published' => [
 			'sourcePath' => '@vendor/bower/jquery-migrate',
 			'js' => [
 				'jquery-migrate.min.js',
 			],
 		],
-		'cdn' => [
+		'static' => [
 			'baseUrl' => '//code.jquery.com',
 			'js' => [
 				'jquery-migrate-1.4.0.min.js',

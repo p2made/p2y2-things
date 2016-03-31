@@ -23,7 +23,7 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/' . $this->bootstrapVersion,
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -39,7 +39,7 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
 			$this->resourceData['sourcePath'] = '@vendor/bower/bootswatch/' . $themeName;
 			$this->resourceData['published']['baseUrl'] = [
-				'bootswatch/' . $this->bootstrapVersion . '/' . $themeName,
+				'bootswatch/3.3.6/' . $themeName,
 			];
 			$this->resourceData['published']['css'] = [
 				'bootstrap.min.css',

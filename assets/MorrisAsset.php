@@ -3,10 +3,17 @@
  * MorrisAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
- * @author Pedro Plowman
+ * @author Pedro Plowman * @license MIT
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
- * @license MIT
+ */
+
+/**
+ * Load this asset with...
+ * p2made\assets\MorrisAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\MorrisAsset',
  */
 
 namespace p2made\assets;

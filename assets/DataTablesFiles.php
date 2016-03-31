@@ -1,4 +1,12 @@
 <?php
+/**
+ * Load this asset with...
+ * p2made\assets\DataTablesAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\DataTablesAsset',
+ */
+
 namespace p2made\assets;
 
 class DataTablesAsset extends \p2made\assets\base\P2AssetBundle

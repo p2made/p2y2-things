@@ -13,6 +13,8 @@ namespace p2made\assets;
 
 class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $bootstrapVersion = '3.3.6';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
@@ -21,7 +23,7 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/' . $this->bootstrapVersion,
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -33,11 +35,11 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
-			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
+		if(isset(\Yii::$app->params['p2assets']['bootswatchTheme'])) {
+			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
 			$this->resourceData['sourcePath'] = '@vendor/bower/bootswatch/' . $themeName;
 			$this->resourceData['published']['baseUrl'] = [
-				'bootswatch/3.3.6/' . $themeName,
+				'bootswatch/' . $this->bootstrapVersion . '/' . $themeName,
 			];
 			$this->resourceData['published']['css'] = [
 				'bootstrap.min.css',
@@ -54,11 +56,11 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 
 /* params
 	'p2assets' => [
-		'useCdn' => true, // false or not set to use published assets
-		'bwTheme' = 'cerulean', // set to _one_ of:
-			'cerulean', 'cosmo', 'cyborg', 'darkly',
-			'flatly', 'journal', 'lumen', 'paper',
-			'readable', 'sandstone', 'simplex', 'slate',
-			'spacelab', 'superhero', 'united', 'yeti',
+		'useStatic' => true, // false or not set to use published assets
+		'bootswatchTheme' = 'cerulean', // set to _one_ of:
+			// 'cerulean', 'cosmo', 'cyborg', 'darkly',
+			// 'flatly', 'journal', 'lumen', 'paper',
+			// 'readable', 'sandstone', 'simplex', 'slate',
+			// 'spacelab', 'superhero', 'united', 'yeti',
 	],
 */

@@ -1,91 +1,87 @@
 {
-    "name": "p2made/yii2-p2y2-things",
-    "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles &/or Widgets.",
-    "type": "yii2-extension",
-    "keywords": [
-        "yii2", "yii", "extension", "PHP",
-        "asset", "bundle", "widget",
-        "menu", "metisMenu",
-        "Bootstrap Social", "social",
-        "dataTables", "data", "tables",
-        "Flot", "Morris", "Morris.JS", "charts", "excanvas",
-        "raphael", "graphics", "vector", "vector graphics",
-        "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image",
-        "moment.js", "time", "moment", "timezone", "moment-timezone",
-        "FullCalendar", "calendar",
-        "html5shiv", "Respond.JS"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Pedro Plowman",
-            "email": "p2opensource@gmail.com",
-            "homepage": "https://github.com/p2made"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/p2made/yii2-p2y2-things/issues?state=open",
-        "source": "https://github.com/p2made/yii2-p2y2-things"
-    },
+	"name": "p2made/yii2-p2y2-things",
+	"description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles &/or Widgets.",
+	"type": "yii2-extension",
+	"keywords": [
+		"yii2", "yii", "extension", "PHP",
+		"asset", "bundle", "widget",
+		"menu", "metisMenu",
+		"Bootstrap Social", "social",
+		"dataTables", "data", "tables",
+		"Flot", "Morris", "Morris.JS", "charts", "excanvas",
+		"raphael", "graphics", "vector", "vector graphics",
+		"SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image",
+		"moment.js", "time", "moment", "timezone", "moment-timezone",
+		"FullCalendar", "calendar",
+		"html5shiv", "Respond.JS"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Pedro Plowman",
+			"email": "p2opensource@gmail.com",
+			"homepage": "https://github.com/p2made"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/p2made/yii2-p2y2-things/issues?state=open",
+		"source": "https://github.com/p2made/yii2-p2y2-things"
+	},
 
-    "version": "1.4.2",
-    "minimum-stability": "dev",
+	"version": "1.4.3",
+	"minimum-stability": "dev",
 
-    "require": {
-        "yiisoft/yii2": ">=2.0.7",
-        "bower-asset/animate.css": "3.5.1",
-        "bower-asset/bootstrap-social": "4.12.0",
-        "bower-asset/bootstrap-sweetalert": "0.4.5",
-        "bower-asset/bootstrap-switch": "v3.3.2",
-        "bower-asset/bootswatch": "v3.3.5",
-        "bower-asset/datatables": "1.10.11",
-        "bower-asset/datatables-autofill": "2.1.1",
-        "bower-asset/datatables-buttons": "1.1.2",
-        "bower-asset/datatables-colreorder": "1.3.1",
-        "bower-asset/datatables-fixedcolumns": "3.2.1",
-        "bower-asset/datatables-fixedheader": "3.1.1",
-        "bower-asset/datatables-keytable": "2.1.1",
-        "bower-asset/datatables-responsive": "2.0.2",
-        "bower-asset/datatables-rowreorder": "1.1.1",
-        "bower-asset/datatables-scroller": "1.4.1",
-        "bower-asset/datatables-select": "1.1.2",
-        "bower-asset/ekko-lightbox": "v4.0.1",
-        "bower-asset/flag-icon-css": "1.4.0",
-        "bower-asset/flot.tooltip": "0.8.7",
-        "bower-asset/gmaps": "0.4.23",
-        "bower-asset/holderjs": "v2.9.3",
-        "bower-asset/html5shiv": "3.7.3",
-        "bower-asset/isotope": "v1.5.26",
-        "bower-asset/jquery-countto": "v1.2.0",
-        "bower-asset/jquery-migrate": "1.3.0",
-        "bower-asset/jquery-ui": "1.11.4",
-        "bower-asset/jquery.fitvids": "v1.1.0",
-        "bower-asset/lightbox2": "v2.8.2",
-        "bower-asset/masonry": "v4.0.0",
-        "bower-asset/metismenu": "v2.4.3",
-        "bower-asset/moment-timezone": "0.5.3",
-        "bower-asset/moment": "2.12.0",
-        "bower-asset/morrisjs": "0.5.1",
-        "bower-asset/qunit": "1.23.0",
-        "bower-asset/raphael": "v2.1.4",
-        "bower-asset/respond": "1.4.2",
-        "bower-asset/sweetalert": "v1.1.3",
-        "bower-asset/wow": "1.1.2",
-        "philippfrenzel/yii2fullcalendar": "2.5.0",
-        "ramsey/uuid": "3.3.0",
-        "moontoast/math": "1.1.0",
-        "rmrevin/yii2-fontawesome": "2.13.0"
-    },
-    "require-dev": {
-        "symfony/console": "~3",
-        "doctrine/dbal": ">=2.3",
-        "phpunit/phpunit": "~4.1",
-        "satooshi/php-coveralls": "~0.6"
-    },
+	"require": {
+		"yiisoft/yii2": ">=2.0.7",
+		"bower-asset/animate.css": "3.5.1",
+		"bower-asset/bootstrap-social": "4.12.0",
+		"bower-asset/bootstrap-sweetalert": "0.4.5",
+		"bower-asset/bootstrap-switch": "v3.3.2",
+		"bower-asset/bootswatch": "v3.3.5",
+		"bower-asset/datatables": "1.10.11",
+		"bower-asset/datatables-autofill": "2.1.1",
+		"bower-asset/datatables-buttons": "1.1.2",
+		"bower-asset/datatables-colreorder": "1.3.1",
+		"bower-asset/datatables-fixedcolumns": "3.2.1",
+		"bower-asset/datatables-fixedheader": "3.1.1",
+		"bower-asset/datatables-keytable": "2.1.1",
+		"bower-asset/datatables-responsive": "2.0.2",
+		"bower-asset/datatables-rowreorder": "1.1.1",
+		"bower-asset/datatables-scroller": "1.4.1",
+		"bower-asset/datatables-select": "1.1.2",
+		"bower-asset/ekko-lightbox": "v4.0.1",
+		"bower-asset/flag-icon-css": "1.4.0",
+		"bower-asset/flot.tooltip": "0.8.7",
+		"bower-asset/gmaps": "0.4.23",
+		"bower-asset/holderjs": "v2.9.3",
+		"bower-asset/html5shiv": "3.7.3",
+		"bower-asset/isotope": "v1.5.26",
+		"bower-asset/jquery-countto": "v1.2.0",
+		"bower-asset/jquery-migrate": "1.3.0",
+		"bower-asset/jquery-ui": "1.11.4",
+		"bower-asset/jquery.fitvids": "v1.1.0",
+		"bower-asset/lightbox2": "v2.8.2",
+		"bower-asset/masonry": "v4.0.0",
+		"bower-asset/metismenu": "v2.4.3",
+		"bower-asset/moment-timezone": "0.5.3",
+		"bower-asset/moment": "2.12.0",
+		"bower-asset/morrisjs": "0.5.1",
+		"bower-asset/qunit": "1.23.0",
+		"bower-asset/raphael": "v2.1.4",
+		"bower-asset/respond": "1.4.2",
+		"bower-asset/sweetalert": "v1.1.3",
+		"bower-asset/wow": "1.1.2",
+		"philippfrenzel/yii2fullcalendar": "2.5.0",
+		"ramsey/uuid": "3.3.0",
+		"moontoast/math": "1.1.0",
+		"rmrevin/yii2-fontawesome": "2.13.0"
+	},
+	"require-dev": {
+	},
 
-    "autoload": {
-        "psr-4": {
-            "p2made\\": ""
-        }
-    }
+	"autoload": {
+		"psr-4": {
+			"p2made\\": ""
+		}
+	}
 }

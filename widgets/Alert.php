@@ -1,6 +1,6 @@
 <?php
 /**
- * FA.php
+ * Alert.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -12,6 +12,18 @@ namespace p2made\widgets;
 
 use \yii\bootstrap\Alert as BootstrapAlert;
 use \yii\bootstrap\Widget;
+
+/**
+ * Use this helper with...
+ *
+ * use p2made\widgets\Alert;
+ * ...
+ * echo Alert::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\widgets\Alert::method([$params]);
+ */
 
 /**
  * Alert widget renders a message from session flash for AdminLTE alerts. All flash messages are displayed
@@ -28,6 +40,11 @@ use \yii\bootstrap\Widget;
  * ```
  *
  * @author Evgeniy Tkachenko <et.coder@gmail.com>
+ */
+
+/**
+ * Class Alert
+ * @package p2made\yii2-p2y2-things
  */
 class Alert extends Widget
 {

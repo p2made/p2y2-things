@@ -8,6 +8,14 @@
  * @package p2made/yii2-p2y2-things
  */
 
+/**
+ * Load this asset with...
+ * p2made\assets\_ExampleAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\_ExampleAsset',
+ */
+
 namespace p2made\assets; /* edit this if using elsewhere */
 
 class _ExampleAsset extends \p2made\assets\base\P2AssetBundle

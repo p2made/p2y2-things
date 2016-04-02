@@ -8,50 +8,46 @@
  * @package p2made/yii2-p2y2-things
  */
 
+/**
+ * Load this asset with...
+ * p2made\assets\_ExampleLoaderAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\_ExampleLoaderAsset',
+ */
+
 namespace p2made\assets; /* edit this if using elsewhere */
 
-class _ExampleLoaderAsset extends \p2made\assets\base\P2AssetBundle
+class _ExampleLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
 {
-	private $resourceData = array(
 
-		/**
-		 * The 'depends' is where the action of this one happens
-		 * so it's first up here....
-		 */
-		'depends' => [
-			// Put all the dependancies you want in here.
-		],
+	/**
+	 * The 'depends' is where the action of this one happens
+	 * so it's first up here....
+	 */
+	public $depends = [
+		// Put all the dependancies you want in here.
+		'p2made\assets\P2CoreLoaderAsset',
+	];
 
-		/**
-		 * A Loader is just to load a selection of other assets
-		 * without loading any assets of its own...
-		 *
-		 * So the 'published' version is just a null path.
-		 */
-		'published' => ['sourcePath' => null,],
+	/**
+	 * A Loader is just to load a selection of other assets
+	 * without loading any assets of its own...
+	 *
+	 * So the paths & URLs are null...
+	 • but that's been specified in P2LoaderAssetBundle.
+	 */
 
-		/**
-		 * And the 'static' version ia also a null path.
-		 */
-		'static' => ['baseUrl' => null,],
+	'cssOptions' => [
+		// cssOptions like any other assets
+		// or leave out if no cssOptions
+	],
 
-		'cssOptions' => [
-			// cssOptions like any other assets
-			// or leave out if no cssOptions
-		],
+	'jsOptions' => [
+		// jsOptions like any other assets
+		// or leave out if no jsOptions
+	],
 
-		'jsOptions' => [
-			// jsOptions like any other assets
-			// or leave out if no jsOptions
-		],
-
-	);
-
-	public function init()
-	{
-		$this->configureAsset($this->resourceData);
-		parent::init();
-	}
 }
 
 /* dependency lines for all assets... */

@@ -1,6 +1,6 @@
 <?php
 /**
- * UuidHelpers.php
+ * Uuid.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,21 +11,41 @@
 namespace p2made\helpers;
 
 use yii;
-use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\Uuid as Ruuid;
 use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 
+/**
+ * Use this helper with...
+ *
+ * use p2made\helpers\Uuid;
+ * ...
+ * echo Uuid::uuid($subDomain = self::SUBDOMAIN_DEFAULT);
+ * echo Uuid::p2uuid1();
+ * echo Uuid::p2uuid3($subDomain = self::SUBDOMAIN_UUID);
+ * echo Uuid::p2uuid4();
+ * echo Uuid::p2uuid5($subDomain = self::SUBDOMAIN_UUID);
+ *
+ * or
+ *
+ * echo \p2made\helpers\Uuid::uuid($subDomain = self::SUBDOMAIN_DEFAULT);
+ * echo \p2made\helpers\Uuid::p2uuid1();
+ * echo \p2made\helpers\Uuid::p2uuid3($subDomain = self::SUBDOMAIN_UUID);
+ * echo \p2made\helpers\Uuid::p2uuid4();
+ * echo \p2made\helpers\Uuid::p2uuid5($subDomain = self::SUBDOMAIN_UUID);
+ */
+
 /*
- * UuidHelpers::p2uuid1()
- * UuidHelpers::p2uuid3('mfa_test')
- * UuidHelpers::p2uuid4()
- * UuidHelpers::p2uuid5('mfa_test')
+ * Uuid::p2uuid1()
+ * Uuid::p2uuid3('mfa_test')
+ * Uuid::p2uuid4()
+ * Uuid::p2uuid5('mfa_test')
  */
 
 /**
- * Class UuidHelpers
+ * Class Uuid
  * @package p2made\yii2-p2y2-things
  */
-class UuidHelpers
+class Uuid
 {
 	const SUBDOMAIN_NONE = 0;	// NO subdomain.
 	const SUBDOMAIN_UUID = 1;	// UUID as subdomain.
@@ -40,24 +60,24 @@ class UuidHelpers
 		return self::p2uuid5($subDomain);
 	}
 
-	public static function p2uuid1()
+	public static function uuid1()
 	{
-		return Uuid::uuid1();
+		return Ruuid::uuid1();
 	}
 
 	public static function p2uuid3($subDomain = self::SUBDOMAIN_UUID)
 	{
-		return Uuid::uuid3(Uuid::uuid1(), self::fullReverseDomain($subDomain));
+		return Ruuid::uuid3(Ruuid::uuid1(), self::fullReverseDomain($subDomain));
 	}
 
 	public static function p2uuid4()
 	{
-		return Uuid::uuid4();
+		return Ruuid::uuid4();
 	}
 
 	public static function p2uuid5($subDomain = self::SUBDOMAIN_UUID)
 	{
-		return Uuid::uuid5(Uuid::uuid4(), self::fullReverseDomain($subDomain));
+		return Ruuid::uuid5(Ruuid::uuid4(), self::fullReverseDomain($subDomain));
 	}
 
 	protected static function fullReverseDomain($subDomain = self::SUBDOMAIN_UUID)

@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleWidget.php
+ * _ExampleBaseWidget.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -8,25 +8,25 @@
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2made\widgets;
+namespace p2made\widgets\base;
 
 /**
  * Use this helper with...
  *
- * use p2made\widgets\_ExampleWidget;
+ * use p2made\widgets\base\_ExampleBaseWidget;
  * ...
  * echo _ExampleWidget::method([$params]);
  *
  * or
  *
- * echo \p2made\widgets\_ExampleWidget::method([$params]);
+ * echo \p2made\widgets\base\_ExampleBaseWidget::method([$params]);
  */
 
 /**
- * Class _ExampleWidget
+ * Class _ExampleBaseWidget
  * @package p2made\yii2-p2y2-things
  */
-class _ExampleWidget extends \p2made\widgets\base\P2Widget
+class _ExampleBaseWidget extends \p2made\widgets\base\P2Widget
 {
 
 	/**

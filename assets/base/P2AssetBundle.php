@@ -8,6 +8,14 @@
  * @package p2made/yii2-p2y2-things
  */
 
+/**
+ * Load this asset with...
+ * p2made\assets\base\P2AssetBundle::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\base\P2AssetBundle',
+ */
+
 namespace p2made\assets\base;
 
 class P2AssetBundle extends \yii\web\AssetBundle
@@ -153,40 +161,4 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 		return $_staticEnd;
 	}
-
-/* --- asset template --- */
-/*
-	private $resourceData = array(
-		'published' => [
-			'sourcePath' => '',
-			'css' => [
-				'',
-			],
-			'js' => [
-				'',
-			],
-		],
-		'static' => [
-			'baseUrl' => '',
-			'css' => [
-				'',
-			],
-			'js' => [
-				'',
-			],
-		],
-		'cssOptions' => [
-		],
-		'jsOptions' => [
-		],
-		'depends' => [
-		],
-	);
-
-	public function init()
-	{
-		$this->configureAsset($this->resourceData);
-		parent::init();
-	}
- */
 }

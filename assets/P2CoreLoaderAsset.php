@@ -18,32 +18,17 @@
 
 namespace p2made\assets;
 
-class P2CoreLoaderAsset extends \p2made\assets\base\P2AssetBundle
+class P2CoreLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
 {
-	private $resourceData = array(
 
-		'published' => [
-			'sourcePath' => null,
-		],
-		'static' => [
-			'baseUrl' => null,
-		],
+	public $depends = [
+		'yii\web\YiiAsset',
+		'p2made\assets\JqueryAsset',
+		'p2made\assets\BootstrapAsset',
+		'p2made\assets\FontAwesomeAsset',
+		'p2made\assets\JuiAsset',
+	];
 
-		'depends' => [
-			'yii\web\YiiAsset',
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\BootstrapAsset',
-			'p2made\assets\FontAwesomeAsset',
-			'p2made\assets\JuiAsset',
-		],
-
-	);
-
-	public function init()
-	{
-		$this->configureAsset($this->resourceData);
-		parent::init();
-	}
 }
 
 /* dependency lines for all assets... */

@@ -1,22 +1,19 @@
 <?php
 /**
- * IconWidget.php
- *
- * @copyright Copyright &copy; Pedro Plowman, 2016
- * @author Pedro Plowman * @license MIT
- * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
+ * FontAwesome.php
+ * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
-namespace p2made\widgets\base;
+namespace rmrevin\yii\fontawesome;
 
-use p2made\components;
+use rmrevin\yii\fontawesome\component;
 
 /**
- * Class FontAwesomeWidget
- * @package p2made\yii2-p2y2-things
+ * Class FA
+ * @package rmrevin\yii\fontawesome
  */
-class IconWidget extends \p2made\widgets\base\P2Widget
+class FontAwesome
 {
 
 	/** @var string CSS Class prefix */
@@ -31,7 +28,7 @@ class IconWidget extends \p2made\widgets\base\P2Widget
 	 */
 	public static function icon($name, $options = [])
 	{
-		return new components\Icon($name, $options);
+		return new component\Icon($name, $options);
 	}
 
 	/**
@@ -55,7 +52,7 @@ class IconWidget extends \p2made\widgets\base\P2Widget
 	 */
 	public static function stack($options = [])
 	{
-		return new components\Stack($options);
+		return new component\Stack($options);
 	}
 
 	/**

@@ -13,6 +13,18 @@ namespace p2made\widgets\base;
 use yii\helpers\Html;
 
 /**
+ * Use this helper with...
+ *
+ * use p2made\widgets\base\P2Widget;
+ * ...
+ * echo P2Widget::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\widgets\base\P2Widget::method([$params]);
+ */
+
+/**
  * Base widget class for yii2-widgets
  *
  * @var public $options = [];
@@ -36,6 +48,10 @@ use yii\helpers\Html;
  * @var protected $_encOptions = '';
  */
 
+/**
+ * Class P2Widget
+ * @package p2made\yii2-p2y2-things
+ */
 class P2Widget extends \yii\base\Widget
 {
 
@@ -47,4 +63,5 @@ class P2Widget extends \yii\base\Widget
 		parent::init();
 
 	}
+
 }

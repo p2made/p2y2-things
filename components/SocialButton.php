@@ -10,8 +10,19 @@
 
 namespace p2made\components;
 
-use p2made\helpers\BA;
+use p2made\helpers\BSocial;
+use p2made\helpers\FA;
 use yii\helpers\Html;
+
+/**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ */
 
 /**
  * Class SocialButton
@@ -29,109 +40,14 @@ class SocialButton
 	/** @var array */
 	private $options = [];
 
-	/**
-	 * @param string $name
-	 * @param array $options
-	 */
-	public function __construct($name, $options = [])
-	{
-		Html::addCssClass($options, BA::$cssPrefix . ' ' . BA::$cssPrefix . '-' . $name);
+	/** @var string */
+	private $defaultCaption = ' Sign in with ';
 
-		$this->options = $options;
-	}
+	/** @var string */
+	private $caption;
 
-	/**
-	 * @return string
-	 */
-	public function __toString()
-	{
-		return $this->render();
-	}
-
-	/**
-	 * @return self
-	 */
-	public function icon()
-	{
-		return self;
-	}
-
-	/**
-	 * @param string $value
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	 */
-	public function size($value)
-	{
-		return $this->addCssClass(
-			BA::$cssPrefix . '-' . $value,
-			in_array((string)$value, [BA::SIZE_LARGE, BA::SIZE_2X, BA::SIZE_3X, BA::SIZE_4X, BA::SIZE_5X], true),
-			sprintf(
-				'%s - invalid value. Use one of the constants: %s.',
-				'BA::size()',
-				'BA::SIZE_LARGE, BA::SIZE_2X, BA::SIZE_3X, BA::SIZE_4X, BA::SIZE_5X'
-			)
-		);
-	}
-
-	/**
-	 * Change html tag.
-	 * @param string $tag
-	 * @return static
-	 * @throws \yii\base\InvalidParamException
-	 */
-	public function tag($tag)
-	{
-		$this->tag = $tag;
-
-		return $this;
-	}
-
-	/**
-	 * @param string $class
-	 * @param bool $condition
-	 * @param string|bool $throw
-	 * @return \rmrevin\yii\fontawesome\component\Icon
-	 * @throws \yii\base\InvalidConfigException
-	 * @codeCoverageIgnore
-	 */
-	public function addCssClass($class, $condition = true, $throw = false)
-	{
-		if ($condition === false) {
-			if (!empty($throw)) {
-				$message = !is_string($throw)
-					? 'Condition is false'
-					: $throw;
-
-				throw new \yii\base\InvalidConfigException($message);
-			}
-		} else {
-			Html::addCssClass($this->options, $class);
-		}
-
-		return $this;
-	}
-
-	/**
-	 * @param string|null $tag
-	 * @param string|null $content
-	 * @param array $options
-	 * @return string
-	 */
-	public function render($tag = null, $content = null, $options = [])
-	{
-		$tag = empty($tag)
-			? (empty($this->tag) ? static::$defaultTag : $this->tag)
-			: $tag;
-
-		$options = array_merge($this->options, $options);
-
-		return Html::tag($tag, $content, $options);
-	}
-}
-
-
-	private $_services = [
+	/** @var array */
+	private $services = array(
 		'adn' =>           ['name' => 'App.net', 'icon' => 'adn', 'hex' => '#D87A68'],
 		'bitbucket' =>     ['name' => 'Bitbucket', 'icon' => 'bitbucket', 'hex' => '#205081'],
 		'dropbox' =>       ['name' => 'Dropbox', 'icon' => 'dropbox', 'hex' => '#1087DD'],
@@ -153,100 +69,159 @@ class SocialButton
 		'vimeo' =>         ['name' => 'Vimeo', 'icon' => 'vimeo-square', 'hex' => '#1AB7EA'],
 		'vk' =>            ['name' => 'VK', 'icon' => 'vk', 'hex' => '#587EA3'],
 		'yahoo' =>         ['name' => 'Yahoo!', 'icon' => 'yahoo', 'hex' => '#720E9E'],
-	];
+	);
 
-?>
-<?php
-namespace p2made\helpers;
+	/** @var array */
+	private $service = null;
 
-/**
- *
- *
- */
+	/** @var string */
+	private $serviceIcon = null;
 
-class BootstrapSocial
-{
+	const BTN = 'btn';
+	const BTN_BLOCK = 'btn-block';
+	const BTN_SOCIAL = 'btn-social';
+	const BTN_SOCIAL_ICON = 'btn-social-icon';
 
-protected $_service = null;
-protected $_serviceIcon = null;
-
-
-//	public function a($text, $url = null, $options = [])
-	public static function a($service, $content = null, $url = null, $options = [])
+	/**
+	 * @param string $service
+	 * @param array $options
+	 */
+	public function __construct($service, $options = [])
 	{
-		$text = ($content == null ? 'Sign in with' : $content) . ' ' . this::service($service);
-		//
-		//
-		//
+		$this->service = $this->services[$service];
+		$this->serviceIcon = FA::icon($this->service['icon']);
+		$this->caption = $this->serviceIcon
+			. $this->defaultCaption . $this->service['name'];
 
-		return parent::a($text, $url, $options);
+		Html::addCssClass($options, self::BTN);
+		Html::addCssClass($options, self::BTN_BLOCK);
+		Html::addCssClass($options, self::BTN_SOCIAL);
+		Html::addCssClass($options, self::BTN . '-' . $service);
+
+		$this->options = $options;
 	}
 
-//	public function a($text, $url = null, $options = [])
-	public static function aIcon($service, $url = null, $options = [])
+	/**
+	 * @return string
+	 */
+	public function __toString()
 	{
-		$text = FA::icon(this::serviceIcon($service))->fixedWidth();
-		$this->addCssClass('btn btn-block');
-		$this->addCssClass('btn-social-icon');
-		$this->addCssClass('btn-' . $service);
-		//
-		//
-		//
+		$tag = empty($this->tag) ? static::$defaultTag : $this->tag;
 
-		return parent::a($text, $url, $options);
+		return Html::tag($tag, $this->caption, $this->options);
 	}
 
-//	public function button($content = 'Button', $options = [])
-	public static function button($service, $content = null, $options = [])
+	/**
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function icon()
 	{
-		//
+		Html::removeCssClass($this->options, self::BTN_BLOCK);
+		Html::removeCssClass($this->options, self::BTN_SOCIAL);
 
-		return parent::button($content, $options);
-	}
+		Html::addCssClass($this->options, self::BTN_SOCIAL_ICON);
 
-//	public static function input($type, $name = null, $value = null, $options = [])
-	public static function input($service, $name = null, $value = null, $options = [])
-	{
-		//
+		$this->caption = $this->serviceIcon;
 
-		return parent::input('button', $name = null, $value = null, $options = []);
-	}
-
-	protected static function service($serviceCode)
-	{
-		if ($_service != null) {
-			return $_service;
+		return $this;
 		}
 
-		$_service = $_services[$serviceCode];
-		return $_service;
-	}
-
-	protected static function serviceIcon($serviceCode)
+	/**
+	 * @param boolean $value = false
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function block($value = false)
 	{
-		if ($_serviceIcon != null) {
-			return $_serviceIcon;
+		if($value != false) {
+			return $this; // trying to change to default
 		}
 
-		$_serviceIcon = $_services[$serviceCode][$icon];
-		return $_serviceIcon;
+		Html::removeCssClass($this->options, self::BTN_BLOCK);
+
+		return $this;
 	}
 
+	/**
+	 * @param string $value
+	 * placeholder '@@@' is replaced with service name from internal data
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function caption($value)
+	{
+		if($value == '') {
+			return $this->icon(); // $value == '' is same as icon()
+		}
 
-/*
-	<a class="btn btn-block btn-social btn-github"><span class="fa fa-github fa-fw"></span> Sign in with GitHub</a>
+		$this->caption = str_replace('  ', ' ',
+			$this->serviceIcon
+			. ' '
+			. str_replace('@@@', $this->service['name'], $value)
+		);
 
-	<div class="text-center"><a class="btn btn-social-icon btn-github"><span class="fa fa-github fa-fw"></span></a></div>
+		return $this;
+	}
 
-<h3 class="text-center">Different Sizes</h3>
-	<a class="btn btn-block btn-social btn-lg btn-github"><span class="fa fa-github fa-fw"></span> Sign in with github</a>
-	<a class="btn btn-block btn-social btn-github"><span class="fa fa-github fa-fw"></span> Sign in with github</a>
-	<a class="btn btn-block btn-social btn-sm btn-github"><span class="fa fa-github fa-fw"></span> Sign in with github</a>
-	<a class="btn btn-block btn-social btn-xs btn-github"><span class="fa fa-github fa-fw"></span> Sign in with github</a>
+	/**
+	 * @param string $value
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function size($value)
+	{
+		return $this->addCssClass(
+			self::BTN . '-' . $value,
+			in_array((string)$value, [
+				BSocial::SIZE_LARGE,
+				BSocial::SIZE_SMALL,
+				BSocial::SIZE_XSMALL
+			], true),
+			sprintf(
+				'%s - invalid value. Use one of the constants: %s.',
+				'FA::size()',
+				'BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL'
+			)
+		);
+	}
 
-	<a class="btn btn-social-icon btn-lg btn-github"><span class="fa fa-github fa-fw"></span></a>
-	<a class="btn btn-social-icon btn-github"><span class="fa fa-github fa-fw"></span></a>
-	<a class="btn btn-social-icon btn-sm btn-github"><span class="fa fa-github fa-fw"></span></a>
-	<a class="btn btn-social-icon btn-xs btn-github"><span class="fa fa-github fa-fw"></span></a>
-*/
+	/**
+	 * Change html tag.
+	 * @param string $tag
+	 * @return static
+	 * @throws \yii\base\InvalidParamException
+	 */
+	public function tag($tag)
+	{
+		$this->tag = $tag;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $class
+	 * @param bool $condition
+	 * @param string|bool $throw
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 * @codeCoverageIgnore
+	 */
+	public function addCssClass($class, $condition = true, $throw = false)
+	{
+		if ($condition === false) {
+			if (!empty($throw)) {
+				$message = !is_string($throw)
+					? 'Condition is false'
+					: $throw;
+
+				throw new \yii\base\InvalidConfigException($message);
+			}
+		} else {
+			Html::addCssClass($this->options, $class);
+		}
+
+		return $this;
+	}
+
 }

@@ -8,6 +8,14 @@
  * @package p2made/yii2-p2y2-things
  */
 
+/**
+ * Load this asset with...
+ * p2made\assets\base\BootstrapPluginAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2made\assets\base\BootstrapPluginAsset',
+ */
+
 namespace p2made\assets\base;
 
 class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle

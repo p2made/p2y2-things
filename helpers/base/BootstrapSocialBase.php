@@ -45,6 +45,18 @@ class BootstrapSocialBase
 	}
 
 	/**
+	 * Creates a SocialButton component as an anchor tag without 'btn-block'
+	 *
+	 * @param string $name
+	 * @param array $options
+	 * @return p2made\components\SocialButton
+	 */
+	public static function aNoBlock($name, $options = [])
+	{
+		return static::a($name, $options)->noBlock();
+	}
+
+	/**
 	 * Creates a SocialButton component as a button tag
 	 *
 	 * @param string $name
@@ -67,6 +79,18 @@ class BootstrapSocialBase
 	public static function buttonIcon($name, $options = [])
 	{
 		return static::button($name, $options)->icon();
+	}
+
+	/**
+	 * Creates a SocialButton component as a button tag without 'btn-block'
+	 *
+	 * @param string $name
+	 * @param array $options
+	 * @return p2made\components\SocialButton
+	 */
+	public static function buttonNoBlock($name, $options = [])
+	{
+		return static::button($name, $options)->noBlock();
 	}
 
 	/**

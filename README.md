@@ -1,4 +1,4 @@
-P2Y2Things v1.5.1
+P2Y2Things v1.5.2
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -39,15 +39,16 @@ to the requires section of your `composer.json` file & p2y2-things will be insta
 Assets
 ------
 
-A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. See [assets documentation](docs/P2Y2Assets) for detail & usage.
+A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. See [assets documentation](docs/P2Y2Assets.md) for detail & usage.
 
 Helpers
 -------
 
 Helper | Description
 ------ | -----------
-[IsGdHelpers](docs/IsGdHelpers) | Wrapping [is.gd](http://is.gd) as helpers for Yii2.
-[UuidHelpers](docs/IsGdHelpers) | Wrapping [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii2.
+[BSocial](docs/BSocial.md) | Wrapping [Bootstrap Social](http://lipis.github.io/bootstrap-social/) as helpers for Yii2.
+[IsGd](docs/IsGd.md) | Wrapping [is.gd](http://is.gd) as helpers for Yii2.
+[Uuid](docs/Uuid.md) | Wrapping [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii2.
 
 ---
 [![Dependency Status](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0)

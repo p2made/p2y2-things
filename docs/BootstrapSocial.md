@@ -1,10 +1,11 @@
 BSocial Asset Bundle & Helpers
 ==============================
 
-This extension provides an asset bundle with [Bootstrap Social](http://lipis.github.io/bootstrap-social/)
-for [Yii 2](http://www.yiiframework.com/) applications and helper to use icons.
+This extension provides an asset bundle with [Bootstrap Social](http://lipis.github.io/bootstrap-social/) for [Yii 2](http://www.yiiframework.com/) applications and helper to use icons.
 
-I wanted to reduce the class name to two letters, like FA in rmrevin/yii2-fontawesome, but (in English at least) the result isn't good.
+I wanted to reduce the class name to two letters, like FA in [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome), but (in English at least) the result isn't good.
+
+Credit to @lipis for Bootstrap Social.
 
 Usage
 -----
@@ -24,7 +25,6 @@ or specify as a dependency in another asset bundle loaded to the same page with.
 ```
 
 Also include `use p2made\helpers\BSocial;` at the top of the page.
-
 
 Now your page is ready for Bootstrap Social
 

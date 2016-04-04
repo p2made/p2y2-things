@@ -12,6 +12,37 @@ A collection of resources as Assets, Helpers, & Widgets for Yii2.
 
 This package replaces my yii2-asset-collection, including in all my other projects which had yii2-asset-collection as a dependancy.
 
+Highlights
+----------
+
+### [P2Y2 Assets](docs/Assets.md)
+
+A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. See [assets documentation](docs/P2Y2Assets.md) for detail & usage. These are just convenient ways to load a bunch of CSS & JS goodies. There's also an option for getting assets from official CDNs.
+
+### [BSocial Asset Bundle & Helpers](docs/BootstrapSocial.md)
+
+The [Bootstrap Social](http://lipis.github.io/bootstrap-social/) asset from P2Y2 Assets, with helpers inspired by @rmrevin's [yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
+
+Credit to @lipis for Bootstrap Social.
+
+### [FontAwesome Asset Bundle & Helpers](docs/FontAwesome.md)
+
+It began as a wrapper on [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome), merely for the convenience of having Font Awesome on the p2made namespace... & then it grew...
+
+I love the elegance & cleverness of the recursive methods in @rmrevin's classes, however the syntax starts beautifully concise for basic icons, but becomes much longer as attributes are added. I've added a few shortcuts that reduce common combinations to method names of 2 or 3 letters.
+
+Credit to @rmrevin for FontAwesome.
+
+### [IsGd Helper](docs/IsGdHelper.md)
+
+A simple wrapper of [is.gd](http://is.gd) as a helper for Yii 2 Framework.
+
+### [Uuid Helper](docs/UuidHelpers.md)
+
+A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
+
+Credit to @ramsey for ramsey/uuid, which provides all the UUID magic here.
+
 Installation
 ------------
 
@@ -74,19 +105,7 @@ P2Y2Things gives you the option of loading assets from the official CDNs. Just p
 	],
 ```
 
-Assets
-------
 
-A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. See [assets documentation](docs/P2Y2Assets.md) for detail & usage.
-
-Helpers
--------
-
-Helper | Description
------- | -----------
-[BSocial](docs/BSocial.md) | Wrapping [Bootstrap Social](http://lipis.github.io/bootstrap-social/) as helpers for Yii2.
-[IsGd](docs/IsGd.md) | Wrapping [is.gd](http://is.gd) as helpers for Yii2.
-[Uuid](docs/Uuid.md) | Wrapping [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii2.
 
 ---
 [![Dependency Status](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0)

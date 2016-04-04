@@ -5,6 +5,8 @@ A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for
 
 Version 3 brings P2Uuid into sync with version 3 of ramsey/uuid.
 
+Credit to @ramsey for ramsey/uuid, which provides all the UUID magic here.
+
 Usage
 -----
 

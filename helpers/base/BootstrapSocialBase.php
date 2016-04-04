@@ -39,7 +39,7 @@ class BootstrapSocialBase
 	 * @param array $options
 	 * @return p2made\components\SocialButton
 	 */
-	public static function aIcon($name, $options = [])
+	public static function i($name, $options = [])
 	{
 		return static::a($name, $options)->icon();
 	}
@@ -51,7 +51,7 @@ class BootstrapSocialBase
 	 * @param array $options
 	 * @return p2made\components\SocialButton
 	 */
-	public static function aNoBlock($name, $options = [])
+	public static function nb($name, $options = [])
 	{
 		return static::a($name, $options)->noBlock();
 	}
@@ -63,7 +63,7 @@ class BootstrapSocialBase
 	 * @param array $options
 	 * @return p2made\components\SocialButton
 	 */
-	public static function button($name, $options = [])
+	public static function b($name, $options = [])
 	{
 		$options = array_merge($options, ['type' => 'submit']);
 		return static::socialButton($name, $options)->tag('button');
@@ -76,9 +76,9 @@ class BootstrapSocialBase
 	 * @param array $options
 	 * @return p2made\components\SocialButton
 	 */
-	public static function buttonIcon($name, $options = [])
+	public static function bi($name, $options = [])
 	{
-		return static::button($name, $options)->icon();
+		return static::b($name, $options)->icon();
 	}
 
 	/**
@@ -88,9 +88,9 @@ class BootstrapSocialBase
 	 * @param array $options
 	 * @return p2made\components\SocialButton
 	 */
-	public static function buttonNoBlock($name, $options = [])
+	public static function bnb($name, $options = [])
 	{
-		return static::button($name, $options)->noBlock();
+		return static::b($name, $options)->noBlock();
 	}
 
 	/**

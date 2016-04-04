@@ -4,6 +4,8 @@ BSocial Asset Bundle & Helpers
 This extension provides an asset bundle with [Bootstrap Social](http://lipis.github.io/bootstrap-social/)
 for [Yii 2](http://www.yiiframework.com/) applications and helper to use icons.
 
+I wanted to reduce the class name to two letters, like FA in rmrevin/yii2-fontawesome, but (in English at least) the result isn't good.
+
 Usage
 -----
 

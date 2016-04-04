@@ -1,4 +1,4 @@
-P2Y2Things v1.5.2
+P2Y2Things v1.6.0
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -15,7 +15,7 @@ This package replaces my yii2-asset-collection, including in all my other projec
 Installation
 ------------
 
-The preferred way to install p2y2-things is through [composer](http://getcomposer.org/download/).
+The preferred way to install P2Y2Things is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
 
 ```
@@ -34,7 +34,45 @@ Alternatively add:
 	"p2made/yii2-p2y2-things": "*"
 ```
 
-to the requires section of your `composer.json` file & p2y2-things will be installed next time you run `composer update`.
+to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.
+
+And then...
+-----------
+
+If you're using P2Y2Things you'll want to nullify some of the Yii 2 assets, to avoid conflicts through double loading. Modify `common/config/main.php` with...
+
+```
+	'components' => [
+		'assetManager' => [
+			'bundles' => [
+				'yii\web\JqueryAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\bootstrap\BootstrapAsset' => [
+					'sourcePath' => null, 'css' => [],
+				],
+				'yii\bootstrap\BootstrapPluginAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\jui\JuiAsset' => [
+					'sourcePath' => null, 'css' => [], 'js' => [],
+				],
+				'\rmrevin\yii\fontawesome\AssetBundle' => [
+					'sourcePath' => null, 'css' => [],
+				],
+			],
+		],
+		...
+	],
+```
+
+P2Y2Things gives you the option of loading assets from the official CDNs. Just put this into `common/config/params.php`...
+
+```
+	'p2made' => [
+		'useStatic' => true, // false or not set to use published assets
+	],
+```
 
 Assets
 ------

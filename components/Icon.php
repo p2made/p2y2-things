@@ -65,11 +65,7 @@ class Icon extends \rmrevin\yii\fontawesome\component\Icon
 	 *
 	 * public function border()
 	 *
-	 * public function pull_left()
-	 *
 	 * public function pullLeft()
-	 *
-	 * public function pull_right()
 	 *
 	 * public function pullRight()
 	 *

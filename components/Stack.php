@@ -35,34 +35,59 @@ class Stack extends \rmrevin\yii\fontawesome\component\Stack
 	 *
 	 */
 
-	/**
-	 * public static $defaultTag = 'span';
-	 */
+	/** @var string */
+	// public static $defaultTag = 'span';
 
 	/** @var string */
-	private $tag;
+	// private $tag;
 
 	/** @var array */
-	private $options = [];
+	// private $options = [];
 
 	/** @var Icon */
-	private $icon_front;
+	// private $icon_front;
 
 	/** @var Icon */
-	private $icon_back;
+	// private $icon_back;
 
 	/**
-	 * public function __construct($options = [])
-	 *
-	 * public function __toString()
-	 *
-	 * public function icon($icon, $options = [])
-	 *
-	 * public function on($icon, $options = [])
-	 *
-	 * public function tag($tag)
-	 *
-	 * public function render($tag = null, $options = [])
+	 * @param array $options
 	 */
+	// public function __construct($options = [])
+
+	/**
+	 * @return string
+	 */
+	// public function __toString()
+
+	/**
+	 * @param string|Icon $icon
+	 * @param array $options
+	 * @return self
+	 */
+	// public function icon($icon, $options = [])
+
+	/**
+	 * @param string|Icon $icon
+	 * @param array $options
+	 * @return self
+	 */
+	// public function on($icon, $options = [])
+
+	/**
+	 * Change html tag.
+	 * @param string $tag
+	 * @return static
+	 * @throws \yii\base\InvalidParamException
+	 */
+	// public function tag($tag)
+
+	/**
+	 * @param string|null $tag
+	 * @param array $options
+	 * @return string
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	// public function render($tag = null, $options = [])
 
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * BootstrapSocialBase.php
+ * BootstrapSocial.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -13,11 +13,14 @@ namespace p2made\helpers\base;
 use p2made\components\SocialButton;
 
 /**
- * Class BootstrapSocialBase
+ * Class BootstrapSocial
  * @package p2made\yii2-p2y2-things
  */
-class BootstrapSocialBase
+class BootstrapSocial
 {
+
+	/** @var string CSS Class prefix */
+	public static $cssPrefix = 'btn';
 
 	/**
 	 * Creates a SocialButton component as an anchor tag

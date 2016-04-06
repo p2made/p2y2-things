@@ -26,7 +26,7 @@ namespace p2made\helpers;
  * Class BSocial
  * @package p2made\yii2-p2y2-things
  */
-class BSocial extends \p2made\helpers\base\BootstrapSocialBase
+class BSocial extends \p2made\helpers\base\BootstrapSocial
 {
 
 	/**

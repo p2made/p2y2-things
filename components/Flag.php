@@ -1,6 +1,6 @@
 <?php
 /**
- * SocialButton.php
+ * Flag.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,8 +10,7 @@
 
 namespace p2made\components;
 
-use p2made\helpers\BSocial;
-use p2made\helpers\FA;
+use p2made\helpers\FI;
 use yii\helpers\Html;
 
 /**
@@ -25,78 +24,47 @@ use yii\helpers\Html;
  */
 
 /**
- * Class SocialButton
+ * Use this helper with...
+ *
+ * use p2made\components\base\Flag;
+ * ...
+ * echo Flag::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\components\base\Flag::method([$params]);
+ */
+
+/**
+ * Class Flag
  * @package p2made\yii2-p2y2-things
  */
-class SocialButton
+class Flag extends \p2made\components\base\P2ComponentBase
 {
 
 	/** @var string */
-	public static $defaultTag = 'a';
+	public static $defaultTag = 'div';
 
 	/** @var string */
-	private $tag;
-
-	/** @var array */
-	private $options = [];
-
-	/** @var string */
-	private $defaultCaption = ' Sign in with ';
-
-	/** @var string */
-	private $caption;
-
-	/** @var array */
-	private $services = array(
-		'adn' =>           ['name' => 'App.net', 'icon' => 'adn', 'hex' => '#D87A68'],
-		'bitbucket' =>     ['name' => 'Bitbucket', 'icon' => 'bitbucket', 'hex' => '#205081'],
-		'dropbox' =>       ['name' => 'Dropbox', 'icon' => 'dropbox', 'hex' => '#1087DD'],
-		'facebook' =>      ['name' => 'Facebook', 'icon' => 'facebook', 'hex' => '#3B5998'],
-		'flickr' =>        ['name' => 'Flickr', 'icon' => 'flickr', 'hex' => '#2BA9E1'],
-		'foursquare' =>    ['name' => 'Foursquare', 'icon' => 'foursquare', 'hex' => '#f94877'],
-		'github' =>        ['name' => 'GitHub', 'icon' => 'github', 'hex' => '#444444'],
-		'google' =>        ['name' => 'Google', 'icon' => 'google', 'hex' => '#DD4B39'],
-		'instagram' =>     ['name' => 'Instagram', 'icon' => 'instagram', 'hex' => '#3F729B'],
-		'linkedin' =>      ['name' => 'LinkedIn', 'icon' => 'linkedin', 'hex' => '#007BB6'],
-		'microsoft' =>     ['name' => 'Microsoft', 'icon' => 'windows', 'hex' => '#2672EC'],
-		'odnoklassniki' => ['name' => 'Odnoklassniki', 'icon' => 'odnoklassniki', 'hex' => '#F4731C'],
-		'openid' =>        ['name' => 'OpenID', 'icon' => 'openid', 'hex' => '#F7931E'],
-		'pinterest' =>     ['name' => 'Pinterest', 'icon' => 'pinterest', 'hex' => '#CB2027'],
-		'reddit' =>        ['name' => 'Reddit', 'icon' => 'reddit', 'hex' => '#EFF7FF'],
-		'soundcloud' =>    ['name' => 'SoundCloud', 'icon' => 'soundcloud', 'hex' => '#FF5500'],
-		'tumblr' =>        ['name' => 'Tumblr', 'icon' => 'tumblr', 'hex' => '#CB2027'],
-		'twitter' =>       ['name' => 'Twitter', 'icon' => 'twitter', 'hex' => '#55ACEE'],
-		'vimeo' =>         ['name' => 'Vimeo', 'icon' => 'vimeo-square', 'hex' => '#1AB7EA'],
-		'vk' =>            ['name' => 'VK', 'icon' => 'vk', 'hex' => '#587EA3'],
-		'yahoo' =>         ['name' => 'Yahoo!', 'icon' => 'yahoo', 'hex' => '#720E9E'],
-	);
-
-	/** @var array */
-	private $service = null;
-
-	/** @var string */
-	private $serviceIcon = null;
-
-	const BTN = 'btn';
-	const BTN_BLOCK = 'btn-block';
-	const BTN_SOCIAL = 'btn-social';
-	const BTN_SOCIAL_ICON = 'btn-social-icon';
+	private $name;
 
 	/**
 	 * @param string $service
 	 * @param array $options
 	 */
-	public function __construct($service, $options = [])
+	public function __construct($name, $tag = 'div', $options = [])
 	{
-		$this->service = $this->services[$service];
-		$this->serviceIcon = FA::icon($this->service['icon']);
-		$this->caption = $this->serviceIcon
-			. $this->defaultCaption . $this->service['name'];
+		$this->name = $name;
+		$this->tag = $tag;
 
-		Html::addCssClass($options, self::BTN);
-		Html::addCssClass($options, self::BTN_BLOCK);
-		Html::addCssClass($options, self::BTN_SOCIAL);
-		Html::addCssClass($options, self::BTN . '-' . $service);
+		if ($tag === 'i' || $tag === 'span') {
+			Html::addCssClass($options, FI::$cssPrefix . '-icon');
+		}
+		if ($tag === 'div') {
+			Html::addCssClass($options, 'img-thumbnail ' . FI::$cssPrefix .
+				' ' . FI::$cssPrefix . '-icon-background');
+		}
+		Html::addCssClass($options, 'flag-icon-' . $name);
 
 		$this->options = $options;
 	}
@@ -104,116 +72,88 @@ class SocialButton
 	/**
 	 * @return string
 	 */
-	public function __toString()
-	{
-		$tag = empty($this->tag) ? static::$defaultTag : $this->tag;
-
-		return Html::tag($tag, $this->caption, $this->options);
-	}
+	// public function __toString()
 
 	/**
+	 * Creates a squared flag icon
 	 * @return self
 	 */
-	public function icon()
+	public function square()
 	{
-		Html::removeCssClass($this->options, self::BTN_BLOCK);
-		Html::removeCssClass($this->options, self::BTN_SOCIAL);
-
-		Html::addCssClass($this->options, self::BTN_SOCIAL_ICON);
-
-		$this->caption = $this->serviceIcon;
-
-		return $this;
-		}
-
-	/**
-	 * @return self
-	 */
-	public function noBlock()
-	{
-		Html::removeCssClass($this->options, self::BTN_BLOCK);
+		Html::addCssClass($this->options, 'flag-icon-squared');
 
 		return $this;
 	}
 
 	/**
+	 * Adds title attribute
 	 * @param string $value
-	 * placeholder '@@@' is replaced with service name from internal data
 	 * @return self
+	 * If $value == null then the flag identifier is used
 	 */
-	public function caption($value)
+	public function title($value = null)
 	{
-		if($value == '') {
-			return $this->icon(); // $value == '' is same as icon()
-		}
-
-		$this->caption = str_replace('  ', ' ',
-			$this->serviceIcon
-			. ' '
-			. str_replace('@@@', $this->service['name'], $value)
+		$this->options = array_merge($this->options,
+			['title' => ($value == null ? $this->name : $value)]
 		);
 
 		return $this;
 	}
 
 	/**
+	 * Adds id attribute
 	 * @param string $value
 	 * @return self
-	 * @throws \yii\base\InvalidConfigException
+	 * If $value == null then the flag identifier is used
 	 */
-	public function size($value)
+	public function id($value = null)
 	{
-		return $this->addCssClass(
-			self::BTN . '-' . $value,
-			in_array((string)$value, [
-				BSocial::SIZE_LARGE,
-				BSocial::SIZE_SMALL,
-				BSocial::SIZE_XSMALL
-			], true),
-			sprintf(
-				'%s - invalid value. Use one of the constants: %s.',
-				'FA::size()',
-				'BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL'
-			)
+		$this->options = array_merge($this->options,
+			['id' => ($value == null ? $this->name : $value)]
 		);
+
+		return $this;
 	}
+
 
 	/**
 	 * Change html tag.
 	 * @param string $tag
-	 * @return static
-	 * @throws \yii\base\InvalidParamException
+	 * @return self
 	 */
-	public function tag($tag)
-	{
-		$this->tag = $tag;
-
-		return $this;
-	}
+	// public function tag($tag)
 
 	/**
 	 * @param string $class
 	 * @param bool $condition
 	 * @param string|bool $throw
-	 * @return self
+	 * @return \rmrevin\yii\fontawesome\component\Icon
 	 * @throws \yii\base\InvalidConfigException
 	 * @codeCoverageIgnore
 	 */
-	public function addCssClass($class, $condition = true, $throw = false)
-	{
-		if ($condition === false) {
-			if (!empty($throw)) {
-				$message = !is_string($throw)
-					? 'Condition is false'
-					: $throw;
+	// public function addCssClass($class, $condition = true, $throw = false)
 
-				throw new \yii\base\InvalidConfigException($message);
-			}
-		} else {
-			Html::addCssClass($this->options, $class);
-		}
+	/**
+	 * @param string|null $tag
+	 * @param string|null $content
+	 * @param array $options
+	 * @return string
+	 */
+	// public function render($tag = null, $content = null, $options = [])
 
-		return $this;
-	}
+/*
+	'i' =>      'flag-icon flag-icon-au',
+	'span' =>   'flag-icon flag-icon-au',
+	'div' =>    'img-thumbnail flag flag-icon-background flag-icon-au" title="au" id="au',
+*/
+
+
+/**
+	<i class="flag-icon flag-icon-au"></i>
+	<i class="flag-icon flag-icon-squared flag-icon-au"></i>
+	<span class="flag-icon flag-icon-au"></span>
+	<div class="img-thumbnail flag flag-icon-background flag-icon-eu" title="eu" id="eu"></div>
+ */
+
 
 }

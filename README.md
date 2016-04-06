@@ -1,4 +1,4 @@
-P2Y2Things v1.6.0
+P2Y2Things v1.6.1
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -17,15 +17,15 @@ Highlights
 
 ### [P2Y2 Assets](docs/Assets.md)
 
-A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. See [assets documentation](docs/P2Y2Assets.md) for detail & usage. These are just convenient ways to load a bunch of CSS & JS goodies. There's also an option for getting assets from official CDNs.
+A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. These are just convenient ways to load a bunch of CSS & JS goodies. There's also an option for getting assets from official CDNs.
 
-### [BSocial Asset Bundle & Helpers](docs/BootstrapSocial.md)
+### [Bootstrap Social Asset Bundle & Helpers](docs/BootstrapSocial.md)
 
 The [Bootstrap Social](http://lipis.github.io/bootstrap-social/) asset from P2Y2 Assets, with helpers inspired by @rmrevin's [yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
 
 Credit to @lipis for Bootstrap Social.
 
-### [FontAwesome Asset Bundle & Helpers](docs/FontAwesome.md)
+### [Font Awesome Asset Bundle & Helpers](docs/FontAwesome.md)
 
 It began as a wrapper on [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome), merely for the convenience of having Font Awesome on the p2made namespace... & then it grew...
 
@@ -37,7 +37,7 @@ Credit to @rmrevin for FontAwesome.
 
 A simple wrapper of [is.gd](http://is.gd) as a helper for Yii 2 Framework.
 
-### [Uuid Helper](docs/UuidHelpers.md)
+### [Uuid Helpers](docs/UuidHelpers.md)
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
 

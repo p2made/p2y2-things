@@ -43,6 +43,34 @@ class FA extends \p2made\helpers\base\FontAwesome
 	// public static function getConstants($html = false)
 
 	/**
+	 * Size values
+	 * @see rmrevin\yii\fontawesome\component\Icon::size
+	 * use as FA::CONSTANT
+	 */
+	// const SIZE_LARGE = 'lg';
+	// const SIZE_2X = '2x';
+	// const SIZE_3X = '3x';
+	// const SIZE_4X = '4x';
+	// const SIZE_5X = '5x';
+
+	/**
+	 * Rotate values
+	 * @see rmrevin\yii\fontawesome\component\Icon::rotate
+	 * use as FA::CONSTANT
+	 */
+	// const ROTATE_90 = '90';
+	// const ROTATE_180 = '180';
+	// const ROTATE_270 = '270';
+
+	/**
+	 * Flip values
+	 * @see rmrevin\yii\fontawesome\component\Icon::flip
+	 * use as FA::CONSTANT
+	 */
+	// const FLIP_HORIZONTAL = 'horizontal';
+	// const FLIP_VERTICAL = 'vertical';
+
+	/**
 	 * FA constants
 	 * use as FA::_CONSTANT
 	 */

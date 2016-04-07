@@ -1,4 +1,4 @@
-P2Y2Things v1.6.1
+P2Y2Things v1.7.0
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -22,6 +22,12 @@ A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. These ar
 ### [Bootstrap Social Asset Bundle & Helpers](docs/BootstrapSocial.md)
 
 The [Bootstrap Social](http://lipis.github.io/bootstrap-social/) asset from P2Y2 Assets, with helpers inspired by @rmrevin's [yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
+
+Credit to @lipis for Bootstrap Social.
+
+### [FlagIconCss Asset Bundle & Helpers](docs/FlagIconCss.md)
+
+The [flag-icon-css](http://lipis.github.io/flag-icon-css/) asset from P2Y2 Assets, with helpers inspired by @rmrevin's [yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
 
 Credit to @lipis for Bootstrap Social.
 

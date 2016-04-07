@@ -28,17 +28,11 @@ use yii\helpers\Html;
  * Class SocialButton
  * @package p2made\yii2-p2y2-things
  */
-class SocialButton
+class SocialButton extends \p2made\components\base\P2ComponentBase
 {
 
 	/** @var string */
 	public static $defaultTag = 'a';
-
-	/** @var string */
-	private $tag;
-
-	/** @var array */
-	private $options = [];
 
 	/** @var string */
 	private $defaultCaption = ' Sign in with ';
@@ -181,39 +175,26 @@ class SocialButton
 	/**
 	 * Change html tag.
 	 * @param string $tag
-	 * @return static
-	 * @throws \yii\base\InvalidParamException
+	 * @return self
 	 */
-	public function tag($tag)
-	{
-		$this->tag = $tag;
-
-		return $this;
-	}
+	// public function tag($tag)
 
 	/**
 	 * @param string $class
 	 * @param bool $condition
 	 * @param string|bool $throw
-	 * @return self
+	 * @return \rmrevin\yii\fontawesome\component\Icon
 	 * @throws \yii\base\InvalidConfigException
 	 * @codeCoverageIgnore
 	 */
-	public function addCssClass($class, $condition = true, $throw = false)
-	{
-		if ($condition === false) {
-			if (!empty($throw)) {
-				$message = !is_string($throw)
-					? 'Condition is false'
-					: $throw;
+	// public function addCssClass($class, $condition = true, $throw = false)
 
-				throw new \yii\base\InvalidConfigException($message);
-			}
-		} else {
-			Html::addCssClass($this->options, $class);
-		}
-
-		return $this;
-	}
+	/**
+	 * @param string|null $tag
+	 * @param string|null $content
+	 * @param array $options
+	 * @return string
+	 */
+	// public function render($tag = null, $content = null, $options = [])
 
 }

@@ -12,7 +12,7 @@ Usage
 
 Once P2Y2Things is installed, here's how you use FontAwesome in your code.
 
-First register the asset bundle where you want to use BSocial...
+First register the asset bundle where you want to use FontAwesome...
 
 ```
 	p2made\assets\FontAwesomeAsset::register($this);
@@ -26,7 +26,7 @@ or specify as a dependency in another asset bundle loaded to the same page with.
 
 Also include `use p2made\helpers\FA;` at the top of the page.
 
-Now your page is ready for FontAwesome
+Now your page is ready for FontAwesome!
 
 Class reference
 ---------------

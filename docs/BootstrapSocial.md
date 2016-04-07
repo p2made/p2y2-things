@@ -26,7 +26,7 @@ or specify as a dependency in another asset bundle loaded to the same page with.
 
 Also include `use p2made\helpers\BSocial;` at the top of the page.
 
-Now your page is ready for Bootstrap Social
+Now your page is ready for Bootstrap Social!
 
 Class reference
 ---------------

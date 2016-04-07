@@ -24,9 +24,9 @@ class P2CoreLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
 	public $depends = [
 		'yii\web\YiiAsset',
 		'p2made\assets\JqueryAsset',
+		'p2made\assets\JuiAsset',
 		'p2made\assets\BootstrapAsset',
 		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\JuiAsset',
 	];
 
 }

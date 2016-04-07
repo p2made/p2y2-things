@@ -24,6 +24,18 @@ use yii\helpers\Html;
  */
 
 /**
+ * Use this helper with...
+ *
+ * use p2made\components\Icon;
+ * ...
+ * echo Icon::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\components\Icon::method([$params]);
+ */
+
+/**
  * Class Icon
  * @package p2made\yii2-p2y2-things
  */

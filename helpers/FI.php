@@ -34,25 +34,6 @@ class FI extends \p2made\helpers\base\FlagIconCss
 {
 
 	/**
-	 * Get all icon constants for dropdown list in example
-	 * @param bool $html whether to render icon as array value prefix
-	 * @return array
-	 */
-	public static function getConstants($html = false)
-	{
-		$result = [];
-		foreach ((new \ReflectionClass(get_class()))->getConstants() as $constant) {
-			$key = static::$cssPrefix . ' ' . static::$cssPrefix . '-' . $constant;
-
-			$result[$key] = ($html)
-				? static::icon($constant) . '&nbsp;&nbsp;' . $constant
-				: $constant;
-		}
-
-		return $result;
-	}
-
-	/**
 	 * ISO 3166-1 Flags
 	 */
 	const _AD = 'ad';
@@ -313,5 +294,13 @@ class FI extends \p2made\helpers\base\FlagIconCss
 	const _GB_SCT = 'gb-sct';
 	const _GB_WLS = 'gb-wls';
 	const _UN = 'un';
+
+	/**
+	 * Size values
+	 * @see p2made\components\SocialButton::size
+	 */
+	const SIZE_LARGE = 'lg';
+	const SIZE_SMALL = 'sm';
+	const SIZE_XSMALL = 'xs';
 
 }

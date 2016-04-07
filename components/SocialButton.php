@@ -25,6 +25,18 @@ use yii\helpers\Html;
  */
 
 /**
+ * Use this helper with...
+ *
+ * use p2made\components\SocialButton;
+ * ...
+ * echo SocialButton::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\components\SocialButton::method([$params]);
+ */
+
+/**
  * Class SocialButton
  * @package p2made\yii2-p2y2-things
  */
@@ -77,12 +89,12 @@ class SocialButton extends \p2made\components\base\P2ComponentBase
 	const BTN_SOCIAL_ICON = 'btn-social-icon';
 
 	/**
-	 * @param string $service
+	 * @param string $name
 	 * @param array $options
 	 */
-	public function __construct($service, $options = [])
+	public function __construct($name, $options = [])
 	{
-		$this->service = $this->services[$service];
+		$this->service = $this->services[$name];
 		$this->serviceIcon = FA::icon($this->service['icon']);
 		$this->caption = $this->serviceIcon
 			. $this->defaultCaption . $this->service['name'];
@@ -90,7 +102,7 @@ class SocialButton extends \p2made\components\base\P2ComponentBase
 		Html::addCssClass($options, self::BTN);
 		Html::addCssClass($options, self::BTN_BLOCK);
 		Html::addCssClass($options, self::BTN_SOCIAL);
-		Html::addCssClass($options, self::BTN . '-' . $service);
+		Html::addCssClass($options, self::BTN . '-' . $name);
 
 		$this->options = $options;
 	}

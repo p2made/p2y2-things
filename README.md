@@ -1,4 +1,4 @@
-P2Y2Things v1.7.0
+P2Y2Things v1.8.0
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -38,6 +38,10 @@ It began as a wrapper on [rmrevin/yii2-fontawesome](https://github.com/rmrevin/y
 I love the elegance & cleverness of the recursive methods in @rmrevin's classes, however the syntax starts beautifully concise for basic icons, but becomes much longer as attributes are added. I've added a few shortcuts that reduce common combinations to method names of 2 or 3 letters.
 
 Credit to @rmrevin for FontAwesome.
+
+### [Glyphicons Asset Bundle & Helpers](docs/Glyphicons.md)
+
+This extension wraps Bootstrap Glyphicons in a manner similar to [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
 
 ### [IsGd Helper](docs/IsGdHelper.md)
 

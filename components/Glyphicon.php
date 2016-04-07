@@ -1,6 +1,6 @@
 <?php
 /**
- * Flag.php
+ * Glyphicon.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,7 +10,7 @@
 
 namespace p2made\components;
 
-use p2made\helpers\FI;
+use p2made\helpers\GI;
 use yii\helpers\Html;
 
 /**
@@ -26,48 +26,54 @@ use yii\helpers\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\Flag;
+ * use p2made\components\Glyphicon;
  * ...
- * echo Flag::method([$params]);
+ * echo Glyphicon::method([$params]);
  *
  * or
  *
- * echo \p2made\components\Flag::method([$params]);
+ * echo \p2made\components\Glyphicon::method([$params]);
  */
 
 /**
- * Class Flag
+ * Class Glyphicon
  * @package p2made\yii2-p2y2-things
  */
-class Flag extends \p2made\components\base\P2ComponentBase
+class Glyphicon extends \p2made\components\base\P2ComponentBase
 {
 
 	/** @var string */
-	public static $defaultTag = 'div';
-
-	/** @var string */
-	private $name;
+	public static $defaultTag = 'i';
 
 	/**
 	 * @param string $service
 	 * @param array $options
 	 */
-	public function __construct($name, $tag = 'div', $options = [])
+	public function __construct($name, $options = [])
 	{
-		$this->name = $name;
-		$this->tag = $tag;
-
-		if ($tag === 'i' || $tag === 'span') {
-			Html::addCssClass($options, FI::$cssPrefix . '-icon');
-		}
-		if ($tag === 'div') {
-			Html::addCssClass($options, 'img-thumbnail ' . FI::$cssPrefix .
-				' ' . FI::$cssPrefix . '-icon-background');
-		}
-		Html::addCssClass($options, 'flag-icon-' . $name);
+		Html::addCssClass($options, GI::$cssPrefix);
+		Html::addCssClass($options, GI::$cssPrefix . '-' . $name);
 
 		$this->options = $options;
 	}
+
+
+/**
+
+	<div class="fa col-md-4">
+		<p><i class="flag-icon-asterisk fa-fw"></i></p><br>
+	</div>
+
+
+ */
+
+/**
+	<div class="fa col-md-4">
+		<p><i class="glyphicon glyphicon-adjust fa-fw"></i> glyphicon-adjust</p><br>
+	</div>
+ */
+
+
 
 	/**
 	 * @return string
@@ -75,45 +81,39 @@ class Flag extends \p2made\components\base\P2ComponentBase
 	// public function __toString()
 
 	/**
-	 * Creates a squared flag icon
+	 * Adds the Font Awesome 'fa-fw' class for fixed width
 	 * @return self
 	 */
-	public function square()
+	public function fixedWidth()
 	{
-		Html::addCssClass($this->options, 'flag-icon-squared');
+		Html::addCssClass($this->options, 'fa-fw');
 
 		return $this;
 	}
 
 	/**
-	 * Adds title attribute
 	 * @param string $value
 	 * @return self
-	 * If $value == null then the flag identifier is used
+	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function title($value = null)
+	public function size($value)
 	{
-		$this->options = array_merge($this->options,
-			['title' => ($value == null ? $this->name : $value)]
+		return $this->addCssClass(
+			'btn-' . $value,
+			in_array((string)$value, [
+				FI::SIZE_LARGE,
+				FI::SIZE_SMALL,
+				FI::SIZE_XSMALL
+			], true),
+			sprintf(
+				'%s - invalid value. Use one of the constants: %s.',
+				'FA::size()',
+				'FI::SIZE_LARGE, FI::SIZE_SMALL, FI::SIZE_XSMALL'
+			)
 		);
-
-		return $this;
 	}
 
-	/**
-	 * Adds id attribute
-	 * @param string $value
-	 * @return self
-	 * If $value == null then the flag identifier is used
-	 */
-	public function id($value = null)
-	{
-		$this->options = array_merge($this->options,
-			['id' => ($value == null ? $this->name : $value)]
-		);
 
-		return $this;
-	}
 
 
 	/**

@@ -5,7 +5,7 @@ This began as a wrapper on [rmrevin/yii2-fontawesome](https://github.com/rmrevin
 
 I love the elegance & cleverness of the recursive methods in @rmrevin's classes, however the syntax starts beautifully concise for basic icons, but becomes much longer as attributes are added. I've added a few shortcuts that reduce common combinations to method names of 2 or 3 letters.
 
-Credit to @rmrevin for FontAwesome.
+Credit to @rmrevin for yii2-fontawesome.
 
 Usage
 -----

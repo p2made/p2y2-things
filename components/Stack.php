@@ -23,6 +23,18 @@ use yii\helpers\Html;
  */
 
 /**
+ * Use this helper with...
+ *
+ * use p2made\components\Stack;
+ * ...
+ * echo Stack::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\components\Stack::method([$params]);
+ */
+
+/**
  * Class Stack
  * @package p2made\yii2-p2y2-things
  */

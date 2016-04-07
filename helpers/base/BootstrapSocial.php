@@ -13,10 +13,20 @@ namespace p2made\helpers\base;
 use p2made\components\SocialButton;
 
 /**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ */
+
+/**
  * Class BootstrapSocial
  * @package p2made\yii2-p2y2-things
  */
-class BootstrapSocial
+class BootstrapSocial extends P2HelperBase
 {
 
 	/** @var string CSS Class prefix */

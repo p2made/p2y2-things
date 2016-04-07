@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleBaseHelper.php
+ * P2HelperBase.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -9,6 +9,8 @@
  */
 
 namespace p2made\helpers\base;
+
+use yii\helpers\Html;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -23,20 +25,20 @@ namespace p2made\helpers\base;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\base\_ExampleBaseHelper;
+ * use p2made\helpers\base\P2Helper;
  * ...
- * echo _ExampleBaseHelper::method([$params]);
+ * echo P2Helper::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\base\_ExampleBaseHelper::method([$params]);
+ * echo \p2made\helpers\base\P2Helper::method([$params]);
  */
 
 /**
- * Class _ExampleBaseHelper
+ * Class P2HelperBase
  * @package p2made\yii2-p2y2-things
  */
-class _ExampleBaseHelper extends P2HelperBase
+class P2HelperBase
 {
 
 

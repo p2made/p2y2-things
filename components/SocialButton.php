@@ -12,7 +12,7 @@ namespace p2made\components;
 
 use p2made\helpers\BSocial;
 use p2made\helpers\FA;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####

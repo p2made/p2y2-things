@@ -12,7 +12,7 @@ namespace p2made\helpers;
 
 use Yii;
 use yii\bootstrap\Nav;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 
 /**
@@ -83,7 +83,7 @@ use yii\bootstrap\BootstrapAsset;
 use yii\bootstrap\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 /**
  * Nav renders a nav HTML component.
  *

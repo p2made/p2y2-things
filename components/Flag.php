@@ -11,7 +11,7 @@
 namespace p2made\components;
 
 use p2made\helpers\FI;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####

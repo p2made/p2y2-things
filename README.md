@@ -1,4 +1,4 @@
-P2Y2Things v1.8.0
+P2Y2Things v1.8.1
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -115,6 +115,20 @@ P2Y2Things gives you the option of loading assets from the official CDNs. Just p
 	],
 ```
 
+When things are set up to your liking, register the `P2CoreLoaderAsset` with...
+
+```
+	p2made\assets\P2CoreLoaderAsset::register($this);
+```
+
+...&  you get
+* `yii\web\YiiAsset`, followed by
+* `Jquery` (as `p2made\assets\JqueryAsset`),
+* `Jui` (as `p2made\assets\JuiAsset`),
+* `Bootstrap` (as `p2made\assets\BootstrapAsset`), &
+* `Font Awesome` (as `p2made\assets\FontAwesomeAsset`)
+
+nicely loaded in one line.
 
 
 ---

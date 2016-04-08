@@ -8,7 +8,7 @@
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2made\helpers\base;
+namespace p2made\helpers;
 
 /**
  * Use this helper with...

@@ -10,7 +10,7 @@
 
 namespace p2made\widgets\base;
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /**
  * Use this helper with...

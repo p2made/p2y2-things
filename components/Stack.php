@@ -10,7 +10,7 @@
 
 namespace p2made\components;
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####

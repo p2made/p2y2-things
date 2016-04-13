@@ -1,0 +1,17 @@
+.fa-aud::before {
+	font-family: "Montserrat",​Arial,​sans-serif;
+	content: "A";
+}
+
+.fa-aud::after {
+	content: "\f155";
+}
+
+.fa-nzd::before {
+	font-family: "Montserrat",​Arial,​sans-serif;
+	content: "NZ";
+}
+
+.fa-nzd::after {
+	content: "\f155";
+}

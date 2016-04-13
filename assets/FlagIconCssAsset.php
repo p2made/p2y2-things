@@ -28,7 +28,7 @@ class FlagIconCssAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/1.4.0',
+			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/2.0.0',
 			'css' => [
 				'css/flag-icon.min.css',
 			],

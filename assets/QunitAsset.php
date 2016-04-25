@@ -33,10 +33,10 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//code.jquery.com/qunit',
 			'css' => [
-				'qunit-1.22.0.css',
+				'qunit-1.23.1.css',
 			],
 			'js' => [
-				'qunit-1.22.0.js',
+				'qunit-1.23.1.js',
 			],
 		],
 		'depends' => [

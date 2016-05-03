@@ -28,13 +28,11 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "1.8.6",
 	"minimum-stability": "dev",
 
 	"require": {
-		"yiisoft/yii2": ">=2.0.7",
+		"yiisoft/yii2": "2.0.8",
 		"fxp/composer-asset-plugin": "1.1.4",
-		"eve": "https://github.com/adobe-webplatform/eve.git#eef80ed"
 		"bower-asset/animate.css": "3.5.1",
 		"bower-asset/bootstrap-social": "4.12.0",
 		"bower-asset/bootstrap-sweetalert": "0.4.5",

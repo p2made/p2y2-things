@@ -1,5 +1,5 @@
 P2Y2Things v1.8.6
-=================
+==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -9,8 +9,6 @@ P2Y2Things v1.8.6
 ---
 
 A collection of resources as Assets, Helpers, & Widgets for Yii2.
-
-This package replaces my yii2-asset-collection, including in all my other projects which had yii2-asset-collection as a dependancy.
 
 Highlights
 ----------

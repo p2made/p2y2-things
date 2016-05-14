@@ -28,7 +28,7 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4',
 			'js' => [
 				'raphael-min.js',
 			],

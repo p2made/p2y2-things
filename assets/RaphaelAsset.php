@@ -22,13 +22,13 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/raphael',
+			'sourcePath' => '#/raphael-2.2.0',
 			'js' => [
 				'raphael-min.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0',
 			'js' => [
 				'raphael-min.js',
 			],

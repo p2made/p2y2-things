@@ -22,7 +22,7 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/morrisjs',
+			'sourcePath' => '#/morris.js-0.5.1',
 			'css' => [
 				'morris.css',
 			],

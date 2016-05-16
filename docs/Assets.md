@@ -37,17 +37,6 @@ timeline | `p2made\assets\TimelineAsset`
 
 The asset collection gives the option of using either published assets or assets from CDNs.
 
-Deprecated
-----------
-
-These assets support IE. I will not be maintaining them any further, & will eventually remove them.
-
-Resource | Asset Class
--------- | -----------
-[html5shiv](https://github.com/afarkas/html5shiv) | `p2made\assets\Html5shivAsset`
-[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
-[Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\RespondAsset`
-
 Usage
 -----
 

@@ -28,6 +28,7 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
+	"version": "v1.9.1",
 	"minimum-stability": "dev",
 
 	"require": {

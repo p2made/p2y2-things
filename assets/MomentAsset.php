@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class MomentAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '2.13.0';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/moment/min',
@@ -28,7 +30,7 @@ class MomentAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/' . $this->version,
 			'js' => [
 				'moment.min.js',
 			],

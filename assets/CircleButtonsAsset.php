@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class CircleButtonsAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '0.0.0';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-p2y2-things/assets/lib/pub',

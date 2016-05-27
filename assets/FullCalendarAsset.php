@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '2.6.1';
+
 	/**
 	 * the language the calender will be displayed in
 	 * @var string ISO2 code for the wished display language
@@ -49,7 +51,7 @@ class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/' . $this->version,
 			'css' => [
 				'fullcalendar.min.css',
 			],

@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '1.0.0';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '#/Timeline.css-1.0',
@@ -28,7 +30,7 @@ class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/1.0.0',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/' . $this->version,
 			'css' => [
 				'timeline.min.css',
 			],

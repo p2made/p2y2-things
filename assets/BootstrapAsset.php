@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $bootstrapVersion = '3.3.6';
+	private $version = '3.3.6';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/' . $this->version,
 			'css' => [
 				'css/bootstrap.min.css',
 			],

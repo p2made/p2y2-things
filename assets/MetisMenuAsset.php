@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '2.5.2';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/metisMenu/dist',
@@ -31,7 +33,7 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.4.3',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/' . $this->version,
 			'css' => [
 				'metisMenu.min.css',
 			],

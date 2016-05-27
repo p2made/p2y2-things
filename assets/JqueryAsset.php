@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '2.2.1';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/jquery/dist',
@@ -30,7 +32,7 @@ class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'jquery-2.2.1.min.js',
+				'jquery-' . $this->version . '.min.js',
 			],
 		],
 	);

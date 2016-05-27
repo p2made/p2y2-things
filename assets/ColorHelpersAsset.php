@@ -20,16 +20,13 @@ namespace p2made\assets;
 
 class FlotChartsAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '1.1-1';
+
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/pub',
+			'sourcePath' => '#/jquery-colorhelpers-jquery-colorhelpers-' . $this->version,
 			'js' => [
-				'js/jquery.colorhelpers.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '',
-			'js' => [
+				'jquery.colorhelpers.min.js',
 			],
 		],
 		'depends' => [

@@ -20,6 +20,8 @@ namespace p2made\assets;
 
 class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
 {
+	private $version = '1.1.0';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/jquery.fitvids',
@@ -28,7 +30,7 @@ class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0',
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/' . $this->version,
 			'js' => [
 				'jquery.fitvids.min.js',
 			],

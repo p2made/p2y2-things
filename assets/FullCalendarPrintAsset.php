@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FullCalendarPrintAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.6.1';
+	protected $version = '2.6.1';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class FullCalendarPrintAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
 			'css' => [
 				'fullcalendar.print.css',
 			],
@@ -42,6 +42,8 @@ class FullCalendarPrintAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

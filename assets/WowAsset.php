@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class WowAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.1.2';
+	protected $version = '1.1.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class WowAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
 			'js' => [
 				'wow.min.js',
 			],
@@ -42,6 +42,8 @@ class WowAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

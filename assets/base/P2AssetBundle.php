@@ -59,6 +59,11 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	private static $_staticEnd;
 	private static $_useStatic;
 
+	protected function insertAssetVersion(&$target)
+	{
+		$target = str_replace ('##-version-##', $this->version, $target);
+	}
+
 	protected function configureAsset($resourceData)
 	{
 		if(isset($resourceData['cssOptions'])) {

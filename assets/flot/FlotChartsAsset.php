@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleAsset.php
+ * FlotChartsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,10 +10,10 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\_ExampleAsset::register($this);
+ * p2made\assets\flot\FlotChartsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\_ExampleAsset',
+ *     'p2made\assets\flot\FlotChartsAsset',
  */
 
 namespace p2made\assets\flot; /* edit this if using elsewhere */
@@ -22,7 +22,7 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/flot-' . $this->version,
+			'sourcePath' => '#/flot-##-version-##',
 			'js' => [
 				'jquery.flot.min.js',
 				'jquery.colorhelpers.min.js',
@@ -43,7 +43,7 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
 			'js' => [
 				'jquery.flot.min.js',
 				'jquery.colorhelpers.min.js',
@@ -65,12 +65,15 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 		],
 		'depends' => [
 			//'p2made\assets\MorrisAsset',
-			//'p2made\assets\FlotTooltipAsset',
+			//'p2made\assets\flot\FlotTooltipAsset',
 		],
 	);
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

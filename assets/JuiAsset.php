@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JuiAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.11.4';
+	protected $version = '1.11.4';
 
 	private $resourceData = array(
 		'published' => [
@@ -32,7 +32,7 @@ class JuiAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'ui/' . $this->version . '/jquery-ui.min.js',
+				'ui/##-version-##/jquery-ui.min.js',
 			],
 		],
 		'depends' => [
@@ -42,6 +42,8 @@ class JuiAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['js'][0]);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

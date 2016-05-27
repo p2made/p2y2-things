@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class HolderAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.9.3';
+	protected $version = '2.9.3';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class HolderAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/##-version-##',
 			'js' => [
 				'holder.min.js',
 			],
@@ -39,6 +39,8 @@ class HolderAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

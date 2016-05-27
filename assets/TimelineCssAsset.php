@@ -20,17 +20,17 @@ namespace p2made\assets;
 
 class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.0.0';
+	protected $version = '1.0.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/Timeline.css-1.0',
+			'sourcePath' => '#/Timeline.css-##-version-##',
 			'css' => [
 				'css/timeline.css',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/##-version-##',
 			'css' => [
 				'timeline.min.css',
 			],
@@ -39,6 +39,9 @@ class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.8.2';
+	protected $version = '2.8.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/##-version-##',
 			'css' => [
 				'css/lightbox.min.css',
 			],
@@ -47,6 +47,8 @@ class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

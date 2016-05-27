@@ -22,6 +22,10 @@ class DataTablesBundleAsset extends \p2made\assets\base\P2LoaderAssetBundle
 {
 	public $depends = [
 		'p2made\assets\datatables\DataTablesAsset',
+		'p2made\assets\datatables\DataTablesResponsiveAsset',
+
+		/*
+		'p2made\assets\datatables\DataTablesAsset',
 		'p2made\assets\datatables\DataTablesAutoFillAsset',
 		'p2made\assets\datatables\DataTablesButtonsAsset',
 		'p2made\assets\datatables\DataTablesColReorderAsset',
@@ -33,5 +37,6 @@ class DataTablesBundleAsset extends \p2made\assets\base\P2LoaderAssetBundle
 		'p2made\assets\datatables\DataTablesRowReorderAsset',
 		'p2made\assets\datatables\DataTablesScrollerAsset',
 		'p2made\assets\datatables\DataTablesSelectAsset',
+		 */
 	];
 }

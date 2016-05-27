@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MomentAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.13.0';
+	protected $version = '2.13.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class MomentAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/##-version-##',
 			'js' => [
 				'moment.min.js',
 			],
@@ -39,6 +39,8 @@ class MomentAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.1.0';
+	protected $version = '1.1.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/##-version-##',
 			'js' => [
 				'jquery.fitvids.min.js',
 			],
@@ -39,6 +39,8 @@ class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

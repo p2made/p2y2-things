@@ -20,7 +20,7 @@ namespace p2made\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.1.2';
+	protected $version = '2.1.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -34,7 +34,7 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/autofill/' . $this->version,
+			'baseUrl' => '//cdn.datatables.net/autofill/##-version-##',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
 			],
@@ -51,6 +51,8 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,17 +20,17 @@ namespace p2made\assets;
 
 class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.2.0';
+	protected $version = '2.2.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/raphael-2.2.0',
+			'sourcePath' => '#/raphael-##-version-##',
 			'js' => [
 				'raphael-min.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/##-version-##',
 			'js' => [
 				'raphael-min.js',
 			],
@@ -39,6 +39,9 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

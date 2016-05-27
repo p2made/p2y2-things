@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class IsotopeAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.2.2';
+	protected $version = '2.2.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class IsotopeAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/##-version-##',
 			'js' => [
 				'isotope.pkgd.min.js',
 			],
@@ -39,6 +39,8 @@ class IsotopeAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

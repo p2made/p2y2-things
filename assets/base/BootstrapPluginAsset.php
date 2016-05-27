@@ -20,6 +20,8 @@ namespace p2made\assets\base;
 
 class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 {
+	protected $version = '3.3.6';
+
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap/dist',
@@ -28,7 +30,7 @@ class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6',
+			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/',
 			'js' => [
 				'js/bootstrap.min.js',
 			],
@@ -40,6 +42,8 @@ class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->resourceData['static']['baseUrl'] .= $this->version;
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,7 +20,7 @@ namespace p2made\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.2.0';
+	protected $version = '1.2.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/select/' . $this->version,
+			'baseUrl' => '//cdn.datatables.net/select/##-version-##',
 			'css' => [
 				'css/select.bootstrap.min.css',
 			],
@@ -48,6 +48,8 @@ class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

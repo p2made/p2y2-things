@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '3.3.2';
+	protected $version = '3.3.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/##-version-##',
 			'css' => [
 				'css/bootstrap3/bootstrap-switch.min.css',
 			],
@@ -48,6 +48,8 @@ class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

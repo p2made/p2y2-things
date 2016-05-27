@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JqueryCountToAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.1.0';
+	protected $version = '0.1.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class JqueryCountToAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/jquery.countto/' . $this->version,
+			'baseUrl' => '//cdn.jsdelivr.net/jquery.countto/##-version-##',
 			'js' => [
 				'jquery.countTo.min.js',
 			],
@@ -42,6 +42,8 @@ class JqueryCountToAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

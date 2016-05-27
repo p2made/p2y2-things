@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.5.1';
+	protected $version = '0.5.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/morris.js-0.5.1',
+			'sourcePath' => '#/morris.js-##-version-##',
 			'css' => [
 				'morris.css',
 			],
@@ -33,7 +33,7 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/##-version-##',
 			'css' => [
 				'morris.css',
 			],
@@ -48,6 +48,9 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

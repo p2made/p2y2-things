@@ -20,8 +20,6 @@ namespace p2made\assets;
 
 class BootstrapSweetalertAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.0.0';
-
 	private $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bower/bootstrap-sweetalert/lib',

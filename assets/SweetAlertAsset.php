@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.1.3';
+	protected $version = '1.1.3';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
 			'css' => [
 				'sweet-alert.css',
 			],
@@ -45,6 +45,8 @@ class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

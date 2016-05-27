@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.2.1';
+	protected $version = '2.2.1';
 
 	private $resourceData = array(
 		'published' => [
@@ -32,13 +32,15 @@ class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//code.jquery.com',
 			'js' => [
-				'jquery-' . $this->version . '.min.js',
+				'jquery-##-version-##.min.js',
 			],
 		],
 	);
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['js'][0]);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

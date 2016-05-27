@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.4.23';
+	protected $version = '0.4.23';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/##-version-##',
 			'js' => [
 				'gmaps.min.js',
 			],
@@ -42,6 +42,8 @@ class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

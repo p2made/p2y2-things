@@ -20,7 +20,7 @@ namespace p2made\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.2.0';
+	protected $version = '1.2.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -38,7 +38,7 @@ class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/buttons/' . $this->version,
+			'baseUrl' => '//cdn.datatables.net/buttons/##-version-##',
 			'css' => [
 				'css/buttons.bootstrap.min.css',
 			],
@@ -59,6 +59,8 @@ class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

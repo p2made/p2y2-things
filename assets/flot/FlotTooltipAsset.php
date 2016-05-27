@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleAsset.php
+ * FlotTooltipAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,17 +10,17 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\_ExampleAsset::register($this);
+ * p2made\assets\flot\FlotTooltipAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\_ExampleAsset',
+ *     'p2made\assets\flot\FlotTooltipAsset',
  */
 
 namespace p2made\assets\flot; /* edit this if using elsewhere */
 
 class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.8.7';
+	protected $version = '0.8.7';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/##-version-##',
 			'js' => [
 				'jquery.flot.tooltip.min.js',
 			],
@@ -39,6 +39,8 @@ class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

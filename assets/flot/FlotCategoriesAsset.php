@@ -22,13 +22,13 @@ class FlotCategoriesAsset extends \p2made\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/flot-' . $this->version,
+			'sourcePath' => '#/flot-##-version-##',
 			'js' => [
 				'jquery.flot.categories.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
 			'js' => [
 				'jquery.flot.categories.js',
 			],
@@ -39,6 +39,9 @@ class FlotCategoriesAsset extends \p2made\assets\flot\FlotAssetBase
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

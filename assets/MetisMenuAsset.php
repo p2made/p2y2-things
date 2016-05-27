@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '2.5.2';
+	protected $version = '2.5.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/##-version-##',
 			'css' => [
 				'metisMenu.min.css',
 			],
@@ -45,6 +45,8 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

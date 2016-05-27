@@ -20,7 +20,7 @@ namespace p2made\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '3.1.2';
+	protected $version = '3.1.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/fixedheader/' . $this->version,
+			'baseUrl' => '//cdn.datatables.net/fixedheader/##-version-##',
 			'css' => [
 				'css/fixedHeader.bootstrap.min.css',
 			],
@@ -49,6 +49,8 @@ class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

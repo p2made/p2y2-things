@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '4.0.2';
+	protected $version = '4.0.2';
 
 	private $resourceData = array(
 		'published' => [
@@ -33,7 +33,7 @@ class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/##-version-##',
 			'css' => [
 				'ekko-lightbox.min.css',
 			],
@@ -47,6 +47,8 @@ class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,7 +20,7 @@ namespace p2made\assets; /* edit this if using elsewhere */
 
 class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '0.0.0';
+	protected $version = '0.0.0';
 
 	private $resourceData = array(
 
@@ -45,7 +45,7 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 		 * leave out if there's no static version
 		 */
 		'static' => [
-			'baseUrl' => '//example.com/path_to_asset' . $this->version,
+			'baseUrl' => '//example.com/path_to_asset/##-version-##',
 			'css' => [
 				'css/css_file.css',
 			],
@@ -71,6 +71,8 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

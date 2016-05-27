@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '1.23.1';
+	protected $version = '1.23.1';
 
 	private $resourceData = array(
 		'published' => [
@@ -35,10 +35,10 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//code.jquery.com/qunit',
 			'css' => [
-				'qunit-' . $this->version . '.css',
+				'qunit-##-version-##.css',
 			],
 			'js' => [
-				'qunit-' . $this->version . '.js',
+				'qunit-##-version-##.js',
 			],
 		],
 		'depends' => [
@@ -48,6 +48,9 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['css'][0]);
+		$this->insertAssetVersion($this->resourceData['static']['js'][0]);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '3.1.6';
+	protected $version = '3.1.6';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/prettyPhoto_3.1.6',
+			'sourcePath' => '#/prettyPhoto_##-version-##',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],
@@ -33,7 +33,7 @@ class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/##-version-##',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],
@@ -45,6 +45,9 @@ class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

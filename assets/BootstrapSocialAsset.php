@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 {
-	private $version = '4.12.0';
+	protected $version = '4.12.0';
 
 	private $resourceData = array(
 		'published' => [
@@ -30,7 +30,7 @@ class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/' . $this->version,
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/##-version-##',
 			'css' => [
 				'bootstrap-social.min.css',
 			],
@@ -43,6 +43,8 @@ class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
+		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
+
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

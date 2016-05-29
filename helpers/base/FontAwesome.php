@@ -340,4 +340,11 @@ class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 		return static::is($foreground, $object, $options);
 	}
 
+/*
+$camera = 'camera';
+$ban = FA::i('ban')->addCssClass('text-danger');
+$options = ['class' => 'fa-lg', 'template' => '{front}{back}'];
+echo FA::stack($options)->icon($camera)->on($ban);
+*/
+
 }

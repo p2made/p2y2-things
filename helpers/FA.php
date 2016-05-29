@@ -774,6 +774,4 @@ class FA extends \p2made\helpers\base\FontAwesome
 	const _YOUTUBE = 'youtube';
 	const _YOUTUBE_PLAY = 'youtube-play';
 	const _YOUTUBE_SQUARE = 'youtube-square';
-
-
 }

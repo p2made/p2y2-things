@@ -303,8 +303,6 @@ class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 	 * @see stack()
 	 * @see component\Stack
 	 *
-	 * ***** this method does not have @zzzz's tricks. *****
-	 *
 	 * @param mixed $foreground
 	 * @param mixed $background
 	 * @param array $options
@@ -312,22 +310,14 @@ class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 	 */
 	public static function is($foreground, $background, $options = [])
 	{
-		$tag = 'span';
-
-		Html::addCssClass($options, 'fa-stack');
-
-		$foreground->addCssClass('fa-stack-2x');
-		$background->addCssClass('fa-stack-1x');
-
-		return Html::tag($tag, $background . $foreground, $options);
+		$options['template'] = '{front}{back}';
+		return static::stack($options)->icon($background)->on($foreground);
 	}
 
 	/**
 	 * Shortcut for is() using 'ban' as the top icon
 	 * @see stack()
 	 * @see component\Stack
-	 *
-	 * ***** this method does not have @zzzz's tricks. *****
 	 *
 	 * @param mixed $foreground
 	 * @param mixed $background

@@ -1,6 +1,6 @@
 <?php
 /**
- * MorrisAsset.php
+ * QunitAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,15 +10,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MorrisAsset::register($this);
+ * p2made\assets\QunitAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MorrisAsset',
+ *     'p2made\assets\QunitAsset',
  */
 
 namespace p2made\assets;
 
-class MorrisAsset extends \p2made\assets\base\P2AssetBundle
+class QunitAsset extends \p2made\assets\base\P2AssetBundle
 {
 	protected $version = '1.23.1';
 

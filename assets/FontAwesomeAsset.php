@@ -24,7 +24,7 @@ class FontAwesomeAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/font-awesome',
+			'sourcePath' => '@vendor/fortawesome/font-awesome',
 			'css' => [
 				'css/font-awesome.min.css',
 			],

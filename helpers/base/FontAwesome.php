@@ -293,7 +293,7 @@ class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 	 * @param array $options
 	 * @return component\Icon
 	 */
-	public static function s($foreground, $background, $options = [])
+	public static function si($foreground, $background, $options = [])
 	{
 		return static::stack($options)->icon($foreground)->on($background);
 	}

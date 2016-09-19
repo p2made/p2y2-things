@@ -64,7 +64,7 @@ Class reference
 
 #### stack methods
 
-* `static FA::s($foreground, $background, $options = [])` - Shortcut for stack()->icon()->on()
+* `static FA::si($foreground, $background, $options = [])` - Shortcut for stack()->icon()->on()
   * `$foreground` - `FA::icon` or the name of an icon in Font Awesome.
   * `$background` - `FA::icon` or the name of an icon in Font Awesome.
   * `$options` - additional attributes for the html tag.

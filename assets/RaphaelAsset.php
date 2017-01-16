@@ -26,13 +26,13 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 		'published' => [
 			'sourcePath' => '#/raphael-##-version-##',
 			'js' => [
-				'raphael-min.js',
+				'raphael.min.js',
 			],
 		],
 		'static' => [
 			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/##-version-##',
 			'js' => [
-				'raphael-min.js',
+				'raphael.min.js',
 			],
 		],
 	);

@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.6';
+	protected $version = '3.3.7';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/bootstrap/dist',
+			'sourcePath' => '@bower/bootstrap/dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],
@@ -42,12 +42,9 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-		// '##-version-##'
-
 		if(isset(\Yii::$app->params['p2assets']['bootswatchTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
-			$this->resourceData['sourcePath'] = '@vendor/bower/bootswatch/' . $themeName;
+			$this->resourceData['sourcePath'] = '@bower/bootswatch/' . $themeName;
 			$this->resourceData['published']['baseUrl'] = [
 				'bootswatch/3.3.6/' . $themeName,
 			];

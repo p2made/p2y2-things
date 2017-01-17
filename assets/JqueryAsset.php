@@ -24,7 +24,7 @@ class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/jquery/dist',
+			'sourcePath' => '@bower/jquery/dist',
 			'js' => [
 				'jquery.min.js',
 			],

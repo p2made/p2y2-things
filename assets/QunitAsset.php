@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class QunitAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.23.1';
+	protected $version = '2.0.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/qunit/qunit',
+			'sourcePath' => '@bower/qunit/qunit',
 			'css' => [
 				'qunit.css',
 			],

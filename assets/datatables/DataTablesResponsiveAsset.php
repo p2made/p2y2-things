@@ -16,7 +16,7 @@
  *     'p2made\assets\datatables\DataTablesResponsiveAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 {
@@ -24,7 +24,7 @@ class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-responsive',
+			'sourcePath' => '@bower/datatables-responsive',
 			'css' => [
 				'css/responsive.bootstrap.min.css',
 			],
@@ -34,7 +34,7 @@ class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/responsive/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/responsive/##-version-##',
 			'css' => [
 				'css/responsive.bootstrap.min.css',
 			],
@@ -45,14 +45,12 @@ class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesAsset',
+			'p2made\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

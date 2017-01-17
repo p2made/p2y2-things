@@ -16,51 +16,41 @@
  *     'p2made\assets\datatables\DataTablesButtonsAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.0';
+	protected $version = '1.2.2';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-buttons',
+			'sourcePath' => '@bower/datatables-buttons',
 			'css' => [
-				'css/buttons.bootstrap.min.css',
+				'css/buttons.bootstrap.scss',
 			],
 			'js' => [
-				'js/dataTables.buttons.min.js',
-				'js/buttons.bootstrap.min.js',
-				//'js/buttons.colVis.min.js',
-				//'js/buttons.flash.min.js',
-				//'js/buttons.html5.min.js',
-				//'js/buttons.print.min.js',
+				'js/dataTables.buttons.js',
+				'js/buttons.bootstrap.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/buttons/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
 			'css' => [
 				'css/buttons.bootstrap.min.css',
 			],
 			'js' => [
 				'js/dataTables.buttons.min.js',
 				'js/buttons.bootstrap.min.js',
-				//'js/buttons.colVis.min.js',
-				//'js/buttons.flash.min.js',
-				//'js/buttons.html5.min.js',
-				//'js/buttons.print.min.js',
 			],
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',
-			'p2made\assets\DataTablesAsset',
+			'p2made\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

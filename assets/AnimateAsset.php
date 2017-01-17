@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class AnimateAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '3.5.1';
+	protected $version = '3.5.2';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/animate.css',
+			'sourcePath' => '@bower/animate.css',
 			'css' => [
 				'animate.min.css',
 			],
@@ -39,8 +39,6 @@ class AnimateAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

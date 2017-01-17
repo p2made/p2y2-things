@@ -22,7 +22,7 @@ class FlotAsset extends \p2made\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/flot-##-version-##',
+			'sourcePath' => '@p2m@/flot-##-version-##',
 			'js' => [
 				'jquery.flot.min.js',
 			],
@@ -39,9 +39,6 @@ class FlotAsset extends \p2made\assets\flot\FlotAssetBase
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

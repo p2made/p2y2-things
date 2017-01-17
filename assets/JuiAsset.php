@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class JuiAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.11.4';
+	protected $version = '1.12.0.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/jquery-ui',
+			'sourcePath' => '@bower/jquery-ui',
 			'js' => [
 				'jquery-ui.min.js',
 			],

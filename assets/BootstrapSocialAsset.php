@@ -24,7 +24,7 @@ class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/bootstrap-social',
+			'sourcePath' => '@bower/bootstrap-social',
 			'css' => [
 				'bootstrap-social.css',
 			],
@@ -43,8 +43,6 @@ class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '0.5.2';
+	protected $version = '0.5.5';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/moment-timezone/build',
+			'sourcePath' => '@bower/moment-timezone/build',
 			'js' => [
 				'moment-timezone.js',
 			],
@@ -39,8 +39,6 @@ class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

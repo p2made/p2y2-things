@@ -24,7 +24,7 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/raphael-##-version-##',
+			'sourcePath' => '@p2m@/raphael-##-version-##',
 			'js' => [
 				'raphael.min.js',
 			],
@@ -39,9 +39,6 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

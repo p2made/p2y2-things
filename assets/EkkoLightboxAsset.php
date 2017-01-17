@@ -24,7 +24,7 @@ class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/ekko-lightbox/dist',
+			'sourcePath' => '@bower/ekko-lightbox/dist',
 			'css' => [
 				'ekko-lightbox.min.css',
 			],
@@ -47,8 +47,6 @@ class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

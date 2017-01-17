@@ -21,48 +21,34 @@ namespace p2made\assets\base;
 class P2AssetBundle extends \yii\web\AssetBundle
 {
 	/**
-	 * [$sourcePath description]
 	 * @var string
-	 */
-	public $sourcePath = null;
-
-	/**
-	 * [$basePath description]
+	 * public $sourcePath;
+	 *
 	 * @var string
-	 */
-	public $basePath = null;
-
-	/**
-	 * [$baseUrl description]
-	 * @var string
-	 */
-	public $baseUrl = null;
-
-	/**
-	 * [$css description]
+	 * public $baseUrl;
+	 *
 	 * @var array
-	 */
-	public $css = [];
-
-	/**
-	 * [$js description]
+	 * public $css = [];
+	 *
 	 * @var array
-	 */
-	public $js  = [];
-
-	/**
-	 * [$depends description]
+	 * public $cssOptions = [];
+	 *
 	 * @var array
+	 * public $js = [];
+	 *
+	 * @var array
+	 * public $jsOptions = [];
+	 *
+	 * @var array
+	 * public $depends = [];
+	 *
+	 * @var array
+	 * public $publishOptions = [];
 	 */
-	public $depends = [];
 
 	private static $_staticEnd;
 	private static $_useStatic;
-
-	protected function insertAssetVersion(&$target)
-	{
-		$target = str_replace ('##-version-##', $this->version, $target);
-	}
+	private static $_p2mPath = '@vendor/p2made/yii2-p2y2-things/assets/lib';
 
 	protected function configureAsset($resourceData)
 	{
@@ -75,62 +61,60 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		if(isset($resourceData['depends'])) {
 			$this->depends = $resourceData['depends'];
 		}
+		if(isset($resourceData['publishOptions'])) {
+			$this->publishOptions = $resourceData['publishOptions'];
+		}
 
-		if(P2AssetBundle::useStatic()) {
-			$this->configureStaticAsset($resourceData);
-		} elseif(P2AssetBundle::staticEnd() !== false) {
+		if(P2AssetBundle::useStatic() && isset($resourceData['static'])) {
+			$this->configureStaticAsset($resourceData['static']);
+		} elseif(isset($resourceData['published'])) {
+			$this->configurePublishedAsset($resourceData['published']);
 		} else {
-			$this->configurePublishedAsset($resourceData);
+			return;
 		}
 	}
 
-	protected function configurePublishedAsset($resourceData, $fallOut = false)
+	protected function configureStaticAsset($thisData)
 	{
-		if(isset($resourceData['published'])) {
-			$thisData = $resourceData['published'];
-		} else { // no published asset data
-			if($fallOut) {
-				return;
-			} else {
-				$this->configureStaticAsset($resourceData, true);
-			}
-		}
-
-		$thisPath = $thisData['sourcePath'];
-		if(P2AssetBundle::staticEnd()) {
-			$this->baseUrl = str_replace('#/', P2AssetBundle::staticEnd(), $thisPath);
-		} else {
-			$this->sourcePath = str_replace('#/', P2AssetBundle::ownPath(), $thisPath);
-		}
-
-		if(isset($thisData['css'])) {
-			$this->css = $thisData['css'];
-		}
-		if(isset($thisData['js'])) {
-			$this->js = $thisData['js'];
-		}
-	}
-
-	protected function configureStaticAsset($resourceData, $fallOut = false)
-	{
-		if(isset($resourceData['static'])) {
-			$thisData = $resourceData['static'];
-		} else { // no static asset data
-			if($fallOut) {
-				return;
-			} else {
-				$this->configurePublishedAsset($resourceData, true);
-			}
-		}
-
 		if(isset($thisData['baseUrl'])) {
 			$this->baseUrl = $thisData['baseUrl'];
+			$this->insertAssetVersion($this->baseUrl);
 		}
 		if(isset($thisData['css'])) {
 			$this->css = $thisData['css'];
 		}
 		if(isset($thisData['js'])) {
 			$this->js = $thisData['js'];
+		}
+	}
+
+	protected function configurePublishedAsset($thisData)
+	{
+		if(isset($thisData['sourcePath'])) {
+			$this->sourcePath = $thisData['sourcePath'];
+			$this->insertAssetVersion($this->sourcePath);
+			$this->insertP2mPath($this->sourcePath);
+		}
+
+		if(isset($thisData['css'])) {
+			$this->css = $thisData['css'];
+		}
+		if(isset($thisData['js'])) {
+			$this->js = $thisData['js'];
+		}
+	}
+
+	// ===== utility functions ===== //
+
+	protected function insertP2mPath(&$target)
+	{
+		$target = str_replace('@p2m@', '@vendor/p2made/yii2-p2y2-things/assets/lib', $target);
+	}
+
+	protected function insertAssetVersion(&$target)
+	{
+		if(isset($this->version)) {
+			$target = str_replace('##-version-##', $this->version, $target);
 		}
 	}
 
@@ -148,22 +132,25 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		return $_useStatic;
 	}
 
-	protected static function ownPath()
-	{
-		return '@vendor/p2made/yii2-p2y2-things/assets/lib/';
-	}
-
 	protected static function staticEnd()
 	{
 		if(isset($_staticEnd)) { return $_staticEnd; }
 
 		// using 'p2made' as param space to allow for my other bits
 		if(isset(\Yii::$app->params['p2made']['staticEnd'])) {
-			$_staticEnd = \Yii::$app->params['p2made']['staticEnd'] . '/lib/';
+			$_staticEnd = \Yii::$app->params['p2made']['staticEnd'];
 		} else {
 			$_staticEnd = false;
 		}
 
 		return $_staticEnd;
 	}
+
+	protected static function p2mPath()
+	{
+		return $this->_p2mPath;
+	}
+
+
+
 }

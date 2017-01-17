@@ -24,7 +24,7 @@ class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/bootstrap-switch/dist',
+			'sourcePath' => '@bower/bootstrap-switch/dist',
 			'css' => [
 				'css/bootstrap3/bootstrap-switch.min.css',
 			],
@@ -48,8 +48,6 @@ class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

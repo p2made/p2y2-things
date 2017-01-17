@@ -24,7 +24,7 @@ class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/lightbox2/dist',
+			'sourcePath' => '@bower/lightbox2/dist',
 			'css' => [
 				'css/lightbox.min.css',
 			],
@@ -47,8 +47,6 @@ class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

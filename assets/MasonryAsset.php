@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class MasonryAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '4.0.0';
+	protected $version = '4.1.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/masonry/dist',
+			'sourcePath' => '@bower/masonry/dist',
 			'js' => [
 				'masonry.pkgd.min.js',
 			],
@@ -39,8 +39,6 @@ class MasonryAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

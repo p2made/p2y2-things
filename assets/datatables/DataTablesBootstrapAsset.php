@@ -1,6 +1,6 @@
 <?php
 /**
- * DataTablesAsset.php
+ * DataTablesBootstrapAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,21 +10,21 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesAsset::register($this);
+ * p2made\assets\datatables\DataTablesBootstrapAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesAsset',
+ *     'p2made\assets\datatables\DataTablesBootstrapAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
-class DataTablesAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesBootstrapAsset extends \p2made\assets\base\P2AssetBundle
 {
 	protected $version = '1.10.12';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables/media',
+			'sourcePath' => '@bower/datatables/media',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',
 			],
@@ -34,7 +34,7 @@ class DataTablesAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/##-version-##',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',
 			],
@@ -50,8 +50,6 @@ class DataTablesAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

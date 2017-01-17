@@ -16,15 +16,15 @@
  *     'p2made\assets\datatables\DataTablesKeyTableAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesKeyTableAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.1.2';
+	protected $version = '2.1.3';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-keytable',
+			'sourcePath' => '@bower/datatables-keytable',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',
 			],
@@ -33,7 +33,7 @@ class DataTablesKeyTableAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/keytable/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/keytable/##-version-##',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',
 			],
@@ -43,14 +43,12 @@ class DataTablesKeyTableAsset extends \p2made\assets\base\P2AssetBundle
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',
-			'p2made\assets\DataTablesAsset',
+			'p2made\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

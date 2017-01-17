@@ -24,7 +24,7 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-autofill',
+			'sourcePath' => '@bower/datatables-autofill',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
 			],
@@ -34,7 +34,7 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/autofill/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/autofill/##-version-##',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
 			],
@@ -45,14 +45,12 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',
-			'p2made\assets\DataTablesAsset',
+			'p2made\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

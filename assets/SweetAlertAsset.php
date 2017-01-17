@@ -24,7 +24,7 @@ class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/sweetalert/dist',
+			'sourcePath' => '@bower/sweetalert/dist',
 			'css' => [
 				'sweetalert.css',
 			],
@@ -45,8 +45,6 @@ class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

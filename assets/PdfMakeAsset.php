@@ -1,6 +1,6 @@
 <?php
 /**
- * FlotCanvasAsset.php
+ * PdfMakeAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,30 +10,35 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotCanvasAsset::register($this);
+ * p2made\assets\PdfMakeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotCanvasAsset',
+ *     'p2made\assets\PdfMakeAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2made\assets;
 
-class FlotCanvasAsset extends \p2made\assets\flot\FlotAssetBase
+class PdfMakeAsset extends \p2made\assets\base\P2AssetBundle
 {
+	protected $version = '0.1.18';
+
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
+			'sourcePath' => '@bower/pdfmake',
 			'js' => [
-				'jquery.flot.canvas.min.js',
+				'build/pdfmake.min.js',
+				'build/vfs_fonts.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+			'baseUrl' => 'https://cdn.rawgit.com/bpampuch/pdfmake/##-version-##',
 			'js' => [
-				'jquery.flot.canvas.min.js',
+				'build/pdfmake.min.js',
+				'build/vfs_fonts.js',
 			],
 		],
 		'depends' => [
+			'p2made\assets\JqueryAsset',
 		],
 	);
 

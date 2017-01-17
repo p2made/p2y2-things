@@ -24,7 +24,7 @@ class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/bootstrap/dist',
+			'sourcePath' => '@bower/bootstrap/dist',
 			'js' => [
 				'js/bootstrap.min.js',
 			],

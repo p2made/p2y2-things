@@ -24,7 +24,7 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/metisMenu/dist',
+			'sourcePath' => '@bower/metisMenu/dist',
 			'css' => [
 				'metisMenu.min.css',
 			],
@@ -45,8 +45,6 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

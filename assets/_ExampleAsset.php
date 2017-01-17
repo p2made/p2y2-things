@@ -37,6 +37,15 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 			'js' => [
 				'js/js_file.js',
 			],
+			/**
+			 * OPTIONAL :
+			 * Use 'endName' for custom assets belonging to one application end,
+			 * AND when you have a static application end to publish asset to,
+			 * AND when you want to publish asset to an end specific folder
+			 * leave any of the above is NOT true
+			 */
+			//
+			'endName' = 'endName',
 		],
 
 		/**
@@ -71,8 +80,6 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

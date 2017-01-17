@@ -1,6 +1,6 @@
 <?php
 /**
- * FlagIconCssAsset.php
+ * JSZipAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2016
  * @author Pedro Plowman * @license MIT
@@ -10,30 +10,33 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FlagIconCssAsset::register($this);
+ * p2made\assets\JSZipAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FlagIconCssAsset',
+ *     'p2made\assets\JSZipAsset',
  */
 
 namespace p2made\assets;
 
-class FlagIconCssAsset extends \p2made\assets\base\P2AssetBundle
+class JSZipAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.4.0';
+	protected $version = '2.5.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/flag-icon-css',
-			'css' => [
-				'css/flag-icon.min.css',
+			'sourcePath' => '@bower/jszip/dist',
+			'js' => [
+				'jszip.min.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/##-version-##',
-			'css' => [
-				'css/flag-icon.min.css',
+			'baseUrl' => 'https://cdnjs.cloudflare.com/ajax/libs/jszip/##-version-##',
+			'js' => [
+				'jszip.min.js',
 			],
+		],
+		'depends' => [
+			'p2made\assets\JqueryAsset',
 		],
 	);
 

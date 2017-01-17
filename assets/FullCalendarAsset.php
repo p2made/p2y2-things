@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.6.1';
+	protected $version = '2.9.1';
 
 	/**
 	 * the language the calender will be displayed in
@@ -42,7 +42,7 @@ class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/fullcalendar/dist',
+			'sourcePath' => '@bower/fullcalendar/dist',
 			'css' => [
 				'fullcalendar.min.css',
 			],
@@ -73,6 +73,7 @@ class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 	{
 		$language = $this->language ? $this->language : \Yii::$app->language;
 		$cdnJs = 'fullcalendar/2.3.2/';
+
 		if ($language != 'en-us'){
 			$jsTemp = (P2AssetBundle::useCdn() ? $cdnJs : '') . "lang/{$language}.js";
 			$this->js[] = $jsTemp;
@@ -86,11 +87,8 @@ class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 		parent::registerAssetFiles($view);
 	}
 
-
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

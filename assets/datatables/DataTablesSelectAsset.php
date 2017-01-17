@@ -16,7 +16,7 @@
  *     'p2made\assets\datatables\DataTablesSelectAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 {
@@ -24,16 +24,16 @@ class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-select',
+			'sourcePath' => '@bower/datatables-select',
 			'css' => [
-				'css/select.bootstrap.min.css',
+				'css/select.bootstrap.scss',
 			],
 			'js' => [
 				'js/dataTables.select.min.js',
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/select/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/select/##-version-##',
 			'css' => [
 				'css/select.bootstrap.min.css',
 			],
@@ -48,8 +48,6 @@ class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

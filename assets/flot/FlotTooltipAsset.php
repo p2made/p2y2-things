@@ -20,11 +20,11 @@ namespace p2made\assets\flot; /* edit this if using elsewhere */
 
 class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '0.8.7';
+	protected $version = '0.9.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/flot.tooltip',
+			'sourcePath' => '@bower/flot.tooltip',
 			'js' => [
 				'js/jquery.flot.tooltip.min.js',
 			],
@@ -39,8 +39,6 @@ class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

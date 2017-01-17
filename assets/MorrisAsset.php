@@ -24,7 +24,7 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/morris.js-##-version-##',
+			'sourcePath' => '@p2m@/morris.js-##-version-##',
 			'css' => [
 				'morris.css',
 			],
@@ -48,9 +48,6 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

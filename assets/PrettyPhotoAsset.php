@@ -24,7 +24,7 @@ class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/prettyPhoto_##-version-##',
+			'sourcePath' => '@p2m@/prettyPhoto_##-version-##',
 			'css' => [
 				'css/prettyPhoto.min.css',
 			],
@@ -45,9 +45,6 @@ class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

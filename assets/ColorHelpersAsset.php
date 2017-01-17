@@ -24,7 +24,7 @@ class ColorHelpersAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/jquery-colorhelpers-jquery-colorhelpers-##-version-##',
+			'sourcePath' => '@p2m@/jquery-colorhelpers-jquery-colorhelpers-##-version-##',
 			'js' => [
 				'jquery.colorhelpers.min.js',
 			],
@@ -36,8 +36,6 @@ class ColorHelpersAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

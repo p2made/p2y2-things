@@ -20,11 +20,11 @@ namespace p2made\assets;
 
 class MomentAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.13.0';
+	protected $version = '2.14.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/moment/min',
+			'sourcePath' => '@bower/moment/min',
 			'js' => [
 				'moment.min.js'
 			],
@@ -39,8 +39,6 @@ class MomentAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

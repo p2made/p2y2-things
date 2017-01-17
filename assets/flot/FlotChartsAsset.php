@@ -22,7 +22,7 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/flot-##-version-##',
+			'sourcePath' => '@p2m@/flot-##-version-##',
 			'js' => [
 				'jquery.flot.min.js',
 				'jquery.colorhelpers.min.js',
@@ -71,9 +71,6 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

@@ -24,7 +24,7 @@ class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '#/Timeline.css-##-version-##',
+			'sourcePath' => '@p2m@/Timeline.css-##-version-##',
 			'css' => [
 				'css/timeline.css',
 			],
@@ -39,9 +39,6 @@ class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['published']['sourcePath']);
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

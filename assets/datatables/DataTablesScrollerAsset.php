@@ -16,7 +16,7 @@
  *     'p2made\assets\datatables\DataTablesScrollerAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesScrollerAsset extends \p2made\assets\base\P2AssetBundle
 {
@@ -24,7 +24,7 @@ class DataTablesScrollerAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-scroller',
+			'sourcePath' => '@bower/datatables-scroller',
 			'css' => [
 				'css/scroller.bootstrap.min.css',
 			],
@@ -33,7 +33,7 @@ class DataTablesScrollerAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/scroller/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/scroller/##-version-##',
 			'css' => [
 				'css/scroller.bootstrap.min.css',
 			],
@@ -48,8 +48,6 @@ class DataTablesScrollerAsset extends \p2made\assets\base\P2AssetBundle
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

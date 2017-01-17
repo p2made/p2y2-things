@@ -16,7 +16,7 @@
  *     'p2made\assets\datatables\DataTablesFixedHeaderAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2made\assets\datatables;
 
 class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 {
@@ -24,7 +24,7 @@ class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/bower/datatables-fixedheader',
+			'sourcePath' => '@bower/datatables-fixedheader',
 			'css' => [
 				'css/fixedHeader.bootstrap.min.css',
 			],
@@ -33,7 +33,7 @@ class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'static' => [
-			'baseUrl' => '//cdn.datatables.net/fixedheader/##-version-##',
+			'baseUrl' => 'https://cdn.datatables.net/fixedheader/##-version-##',
 			'css' => [
 				'css/fixedHeader.bootstrap.min.css',
 			],
@@ -43,14 +43,12 @@ class DataTablesFixedHeaderAsset extends \p2made\assets\base\P2AssetBundle
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',
-			'p2made\assets\DataTablesAsset',
+			'p2made\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 
 	public function init()
 	{
-		$this->insertAssetVersion($this->resourceData['static']['baseUrl']);
-
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}

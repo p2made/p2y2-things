@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.2.0';
+	protected $version = '2.2.7';
 
 	private $resourceData = array(
 		'published' => [

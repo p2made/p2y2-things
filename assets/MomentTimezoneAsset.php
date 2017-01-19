@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '0.5.5';
+	protected $version = '0.5.11';
 
 	private $resourceData = array(
 		'published' => [

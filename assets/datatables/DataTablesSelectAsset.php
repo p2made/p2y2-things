@@ -20,7 +20,7 @@ namespace p2made\assets\datatables;
 
 class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.0';
+	protected $version = '1.2.1';
 
 	private $resourceData = array(
 		'published' => [

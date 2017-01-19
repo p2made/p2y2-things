@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class HolderAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.9.3';
+	protected $version = '2.9.4';
 
 	private $resourceData = array(
 		'published' => [

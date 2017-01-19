@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FullCalendarPrintAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.8.0';
+	protected $version = '3.1.0';
 
 	private $resourceData = array(
 		'published' => [

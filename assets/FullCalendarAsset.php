@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.9.1';
+	protected $version = '3.1.0';
 
 	/**
 	 * the language the calender will be displayed in

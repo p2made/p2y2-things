@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FontAwesomeAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '4.5.0';
+	protected $version = '4.7.0';
 
 	private $resourceData = array(
 		'published' => [

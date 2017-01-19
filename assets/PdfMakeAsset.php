@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class PdfMakeAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '0.1.18';
+	protected $version = '0.1.24';
 
 	private $resourceData = array(
 		'published' => [

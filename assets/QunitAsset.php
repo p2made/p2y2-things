@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class QunitAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.0.1';
+	protected $version = '2.1.1';
 
 	private $resourceData = array(
 		'published' => [

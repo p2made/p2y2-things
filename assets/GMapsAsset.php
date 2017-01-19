@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '0.4.23';
+	protected $version = '0.4.24';
 
 	private $resourceData = array(
 		'published' => [

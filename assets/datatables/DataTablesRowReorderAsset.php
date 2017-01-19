@@ -20,7 +20,7 @@ namespace p2made\assets\datatables;
 
 class DataTablesRowReorderAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.1.2';
+	protected $version = '1.2.0';
 
 	private $resourceData = array(
 		'published' => [

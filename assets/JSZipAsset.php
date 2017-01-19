@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JSZipAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.5.0';
+	protected $version = '3.1.3';
 
 	private $resourceData = array(
 		'published' => [

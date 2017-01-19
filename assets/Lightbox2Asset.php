@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.8.2';
+	protected $version = '2.9.0';
 
 	private $resourceData = array(
 		'published' => [

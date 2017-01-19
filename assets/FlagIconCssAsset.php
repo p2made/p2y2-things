@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class FlagIconCssAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.4.0';
+	protected $version = '2.8.0';
 
 	private $resourceData = array(
 		'published' => [

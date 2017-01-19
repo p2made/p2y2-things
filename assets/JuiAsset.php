@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JuiAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '1.12.0.1';
+	protected $version = '1.12.1';
 
 	private $resourceData = array(
 		'published' => [

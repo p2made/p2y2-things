@@ -20,7 +20,7 @@ namespace p2made\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.1.2';
+	protected $version = '2.1.3';
 
 	private $resourceData = array(
 		'published' => [

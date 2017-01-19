@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MomentAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.14.1';
+	protected $version = '2.17.1';
 
 	private $resourceData = array(
 		'published' => [

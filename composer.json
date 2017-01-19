@@ -28,7 +28,7 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "1.14.0",
+	"version": "1.14.1",
 	"minimum-stability": "dev",
 
 	"require": {
@@ -57,7 +57,6 @@
 		"bower-asset/gmaps": "0.4.24",
 		"bower-asset/holderjs": "2.9.4",
 		"bower-asset/isotope": "3.0.1",
-		"bower-asset/jquery": "2.2.4",
 		"bower-asset/jquery-countto": "1.2.0",
 		"bower-asset/jquery-migrate": "3.0.0",
 		"bower-asset/jquery-ui": "1.12.1",

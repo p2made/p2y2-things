@@ -50,7 +50,7 @@
 		"bower-asset/datatables-rowreorder": "1.2.0",
 		"bower-asset/datatables-scroller": "1.4.2",
 		"bower-asset/datatables-select": "1.2.1",
-		"bower-asset/ekko-lightbox": "*",
+		"bower-asset/ekko-lightbox": "4.0.2",
 		"bower-asset/flag-icon-css": "2.8.0",
 		"bower-asset/flot.tooltip": "0.9.0",
 		"bower-asset/fullcalendar": "3.1.0",

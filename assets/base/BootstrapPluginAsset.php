@@ -20,7 +20,7 @@ namespace p2made\assets\base;
 
 class BootstrapPluginAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.6';
+	protected $version = '3.3.7';
 
 	private $resourceData = array(
 		'published' => [

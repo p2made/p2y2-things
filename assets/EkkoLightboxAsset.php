@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '5.0.0';
+	protected $version = '4.0.1';
 
 	private $resourceData = array(
 		'published' => [

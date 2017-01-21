@@ -151,6 +151,4 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		return $this->_p2mPath;
 	}
 
-
-
 }

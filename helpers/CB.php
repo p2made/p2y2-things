@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleHelper.php
+ * CB.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman * @license MIT
@@ -13,20 +13,20 @@ namespace p2made\helpers;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\_ExampleHelper;
+ * use p2made\helpers\CB;
  * ...
- * echo _ExampleHelper::method([$params]);
+ * echo CB::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\_ExampleHelper::method([$params]);
+ * echo \p2made\helpers\CB::method([$params]);
  */
 
 /**
- * Class _ExampleHelper
+ * Class CB
  * @package p2made\yii2-p2y2-things
  */
-class _ExampleHelper extends \p2made\helpers\base\P2Helper
+class CB extends \p2made\helpers\base\BootstrapSocial
 {
 
 

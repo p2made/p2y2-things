@@ -44,9 +44,9 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 	{
 		if(isset(\Yii::$app->params['p2assets']['bootswatchTheme'])) {
 			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
-			$this->resourceData['sourcePath'] = '@bower/bootswatch/' . $themeName;
+			$this->resourceData['sourcePath'] = '@vendor/thomaspark/bootswatch/' . $themeName;
 			$this->resourceData['published']['baseUrl'] = [
-				'bootswatch/3.3.6/' . $themeName,
+				'bootswatch/##-version-##/' . $themeName,
 			];
 			$this->resourceData['published']['css'] = [
 				'bootstrap.min.css',

@@ -24,7 +24,7 @@ class HolderAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/holderjs',
+			'sourcePath' => '@vendor/imsky/holderjs',
 			'js' => [
 				'holder.min.js',
 			],

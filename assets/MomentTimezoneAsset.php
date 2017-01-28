@@ -24,7 +24,7 @@ class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/moment-timezone/build',
+			'sourcePath' => '@bower/moment-timezone/builds',
 			'js' => [
 				'moment-timezone.js',
 			],

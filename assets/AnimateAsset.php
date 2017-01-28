@@ -24,9 +24,9 @@ class AnimateAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/animate.css',
+			'sourcePath' => '@vendor/drmonty/animate.css',
 			'css' => [
-				'animate.min.css',
+				'css/animate.min.css',
 			],
 		],
 		'static' => [

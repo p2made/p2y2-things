@@ -24,7 +24,7 @@ class PdfMakeAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/pdfmake',
+			'sourcePath' => '@vendor/bpampuch/pdfmake',
 			'js' => [
 				'build/pdfmake.min.js',
 				'build/vfs_fonts.js',

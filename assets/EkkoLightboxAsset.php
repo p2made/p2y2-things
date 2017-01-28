@@ -24,12 +24,12 @@ class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/ekko-lightbox/dist',
+			'sourcePath' => '@vendor/drmonty/ekko-lightbox',
 			'css' => [
-				'ekko-lightbox.min.css',
+				'css/ekko-lightbox.min.css',
 			],
 			'js' => [
-				'ekko-lightbox.min.js',
+				'js/ekko-lightbox.min.js',
 			],
 		],
 		'static' => [

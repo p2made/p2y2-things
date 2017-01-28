@@ -24,7 +24,7 @@ class JSZipAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/jszip/dist',
+			'sourcePath' => '@vendor/stuk/jszip/dist',
 			'js' => [
 				'jszip.min.js',
 			],

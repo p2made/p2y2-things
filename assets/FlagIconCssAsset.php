@@ -24,7 +24,7 @@ class FlagIconCssAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/flag-icon-css',
+			'sourcePath' => '@vendor/components/flag-icon-css',
 			'css' => [
 				'css/flag-icon.min.css',
 			],

@@ -24,7 +24,7 @@ class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/onokumus/metisMenu/dist',
+			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'css' => [
 				'metisMenu.min.css',
 			],

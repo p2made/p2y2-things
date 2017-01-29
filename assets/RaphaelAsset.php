@@ -24,7 +24,7 @@ class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/raphael-##-version-##',
+			'sourcePath' => '@bower/raphael',
 			'js' => [
 				'raphael.min.js',
 			],

@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class JqueryAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.2.4';
+	protected $version = '3.1.1';
 
 	private $resourceData = array(
 		'published' => [

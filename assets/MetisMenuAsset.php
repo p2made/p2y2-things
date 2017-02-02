@@ -20,7 +20,7 @@ namespace p2made\assets;
 
 class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
 {
-	protected $version = '2.6.1';
+	protected $version = '2.6.2';
 
 	private $resourceData = array(
 		'published' => [

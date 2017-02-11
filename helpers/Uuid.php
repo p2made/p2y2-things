@@ -2,9 +2,10 @@
 /**
  * Uuid.php
  *
- * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
- * @package p2made/yii2-asset-demo-theme
+ * @link https://github.com/p2made
+ * @package p2made/yii2-p2y2-things
  * @license MIT
  */
 

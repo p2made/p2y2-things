@@ -60,6 +60,20 @@ class IsGd
 	const ISGD_BASIC = 'http://is.gd/create.php?format=simple&url=';
 	const ISGD_ERROR = 'Error: ';
 
+/*
+	private static $contextOptions = array(
+		'ssl' => array(
+			'verify_peer' => true, // You could skip all of the trouble by changing this to false, but it's WAY uncool for security reasons.
+			'cafile' => 'base/ssl/cacert.pem',
+			'CN_match' => 'is.gd', // Change this to your certificates Common Name (or just comment this line out if not needed)
+			'ciphers' => 'HIGH:!SSLv2:!SSLv3',
+			'disable_compression' => true,
+		)
+	);
+
+	private static $context = stream_context_create($contextOptions);
+*/
+
 	/*
 	 * IsGdHelper::shortenUrl('www.example.com')
 	 */
@@ -68,13 +82,20 @@ class IsGd
 		if(!self::checkInput($inputUrl)) { return false; }
 
 		$encodedUrl = rawurlencode($inputUrl);
-		$shortenedUrl = file_get_contents(self::ISGD_BASIC . $encodedUrl);
+		$contextOptions = array(
+			'ssl' => array(
+				'verify_peer' => false,
+				//'verify_peer' => true, // You could skip all of the trouble by changing this to false, but it's WAY uncool for security reasons.
+				//'cafile' => require 'base/ssl/cacert.pem',
+				//'CN_match' => 'is.gd', // Change this to your certificates Common Name (or just comment this line out if not needed)
+				//'ciphers' => 'HIGH:!SSLv2:!SSLv3',
+				//'disable_compression' => true,
+			)
+		);
+		$context = stream_context_create($contextOptions);
+		$shortenedUrl = file_get_contents(self::ISGD_BASIC . $encodedUrl, false, $context);
+
 		return self::checkResult($shortenedUrl);
-
-//echo get_remote_data('http://example.com');                                // GET request
-//echo get_remote_data('http://example.com', "var2=something&var3=blabla" ); // POST request
-//file_get_contents('http://www.filehippo.com')
-
 	}
 
 	private static function checkInput($inputUrl)

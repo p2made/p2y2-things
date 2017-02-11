@@ -1,6 +1,6 @@
 <?php
 /**
- * _ExampleBaseHelper.php
+ * CircleButton.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -24,20 +24,20 @@ namespace p2made\helpers\base;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\base\_ExampleBaseHelper;
+ * use p2made\helpers\base\CircleButton;
  * ...
- * echo _ExampleBaseHelper::method([$params]);
+ * echo CircleButton::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\base\_ExampleBaseHelper::method([$params]);
+ * echo \p2made\helpers\base\CircleButton::method([$params]);
  */
 
 /**
- * Class _ExampleBaseHelper
+ * Class CircleButton
  * @package p2made\yii2-p2y2-things
  */
-class _ExampleBaseHelper extends P2HelperBase
+class CircleButton extends P2HelperBase
 {
 
 

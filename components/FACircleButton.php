@@ -1,6 +1,6 @@
 <?php
 /**
- * SocialButton.php
+ * FACircleButton.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -12,15 +12,14 @@
 namespace p2made\components;
 
 use yii\bootstrap\Html;
-use p2made\helpers\BSocial;
-use p2made\helpers\FA;
+use p2made\helpers\CB;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
+ * ##### ^ #####                                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS CLASS, OR SUB-CLASSES, DIRECTLY!     ##### ^ #####
+ * ##### ^ #####                                                           ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
@@ -28,55 +27,123 @@ use p2made\helpers\FA;
 /**
  * Use this helper with...
  *
- * use p2made\components\SocialButton;
+ * use p2made\components\base\FACircleButton;
  * ...
- * echo SocialButton::method([$params]);
+ * echo P2ComponentBase::method([$params]);
  *
  * or
  *
- * echo \p2made\components\SocialButton::method([$params]);
+ * echo \p2made\components\base\FACircleButton::method([$params]);
  */
 
 /**
- * Class SocialButton
+ * Class FACircleButton
  * @package p2made\yii2-p2y2-things
  */
-class SocialButton extends \p2made\components\base\P2ComponentBase
+class FACircleButton extends \p2made\components\base\CircleButtonBase
 {
 
 	/** @var string */
-	public static $defaultTag = 'a';
+	public static $defaultTag = 'button';
 
 	/** @var string */
-	private $defaultCaption = ' Sign in with ';
+	protected $tag;
 
 	/** @var string */
 	private $caption;
 
+	/** @var mixed */
+	protected $content = null;
+
 	/** @var array */
-	private $services = array(
-		'adn' =>           ['name' => 'App.net', 'icon' => 'adn', 'hex' => '#D87A68'],
-		'bitbucket' =>     ['name' => 'Bitbucket', 'icon' => 'bitbucket', 'hex' => '#205081'],
-		'dropbox' =>       ['name' => 'Dropbox', 'icon' => 'dropbox', 'hex' => '#1087DD'],
-		'facebook' =>      ['name' => 'Facebook', 'icon' => 'facebook', 'hex' => '#3B5998'],
-		'flickr' =>        ['name' => 'Flickr', 'icon' => 'flickr', 'hex' => '#2BA9E1'],
-		'foursquare' =>    ['name' => 'Foursquare', 'icon' => 'foursquare', 'hex' => '#f94877'],
-		'github' =>        ['name' => 'GitHub', 'icon' => 'github', 'hex' => '#444444'],
-		'google' =>        ['name' => 'Google', 'icon' => 'google', 'hex' => '#DD4B39'],
-		'instagram' =>     ['name' => 'Instagram', 'icon' => 'instagram', 'hex' => '#3F729B'],
-		'linkedin' =>      ['name' => 'LinkedIn', 'icon' => 'linkedin', 'hex' => '#007BB6'],
-		'microsoft' =>     ['name' => 'Microsoft', 'icon' => 'windows', 'hex' => '#2672EC'],
-		'odnoklassniki' => ['name' => 'Odnoklassniki', 'icon' => 'odnoklassniki', 'hex' => '#F4731C'],
-		'openid' =>        ['name' => 'OpenID', 'icon' => 'openid', 'hex' => '#F7931E'],
-		'pinterest' =>     ['name' => 'Pinterest', 'icon' => 'pinterest', 'hex' => '#CB2027'],
-		'reddit' =>        ['name' => 'Reddit', 'icon' => 'reddit', 'hex' => '#EFF7FF'],
-		'soundcloud' =>    ['name' => 'SoundCloud', 'icon' => 'soundcloud', 'hex' => '#FF5500'],
-		'tumblr' =>        ['name' => 'Tumblr', 'icon' => 'tumblr', 'hex' => '#CB2027'],
-		'twitter' =>       ['name' => 'Twitter', 'icon' => 'twitter', 'hex' => '#55ACEE'],
-		'vimeo' =>         ['name' => 'Vimeo', 'icon' => 'vimeo-square', 'hex' => '#1AB7EA'],
-		'vk' =>            ['name' => 'VK', 'icon' => 'vk', 'hex' => '#587EA3'],
-		'yahoo' =>         ['name' => 'Yahoo!', 'icon' => 'yahoo', 'hex' => '#720E9E'],
-	);
+	protected $options = [];
+
+	/**
+	 * @param array $options
+	 */
+	public function __construct($options = [])
+	{
+		// Html::addCssClass($options, 'classes');
+
+		$this->options = $options;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function __toString()
+	{
+		return $this->render();
+	}
+
+
+	/**
+	 * Change html tag.
+	 * @param string $tag
+	 * @return self
+	 */
+	public function tag($tag)
+	{
+		$this->tag = $tag;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $class
+	 * @param bool $condition
+	 * @param string|bool $throw
+	 * @return \rmrevin\yii\fontawesome\component\Icon
+	 * @throws \yii\base\InvalidConfigException
+	 * @codeCoverageIgnore
+	 */
+	public function addCssClass($class, $condition = true, $throw = false)
+	{
+		if ($condition === false) {
+			if (!empty($throw)) {
+				$message = !is_string($throw)
+					? 'Condition is false'
+					: $throw;
+
+				throw new \yii\base\InvalidConfigException($message);
+			}
+		} else {
+			Html::addCssClass($this->options, $class);
+		}
+
+		return $this;
+	}
+
+	/**
+	 * @param string|null $tag
+	 * @param string|null $content
+	 * @param array $options
+	 * @return string
+	 */
+	public function render($tag = null, $content = null, $options = [])
+	{
+		$tag = empty($tag)
+		? (empty($this->tag) ? static::$defaultTag : $this->tag)
+		: $tag;
+
+		$options = array_merge($this->options, $options);
+
+		return Html::tag($tag, $content, $options);
+	}
+
+}
+?>
+
+
+<?php
+namespace p2made\components;
+
+use p2made\helpers\BSocial;
+use p2made\helpers\FA;
+use yii\bootstrap\Html;
+
+class SocialButton extends \p2made\components\base\P2ComponentBase
+{
 
 	/** @var array */
 	private $service = null;

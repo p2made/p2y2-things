@@ -28,7 +28,7 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "1.17.1",
+	"version": "1.17.2",
 	"minimum-stability": "dev",
 
 	"require": {
@@ -63,6 +63,7 @@
 		"bower-asset/moment": "^2.17",
 		"bower-asset/raphael": "^2.2",
 		"bower-asset/scrollreveal": "^3.3",
+		"bower-asset/simple-line-icons": "^2.4",
 		"bower-asset/sweetalert": "^1.1",
 		"bower-asset/wow": "^1.1",
 		"bpampuch/pdfmake": "^0.1.24",

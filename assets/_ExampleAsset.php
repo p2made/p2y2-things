@@ -151,11 +151,12 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 		'p2made\assets\PrettyPhotoAsset',
 		'p2made\assets\QunitAsset',
 		'p2made\assets\RaphaelAsset',
+		'p2made\assets\ScrollRevealAsset',
+		'p2made\assets\SimpleLineIconsAsset',
 		'p2made\assets\SweetAlertAsset',
 		'p2made\assets\TimelineAsset',
 		'p2made\assets\TimelineCssAsset',
 		'p2made\assets\WowAsset',
-		p2made\assets\ScrollRevealAsset',
  */
 
 /* register lines for all assets... */
@@ -224,6 +225,7 @@ p2made\assets\PrettyPhotoAsset::register($this);
 p2made\assets\QunitAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\ScrollRevealAsset::register($this);
+p2made\assets\SimpleLineIconsAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\TimelineCssAsset::register($this);

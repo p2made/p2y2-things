@@ -52,4 +52,3 @@ class ScrollRevealAsset extends \p2made\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
-/WWW/yii.development/vendor//scrollreveal.min.js

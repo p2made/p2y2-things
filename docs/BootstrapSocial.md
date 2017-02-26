@@ -15,23 +15,23 @@ Once P2Y2Things is installed, here's how you use BSocial in your code.
 First register the asset bundle where you want to use BSocial...
 
 ```
-	p2made\assets\BootstrapSocialAsset::register($this);
+	p2m\assets\BootstrapSocialAsset::register($this);
 ```
 
 or specify as a dependency in another asset bundle loaded to the same page with...
 
 ```
-	'p2made\assets\BootstrapSocialAsset',
+	'p2m\assets\BootstrapSocialAsset',
 ```
 
-Also include `use p2made\helpers\BSocial;` at the top of the page.
+Also include `use p2m\helpers\BSocial;` at the top of the page.
 
 Now your page is ready for Bootstrap Social!
 
 Class reference
 ---------------
 
-###Namespace: `p2made\helpers`;
+###Namespace: `p2m\helpers`;
 
 ###Class `BSocial`
 

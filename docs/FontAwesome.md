@@ -15,23 +15,23 @@ Once P2Y2Things is installed, here's how you use FontAwesome in your code.
 First register the asset bundle where you want to use FontAwesome...
 
 ```
-	p2made\assets\FontAwesomeAsset::register($this);
+	p2m\assets\FontAwesomeAsset::register($this);
 ```
 
 or specify as a dependency in another asset bundle loaded to the same page with...
 
 ```
-	'p2made\assets\FontAwesomeAsset',
+	'p2m\assets\FontAwesomeAsset',
 ```
 
-Also include `use p2made\helpers\FA;` at the top of the page.
+Also include `use p2m\helpers\FA;` at the top of the page.
 
 Now your page is ready for FontAwesome!
 
 Class reference
 ---------------
 
-###Namespace: `p2made\helpers`;
+###Namespace: `p2m\helpers`;
 
 ###Class `FA`
 

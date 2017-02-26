@@ -10,14 +10,14 @@ Once P2Y2Things is installed, here's how you use Glyphicons in your code.
 
 There's no need to register any assets, because Bootstrap, which Glyphicons is part of, is already loaded.
 
-Include `use p2made\helpers\GI;` at the top of the page.
+Include `use p2m\helpers\GI;` at the top of the page.
 
 Now your page is ready for Glyphicons!
 
 Class reference
 ---------------
 
-###Namespace: `p2made\helpers`;
+###Namespace: `p2m\helpers`;
 
 ###Class `GI`
 

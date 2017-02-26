@@ -13,23 +13,23 @@ Once P2Y2Things is installed, here's how you use Flag Icons in your code.
 First register the asset bundle where you want to use Flag Icons...
 
 ```
-	p2made\assets\FlagIconCssAsset::register($this);
+	p2m\assets\FlagIconCssAsset::register($this);
 ```
 
 or specify as a dependency in another asset bundle loaded to the same page with...
 
 ```
-	'p2made\assets\FlagIconCssAsset',
+	'p2m\assets\FlagIconCssAsset',
 ```
 
-Also include `use p2made\helpers\FI;` at the top of the page.
+Also include `use p2m\helpers\FI;` at the top of the page.
 
 Now your page is ready for Flag Icons!
 
 Class reference
 ---------------
 
-###Namespace: `p2made\helpers`;
+###Namespace: `p2m\helpers`;
 
 ###Class `FI`
 

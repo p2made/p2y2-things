@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\GMapsAsset::register($this);
+ * p2m\assets\GMapsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\GMapsAsset',
+ *     'p2m\assets\GMapsAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class GMapsAsset extends \p2made\assets\base\P2AssetBundle
+class GMapsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.4.24';
 
@@ -37,7 +37,7 @@ class GMapsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\GMapsApiAsset',
+			'p2m\assets\GMapsApiAsset',
 		],
 	);
 

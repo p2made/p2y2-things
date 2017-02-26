@@ -8,14 +8,14 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 use yii;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\IsGd;
+ * use p2m\helpers\IsGd;
  * ...
  * echo IsGd::shortenUrl($inputUrl);
  * echo IsGd::checkInput($inputUrl);
@@ -23,9 +23,9 @@ use yii;
  *
  * or
  *
- * echo \p2made\helpers\IsGd::shortenUrl($inputUrl);
- * echo \p2made\helpers\IsGd::checkInput($inputUrl);
- * echo \p2made\helpers\IsGd::checkResult($shortenedUrl);
+ * echo \p2m\helpers\IsGd::shortenUrl($inputUrl);
+ * echo \p2m\helpers\IsGd::checkInput($inputUrl);
+ * echo \p2m\helpers\IsGd::checkResult($shortenedUrl);
  */
 
 /*
@@ -53,7 +53,7 @@ use yii;
 
 /**
  * Class IsGd
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class IsGd
 {

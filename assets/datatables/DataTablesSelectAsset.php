@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesSelectAsset::register($this);
+ * p2m\assets\datatables\DataTablesSelectAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesSelectAsset',
+ *     'p2m\assets\datatables\DataTablesSelectAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesSelectAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.1';
 
@@ -43,7 +43,7 @@ class DataTablesSelectAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

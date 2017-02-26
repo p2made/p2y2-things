@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FullCalendarAsset::register($this);
+ * p2m\assets\FullCalendarAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FullCalendarAsset',
+ *     'p2m\assets\FullCalendarAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
+class FullCalendarAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.0';
 
@@ -61,9 +61,9 @@ class FullCalendarAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\MomentAsset',
-			'p2made\assets\FullCalendarPrintAsset',
-			'p2made\assets\JuiAsset',
+			'p2m\assets\MomentAsset',
+			'p2m\assets\FullCalendarPrintAsset',
+			'p2m\assets\JuiAsset',
 		],
 	);
 

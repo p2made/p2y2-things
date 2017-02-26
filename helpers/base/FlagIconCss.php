@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
-use p2made\components\Flag;
+use p2m\components\Flag;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -25,7 +25,7 @@ use p2made\components\Flag;
 
 /**
  * Class FlagIconCss
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class FlagIconCss extends P2HelperBase
 {
@@ -38,7 +38,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function i($name, $options = [])
 	{
@@ -50,7 +50,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function span($name, $options = [])
 	{
@@ -62,7 +62,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function div($name, $options = [])
 	{
@@ -75,7 +75,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function square($name, $options = [])
 	{
@@ -88,7 +88,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function iTitle($name, $options = [])
 	{
@@ -101,7 +101,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function spanTitle($name, $options = [])
 	{
@@ -114,7 +114,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function divTitle($name, $options = [])
 	{
@@ -127,7 +127,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function iId($name, $options = [])
 	{
@@ -140,7 +140,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function spanId($name, $options = [])
 	{
@@ -153,7 +153,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function divId($name, $options = [])
 	{
@@ -166,7 +166,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function iTitleId($name, $options = [])
 	{
@@ -179,7 +179,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function spanTitleId($name, $options = [])
 	{
@@ -192,7 +192,7 @@ class FlagIconCss extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function divTitleId($name, $options = [])
 	{
@@ -207,7 +207,7 @@ class FlagIconCss extends P2HelperBase
 	 * @param string $name
 	 * @param string $tag
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	private static function flag($name, $tag = 'div', $options = [])
 	{

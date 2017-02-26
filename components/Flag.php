@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
-use p2made\helpers\FI;
+use p2m\helpers\FI;
 use yii\bootstrap\Html;
 
 /**
@@ -27,20 +27,20 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\Flag;
+ * use p2m\components\Flag;
  * ...
  * echo Flag::method([$params]);
  *
  * or
  *
- * echo \p2made\components\Flag::method([$params]);
+ * echo \p2m\components\Flag::method([$params]);
  */
 
 /**
  * Class Flag
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class Flag extends \p2made\components\base\P2ComponentBase
+class Flag extends \p2m\components\base\P2ComponentBase
 {
 
 	/** @var string */

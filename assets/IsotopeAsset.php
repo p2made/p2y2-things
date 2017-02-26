@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\IsotopeAsset::register($this);
+ * p2m\assets\IsotopeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\IsotopeAsset',
+ *     'p2m\assets\IsotopeAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class IsotopeAsset extends \p2made\assets\base\P2AssetBundle
+class IsotopeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.0.1';
 

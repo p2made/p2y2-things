@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -24,18 +24,18 @@ namespace p2made\helpers\base;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\base\CircleButton;
+ * use p2m\helpers\base\CircleButton;
  * ...
  * echo CircleButton::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\base\CircleButton::method([$params]);
+ * echo \p2m\helpers\base\CircleButton::method([$params]);
  */
 
 /**
  * Class CircleButton
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class CircleButton extends P2HelperBase
 {

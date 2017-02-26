@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\PdfMakeAsset::register($this);
+ * p2m\assets\PdfMakeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\PdfMakeAsset',
+ *     'p2m\assets\PdfMakeAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class PdfMakeAsset extends \p2made\assets\base\P2AssetBundle
+class PdfMakeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.1.24';
 
@@ -39,7 +39,7 @@ class PdfMakeAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

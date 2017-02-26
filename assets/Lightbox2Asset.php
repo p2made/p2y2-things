@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\Lightbox2Asset::register($this);
+ * p2m\assets\Lightbox2Asset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\Lightbox2Asset',
+ *     'p2m\assets\Lightbox2Asset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class Lightbox2Asset extends \p2made\assets\base\P2AssetBundle
+class Lightbox2Asset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.9.0';
 

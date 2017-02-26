@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FullCalendarPrintAsset::register($this);
+ * p2m\assets\FullCalendarPrintAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FullCalendarPrintAsset',
+ *     'p2m\assets\FullCalendarPrintAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FullCalendarPrintAsset extends \p2made\assets\base\P2AssetBundle
+class FullCalendarPrintAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.0';
 

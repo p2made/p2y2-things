@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesPrintViewAsset::register($this);
+ * p2m\assets\datatables\DataTablesPrintViewAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesPrintViewAsset',
+ *     'p2m\assets\datatables\DataTablesPrintViewAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesPrintViewAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesPrintViewAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.1';
 
@@ -37,9 +37,9 @@ class DataTablesPrintViewAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
-			'p2made\assets\datatables\DataTablesButtonsAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\datatables\DataTablesButtonsAsset',
 		],
 	);
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotFillbetweenAsset::register($this);
+ * p2m\assets\flot\FlotFillbetweenAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotFillbetweenAsset',
+ *     'p2m\assets\flot\FlotFillbetweenAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotFillbetweenAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotFillbetweenAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [

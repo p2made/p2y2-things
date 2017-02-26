@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MasonryAsset::register($this);
+ * p2m\assets\MasonryAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MasonryAsset',
+ *     'p2m\assets\MasonryAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class MasonryAsset extends \p2made\assets\base\P2AssetBundle
+class MasonryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.1.1';
 

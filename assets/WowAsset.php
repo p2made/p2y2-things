@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\WowAsset::register($this);
+ * p2m\assets\WowAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\WowAsset',
+ *     'p2m\assets\WowAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class WowAsset extends \p2made\assets\base\P2AssetBundle
+class WowAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.2';
 
@@ -37,7 +37,7 @@ class WowAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\AnimateAsset',
+			'p2m\assets\AnimateAsset',
 		],
 	);
 

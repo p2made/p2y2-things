@@ -9,20 +9,20 @@
  * @license MIT
  */
 
-namespace p2made\widgets\base;
+namespace p2m\widgets\base;
 
 use yii\bootstrap\Html;
 
 /**
  * Use this helper with...
  *
- * use p2made\widgets\base\P2Widget;
+ * use p2m\widgets\base\P2Widget;
  * ...
  * echo P2Widget::method([$params]);
  *
  * or
  *
- * echo \p2made\widgets\base\P2Widget::method([$params]);
+ * echo \p2m\widgets\base\P2Widget::method([$params]);
  */
 
 /**
@@ -51,7 +51,7 @@ use yii\bootstrap\Html;
 
 /**
  * Class P2Widget
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class P2Widget extends \yii\base\Widget
 {

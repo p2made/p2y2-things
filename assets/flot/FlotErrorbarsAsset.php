@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotErrorbarsAsset::register($this);
+ * p2m\assets\flot\FlotErrorbarsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotErrorbarsAsset',
+ *     'p2m\assets\flot\FlotErrorbarsAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotErrorbarsAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotErrorbarsAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [

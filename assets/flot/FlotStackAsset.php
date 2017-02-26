@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotStackAsset::register($this);
+ * p2m\assets\flot\FlotStackAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotStackAsset',
+ *     'p2m\assets\flot\FlotStackAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotStackAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotStackAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [

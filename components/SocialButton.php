@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
 use yii\bootstrap\Html;
-use p2made\helpers\BSocial;
-use p2made\helpers\FA;
+use p2m\helpers\BSocial;
+use p2m\helpers\FA;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -28,20 +28,20 @@ use p2made\helpers\FA;
 /**
  * Use this helper with...
  *
- * use p2made\components\SocialButton;
+ * use p2m\components\SocialButton;
  * ...
  * echo SocialButton::method([$params]);
  *
  * or
  *
- * echo \p2made\components\SocialButton::method([$params]);
+ * echo \p2m\components\SocialButton::method([$params]);
  */
 
 /**
  * Class SocialButton
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class SocialButton extends \p2made\components\base\P2ComponentBase
+class SocialButton extends \p2m\components\base\P2ComponentBase
 {
 
 	/** @var string */

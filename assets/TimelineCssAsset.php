@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\TimelineCssAsset::register($this);
+ * p2m\assets\TimelineCssAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\TimelineCssAsset',
+ *     'p2m\assets\TimelineCssAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class TimelineCssAsset extends \p2made\assets\base\P2AssetBundle
+class TimelineCssAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.0.0';
 

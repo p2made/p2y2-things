@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\widgets;
+namespace p2m\widgets;
 
 use \yii\bootstrap\Alert as BootstrapAlert;
 use \yii\bootstrap\Widget;
@@ -17,13 +17,13 @@ use \yii\bootstrap\Widget;
 /**
  * Use this helper with...
  *
- * use p2made\widgets\Alert;
+ * use p2m\widgets\Alert;
  * ...
  * echo Alert::method([$params]);
  *
  * or
  *
- * echo \p2made\widgets\Alert::method([$params]);
+ * echo \p2m\widgets\Alert::method([$params]);
  */
 
 /**
@@ -45,7 +45,7 @@ use \yii\bootstrap\Widget;
 
 /**
  * Class Alert
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class Alert extends Widget
 {

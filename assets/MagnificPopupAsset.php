@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MagnificPopupAsset::register($this);
+ * p2m\assets\MagnificPopupAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MagnificPopupAsset',
+ *     'p2m\assets\MagnificPopupAsset',
  */
 
-namespace p2made\assets; /* edit this if using elsewhere */
+namespace p2m\assets; /* edit this if using elsewhere */
 
-class MagnificPopupAsset extends \p2made\assets\base\P2AssetBundle
+class MagnificPopupAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.0';
 
@@ -45,7 +45,7 @@ class MagnificPopupAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 
 	);

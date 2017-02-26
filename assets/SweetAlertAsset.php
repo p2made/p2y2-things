@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\SweetAlertAsset::register($this);
+ * p2m\assets\SweetAlertAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\SweetAlertAsset',
+ *     'p2m\assets\SweetAlertAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class SweetAlertAsset extends \p2made\assets\base\P2AssetBundle
+class SweetAlertAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.3';
 

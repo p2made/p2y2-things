@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JqueryAsset::register($this);
+ * p2m\assets\JqueryAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JqueryAsset',
+ *     'p2m\assets\JqueryAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class JqueryAsset extends \p2made\assets\base\P2AssetBundle
+class JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.2.4';
 

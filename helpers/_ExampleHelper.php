@@ -9,25 +9,25 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\_ExampleHelper;
+ * use p2m\helpers\_ExampleHelper;
  * ...
  * echo _ExampleHelper::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\_ExampleHelper::method([$params]);
+ * echo \p2m\helpers\_ExampleHelper::method([$params]);
  */
 
 /**
  * Class _ExampleHelper
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class _ExampleHelper extends \p2made\helpers\base\P2Helper
+class _ExampleHelper extends \p2m\helpers\base\P2Helper
 {
 
 

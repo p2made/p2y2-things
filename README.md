@@ -1,4 +1,4 @@
-P2Y2Things v1.17.2
+P2Y2Things v2.0.0
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -9,6 +9,12 @@ P2Y2Things v1.17.2
 ---
 
 A collection of resources as Assets, Helpers, & Widgets for Yii2.
+
+¡¡ IMPORTANT !!
+===============
+
+Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
+`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
 
 Highlights
 ----------
@@ -58,19 +64,19 @@ The preferred way to install P2Y2Things is through [composer](http://getcomposer
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-p2y2-things "^1.15"
+	composer require p2made/yii2-p2y2-things "^2.0"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-p2y2-things "^1.15"
+	php composer.phar require p2made/yii2-p2y2-things "^2.0"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": "^1.15"
+	"p2made/yii2-p2y2-things": "^2.0"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.
@@ -116,15 +122,15 @@ P2Y2Things gives you the option of loading assets from the official CDNs. Just p
 When things are set up to your liking, register the `P2CoreLoaderAsset` with...
 
 ```
-	p2made\assets\P2CoreLoaderAsset::register($this);
+	p2m\assets\P2CoreAsset::register($this);
 ```
 
 ...&  you get
 * `yii\web\YiiAsset`, followed by
-* `Jquery` (as `p2made\assets\JqueryAsset`),
-* `Jui` (as `p2made\assets\JuiAsset`),
-* `Bootstrap` (as `p2made\assets\BootstrapAsset`), &
-* `Font Awesome` (as `p2made\assets\FontAwesomeAsset`)
+* `Jquery` (as `p2m\assets\JqueryAsset`),
+* `Jui` (as `p2m\assets\JuiAsset`),
+* `Bootstrap` (as `p2m\assets\BootstrapAsset`), &
+* `Font Awesome` (as `p2m\assets\FontAwesomeAsset`)
 
 nicely loaded in one line.
 

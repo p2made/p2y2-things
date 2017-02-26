@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotTooltipAsset::register($this);
+ * p2m\assets\flot\FlotTooltipAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotTooltipAsset',
+ *     'p2m\assets\flot\FlotTooltipAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotTooltipAsset extends \p2made\assets\base\P2AssetBundle
+class FlotTooltipAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.9.0';
 

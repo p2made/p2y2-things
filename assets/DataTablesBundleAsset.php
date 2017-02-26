@@ -1,6 +1,6 @@
 <?php
 /**
-		'p2made\assets\datatables\ * DataTablesBundleAsset',
+		'p2m\assets\datatables\ * DataTablesBundleAsset',
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -11,48 +11,48 @@
 
 /**
  * Load this asset with...
- * p2made\assets\DataTablesBundleAsset::register($this);
+ * p2m\assets\DataTablesBundleAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\DataTablesBundleAsset',
+ *     'p2m\assets\DataTablesBundleAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class DataTablesBundleAsset extends \p2made\assets\base\P2LoaderAssetBundle
+class DataTablesBundleAsset extends \p2m\assets\base\P2LoaderAssetBundle
 {
 	public $depends = [
-		'p2made\assets\JSZipAsset',
-		'p2made\assets\PdfMakeAsset',
-		'p2made\assets\datatables\DataTablesBootstrapAsset',
-		'p2made\assets\datatables\DataTablesAutoFillAsset',
-		'p2made\assets\datatables\DataTablesButtonsAsset',
-		'p2made\assets\datatables\DataTablesColReorderAsset',
-		'p2made\assets\datatables\DataTablesColVisAsset',
-		'p2made\assets\datatables\DataTablesFixedColumnsAsset',
-		'p2made\assets\datatables\DataTablesFixedHeaderAsset',
-		'p2made\assets\datatables\DataTablesFlashExportAsset',
-		'p2made\assets\datatables\DataTablesHTML5ExportAsset',
-		'p2made\assets\datatables\DataTablesKeyTableAsset',
-		'p2made\assets\datatables\DataTablesPrintViewAsset',
-		'p2made\assets\datatables\DataTablesResponsiveAsset',
-		'p2made\assets\datatables\DataTablesRowReorderAsset',
-		'p2made\assets\datatables\DataTablesScrollerAsset',
-		'p2made\assets\datatables\DataTablesSelectAsset',
+		'p2m\assets\JSZipAsset',
+		'p2m\assets\PdfMakeAsset',
+		'p2m\assets\datatables\DataTablesBootstrapAsset',
+		'p2m\assets\datatables\DataTablesAutoFillAsset',
+		'p2m\assets\datatables\DataTablesButtonsAsset',
+		'p2m\assets\datatables\DataTablesColReorderAsset',
+		'p2m\assets\datatables\DataTablesColVisAsset',
+		'p2m\assets\datatables\DataTablesFixedColumnsAsset',
+		'p2m\assets\datatables\DataTablesFixedHeaderAsset',
+		'p2m\assets\datatables\DataTablesFlashExportAsset',
+		'p2m\assets\datatables\DataTablesHTML5ExportAsset',
+		'p2m\assets\datatables\DataTablesKeyTableAsset',
+		'p2m\assets\datatables\DataTablesPrintViewAsset',
+		'p2m\assets\datatables\DataTablesResponsiveAsset',
+		'p2m\assets\datatables\DataTablesRowReorderAsset',
+		'p2m\assets\datatables\DataTablesScrollerAsset',
+		'p2m\assets\datatables\DataTablesSelectAsset',
 
 		/*
-		'p2made\assets\datatables\DataTablesAsset',
-		'p2made\assets\datatables\DataTablesAutoFillAsset',
-		'p2made\assets\datatables\DataTablesButtonsAsset',
-		'p2made\assets\datatables\DataTablesColReorderAsset',
-		'p2made\assets\datatables\DataTablesFiles',
-		'p2made\assets\datatables\DataTablesFixedColumnsAsset',
-		'p2made\assets\datatables\DataTablesFixedHeaderAsset',
-		'p2made\assets\datatables\DataTablesKeyTableAsset',
-		'p2made\assets\datatables\DataTablesResponsiveAsset',
-		'p2made\assets\datatables\DataTablesRowReorderAsset',
-		'p2made\assets\datatables\DataTablesScrollerAsset',
-		'p2made\assets\datatables\DataTablesSelectAsset',
+		'p2m\assets\datatables\DataTablesAsset',
+		'p2m\assets\datatables\DataTablesAutoFillAsset',
+		'p2m\assets\datatables\DataTablesButtonsAsset',
+		'p2m\assets\datatables\DataTablesColReorderAsset',
+		'p2m\assets\datatables\DataTablesFiles',
+		'p2m\assets\datatables\DataTablesFixedColumnsAsset',
+		'p2m\assets\datatables\DataTablesFixedHeaderAsset',
+		'p2m\assets\datatables\DataTablesKeyTableAsset',
+		'p2m\assets\datatables\DataTablesResponsiveAsset',
+		'p2m\assets\datatables\DataTablesRowReorderAsset',
+		'p2m\assets\datatables\DataTablesScrollerAsset',
+		'p2m\assets\datatables\DataTablesSelectAsset',
 		 */
 	];
 }

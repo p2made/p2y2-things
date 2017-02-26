@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesResponsiveAsset::register($this);
+ * p2m\assets\datatables\DataTablesResponsiveAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesResponsiveAsset',
+ *     'p2m\assets\datatables\DataTablesResponsiveAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.1.0';
 
@@ -45,8 +45,8 @@ class DataTablesResponsiveAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

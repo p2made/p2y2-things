@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\GMapsApiAsset::register($this);
+ * p2m\assets\GMapsApiAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\GMapsApiAsset',
+ *     'p2m\assets\GMapsApiAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class GMapsApiAsset extends \p2made\assets\base\P2AssetBundle
+class GMapsApiAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 		'static' => [

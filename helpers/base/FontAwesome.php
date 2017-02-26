@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
-use p2made\components;
+use p2m\components;
 use yii\bootstrap\Html;
 
 /**
@@ -27,18 +27,18 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\base\FontAwesome;
+ * use p2m\helpers\base\FontAwesome;
  * ...
  * echo base\FontAwesome::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\base\FontAwesome::method([$params]);
+ * echo \p2m\helpers\base\FontAwesome::method([$params]);
  */
 
 /**
  * Class base\FontAwesome
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 {

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotThresholdAsset::register($this);
+ * p2m\assets\flot\FlotThresholdAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotThresholdAsset',
+ *     'p2m\assets\flot\FlotThresholdAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotThresholdAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotThresholdAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [

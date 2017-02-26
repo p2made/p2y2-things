@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JSZipAsset::register($this);
+ * p2m\assets\JSZipAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JSZipAsset',
+ *     'p2m\assets\JSZipAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class JSZipAsset extends \p2made\assets\base\P2AssetBundle
+class JSZipAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.3';
 
@@ -37,7 +37,7 @@ class JSZipAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

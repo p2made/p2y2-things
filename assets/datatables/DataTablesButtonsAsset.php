@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesButtonsAsset::register($this);
+ * p2m\assets\datatables\DataTablesButtonsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesButtonsAsset',
+ *     'p2m\assets\datatables\DataTablesButtonsAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesButtonsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.4';
 
@@ -45,8 +45,8 @@ class DataTablesButtonsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

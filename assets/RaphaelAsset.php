@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\RaphaelAsset::register($this);
+ * p2m\assets\RaphaelAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\RaphaelAsset',
+ *     'p2m\assets\RaphaelAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class RaphaelAsset extends \p2made\assets\base\P2AssetBundle
+class RaphaelAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.2.7';
 

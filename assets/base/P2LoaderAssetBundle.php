@@ -11,13 +11,13 @@
 
 /**
  * Load this asset with...
- * p2made\assets\base\P2LoaderAssetBundle::register($this);
+ * p2m\assets\base\P2LoaderAssetBundle::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\base\P2LoaderAssetBundle',
+ *     'p2m\assets\base\P2LoaderAssetBundle',
  */
 
-namespace p2made\assets\base;
+namespace p2m\assets\base;
 
 class P2LoaderAssetBundle extends \yii\web\AssetBundle
 {

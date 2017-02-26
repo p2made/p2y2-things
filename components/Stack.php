@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
 use yii\bootstrap\Html;
 
@@ -26,18 +26,18 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\Stack;
+ * use p2m\components\Stack;
  * ...
  * echo Stack::method([$params]);
  *
  * or
  *
- * echo \p2made\components\Stack::method([$params]);
+ * echo \p2m\components\Stack::method([$params]);
  */
 
 /**
  * Class Stack
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class Stack extends \rmrevin\yii\fontawesome\component\Stack
 {

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotChartsAsset::register($this);
+ * p2m\assets\flot\FlotChartsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotChartsAsset',
+ *     'p2m\assets\flot\FlotChartsAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotChartsAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [
@@ -65,8 +65,8 @@ class FlotChartsAsset extends \p2made\assets\flot\FlotAssetBase
 			],
 		],
 		'depends' => [
-			//'p2made\assets\MorrisAsset',
-			//'p2made\assets\flot\FlotTooltipAsset',
+			//'p2m\assets\MorrisAsset',
+			//'p2m\assets\flot\FlotTooltipAsset',
 		],
 	);
 

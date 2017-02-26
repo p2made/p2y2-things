@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -23,7 +23,7 @@ namespace p2made\helpers\base;
 
 /**
  * Class Glyphicons
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class Glyphicons extends P2HelperBase
 {
@@ -36,7 +36,7 @@ class Glyphicons extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function i($name, $options = [])
 	{
@@ -49,7 +49,7 @@ class Glyphicons extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function span($name, $options = [])
 	{
@@ -62,7 +62,7 @@ class Glyphicons extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function fw($name, $options = [])
 	{
@@ -75,7 +75,7 @@ class Glyphicons extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\Flag
+	 * @return p2m\components\Flag
 	 */
 	public static function sfw($name, $options = [])
 	{
@@ -89,11 +89,11 @@ class Glyphicons extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	private static function glyphicon($name, $options = [])
 	{
-		return new \p2made\components\Glyphicon($name, $options);
+		return new \p2m\components\Glyphicon($name, $options);
 	}
 
 }

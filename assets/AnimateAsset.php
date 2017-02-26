@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\AnimateAsset::register($this);
+ * p2m\assets\AnimateAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\AnimateAsset',
+ *     'p2m\assets\AnimateAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class AnimateAsset extends \p2made\assets\base\P2AssetBundle
+class AnimateAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.5.2';
 

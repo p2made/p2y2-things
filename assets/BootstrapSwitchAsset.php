@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\BootstrapSwitchAsset::register($this);
+ * p2m\assets\BootstrapSwitchAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\BootstrapSwitchAsset',
+ *     'p2m\assets\BootstrapSwitchAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
+class BootstrapSwitchAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.2';
 
@@ -43,7 +43,7 @@ class BootstrapSwitchAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapAsset',
+			'p2m\assets\BootstrapAsset',
 		],
 	);
 

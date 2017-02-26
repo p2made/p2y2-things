@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
-use p2made\helpers\GI;
+use p2m\helpers\GI;
 use yii\bootstrap\Html;
 
 /**
@@ -27,20 +27,20 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\Glyphicon;
+ * use p2m\components\Glyphicon;
  * ...
  * echo Glyphicon::method([$params]);
  *
  * or
  *
- * echo \p2made\components\Glyphicon::method([$params]);
+ * echo \p2m\components\Glyphicon::method([$params]);
  */
 
 /**
  * Class Glyphicon
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class Glyphicon extends \p2made\components\base\P2ComponentBase
+class Glyphicon extends \p2m\components\base\P2ComponentBase
 {
 
 	/** @var string */

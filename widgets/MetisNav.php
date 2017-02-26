@@ -10,7 +10,7 @@
  * With thanks to Francis Lavoie https://github.com/francislavoie
  */
 
-namespace p2made\widgets;
+namespace p2m\widgets;
 
 use Yii;
 use yii\bootstrap\Html;
@@ -19,13 +19,13 @@ use yii\bootstrap\Nav;
 /**
  * Use this widget with...
  *
- * use p2made\widgets\MetisNav;
+ * use p2m\widgets\MetisNav;
  * ...
  * MetisNav::widget([$params]);
  *
  * or
  *
- * p2made\widgets\MetisNav::widget([$params]);
+ * p2m\widgets\MetisNav::widget([$params]);
  */
 
 /**

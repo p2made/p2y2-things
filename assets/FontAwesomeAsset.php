@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FontAwesomeAsset::register($this);
+ * p2m\assets\FontAwesomeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FontAwesomeAsset',
+ *     'p2m\assets\FontAwesomeAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FontAwesomeAsset extends \p2made\assets\base\P2AssetBundle
+class FontAwesomeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.7.0';
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\ColorHelpersAsset::register($this);
+ * p2m\assets\ColorHelpersAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\ColorHelpersAsset',
+ *     'p2m\assets\ColorHelpersAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class ColorHelpersAsset extends \p2made\assets\base\P2AssetBundle
+class ColorHelpersAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1-1';
 
@@ -31,7 +31,7 @@ class ColorHelpersAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\flot\FlotTooltipAsset',
+			'p2m\assets\flot\FlotTooltipAsset',
 		],
 	);
 

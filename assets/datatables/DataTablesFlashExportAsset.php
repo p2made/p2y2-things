@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesFlashExportAsset::register($this);
+ * p2m\assets\datatables\DataTablesFlashExportAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesFlashExportAsset',
+ *     'p2m\assets\datatables\DataTablesFlashExportAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesFlashExportAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesFlashExportAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.1';
 
@@ -37,9 +37,9 @@ class DataTablesFlashExportAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
-			'p2made\assets\datatables\DataTablesButtonsAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\datatables\DataTablesButtonsAsset',
 		],
 	);
 

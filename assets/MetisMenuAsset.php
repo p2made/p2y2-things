@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MetisMenuAsset::register($this);
+ * p2m\assets\MetisMenuAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MetisMenuAsset',
+ *     'p2m\assets\MetisMenuAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class MetisMenuAsset extends \p2made\assets\base\P2AssetBundle
+class MetisMenuAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.6.2';
 

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 use yii;
 use Ramsey\Uuid\Uuid as Ruuid;
@@ -18,7 +18,7 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\Uuid;
+ * use p2m\helpers\Uuid;
  * ...
  * echo Uuid::uuid($subDomain = self::SUBDOMAIN_DEFAULT);
  * echo Uuid::p2uuid1();
@@ -28,11 +28,11 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
  *
  * or
  *
- * echo \p2made\helpers\Uuid::uuid($subDomain = self::SUBDOMAIN_DEFAULT);
- * echo \p2made\helpers\Uuid::p2uuid1();
- * echo \p2made\helpers\Uuid::p2uuid3($subDomain = self::SUBDOMAIN_UUID);
- * echo \p2made\helpers\Uuid::p2uuid4();
- * echo \p2made\helpers\Uuid::p2uuid5($subDomain = self::SUBDOMAIN_UUID);
+ * echo \p2m\helpers\Uuid::uuid($subDomain = self::SUBDOMAIN_DEFAULT);
+ * echo \p2m\helpers\Uuid::p2uuid1();
+ * echo \p2m\helpers\Uuid::p2uuid3($subDomain = self::SUBDOMAIN_UUID);
+ * echo \p2m\helpers\Uuid::p2uuid4();
+ * echo \p2m\helpers\Uuid::p2uuid5($subDomain = self::SUBDOMAIN_UUID);
  */
 
 /*
@@ -44,7 +44,7 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 
 /**
  * Class Uuid
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class Uuid
 {

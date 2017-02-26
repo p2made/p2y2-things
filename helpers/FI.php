@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\FI;
+ * use p2m\helpers\FI;
  * ...
  * echo FI::i($flag, $options = []);
  * echo FI::span($flag, $options = []);
@@ -22,16 +22,16 @@ namespace p2made\helpers;
  *
  * or
  *
- * echo \p2made\helpers\FI::i($flag, $options = []);
- * echo \p2made\helpers\FI::span($flag, $options = []);
- * echo \p2made\helpers\FI::div($flag, $options = []);
+ * echo \p2m\helpers\FI::i($flag, $options = []);
+ * echo \p2m\helpers\FI::span($flag, $options = []);
+ * echo \p2m\helpers\FI::div($flag, $options = []);
  */
 
 /**
  * Class FI
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class FI extends \p2made\helpers\base\FlagIconCss
+class FI extends \p2m\helpers\base\FlagIconCss
 {
 
 	/**
@@ -298,7 +298,7 @@ class FI extends \p2made\helpers\base\FlagIconCss
 
 	/**
 	 * Size values
-	 * @see p2made\components\SocialButton::size
+	 * @see p2m\components\SocialButton::size
 	 */
 	const SIZE_LARGE = 'lg';
 	const SIZE_SMALL = 'sm';

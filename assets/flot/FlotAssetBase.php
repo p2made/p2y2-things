@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotAssetBase::register($this);
+ * p2m\assets\flot\FlotAssetBase::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotAssetBase',
+ *     'p2m\assets\flot\FlotAssetBase',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotAssetBase extends \p2made\assets\base\P2AssetBundle
+class FlotAssetBase extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.8.3';
 }

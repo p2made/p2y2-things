@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FlagIconCssAsset::register($this);
+ * p2m\assets\FlagIconCssAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FlagIconCssAsset',
+ *     'p2m\assets\FlagIconCssAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FlagIconCssAsset extends \p2made\assets\base\P2AssetBundle
+class FlagIconCssAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.8.0';
 

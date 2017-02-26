@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\widgets;
+namespace p2m\widgets;
 
 /**
  * Class FullCalendarWidget
@@ -17,7 +17,7 @@ namespace p2made\widgets;
  * Bring's \yii2fullcalendar\yii2fullcalendar
  * into the \p2made namespace
  *
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 
 /**
@@ -33,7 +33,7 @@ namespace p2made\widgets;
  *
  * @property array $events
  * Holds an array of Event Objects
- * events of p2made\models\FullCalendarEvent
+ * events of p2m\models\FullCalendarEvent
  * @todo add the event class and write docs
  *
  * @property array $header

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
 use yii\bootstrap\Html;
 
@@ -26,18 +26,18 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\helpers\base\P2Helper;
+ * use p2m\helpers\base\P2Helper;
  * ...
  * echo P2Helper::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\base\P2Helper::method([$params]);
+ * echo \p2m\helpers\base\P2Helper::method([$params]);
  */
 
 /**
  * Class P2HelperBase
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class P2HelperBase
 {

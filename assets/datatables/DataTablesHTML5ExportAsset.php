@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesHTML5ExportAsset::register($this);
+ * p2m\assets\datatables\DataTablesHTML5ExportAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesHTML5ExportAsset',
+ *     'p2m\assets\datatables\DataTablesHTML5ExportAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesHTML5ExportAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesHTML5ExportAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.1';
 
@@ -37,9 +37,9 @@ class DataTablesHTML5ExportAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
-			'p2made\assets\datatables\DataTablesButtonsAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\datatables\DataTablesButtonsAsset',
 		],
 	);
 

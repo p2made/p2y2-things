@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
-// use p2made\helpers\SomeHelper;
-// use p2made\widgets\SomeWidget;
+// use p2m\helpers\SomeHelper;
+// use p2m\widgets\SomeWidget;
 use yii\bootstrap\Html;
 
 /**
@@ -28,20 +28,20 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\_ExampleComponent;
+ * use p2m\components\_ExampleComponent;
  * ...
  * echo _ExampleComponent::method([$params]);
  *
  * or
  *
- * echo \p2made\components\_ExampleComponent::method([$params]);
+ * echo \p2m\components\_ExampleComponent::method([$params]);
  */
 
 /**
  * Class _ExampleComponent
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class _ExampleComponent extends \p2made\components\base\P2ComponentBase
+class _ExampleComponent extends \p2m\components\base\P2ComponentBase
 {
 
 

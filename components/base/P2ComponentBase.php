@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\components\base;
+namespace p2m\components\base;
 
 use yii\bootstrap\Html;
 
@@ -26,18 +26,18 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\base\P2ComponentBase;
+ * use p2m\components\base\P2ComponentBase;
  * ...
  * echo P2ComponentBase::method([$params]);
  *
  * or
  *
- * echo \p2made\components\base\P2ComponentBase::method([$params]);
+ * echo \p2m\components\base\P2ComponentBase::method([$params]);
  */
 
 /**
  * Class P2ComponentBase
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class P2ComponentBase
 {

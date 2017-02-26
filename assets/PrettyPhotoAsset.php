@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\PrettyPhotoAsset::register($this);
+ * p2m\assets\PrettyPhotoAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\PrettyPhotoAsset',
+ *     'p2m\assets\PrettyPhotoAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class PrettyPhotoAsset extends \p2made\assets\base\P2AssetBundle
+class PrettyPhotoAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.6';
 

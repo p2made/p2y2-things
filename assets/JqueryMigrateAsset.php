@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JqueryMigrateAsset::register($this);
+ * p2m\assets\JqueryMigrateAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JqueryMigrateAsset',
+ *     'p2m\assets\JqueryMigrateAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class JqueryMigrateAsset extends \p2made\assets\base\P2AssetBundle
+class JqueryMigrateAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.0.0';
 
@@ -37,7 +37,7 @@ class JqueryMigrateAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

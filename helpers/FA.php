@@ -9,25 +9,25 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\FA;
+ * use p2m\helpers\FA;
  * ...
  * echo FA::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\FA::method([$params]);
+ * echo \p2m\helpers\FA::method([$params]);
  */
 
 /**
  * Class FA
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class FA extends \p2made\helpers\base\FontAwesome
+class FA extends \p2m\helpers\base\FontAwesome
 {
 	/**
 	 *

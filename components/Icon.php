@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\components;
+namespace p2m\components;
 
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 use yii\bootstrap\Html;
 
 /**
@@ -27,18 +27,18 @@ use yii\bootstrap\Html;
 /**
  * Use this helper with...
  *
- * use p2made\components\Icon;
+ * use p2m\components\Icon;
  * ...
  * echo Icon::method([$params]);
  *
  * or
  *
- * echo \p2made\components\Icon::method([$params]);
+ * echo \p2m\components\Icon::method([$params]);
  */
 
 /**
  * Class Icon
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class Icon extends \rmrevin\yii\fontawesome\component\Icon
 {

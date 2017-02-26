@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace p2made\widgets;
+namespace p2m\widgets;
 
 /**
  * Class FlagIcon
  *
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 
 class FlagIcon extends FlagIconCssWidget

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesFixedColumnsAsset::register($this);
+ * p2m\assets\datatables\DataTablesFixedColumnsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesFixedColumnsAsset',
+ *     'p2m\assets\datatables\DataTablesFixedColumnsAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesFixedColumnsAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesFixedColumnsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.2.2';
 
@@ -43,8 +43,8 @@ class DataTablesFixedColumnsAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

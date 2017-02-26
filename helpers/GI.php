@@ -9,31 +9,31 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\GI;
+ * use p2m\helpers\GI;
  * ...
  * echo GI::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\GI::method([$params]);
+ * echo \p2m\helpers\GI::method([$params]);
  */
 
 /**
  * Class GI
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class GI extends \p2made\helpers\base\Glyphicons
+class GI extends \p2m\helpers\base\Glyphicons
 {
 
 
 	/**
 	 * Size values
-	 * @see p2made\components\SocialButton
+	 * @see p2m\components\SocialButton
 	 */
 	const _ADJUST = 'adjust';
 	const _ALERT = 'alert';
@@ -301,7 +301,7 @@ class GI extends \p2made\helpers\base\Glyphicons
 
 	/**
 	 * Size values
-	 * @see p2made\components\SocialButton::size
+	 * @see p2m\components\SocialButton::size
 	 */
 	const SIZE_LARGE = 'lg';
 	const SIZE_SMALL = 'sm';

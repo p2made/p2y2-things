@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesAutoFillAsset::register($this);
+ * p2m\assets\datatables\DataTablesAutoFillAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesAutoFillAsset',
+ *     'p2m\assets\datatables\DataTablesAutoFillAsset',
  */
 
-namespace p2made\assets\datatables; /* edit this if using elsewhere */
+namespace p2m\assets\datatables; /* edit this if using elsewhere */
 
-class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesAutoFillAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.1.3';
 
@@ -45,8 +45,8 @@ class DataTablesAutoFillAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

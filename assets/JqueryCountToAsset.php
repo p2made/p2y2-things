@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JqueryCountToAsset::register($this);
+ * p2m\assets\JqueryCountToAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JqueryCountToAsset',
+ *     'p2m\assets\JqueryCountToAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class JqueryCountToAsset extends \p2made\assets\base\P2AssetBundle
+class JqueryCountToAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.1.0';
 
@@ -37,7 +37,7 @@ class JqueryCountToAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

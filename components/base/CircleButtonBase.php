@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace p2made\components\base;
+namespace p2m\components\base;
 
 use yii\bootstrap\Html;
-use p2made\helpers\CB;
+use p2m\helpers\CB;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -27,20 +27,20 @@ use p2made\helpers\CB;
 /**
  * Use this helper with...
  *
- * use p2made\components\base\CircleButtonBase;
+ * use p2m\components\base\CircleButtonBase;
  * ...
  * echo P2ComponentBase::method([$params]);
  *
  * or
  *
- * echo \p2made\components\base\CircleButtonBase::method([$params]);
+ * echo \p2m\components\base\CircleButtonBase::method([$params]);
  */
 
 /**
  * Class CircleButtonBase
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class CircleButtonBase extends \p2made\components\base\P2ComponentBase
+class CircleButtonBase extends \p2m\components\base\P2ComponentBase
 {
 
 	/** @var string */
@@ -199,13 +199,13 @@ class CircleButtonBase extends \p2made\components\base\P2ComponentBase
 
 
 <?php
-namespace p2made\components;
+namespace p2m\components;
 
-use p2made\helpers\BSocial;
-use p2made\helpers\FA;
+use p2m\helpers\BSocial;
+use p2m\helpers\FA;
 use yii\bootstrap\Html;
 
-class SocialButton extends \p2made\components\base\P2ComponentBase
+class SocialButton extends \p2m\components\base\P2ComponentBase
 {
 
 	/** @var array */

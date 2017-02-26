@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\BootstrapSocialAsset::register($this);
+ * p2m\assets\BootstrapSocialAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\BootstrapSocialAsset',
+ *     'p2m\assets\BootstrapSocialAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
+class BootstrapSocialAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '5.1.1';
 
@@ -37,8 +37,8 @@ class BootstrapSocialAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapAsset',
-			'p2made\assets\FontAwesomeAsset',
+			'p2m\assets\BootstrapAsset',
+			'p2m\assets\FontAwesomeAsset',
 		],
 	);
 

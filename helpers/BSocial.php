@@ -9,30 +9,30 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\BSocial;
+ * use p2m\helpers\BSocial;
  * ...
  * echo BSocial::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\BSocial::method([$params]);
+ * echo \p2m\helpers\BSocial::method([$params]);
  */
 
 /**
  * Class BSocial
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class BSocial extends \p2made\helpers\base\BootstrapSocial
+class BSocial extends \p2m\helpers\base\BootstrapSocial
 {
 
 	/**
 	 * Size values
-	 * @see p2made\components\SocialButton
+	 * @see p2m\components\SocialButton
 	 */
 	const ADN = 'adn';
 	const BITBUCKET = 'bitbucket';
@@ -59,7 +59,7 @@ class BSocial extends \p2made\helpers\base\BootstrapSocial
 
 	/**
 	 * Size values
-	 * @see p2made\components\SocialButton::size
+	 * @see p2m\components\SocialButton::size
 	 */
 	const SIZE_LARGE = 'lg';
 	const SIZE_SMALL = 'sm';

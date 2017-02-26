@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\EkkoLightboxAsset::register($this);
+ * p2m\assets\EkkoLightboxAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\EkkoLightboxAsset',
+ *     'p2m\assets\EkkoLightboxAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class EkkoLightboxAsset extends \p2made\assets\base\P2AssetBundle
+class EkkoLightboxAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.0.1';
 

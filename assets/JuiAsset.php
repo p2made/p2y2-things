@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JuiAsset::register($this);
+ * p2m\assets\JuiAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JuiAsset',
+ *     'p2m\assets\JuiAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class JuiAsset extends \p2made\assets\base\P2AssetBundle
+class JuiAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.12.1';
 
@@ -37,7 +37,7 @@ class JuiAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
+			'p2m\assets\JqueryAsset',
 		],
 	);
 

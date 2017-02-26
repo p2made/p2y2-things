@@ -11,33 +11,33 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FlotBundleAsset::register($this);
+ * p2m\assets\FlotBundleAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FlotBundleAsset',
+ *     'p2m\assets\FlotBundleAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FlotBundleAsset extends \p2made\assets\base\P2LoaderAssetBundle
+class FlotBundleAsset extends \p2m\assets\base\P2LoaderAssetBundle
 {
 	public $depends = [
-		'p2made\assets\flot\FlotAsset',
-		'p2made\assets\ColorHelpersAsset',
-		'p2made\assets\flot\FlotCanvasAsset',
-		'p2made\assets\flot\FlotCategoriesAsset',
-		'p2made\assets\flot\FlotCrosshairAsset',
-		'p2made\assets\flot\FlotErrorbarsAsset',
-		'p2made\assets\flot\FlotFillbetweenAsset',
-		'p2made\assets\flot\FlotImageAsset',
-		'p2made\assets\flot\FlotNavigateAsset',
-		'p2made\assets\flot\FlotPieAsset',
-		'p2made\assets\flot\FlotResizeAsset',
-		'p2made\assets\flot\FlotSelectionAsset',
-		'p2made\assets\flot\FlotStackAsset',
-		'p2made\assets\flot\FlotSymbolAsset',
-		'p2made\assets\flot\FlotThresholdAsset',
-		'p2made\assets\flot\FlotTimeAsset',
-		'p2made\assets\flot\FlotTooltipAsset',
+		'p2m\assets\flot\FlotAsset',
+		'p2m\assets\ColorHelpersAsset',
+		'p2m\assets\flot\FlotCanvasAsset',
+		'p2m\assets\flot\FlotCategoriesAsset',
+		'p2m\assets\flot\FlotCrosshairAsset',
+		'p2m\assets\flot\FlotErrorbarsAsset',
+		'p2m\assets\flot\FlotFillbetweenAsset',
+		'p2m\assets\flot\FlotImageAsset',
+		'p2m\assets\flot\FlotNavigateAsset',
+		'p2m\assets\flot\FlotPieAsset',
+		'p2m\assets\flot\FlotResizeAsset',
+		'p2m\assets\flot\FlotSelectionAsset',
+		'p2m\assets\flot\FlotStackAsset',
+		'p2m\assets\flot\FlotSymbolAsset',
+		'p2m\assets\flot\FlotThresholdAsset',
+		'p2m\assets\flot\FlotTimeAsset',
+		'p2m\assets\flot\FlotTooltipAsset',
 	];
 }

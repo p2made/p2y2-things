@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\models;
+namespace p2m\models;
 
 /**
  *

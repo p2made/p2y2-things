@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MomentAsset::register($this);
+ * p2m\assets\MomentAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MomentAsset',
+ *     'p2m\assets\MomentAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class MomentAsset extends \p2made\assets\base\P2AssetBundle
+class MomentAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.17.1';
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MorrisAsset::register($this);
+ * p2m\assets\MorrisAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MorrisAsset',
+ *     'p2m\assets\MorrisAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class MorrisAsset extends \p2made\assets\base\P2AssetBundle
+class MorrisAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.5.1';
 
@@ -43,7 +43,7 @@ class MorrisAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\RaphaelAsset',
+			'p2m\assets\RaphaelAsset',
 		],
 	);
 

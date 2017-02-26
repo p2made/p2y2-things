@@ -9,30 +9,30 @@
  * @license MIT
  */
 
-namespace p2made\helpers;
+namespace p2m\helpers;
 
 /**
  * Use this helper with...
  *
- * use p2made\helpers\CB;
+ * use p2m\helpers\CB;
  * ...
  * echo CB::method([$params]);
  *
  * or
  *
- * echo \p2made\helpers\CB::method([$params]);
+ * echo \p2m\helpers\CB::method([$params]);
  */
 
 /**
  * Class CB
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class CB extends \p2made\helpers\base\CircleButton
+class CB extends \p2m\helpers\base\CircleButton
 {
 
 	/**
 	 * Size values
-	 * @see p2made\components\base\CircleButtonBase::size
+	 * @see p2m\components\base\CircleButtonBase::size
 	 */
 	const SIZE_NORMAL = '';
 	const SIZE_LARGE = 'lg';

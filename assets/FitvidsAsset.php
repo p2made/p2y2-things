@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\FitvidsAsset::register($this);
+ * p2m\assets\FitvidsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\FitvidsAsset',
+ *     'p2m\assets\FitvidsAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class FitvidsAsset extends \p2made\assets\base\P2AssetBundle
+class FitvidsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.0';
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\_ExampleLoaderAsset::register($this);
+ * p2m\assets\_ExampleLoaderAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\_ExampleLoaderAsset',
+ *     'p2m\assets\_ExampleLoaderAsset',
  */
 
-namespace p2made\assets; /* edit this if using elsewhere */
+namespace p2m\assets; /* edit this if using elsewhere */
 
-class _ExampleLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
+class _ExampleLoaderAsset extends \p2m\assets\base\P2LoaderAssetBundle
 {
 
 	/**
@@ -28,7 +28,7 @@ class _ExampleLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
 	 */
 	public $depends = [
 		// Put all the dependancies you want in here.
-		'p2made\assets\P2CoreLoaderAsset',
+		'p2m\assets\P2CoreLoaderAsset',
 	];
 
 	/**
@@ -53,144 +53,144 @@ class _ExampleLoaderAsset extends \p2made\assets\base\P2LoaderAssetBundle
 
 /* dependency lines for all assets... */
 /**
-		'p2made\assets\_ExampleAsset',
-		'p2made\assets\AnimateAsset',
-		'p2made\assets\BootstrapAsset',
-		'p2made\assets\BootstrapSocialAsset',
-		'p2made\assets\BootstrapSweetalertAsset',
-		'p2made\assets\BootstrapSwitchAsset',
-		'p2made\assets\CircleButtonsAsset',
-		'p2made\assets\ColorHelpersAsset',
-		'p2made\assets\datatables\DataTablesAsset',
-		'p2made\assets\datatables\DataTablesAutoFillAsset',
-		'p2made\assets\datatables\DataTablesButtonsAsset',
-		'p2made\assets\datatables\DataTablesColReorderAsset',
-		'p2made\assets\datatables\DataTablesFixedColumnsAsset',
-		'p2made\assets\datatables\DataTablesFixedHeaderAsset',
-		'p2made\assets\datatables\DataTablesKeyTableAsset',
-		'p2made\assets\datatables\DataTablesResponsiveAsset',
-		'p2made\assets\datatables\DataTablesRowReorderAsset',
-		'p2made\assets\datatables\DataTablesScrollerAsset',
-		'p2made\assets\datatables\DataTablesSelectAsset',
-		'p2made\assets\DataTablesBundleAsset',
-		'p2made\assets\EkkoLightboxAsset',
-		'p2made\assets\FitvidsAsset',
-		'p2made\assets\FlagIconCssAsset',
-		'p2made\assets\flot\FlotAsset',
-		'p2made\assets\flot\FlotCanvasAsset',
-		'p2made\assets\flot\FlotCategoriesAsset',
-		'p2made\assets\flot\FlotChartsAsset',
-		'p2made\assets\flot\FlotCrosshairAsset',
-		'p2made\assets\flot\FlotErrorbarsAsset',
-		'p2made\assets\flot\FlotFillbetweenAsset',
-		'p2made\assets\flot\FlotImageAsset',
-		'p2made\assets\flot\FlotNavigateAsset',
-		'p2made\assets\flot\FlotPieAsset',
-		'p2made\assets\flot\FlotResizeAsset',
-		'p2made\assets\flot\FlotSelectionAsset',
-		'p2made\assets\flot\FlotStackAsset',
-		'p2made\assets\flot\FlotSymbolAsset',
-		'p2made\assets\flot\FlotThresholdAsset',
-		'p2made\assets\flot\FlotTimeAsset',
-		'p2made\assets\flot\FlotTooltipAsset',
-		'p2made\assets\FlotBundleAsset',
-		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\FullCalendarAsset',
-		'p2made\assets\FullCalendarPrintAsset',
-		'p2made\assets\GMapsApiAsset',
-		'p2made\assets\GMapsAsset',
-		'p2made\assets\HolderAsset',
-		'p2made\assets\IsotopeAsset',
-		'p2made\assets\JqueryAsset',
-		'p2made\assets\JqueryCountToAsset',
-		'p2made\assets\JqueryEasingAsset',
-		'p2made\assets\JqueryMigrateAsset',
-		'p2made\assets\JuiAsset',
-		'p2made\assets\Lightbox2Asset',
-		'p2made\assets\MagnificPopupAsset',
-		'p2made\assets\MasonryAsset',
-		'p2made\assets\MetisMenuAsset',
-		'p2made\assets\MomentAsset',
-		'p2made\assets\MomentTimezoneAsset',
-		'p2made\assets\MorrisAsset',
-		'p2made\assets\PrettyPhotoAsset',
-		'p2made\assets\QunitAsset',
-		'p2made\assets\RaphaelAsset',
-		'p2made\assets\SweetAlertAsset',
-		'p2made\assets\TimelineAsset',
-		'p2made\assets\TimelineCssAsset',
-		'p2made\assets\WowAsset',
-		p2made\assets\ScrollRevealAsset',
+		'p2m\assets\_ExampleAsset',
+		'p2m\assets\AnimateAsset',
+		'p2m\assets\BootstrapAsset',
+		'p2m\assets\BootstrapSocialAsset',
+		'p2m\assets\BootstrapSweetalertAsset',
+		'p2m\assets\BootstrapSwitchAsset',
+		'p2m\assets\CircleButtonsAsset',
+		'p2m\assets\ColorHelpersAsset',
+		'p2m\assets\datatables\DataTablesAsset',
+		'p2m\assets\datatables\DataTablesAutoFillAsset',
+		'p2m\assets\datatables\DataTablesButtonsAsset',
+		'p2m\assets\datatables\DataTablesColReorderAsset',
+		'p2m\assets\datatables\DataTablesFixedColumnsAsset',
+		'p2m\assets\datatables\DataTablesFixedHeaderAsset',
+		'p2m\assets\datatables\DataTablesKeyTableAsset',
+		'p2m\assets\datatables\DataTablesResponsiveAsset',
+		'p2m\assets\datatables\DataTablesRowReorderAsset',
+		'p2m\assets\datatables\DataTablesScrollerAsset',
+		'p2m\assets\datatables\DataTablesSelectAsset',
+		'p2m\assets\DataTablesBundleAsset',
+		'p2m\assets\EkkoLightboxAsset',
+		'p2m\assets\FitvidsAsset',
+		'p2m\assets\FlagIconCssAsset',
+		'p2m\assets\flot\FlotAsset',
+		'p2m\assets\flot\FlotCanvasAsset',
+		'p2m\assets\flot\FlotCategoriesAsset',
+		'p2m\assets\flot\FlotChartsAsset',
+		'p2m\assets\flot\FlotCrosshairAsset',
+		'p2m\assets\flot\FlotErrorbarsAsset',
+		'p2m\assets\flot\FlotFillbetweenAsset',
+		'p2m\assets\flot\FlotImageAsset',
+		'p2m\assets\flot\FlotNavigateAsset',
+		'p2m\assets\flot\FlotPieAsset',
+		'p2m\assets\flot\FlotResizeAsset',
+		'p2m\assets\flot\FlotSelectionAsset',
+		'p2m\assets\flot\FlotStackAsset',
+		'p2m\assets\flot\FlotSymbolAsset',
+		'p2m\assets\flot\FlotThresholdAsset',
+		'p2m\assets\flot\FlotTimeAsset',
+		'p2m\assets\flot\FlotTooltipAsset',
+		'p2m\assets\FlotBundleAsset',
+		'p2m\assets\FontAwesomeAsset',
+		'p2m\assets\FullCalendarAsset',
+		'p2m\assets\FullCalendarPrintAsset',
+		'p2m\assets\GMapsApiAsset',
+		'p2m\assets\GMapsAsset',
+		'p2m\assets\HolderAsset',
+		'p2m\assets\IsotopeAsset',
+		'p2m\assets\JqueryAsset',
+		'p2m\assets\JqueryCountToAsset',
+		'p2m\assets\JqueryEasingAsset',
+		'p2m\assets\JqueryMigrateAsset',
+		'p2m\assets\JuiAsset',
+		'p2m\assets\Lightbox2Asset',
+		'p2m\assets\MagnificPopupAsset',
+		'p2m\assets\MasonryAsset',
+		'p2m\assets\MetisMenuAsset',
+		'p2m\assets\MomentAsset',
+		'p2m\assets\MomentTimezoneAsset',
+		'p2m\assets\MorrisAsset',
+		'p2m\assets\PrettyPhotoAsset',
+		'p2m\assets\QunitAsset',
+		'p2m\assets\RaphaelAsset',
+		'p2m\assets\SweetAlertAsset',
+		'p2m\assets\TimelineAsset',
+		'p2m\assets\TimelineCssAsset',
+		'p2m\assets\WowAsset',
+		p2m\assets\ScrollRevealAsset',
  */
 
 /* register lines for all assets... */
 /**
-p2made\assets\_ExampleAsset::register($this);
-p2made\assets\AnimateAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
-p2made\assets\BootstrapSweetalertAsset::register($this);
-p2made\assets\BootstrapSwitchAsset::register($this);
-p2made\assets\CircleButtonsAsset::register($this);
-p2made\assets\ColorHelpersAsset::register($this);
-p2made\assets\datatables\DataTablesAsset::register($this);
-p2made\assets\datatables\DataTablesAutoFillAsset::register($this);
-p2made\assets\datatables\DataTablesButtonsAsset::register($this);
-p2made\assets\datatables\DataTablesColReorderAsset::register($this);
-p2made\assets\datatables\DataTablesFixedColumnsAsset::register($this);
-p2made\assets\datatables\DataTablesFixedHeaderAsset::register($this);
-p2made\assets\datatables\DataTablesKeyTableAsset::register($this);
-p2made\assets\datatables\DataTablesResponsiveAsset::register($this);
-p2made\assets\datatables\DataTablesRowReorderAsset::register($this);
-p2made\assets\datatables\DataTablesScrollerAsset::register($this);
-p2made\assets\datatables\DataTablesSelectAsset::register($this);
-p2made\assets\DataTablesBundleAsset::register($this);
-p2made\assets\EkkoLightboxAsset::register($this);
-p2made\assets\FitvidsAsset::register($this);
-p2made\assets\FlagIconCssAsset::register($this);
-p2made\assets\flot\FlotAsset::register($this);
-p2made\assets\flot\FlotCanvasAsset::register($this);
-p2made\assets\flot\FlotCategoriesAsset::register($this);
-p2made\assets\flot\FlotChartsAsset::register($this);
-p2made\assets\flot\FlotCrosshairAsset::register($this);
-p2made\assets\flot\FlotErrorbarsAsset::register($this);
-p2made\assets\flot\FlotFillbetweenAsset::register($this);
-p2made\assets\flot\FlotImageAsset::register($this);
-p2made\assets\flot\FlotNavigateAsset::register($this);
-p2made\assets\flot\FlotPieAsset::register($this);
-p2made\assets\flot\FlotResizeAsset::register($this);
-p2made\assets\flot\FlotSelectionAsset::register($this);
-p2made\assets\flot\FlotStackAsset::register($this);
-p2made\assets\flot\FlotSymbolAsset::register($this);
-p2made\assets\flot\FlotThresholdAsset::register($this);
-p2made\assets\flot\FlotTimeAsset::register($this);
-p2made\assets\flot\FlotTooltipAsset::register($this);
-p2made\assets\FlotBundleAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\FullCalendarAsset::register($this);
-p2made\assets\FullCalendarPrintAsset::register($this);
-p2made\assets\GMapsApiAsset::register($this);
-p2made\assets\GMapsAsset::register($this);
-p2made\assets\HolderAsset::register($this);
-p2made\assets\IsotopeAsset::register($this);
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\JqueryCountToAsset::register($this);
-p2made\assets\JqueryEasingAsset::register($this);
-p2made\assets\JqueryMigrateAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-p2made\assets\Lightbox2Asset::register($this);
-p2made\assets\MagnificPopupAsset::register($this);
-p2made\assets\MasonryAsset::register($this);
-p2made\assets\MetisMenuAsset::register($this);
-p2made\assets\MomentAsset::register($this);
-p2made\assets\MomentTimezoneAsset::register($this);
-p2made\assets\MorrisAsset::register($this);
-p2made\assets\PrettyPhotoAsset::register($this);
-p2made\assets\QunitAsset::register($this);
-p2made\assets\RaphaelAsset::register($this);
-p2made\assets\ScrollRevealAsset::register($this);
-p2made\assets\SweetAlertAsset::register($this);
-p2made\assets\TimelineAsset::register($this);
-p2made\assets\TimelineCssAsset::register($this);
-p2made\assets\WowAsset::register($this);
+p2m\assets\_ExampleAsset::register($this);
+p2m\assets\AnimateAsset::register($this);
+p2m\assets\BootstrapAsset::register($this);
+p2m\assets\BootstrapSocialAsset::register($this);
+p2m\assets\BootstrapSweetalertAsset::register($this);
+p2m\assets\BootstrapSwitchAsset::register($this);
+p2m\assets\CircleButtonsAsset::register($this);
+p2m\assets\ColorHelpersAsset::register($this);
+p2m\assets\datatables\DataTablesAsset::register($this);
+p2m\assets\datatables\DataTablesAutoFillAsset::register($this);
+p2m\assets\datatables\DataTablesButtonsAsset::register($this);
+p2m\assets\datatables\DataTablesColReorderAsset::register($this);
+p2m\assets\datatables\DataTablesFixedColumnsAsset::register($this);
+p2m\assets\datatables\DataTablesFixedHeaderAsset::register($this);
+p2m\assets\datatables\DataTablesKeyTableAsset::register($this);
+p2m\assets\datatables\DataTablesResponsiveAsset::register($this);
+p2m\assets\datatables\DataTablesRowReorderAsset::register($this);
+p2m\assets\datatables\DataTablesScrollerAsset::register($this);
+p2m\assets\datatables\DataTablesSelectAsset::register($this);
+p2m\assets\DataTablesBundleAsset::register($this);
+p2m\assets\EkkoLightboxAsset::register($this);
+p2m\assets\FitvidsAsset::register($this);
+p2m\assets\FlagIconCssAsset::register($this);
+p2m\assets\flot\FlotAsset::register($this);
+p2m\assets\flot\FlotCanvasAsset::register($this);
+p2m\assets\flot\FlotCategoriesAsset::register($this);
+p2m\assets\flot\FlotChartsAsset::register($this);
+p2m\assets\flot\FlotCrosshairAsset::register($this);
+p2m\assets\flot\FlotErrorbarsAsset::register($this);
+p2m\assets\flot\FlotFillbetweenAsset::register($this);
+p2m\assets\flot\FlotImageAsset::register($this);
+p2m\assets\flot\FlotNavigateAsset::register($this);
+p2m\assets\flot\FlotPieAsset::register($this);
+p2m\assets\flot\FlotResizeAsset::register($this);
+p2m\assets\flot\FlotSelectionAsset::register($this);
+p2m\assets\flot\FlotStackAsset::register($this);
+p2m\assets\flot\FlotSymbolAsset::register($this);
+p2m\assets\flot\FlotThresholdAsset::register($this);
+p2m\assets\flot\FlotTimeAsset::register($this);
+p2m\assets\flot\FlotTooltipAsset::register($this);
+p2m\assets\FlotBundleAsset::register($this);
+p2m\assets\FontAwesomeAsset::register($this);
+p2m\assets\FullCalendarAsset::register($this);
+p2m\assets\FullCalendarPrintAsset::register($this);
+p2m\assets\GMapsApiAsset::register($this);
+p2m\assets\GMapsAsset::register($this);
+p2m\assets\HolderAsset::register($this);
+p2m\assets\IsotopeAsset::register($this);
+p2m\assets\JqueryAsset::register($this);
+p2m\assets\JqueryCountToAsset::register($this);
+p2m\assets\JqueryEasingAsset::register($this);
+p2m\assets\JqueryMigrateAsset::register($this);
+p2m\assets\JuiAsset::register($this);
+p2m\assets\Lightbox2Asset::register($this);
+p2m\assets\MagnificPopupAsset::register($this);
+p2m\assets\MasonryAsset::register($this);
+p2m\assets\MetisMenuAsset::register($this);
+p2m\assets\MomentAsset::register($this);
+p2m\assets\MomentTimezoneAsset::register($this);
+p2m\assets\MorrisAsset::register($this);
+p2m\assets\PrettyPhotoAsset::register($this);
+p2m\assets\QunitAsset::register($this);
+p2m\assets\RaphaelAsset::register($this);
+p2m\assets\ScrollRevealAsset::register($this);
+p2m\assets\SweetAlertAsset::register($this);
+p2m\assets\TimelineAsset::register($this);
+p2m\assets\TimelineCssAsset::register($this);
+p2m\assets\WowAsset::register($this);
  */

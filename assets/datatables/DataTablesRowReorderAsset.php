@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\datatables\DataTablesRowReorderAsset::register($this);
+ * p2m\assets\datatables\DataTablesRowReorderAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\datatables\DataTablesRowReorderAsset',
+ *     'p2m\assets\datatables\DataTablesRowReorderAsset',
  */
 
-namespace p2made\assets\datatables;
+namespace p2m\assets\datatables;
 
-class DataTablesRowReorderAsset extends \p2made\assets\base\P2AssetBundle
+class DataTablesRowReorderAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.0';
 
@@ -43,8 +43,8 @@ class DataTablesRowReorderAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\JqueryAsset',
-			'p2made\assets\datatables\DataTablesBootstrapAsset',
+			'p2m\assets\JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\flot\FlotCrosshairAsset::register($this);
+ * p2m\assets\flot\FlotCrosshairAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\flot\FlotCrosshairAsset',
+ *     'p2m\assets\flot\FlotCrosshairAsset',
  */
 
-namespace p2made\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot; /* edit this if using elsewhere */
 
-class FlotCrosshairAsset extends \p2made\assets\flot\FlotAssetBase
+class FlotCrosshairAsset extends \p2m\assets\flot\FlotAssetBase
 {
 	private $resourceData = array(
 		'published' => [

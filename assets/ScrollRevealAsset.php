@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\ScrollRevealAsset::register($this);
+ * p2m\assets\ScrollRevealAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\ScrollRevealAsset',
+ *     'p2m\assets\ScrollRevealAsset',
  */
 
-namespace p2made\assets; /* edit this if using elsewhere */
+namespace p2m\assets; /* edit this if using elsewhere */
 
-class ScrollRevealAsset extends \p2made\assets\base\P2AssetBundle
+class ScrollRevealAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.2';
 
@@ -41,7 +41,7 @@ class ScrollRevealAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 
 	);

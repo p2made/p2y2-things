@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\JqueryEasingAsset::register($this);
+ * p2m\assets\JqueryEasingAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\JqueryEasingAsset',
+ *     'p2m\assets\JqueryEasingAsset',
  */
 
-namespace p2made\assets; /* edit this if using elsewhere */
+namespace p2m\assets; /* edit this if using elsewhere */
 
-class JqueryEasingAsset extends \p2made\assets\base\P2AssetBundle
+class JqueryEasingAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.4.1';
 
@@ -43,7 +43,7 @@ class JqueryEasingAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 
 	);

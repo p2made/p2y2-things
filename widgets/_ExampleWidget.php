@@ -8,25 +8,25 @@
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2made\widgets;
+namespace p2m\widgets;
 
 /**
  * Use this helper with...
  *
- * use p2made\widgets\_ExampleWidget;
+ * use p2m\widgets\_ExampleWidget;
  * ...
  * echo _ExampleWidget::method([$params]);
  *
  * or
  *
- * echo \p2made\widgets\_ExampleWidget::method([$params]);
+ * echo \p2m\widgets\_ExampleWidget::method([$params]);
  */
 
 /**
  * Class _ExampleWidget
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
-class _ExampleWidget extends \p2made\widgets\base\P2Widget
+class _ExampleWidget extends \p2m\widgets\base\P2Widget
 {
 
 	/**

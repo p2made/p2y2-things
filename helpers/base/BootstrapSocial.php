@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace p2made\helpers\base;
+namespace p2m\helpers\base;
 
-use p2made\components\SocialButton;
+use p2m\components\SocialButton;
 
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
@@ -25,7 +25,7 @@ use p2made\components\SocialButton;
 
 /**
  * Class BootstrapSocial
- * @package p2made\yii2-p2y2-things
+ * @package p2m\yii2-p2y2-things
  */
 class BootstrapSocial extends P2HelperBase
 {
@@ -38,7 +38,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function a($name, $options = [])
 	{
@@ -51,7 +51,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function i($name, $options = [])
 	{
@@ -63,7 +63,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function nb($name, $options = [])
 	{
@@ -75,7 +75,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function b($name, $options = [])
 	{
@@ -88,7 +88,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function bi($name, $options = [])
 	{
@@ -100,7 +100,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	public static function bnb($name, $options = [])
 	{
@@ -113,7 +113,7 @@ class BootstrapSocial extends P2HelperBase
 	 *
 	 * @param string $name
 	 * @param array $options
-	 * @return p2made\components\SocialButton
+	 * @return p2m\components\SocialButton
 	 */
 	private static function socialButton($name, $options = [])
 	{

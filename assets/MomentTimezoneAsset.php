@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\MomentTimezoneAsset::register($this);
+ * p2m\assets\MomentTimezoneAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\MomentTimezoneAsset',
+ *     'p2m\assets\MomentTimezoneAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class MomentTimezoneAsset extends \p2made\assets\base\P2AssetBundle
+class MomentTimezoneAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.5.11';
 

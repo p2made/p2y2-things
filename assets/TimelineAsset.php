@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\TimelineAsset::register($this);
+ * p2m\assets\TimelineAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\TimelineAsset',
+ *     'p2m\assets\TimelineAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class TimelineAsset extends \p2made\assets\base\P2AssetBundle
+class TimelineAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 		'published' => [
@@ -29,7 +29,7 @@ class TimelineAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\BootstrapAsset',
+			'p2m\assets\BootstrapAsset',
 		],
 	);
 

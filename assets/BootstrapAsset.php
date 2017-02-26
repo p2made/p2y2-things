@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\assets\BootstrapAsset::register($this);
+ * p2m\assets\BootstrapAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\assets\BootstrapAsset',
+ *     'p2m\assets\BootstrapAsset',
  */
 
-namespace p2made\assets;
+namespace p2m\assets;
 
-class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
+class BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.7';
 
@@ -37,7 +37,7 @@ class BootstrapAsset extends \p2made\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2made\assets\base\BootstrapPluginAsset',
+			'p2m\assets\base\BootstrapPluginAsset',
 		],
 	);
 

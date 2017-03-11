@@ -28,7 +28,7 @@ class SweetAlertAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/sweetalert-master/dist',
+			'sourcePath' => '@p2m@/sweetalert-##-version-##/dist',
 			'css' => [
 				'sweetalert.css',
 			],

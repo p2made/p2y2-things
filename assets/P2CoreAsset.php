@@ -100,6 +100,8 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 		'p2m\assets\GMapsAsset',
 		'p2m\assets\HolderAsset',
 		'p2m\assets\IsotopeAsset',
+		'p2m\assets\JplayerBlueMondayAsset',
+		'p2m\assets\JplayerPinkFlagAsset',
 		'p2m\assets\JqueryAsset',
 		'p2m\assets\JqueryCountToAsset',
 		'p2m\assets\JqueryEasingAsset',
@@ -173,6 +175,8 @@ p2m\assets\GMapsApiAsset::register($this);
 p2m\assets\GMapsAsset::register($this);
 p2m\assets\HolderAsset::register($this);
 p2m\assets\IsotopeAsset::register($this);
+p2m\assets\JplayerBlueMondayAsset::register($this);
+p2m\assets\JplayerPinkFlagAsset::register($this);
 p2m\assets\JqueryAsset::register($this);
 p2m\assets\JqueryCountToAsset::register($this);
 p2m\assets\JqueryEasingAsset::register($this);

@@ -28,7 +28,7 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"minimum-stability": "dev",
 
 	"require": {
@@ -73,6 +73,7 @@
 		"drmonty/animate.css": "^3.5",
 		"drmonty/ekko-lightbox": "^5.0",
 		"fortawesome/font-awesome": "^4.7",
+		"happyworm/jPlayer": "^2.9",
 		"imsky/holder": "^2.9",
 		"moontoast/math": "^1.1",
 		"nostalgiaz/bootstrap-switch": "^3.3",

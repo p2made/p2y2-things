@@ -101,6 +101,8 @@ class _ExampleLoaderAsset extends \p2m\assets\base\P2LoaderAssetBundle
 		'p2m\assets\GMapsAsset',
 		'p2m\assets\HolderAsset',
 		'p2m\assets\IsotopeAsset',
+		'p2m\assets\JplayerBlueMondayAsset',
+		'p2m\assets\JplayerPinkFlagAsset',
 		'p2m\assets\JqueryAsset',
 		'p2m\assets\JqueryCountToAsset',
 		'p2m\assets\JqueryEasingAsset',
@@ -116,11 +118,12 @@ class _ExampleLoaderAsset extends \p2m\assets\base\P2LoaderAssetBundle
 		'p2m\assets\PrettyPhotoAsset',
 		'p2m\assets\QunitAsset',
 		'p2m\assets\RaphaelAsset',
+		'p2m\assets\ScrollRevealAsset',
+		'p2m\assets\SimpleLineIconsAsset',
 		'p2m\assets\SweetAlertAsset',
 		'p2m\assets\TimelineAsset',
 		'p2m\assets\TimelineCssAsset',
 		'p2m\assets\WowAsset',
-		p2m\assets\ScrollRevealAsset',
  */
 
 /* register lines for all assets... */
@@ -173,6 +176,8 @@ p2m\assets\GMapsApiAsset::register($this);
 p2m\assets\GMapsAsset::register($this);
 p2m\assets\HolderAsset::register($this);
 p2m\assets\IsotopeAsset::register($this);
+p2m\assets\JplayerBlueMondayAsset::register($this);
+p2m\assets\JplayerPinkFlagAsset::register($this);
 p2m\assets\JqueryAsset::register($this);
 p2m\assets\JqueryCountToAsset::register($this);
 p2m\assets\JqueryEasingAsset::register($this);
@@ -189,6 +194,7 @@ p2m\assets\PrettyPhotoAsset::register($this);
 p2m\assets\QunitAsset::register($this);
 p2m\assets\RaphaelAsset::register($this);
 p2m\assets\ScrollRevealAsset::register($this);
+p2m\assets\SimpleLineIconsAsset::register($this);
 p2m\assets\SweetAlertAsset::register($this);
 p2m\assets\TimelineAsset::register($this);
 p2m\assets\TimelineCssAsset::register($this);

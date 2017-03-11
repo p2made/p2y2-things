@@ -109,7 +109,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected function insertP2mPath(&$target)
 	{
-		$target = str_replace('@p2m@', '@vendor/p2made/yii2-p2y2-things/assets/lib', $target);
+		$target = str_replace('@p2m@', '@vendor/p2made/yii2-p2y2-things/vendor', $target);
 	}
 
 	protected function insertAssetVersion(&$target)

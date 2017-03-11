@@ -33,9 +33,6 @@
 
 	"require": {
 		"yiisoft/yii2": "^2.0",
-		"bower-asset/bootstrap-social": "^5.1",
-		"bower-asset/bootstrap-sweetalert": "^1.0",
-		"bower-asset/bootstrap": "^3.3",
 		"bower-asset/datatables-autofill": "^2.1",
 		"bower-asset/datatables-buttons": "^1.2",
 		"bower-asset/datatables-colreorder": "^1.3",

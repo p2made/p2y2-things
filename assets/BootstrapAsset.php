@@ -2,6 +2,9 @@
 /**
  * BootstrapAsset.php
  *
+ * Yii2 asset for Bootstrap
+ * http://getbootstrap.com/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/bootstrap/dist',
+			'sourcePath' => '@p2m@/bootstrap-##-version-##-dist',
 			'css' => [
 				'css/bootstrap.min.css',
 			],

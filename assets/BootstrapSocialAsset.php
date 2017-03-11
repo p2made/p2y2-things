@@ -2,6 +2,9 @@
 /**
  * BootstrapSocialAsset.php
  *
+ * Yii2 asset for Bootstrap Social
+ * https://lipis.github.io/bootstrap-social/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class BootstrapSocialAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/bootstrap-social',
+			'sourcePath' => '@p2m@/bootstrap-social-##-version-##',
 			'css' => [
 				'bootstrap-social.css',
 			],

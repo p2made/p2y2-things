@@ -26,7 +26,7 @@ class BootstrapSweetalertAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-sweetalert/dist',
+			'sourcePath' => '@p2m@/bootstrap-sweetalert-##-version-##/dist',
 			'css' => [
 				'sweet-alert.css',
 			],

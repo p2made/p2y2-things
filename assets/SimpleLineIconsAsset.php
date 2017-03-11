@@ -2,6 +2,9 @@
 /**
  * SimpleLineIconsAsset.php
  *
+ * Yii2 asset for Simple Line Icons
+ * http://simplelineicons.com
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -26,7 +29,7 @@ class SimpleLineIconsAsset extends \p2m\assets\base\P2AssetBundle
 	private $resourceData = array(
 
 		'published' => [
-			'sourcePath' => '@bower/simple-line-icons',
+			'sourcePath' => '@p2m@/simple-line-icons-##-version-##',
 			'css' => [
 				'css/simple-line-icons.css',
 			],

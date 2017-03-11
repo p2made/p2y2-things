@@ -2,6 +2,9 @@
 /**
  * WowAsset.php
  *
+ * Yii2 asset for WOW
+ * https://github.com/matthieua/WOW
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class WowAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/wow/dist',
+			'sourcePath' => '@p2m@/WOW-##-version-##/dist',
 			'js' => [
 				'wow.min.js',
 			],

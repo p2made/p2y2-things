@@ -2,6 +2,9 @@
 /**
  * MomentTimezoneAsset.php
  *
+ * Yii2 asset for Moment Timezone
+ * http://momentjs.com/timezone/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class MomentTimezoneAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/moment-timezone/builds',
+			'sourcePath' => '@p2m@/moment-##-version-##/builds',
 			'js' => [
 				'moment-timezone.js',
 			],

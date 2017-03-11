@@ -2,6 +2,9 @@
 /**
  * MomentAsset.php
  *
+ * Yii2 asset for Moment
+ * http://momentjs.com
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class MomentAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/moment/min',
+			'sourcePath' => '@p2m@/moment-##-version-##/min',
 			'js' => [
 				'moment.min.js'
 			],

@@ -2,6 +2,9 @@
 /**
  * SweetAlertAsset.php
  *
+ * Yii2 asset for Sweetalert
+ * http://t4t5.github.io/sweetalert/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class SweetAlertAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/sweetalert/dist',
+			'sourcePath' => '@p2m@/sweetalert-master/dist',
 			'css' => [
 				'sweetalert.css',
 			],

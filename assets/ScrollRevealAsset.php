@@ -2,6 +2,9 @@
 /**
  * ScrollRevealAsset.php
  *
+ * Yii2 asset for ScrollReveal
+ * https://scrollrevealjs.org
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,12 +24,12 @@ namespace p2m\assets; /* edit this if using elsewhere */
 
 class ScrollRevealAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.2';
+	protected $version = '3.3.4';
 
 	private $resourceData = array(
 
 		'published' => [
-			'sourcePath' => '@bower/scrollreveal/dist',
+			'sourcePath' => '@p2m@/scrollreveal-##-version-##/dist',
 			'css' => [],
 			'js' => [
 				'scrollreveal.min.js',

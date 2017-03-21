@@ -2,6 +2,9 @@
 /**
  * FullCalendarAsset.php
  *
+ * Yii2 asset for FullCalendar
+ * https://fullcalendar.io
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,7 +24,7 @@ namespace p2m\assets;
 
 class FullCalendarAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.1.0';
+	protected $version = '3.2.0';
 
 	/**
 	 * the language the calender will be displayed in
@@ -43,7 +46,7 @@ class FullCalendarAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/fullcalendar/dist',
+			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
 			'css' => [
 				'fullcalendar.min.css',
 			],

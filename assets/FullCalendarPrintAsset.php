@@ -2,6 +2,9 @@
 /**
  * FullCalendarPrintAsset.php
  *
+ * Yii2 asset for FullCalendarPrint
+ * https://fullcalendar.io
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,11 +24,11 @@ namespace p2m\assets;
 
 class FullCalendarPrintAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.1.0';
+	protected $version = '3.2.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/fullcalendar/dist',
+			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
 			'css' => [
 				'fullcalendar.print.css',
 			],

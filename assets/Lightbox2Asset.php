@@ -2,6 +2,9 @@
 /**
  * Lightbox2Asset.php
  *
+ * Yii2 asset for Lightbox2
+ * http://lokeshdhakar.com/projects/lightbox2/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class Lightbox2Asset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/lightbox2/dist',
+			'sourcePath' => '@p2m@/lightbox2-##-version-##/dist',
 			'css' => [
 				'css/lightbox.min.css',
 			],

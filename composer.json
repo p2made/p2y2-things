@@ -28,7 +28,7 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "2.0.5",
+	"version": "2.0.6",
 	"minimum-stability": "dev",
 
 	"require": {
@@ -44,17 +44,12 @@
 		"bower-asset/datatables-scroller": "^1.4",
 		"bower-asset/datatables-select": "^1.2",
 		"bower-asset/datatables": "^1.10",
-		"bower-asset/fullcalendar": "^3.1",
-		"bower-asset/gmaps": "^0.4.24",
-		"bower-asset/isotope": "^3.0",
 		"bower-asset/jquery-countto": "^1.2",
 		"bower-asset/jquery-easing-original": "^1.4",
 		"bower-asset/jquery-migrate": "^3.0",
 		"bower-asset/jquery-ui": "^1.11",
 		"bower-asset/jquery.fitvids": "^1.2",
 		"bower-asset/jquery": "^2.2",
-		"bower-asset/lightbox2": "^2.9",
-		"bower-asset/masonry": "^4.1",
 		"bpampuch/pdfmake": "^0.1.24",
 		"components/flag-icon-css": "^2.8",
 		"components/qunit": "^1.11",

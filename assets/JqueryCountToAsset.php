@@ -2,6 +2,9 @@
 /**
  * JqueryCountToAsset.php
  *
+ * Yii2 asset for jquery-countTo
+ * https://github.com/mhuggins/jquery-countTo
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,11 +24,11 @@ namespace p2m\assets;
 
 class JqueryCountToAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '0.1.0';
+	protected $version = '1.2.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/jquery-countTo',
+			'sourcePath' => '@p2m@/jquery-countTo-##-version-##',
 			'js' => [
 				'jquery.countTo.js',
 			],

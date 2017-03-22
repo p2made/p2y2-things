@@ -2,6 +2,9 @@
 /**
  * QunitAsset.php
  *
+ * Yii2 asset for QUnit
+ * http://qunitjs.com
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,16 +24,16 @@ namespace p2m\assets;
 
 class QunitAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.11.0';
+	protected $version = '2.2.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/components/qunit',
+			'sourcePath' => '@p2m@/jquery',
 			'css' => [
-				'qunit.css',
+				'qunit-##-version-##.css',
 			],
 			'js' => [
-				'qunit.js',
+				'qunit-##-version-##.js',
 			],
 		],
 		'static' => [

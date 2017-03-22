@@ -2,6 +2,9 @@
 /**
  * DataTablesFixedColumnsAsset.php
  *
+ * Yii2 asset for DataTables FixedColumns
+ * https://github.com/DataTables/FixedColumns
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesFixedColumnsAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-fixedcolumns',
+			'sourcePath' => '@p2m@/FixedColumns-##-version-##',
 			'css' => [
 				'css/fixedColumns.bootstrap.min.css',
 			],

@@ -2,6 +2,9 @@
 /**
  * JqueryAsset.php
  *
+ * Yii2 asset for jQuery
+ * http://jquery.com
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -21,13 +24,13 @@ namespace p2m\assets;
 
 class JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.2.4';
+	protected $version = '3.2.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/jquery/dist',
+			'sourcePath' => '@p2m@/jquery',
 			'js' => [
-				'jquery.min.js',
+				'jquery-##-version-##.min.js',
 			],
 		],
 		'static' => [

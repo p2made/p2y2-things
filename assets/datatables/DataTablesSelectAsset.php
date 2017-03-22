@@ -2,6 +2,9 @@
 /**
  * DataTablesSelectAsset.php
  *
+ * Yii2 asset for DataTables Select
+ * https://github.com/DataTables/Select
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesSelectAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-select',
+			'sourcePath' => '@p2m@/Select-##-version-##',
 			'css' => [
 				'css/select.bootstrap.scss',
 			],

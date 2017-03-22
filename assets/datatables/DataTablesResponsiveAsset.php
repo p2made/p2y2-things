@@ -2,6 +2,9 @@
 /**
  * DataTablesResponsiveAsset.php
  *
+ * Yii2 asset for DataTables Responsive
+ * https://github.com/DataTables/Responsive
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-responsive',
+			'sourcePath' => '@p2m@/Responsive-##-version-##',
 			'css' => [
 				'css/responsive.bootstrap.min.css',
 			],

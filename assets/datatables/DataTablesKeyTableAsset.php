@@ -2,6 +2,9 @@
 /**
  * DataTablesKeyTableAsset.php
  *
+ * Yii2 asset for DataTables KeyTable
+ * https://github.com/DataTables/KeyTable
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesKeyTableAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-keytable',
+			'sourcePath' => '@p2m@/KeyTable-##-version-##',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',
 			],

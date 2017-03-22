@@ -2,6 +2,9 @@
 /**
  * JqueryEasingAsset.php
  *
+ * Yii2 asset for jQuery Easing
+ * http://gsgd.co.uk/sandbox/jquery/easing/
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -26,7 +29,7 @@ class JqueryEasingAsset extends \p2m\assets\base\P2AssetBundle
 	private $resourceData = array(
 
 		'published' => [
-			'sourcePath' => '@bower/jquery-easing-original',
+			'sourcePath' => '@p2m@/jquery.easing-##-version-##',
 			'css' => [],
 			'js' => [
 				'jquery.easing.min.js',

@@ -2,6 +2,9 @@
 /**
  * DataTablesRowReorderAsset.php
  *
+ * Yii2 asset for DataTables RowReorder
+ * https://github.com/DataTables/RowReorder
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesRowReorderAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-rowreorder',
+			'sourcePath' => '@p2m@/RowReorder-##-version-##',
 			'css' => [
 				'css/rowReorder.bootstrap.min.css',
 			],

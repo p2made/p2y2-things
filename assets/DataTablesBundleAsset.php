@@ -1,6 +1,9 @@
 <?php
 /**
-		'p2m\assets\datatables\ * DataTablesBundleAsset',
+ * DataTablesBundleAsset.php
+ *
+ * Yii2 asset for DataTables
+ * https://www.datatables.net
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -39,20 +42,5 @@ class DataTablesBundleAsset extends \p2m\assets\base\P2LoaderAssetBundle
 		'p2m\assets\datatables\DataTablesRowReorderAsset',
 		'p2m\assets\datatables\DataTablesScrollerAsset',
 		'p2m\assets\datatables\DataTablesSelectAsset',
-
-		/*
-		'p2m\assets\datatables\DataTablesAsset',
-		'p2m\assets\datatables\DataTablesAutoFillAsset',
-		'p2m\assets\datatables\DataTablesButtonsAsset',
-		'p2m\assets\datatables\DataTablesColReorderAsset',
-		'p2m\assets\datatables\DataTablesFiles',
-		'p2m\assets\datatables\DataTablesFixedColumnsAsset',
-		'p2m\assets\datatables\DataTablesFixedHeaderAsset',
-		'p2m\assets\datatables\DataTablesKeyTableAsset',
-		'p2m\assets\datatables\DataTablesResponsiveAsset',
-		'p2m\assets\datatables\DataTablesRowReorderAsset',
-		'p2m\assets\datatables\DataTablesScrollerAsset',
-		'p2m\assets\datatables\DataTablesSelectAsset',
-		 */
 	];
 }

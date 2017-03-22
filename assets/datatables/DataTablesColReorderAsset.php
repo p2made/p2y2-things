@@ -2,6 +2,9 @@
 /**
  * DataTablesColReorderAsset.php
  *
+ * Yii2 asset for DataTables ColReorder
+ * https://github.com/DataTables/ColReorder
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesColReorderAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-colreorder',
+			'sourcePath' => '@p2m@/ColReorder-##-version-##',
 			'css' => [
 				'css/colReorder.bootstrap.min.css',
 			],

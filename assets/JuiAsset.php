@@ -2,6 +2,9 @@
 /**
  * JuiAsset.php
  *
+ * Yii2 asset for jQuery UI
+ * http://jqueryui.com
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class JuiAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/jquery-ui',
+			'sourcePath' => '@p2m@/jquery',
 			'js' => [
 				'jquery-ui.min.js',
 			],

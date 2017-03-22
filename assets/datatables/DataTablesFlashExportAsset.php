@@ -2,6 +2,9 @@
 /**
  * DataTablesFlashExportAsset.php
  *
+ * Yii2 asset for DataTables Buttons Flash Export
+ * https://github.com/DataTables/Buttons
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesFlashExportAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-buttons',
+			'sourcePath' => '@p2m@/Buttons-##-version-##',
 			'js' => [
 				'buttons.flash.js',
 			],

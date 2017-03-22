@@ -2,6 +2,9 @@
 /**
  * DataTablesAutoFillAsset.php
  *
+ * Yii2 asset for DataTables AutoFill
+ * https://github.com/DataTables/AutoFill
+ *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
@@ -25,7 +28,7 @@ class DataTablesAutoFillAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@bower/datatables-autofill',
+			'sourcePath' => '@p2m@/AutoFill-##-version-##',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
 			],

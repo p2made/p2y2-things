@@ -32,7 +32,8 @@ use yii\bootstrap\Nav;
  * MetisNav widget renders a Nav widget using MetisMenuAsset
  */
 
-class MetisNav extends Nav {
+class MetisNav extends Nav
+{
 
 	/**
 	 * @var array list of items in the nav widget. Each array element represents a single

@@ -1,4 +1,4 @@
-P2Y2Things v2.1.0
+P2Y2Things v2.2.0
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -88,6 +88,7 @@ If you're using P2Y2Things you'll want to nullify some of the Yii 2 assets, to a
 
 ```
 	'components' => [
+		...
 		'assetManager' => [
 			'bundles' => [
 				'yii\web\JqueryAsset' => [
@@ -114,8 +115,10 @@ If you're using P2Y2Things you'll want to nullify some of the Yii 2 assets, to a
 P2Y2Things gives you the option of loading assets from the official CDNs. Just put this into `common/config/params.php`...
 
 ```
-	'p2made' => [
-		'useStatic' => true, // false or not set to use published assets
+	'p2m' => [
+		'assets' => [
+			'useStatic' => true, // false or not set to use published assets
+		],
 	],
 ```
 

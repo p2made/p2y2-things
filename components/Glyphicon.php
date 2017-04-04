@@ -5,24 +5,26 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\components\Glyphicon
+ */
+
+/**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
 namespace p2m\components;
 
 use p2m\helpers\GI;
 use yii\bootstrap\Html;
-
-/**
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- */
 
 /**
  * Use this helper with...
@@ -35,12 +37,7 @@ use yii\bootstrap\Html;
  *
  * echo \p2m\components\Glyphicon::method([$params]);
  */
-
-/**
- * Class Glyphicon
- * @package p2m\yii2-p2y2-things
- */
-class Glyphicon extends \p2m\components\base\P2ComponentBase
+class Glyphicon extends \p2m\base\components\P2ComponentBase
 {
 
 	/** @var string */

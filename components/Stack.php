@@ -5,23 +5,25 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\components\Stack
+ */
+
+/**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
 namespace p2m\components;
 
 use yii\bootstrap\Html;
-
-/**
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ ##### ^ #####
- * ##### ^ ##### ^ #####                                           ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- */
 
 /**
  * Use this helper with...
@@ -33,11 +35,6 @@ use yii\bootstrap\Html;
  * or
  *
  * echo \p2m\components\Stack::method([$params]);
- */
-
-/**
- * Class Stack
- * @package p2m\yii2-p2y2-things
  */
 class Stack extends \rmrevin\yii\fontawesome\component\Stack
 {

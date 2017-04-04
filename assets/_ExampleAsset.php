@@ -8,9 +8,13 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\_ExampleAsset
  */
+
+namespace p2m\assets; /* edit this if using elsewhere */
 
 /**
  * Load this asset with...
@@ -19,9 +23,6 @@
  * or specify as a dependency with...
  *     'p2m\assets\_ExampleAsset',
  */
-
-namespace p2m\assets; /* edit this if using elsewhere */
-
 class _ExampleAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.0.0';

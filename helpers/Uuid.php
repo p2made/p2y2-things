@@ -5,8 +5,10 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\helpers\Uuid
  */
 
 namespace p2m\helpers;
@@ -40,11 +42,6 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
  * Uuid::p2uuid3('mfa_test')
  * Uuid::p2uuid4()
  * Uuid::p2uuid5('mfa_test')
- */
-
-/**
- * Class Uuid
- * @package p2m\yii2-p2y2-things
  */
 class Uuid
 {

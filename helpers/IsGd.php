@@ -4,8 +4,10 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
- * @package p2made/yii2-asset-demo-theme
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\helpers\IsGd
  */
 
 namespace p2m\helpers;
@@ -49,11 +51,6 @@ use yii;
  * 406 Not Acceptable - error code 2
  * 502 Bad Gateway - error code 3
  * 503 Service Unavailable - error code 4
- */
-
-/**
- * Class IsGd
- * @package p2m\yii2-p2y2-things
  */
 class IsGd
 {

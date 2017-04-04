@@ -5,24 +5,26 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\components\base\CircleButtonBase
+ */
+
+/**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
 namespace p2m\components\base;
 
 use yii\bootstrap\Html;
 use p2m\helpers\CB;
-
-/**
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ #####                                                           ##### ^ #####
- * ##### ^ #####      DO NOT USE THIS CLASS, OR SUB-CLASSES, DIRECTLY!     ##### ^ #####
- * ##### ^ #####                                                           ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- */
 
 /**
  * Use this helper with...
@@ -35,12 +37,7 @@ use p2m\helpers\CB;
  *
  * echo \p2m\components\base\CircleButtonBase::method([$params]);
  */
-
-/**
- * Class CircleButtonBase
- * @package p2m\yii2-p2y2-things
- */
-class CircleButtonBase extends \p2m\components\base\P2ComponentBase
+class CircleButtonBase extends \p2m\base\components\P2ComponentBase
 {
 
 	/** @var string */

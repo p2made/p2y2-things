@@ -23,17 +23,7 @@
 
 namespace p2m\assets\base;
 
-use p2m\base\assets\P2AssetBase;
-
-/**
- * Load this asset with...
- * p2m\assets\base\P2AssetBundle::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\base\P2AssetBundle',
- */
-//class P2AssetBundle extends \p2m\base\assets\P2AssetBase
-class P2AssetBundle extends P2AssetBase
+class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 {
 	/*
 	 * @var string

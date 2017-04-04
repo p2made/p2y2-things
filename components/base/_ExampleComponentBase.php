@@ -1,6 +1,6 @@
 <?php
 /**
- * CircleButton.php
+ * _ExampleComponentBase.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -8,7 +8,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\helpers\base\CircleButton
+ * @class \p2m\components\_ExampleComponentBase
  */
 
 /**
@@ -21,25 +21,27 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-namespace p2m\helpers\base;
+namespace p2m\components;
+
+use yii\bootstrap\Html;
 
 /**
  * Use this helper with...
  *
- * use p2m\helpers\base\CircleButton;
+ * use p2m\components\_ExampleComponentBase;
  * ...
- * echo CircleButton::method([$params]);
+ * echo _ExampleComponentBase::method([$params]);
  *
  * or
  *
- * echo \p2m\helpers\base\CircleButton::method([$params]);
+ * echo \p2m\components\_ExampleComponentBase::method([$params]);
  */
 
 /**
- * Class CircleButton
+ * Class _ExampleComponentBase
  * @package p2m\yii2-p2y2-things
  */
-class CircleButton extends \p2m\base\helpers\P2HelperBase
+class _ExampleComponentBase extends \p2m\base\components\P2ComponentBase
 {
 
 

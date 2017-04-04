@@ -5,14 +5,15 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\widgets\Alert
  */
 
 namespace p2m\widgets;
 
 use \yii\bootstrap\Alert as BootstrapAlert;
-use \yii\bootstrap\Widget;
 
 /**
  * Use this helper with...
@@ -42,12 +43,7 @@ use \yii\bootstrap\Widget;
  *
  * @author Evgeniy Tkachenko <et.coder@gmail.com>
  */
-
-/**
- * Class Alert
- * @package p2m\yii2-p2y2-things
- */
-class Alert extends Widget
+class Alert extends \p2m\base\widgets\P2WidgetBase
 {
 	/**
 	 * @var array the alert types configuration for the flash messages.

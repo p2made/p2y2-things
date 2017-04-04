@@ -5,20 +5,16 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
- */
-
-namespace p2m\widgets;
-
-/**
- * Class FullCalendarWidget
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\widgets\FullCalendarWidget
  *
  * Bring's \yii2fullcalendar\yii2fullcalendar
  * into the \p2made namespace
- *
- * @package p2m\yii2-p2y2-things
  */
+
+namespace p2m\widgets;
 
 /**
  * Inherited properties for FullCalendarWidget.
@@ -73,7 +69,6 @@ namespace p2m\widgets;
  * @var string the javascript code that implements the eventAfterAllRender function
  *
  */
-
 class FullCalendarWidget extends \yii2fullcalendar\yii2fullcalendar
 {
 

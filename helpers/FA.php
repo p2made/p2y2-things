@@ -5,8 +5,10 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\helpers\FA
  */
 
 namespace p2m\helpers;
@@ -21,11 +23,6 @@ namespace p2m\helpers;
  * or
  *
  * echo \p2m\helpers\FA::method([$params]);
- */
-
-/**
- * Class FA
- * @package p2m\yii2-p2y2-things
  */
 class FA extends \p2m\helpers\base\FontAwesome
 {

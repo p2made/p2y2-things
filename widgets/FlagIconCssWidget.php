@@ -5,19 +5,15 @@
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ * @class \p2m\widgets\FlagIconCssWidget
  */
 
 namespace p2m\widgets;
 
-/**
- * Class FlagIconCssWidget
- *
- * @package p2m\yii2-p2y2-things
- */
-
-class FlagIconCssWidget extends \p2m\widgets\base\P2Widget
+class FlagIconCssWidget extends \p2m\base\widgets\P2WidgetBase
 {
 
 /**

@@ -1,4 +1,4 @@
-P2Y2Things v2.4.0
+P2Y2Things v2.4.1
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -64,19 +64,19 @@ The preferred way to install P2Y2Things is through [composer](http://getcomposer
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-	composer require p2made/yii2-p2y2-things "^2.1"
+	composer require p2made/yii2-p2y2-things "^2.4"
 ```
 
 or
 
 ```
-	php composer.phar require p2made/yii2-p2y2-things "^2.1"
+	php composer.phar require p2made/yii2-p2y2-things "^2.4"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-p2y2-things": "^2.1"
+	"p2made/yii2-p2y2-things": "^2.4"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.

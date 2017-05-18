@@ -1,4 +1,4 @@
-P2Y2Things v2.5.0
+P2Y2Things v2.5.1
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -13,8 +13,10 @@ A collection of resources as Assets, Helpers, & Widgets for Yii2.
 ¡¡ IMPORTANT !!
 ===============
 
-Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
-`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
+Version 2.0.0 & beyond of all my Yii2 add-ons mark a breaking change where I've shortened my namespaces.
+	`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
+
+Version 2.5.1 fixes a serious bug that had `yii.js` loading before jQuery.
 
 Highlights
 ----------

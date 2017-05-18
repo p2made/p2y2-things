@@ -34,9 +34,7 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'yii\web\YiiAsset',
-			'p2m\assets\JqueryAsset',
-			'p2m\assets\JuiAsset',
+			'p2m\assets\P2YiiAsset',
 			'p2m\assets\BootstrapAsset',
 			'p2m\assets\FontAwesomeAsset',
 		],

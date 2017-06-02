@@ -14,9 +14,9 @@
 /**
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####										   ##### ^ #####
+ * ##### ^ #####	  DO NOT USE THIS CLASS DIRECTLY!	  ##### ^ #####
+ * ##### ^ #####										   ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
@@ -192,11 +192,11 @@ class FontAwesome extends \rmrevin\yii\fontawesome\FontAwesome
 	 * @param string $name
 	 * @param array $options
 	 * @return component\Icon
-	 */
 	public static function ul($name, $options = [])
 	{
 		return static::icon($name, $options)->ul();
 	}
+	 */
 
 	/**
 	 * Shortcut for icon()->li()

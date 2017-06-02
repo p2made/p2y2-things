@@ -1,4 +1,4 @@
-P2Y2Things v2.5.1
+P2Y2Things v2.6.0
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -17,6 +17,8 @@ Version 2.0.0 & beyond of all my Yii2 add-ons mark a breaking change where I've 
 	`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
 
 Version 2.5.1 fixes a serious bug that had `yii.js` loading before jQuery.
+
+Version 2.6.0 is a bigger version bump to more firmly enforce loading of the fix in version 2.5.1.
 
 Highlights
 ----------

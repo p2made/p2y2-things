@@ -2,8 +2,8 @@
 /**
  * FlagIconCssWidget.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @license MIT
  *

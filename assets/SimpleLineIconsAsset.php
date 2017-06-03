@@ -5,10 +5,11 @@
  * Yii2 asset for Simple Line Icons
  * http://simplelineicons.com
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\base\SimpleLineIconsAsset
  * @license MIT
  */
 
@@ -20,14 +21,13 @@
  *     'p2m\assets\SimpleLineIconsAsset',
  */
 
-namespace p2m\assets; /* edit this if using elsewhere */
+namespace p2m\assets;
 
 class SimpleLineIconsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.4.1';
 
 	private $resourceData = array(
-
 		'published' => [
 			'sourcePath' => '@p2m@/simple-line-icons-##-version-##',
 			'css' => [
@@ -42,11 +42,9 @@ class SimpleLineIconsAsset extends \p2m\assets\base\P2AssetBundle
 			],
 			'js' => [],
 		],
-
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-
 	);
 
 	public function init()

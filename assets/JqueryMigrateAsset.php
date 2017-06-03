@@ -5,10 +5,11 @@
  * Yii2 asset for jQuery Migrate
  * http://jquery.com
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\JqueryMigrateAsset
  * @license MIT
  */
 
@@ -40,7 +41,8 @@ class JqueryMigrateAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\JqueryAsset',
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\P2JqueryAsset',
 		],
 	);
 

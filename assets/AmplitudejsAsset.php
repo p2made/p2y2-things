@@ -2,10 +2,14 @@
 /**
  * AmplitudejsAsset.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * Yii2 asset for Amplitude JS
+ * https://521dimensions.com/open-source/amplitudejs
+ *
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\AmplitudejsAsset
  * @license MIT
  */
 
@@ -17,7 +21,7 @@
  *     'p2m\assets\AmplitudejsAsset',
  */
 
-namespace p2m\assets; /* edit this if using elsewhere */
+namespace p2m\assets;
 
 class AmplitudejsAsset extends \p2m\assets\base\P2AssetBundle
 {
@@ -30,10 +34,8 @@ class AmplitudejsAsset extends \p2m\assets\base\P2AssetBundle
 				'js/amplitude.min.js',
 			],
 		],
-
 		'depends' => [
-			// depends like any other assets
-			// or leave out if no depends
+			'p2m\assets\P2CoreAsset',
 		],
 
 	);

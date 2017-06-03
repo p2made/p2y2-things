@@ -2,10 +2,11 @@
 /**
  * FlotChartsAsset.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\flot\FlotChartsAsset
  * @license MIT
  */
 
@@ -17,7 +18,7 @@
  *     'p2m\assets\flot\FlotChartsAsset',
  */
 
-namespace p2m\assets\flot; /* edit this if using elsewhere */
+namespace p2m\assets\flot;
 
 class FlotChartsAsset extends \p2m\assets\flot\FlotAssetBase
 {
@@ -65,8 +66,7 @@ class FlotChartsAsset extends \p2m\assets\flot\FlotAssetBase
 			],
 		],
 		'depends' => [
-			//'p2m\assets\MorrisAsset',
-			//'p2m\assets\flot\FlotTooltipAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

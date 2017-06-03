@@ -5,10 +5,11 @@
  * Yii2 asset for Sweetalert
  * http://t4t5.github.io/sweetalert/
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\base\SweetAlertAsset
  * @license MIT
  */
 
@@ -44,6 +45,9 @@ class SweetAlertAsset extends \p2m\assets\base\P2AssetBundle
 			'js' => [
 				'sweet-alert.min.js',
 			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

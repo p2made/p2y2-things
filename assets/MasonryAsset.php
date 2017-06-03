@@ -5,10 +5,11 @@
  * Yii2 asset for Masonry
  * http://masonry.desandro.com
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\base\MasonryAsset
  * @license MIT
  */
 
@@ -38,6 +39,9 @@ class MasonryAsset extends \p2m\assets\base\P2AssetBundle
 			'js' => [
 				'masonry.pkgd.min.js',
 			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

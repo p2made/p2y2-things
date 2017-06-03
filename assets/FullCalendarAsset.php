@@ -5,10 +5,11 @@
  * Yii2 asset for FullCalendar
  * https://fullcalendar.io
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\FullCalendarAsset
  * @license MIT
  */
 
@@ -64,6 +65,7 @@ class FullCalendarAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
+			'p2m\assets\P2CoreAsset',
 			'p2m\assets\MomentAsset',
 			'p2m\assets\FullCalendarPrintAsset',
 			'p2m\assets\JuiAsset',

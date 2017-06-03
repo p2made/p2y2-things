@@ -2,10 +2,11 @@
 /**
  * P2CoreAsset.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\base\P2CoreAsset
  * @license MIT
  */
 
@@ -17,7 +18,7 @@
  *     'p2m\assets\P2CoreAsset',
  */
 
-namespace p2m\assets; /* edit this if using elsewhere */
+namespace p2m\assets;
 
 class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 {
@@ -34,9 +35,9 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2m\assets\P2YiiAsset',
-			'p2m\assets\BootstrapAsset',
-			'p2m\assets\FontAwesomeAsset',
+			'p2m\assets\base\P2YiiAsset',
+			'p2m\assets\base\P2BootstrapAsset',
+			'p2m\assets\base\P2FontAwesomeAsset',
 		],
 
 	);
@@ -52,7 +53,7 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 /**
 		'p2m\assets\_ExampleAsset',
 		'p2m\assets\AnimateAsset',
-		'p2m\assets\BootstrapAsset',
+		'p2m\assets\base\P2BootstrapAsset',
 		'p2m\assets\BootstrapSocialAsset',
 		'p2m\assets\BootstrapSweetalertAsset',
 		'p2m\assets\BootstrapSwitchAsset',
@@ -91,7 +92,7 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 		'p2m\assets\flot\FlotTimeAsset',
 		'p2m\assets\flot\FlotTooltipAsset',
 		'p2m\assets\FlotBundleAsset',
-		'p2m\assets\FontAwesomeAsset',
+		'p2m\assets\base\P2FontAwesomeAsset',
 		'p2m\assets\FullCalendarAsset',
 		'p2m\assets\FullCalendarPrintAsset',
 		'p2m\assets\GMapsApiAsset',
@@ -100,7 +101,7 @@ class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 		'p2m\assets\IsotopeAsset',
 		'p2m\assets\JplayerBlueMondayAsset',
 		'p2m\assets\JplayerPinkFlagAsset',
-		'p2m\assets\JqueryAsset',
+		'p2m\assets\base\P2JqueryAsset',
 		'p2m\assets\JqueryCountToAsset',
 		'p2m\assets\JqueryEasingAsset',
 		'p2m\assets\JqueryMigrateAsset',

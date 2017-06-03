@@ -5,10 +5,11 @@
  * Yii2 asset for jQuery FitVids
  * http://fitvidsjs.com
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\FitvidsAsset
  * @license MIT
  */
 
@@ -38,6 +39,9 @@ class FitvidsAsset extends \p2m\assets\base\P2AssetBundle
 			'js' => [
 				'jquery.fitvids.min.js',
 			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

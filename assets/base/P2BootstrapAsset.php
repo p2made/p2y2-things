@@ -1,28 +1,39 @@
 <?php
 /**
- * BootstrapAsset.php
+ * P2BootstrapAsset.php
  *
  * Yii2 asset for Bootstrap
  * http://getbootstrap.com/
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\base\P2BootstrapAsset
  * @license MIT
  */
 
 /**
- * Load this asset with...
- * p2m\assets\BootstrapAsset::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\BootstrapAsset',
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-namespace p2m\assets;
+/**
+ * Load this asset with...
+ * p2m\assets\base\P2BootstrapAsset::register($this);
+ *
+ * or specify as a dependency with...
+ *     'p2m\assets\base\P2BootstrapAsset',
+ */
 
-class BootstrapAsset extends \p2m\assets\base\P2AssetBundle
+namespace p2m\assets\base;
+
+class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.7';
 

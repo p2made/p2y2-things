@@ -2,10 +2,14 @@
 /**
  * MagnificPopupAsset.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * Yii2 asset for Magnific Popup
+ * http://dimsemenov.com/plugins/magnific-popup/
+ *
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-p2y2-things
+ * @class \p2m\assets\MagnificPopupAsset
  * @license MIT
  */
 
@@ -24,7 +28,6 @@ class MagnificPopupAsset extends \p2m\assets\base\P2AssetBundle
 	protected $version = '1.1.0';
 
 	private $resourceData = array(
-
 		'published' => [
 			'sourcePath' => '@vendor/dimsemenov/magnific-popup/dist',
 			'css' => [
@@ -43,11 +46,9 @@ class MagnificPopupAsset extends \p2m\assets\base\P2AssetBundle
 				'jquery.magnific-popup.min.js',
 			],
 		],
-
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-
 	);
 
 	public function init()

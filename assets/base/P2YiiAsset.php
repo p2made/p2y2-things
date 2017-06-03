@@ -1,14 +1,13 @@
 <?php
 /**
- * _ExampleBaseHelper.php
+ * P2YiiAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
- * @license MIT
- *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\helpers\base\_ExampleBaseHelper
+ * @class \p2m\assets\base\P2YiiAsset
+ * @license MIT
  */
 
 /**
@@ -21,26 +20,23 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-namespace p2m\helpers\base;
-
 /**
- * Use this helper with...
+ * Load this asset with...
+ * p2m\assets\base\P2YiiAsset::register($this);
  *
- * use p2m\helpers\base\_ExampleBaseHelper;
- * ...
- * echo _ExampleBaseHelper::method([$params]);
- *
- * or
- *
- * echo \p2m\helpers\base\_ExampleBaseHelper::method([$params]);
+ * or specify as a dependency with...
+ *     'p2m\assets\base\P2YiiAsset',
  */
 
-/**
- * Class _ExampleBaseHelper
- * @package p2m\yii2-p2y2-things
- */
-class _ExampleBaseHelper extends \p2m\base\helpers\P2HelperBase
+namespace p2m\assets\base;
+
+class P2YiiAsset extends \yii\web\AssetBundle
 {
-
-
+	public $sourcePath = '@yii/assets';
+	public $js = [
+		'yii.js',
+	];
+	public $depends = [
+		'p2m\assets\base\JqueryAsset',
+	];
 }

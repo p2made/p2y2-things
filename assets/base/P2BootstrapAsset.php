@@ -51,7 +51,7 @@ class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\base\BootstrapPluginAsset',
+			'p2m\assets\base\P2BootstrapPluginAsset',
 		],
 	);
 

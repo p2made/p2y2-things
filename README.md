@@ -20,6 +20,8 @@ Version 2.5.1 fixes a serious bug that had `yii.js` loading before jQuery.
 
 Version 2.6.0 is a bigger version bump to more firmly enforce loading of the fix in version 2.5.1.
 
+Version 2.7.0 tweaks all assets to further ensure safe loading order.
+
 Highlights
 ----------
 

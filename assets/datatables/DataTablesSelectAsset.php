@@ -25,7 +25,7 @@ namespace p2m\assets\datatables;
 
 class DataTablesSelectAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.4';
+	protected $version = '1.2.1';
 
 	private $resourceData = array(
 		'published' => [

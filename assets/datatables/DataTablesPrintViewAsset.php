@@ -25,7 +25,7 @@ namespace p2m\assets\datatables;
 
 class DataTablesPrintViewAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.1';
+	protected $version = '1.2.4';
 
 	private $resourceData = array(
 		'published' => [

@@ -25,7 +25,7 @@ namespace p2m\assets\datatables;
 
 class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.1.0';
+	protected $version = '2.1.1';
 
 	private $resourceData = array(
 		'published' => [

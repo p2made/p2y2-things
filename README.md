@@ -3,6 +3,7 @@ P2Y2Things v2.8.0
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things)
+[![Monthly Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Dependency Status](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0)
@@ -129,7 +130,7 @@ P2Y2Things gives you the option of loading assets from the official CDNs. Just p
 	],
 ```
 
-When things are set up to your liking, register the `P2CoreLoaderAsset` with...
+When things are set up to your liking, register the `P2CoreAsset` with...
 
 ```
 	p2m\assets\P2CoreAsset::register($this);

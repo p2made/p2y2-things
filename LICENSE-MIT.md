@@ -1,4 +1,4 @@
-Copyright (c) 2015 Pedro fp (Pedro Plowman)
+Copyright (c) 2017 Pedro fp (Pedro Plowman)
 ===========================================
 
 Permission is hereby granted, free of charge, to any person

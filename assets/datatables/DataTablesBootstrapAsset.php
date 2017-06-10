@@ -25,11 +25,11 @@ namespace p2m\assets\datatables;
 
 class DataTablesBootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.10.13';
+	protected $version = '1.10.15';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/DataTables-##-version-##/media',
+			'sourcePath' => '@p2m@/DataTables/DataTables-##-version-##/media',
 			'css' => [
 				'css/dataTables.bootstrap.min.css',
 			],
@@ -50,7 +50,6 @@ class DataTablesBootstrapAsset extends \p2m\assets\base\P2AssetBundle
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 		],
 	);
 
@@ -60,23 +59,3 @@ class DataTablesBootstrapAsset extends \p2m\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
-
-/*
-dataTables.bootstrap.min.css
-dataTables.bootstrap.min.js
-dataTables.bootstrap4.min.css
-dataTables.bootstrap4.min.js
-dataTables.foundation.min.css
-dataTables.foundation.min.js
-dataTables.jqueryui.min.css
-dataTables.jqueryui.min.js
-dataTables.material.min.css
-dataTables.material.min.js
-dataTables.semanticui.min.css
-dataTables.semanticui.min.js
-dataTables.uikit.min.css
-dataTables.uikit.min.js
-jquery.dataTables_themeroller.css
-jquery.dataTables.min.css
-jquery.dataTables.min.js
-*/

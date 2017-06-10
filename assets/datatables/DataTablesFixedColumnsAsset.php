@@ -29,7 +29,7 @@ class DataTablesFixedColumnsAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/FixedColumns-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/FixedColumns-##-version-##',
 			'css' => [
 				'css/fixedColumns.bootstrap.min.css',
 			],
@@ -47,8 +47,6 @@ class DataTablesFixedColumnsAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

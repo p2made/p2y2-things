@@ -25,11 +25,11 @@ namespace p2m\assets\datatables;
 
 class DataTablesColReorderAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.3.2';
+	protected $version = '1.3.3';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/ColReorder-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/ColReorder-##-version-##',
 			'css' => [
 				'css/colReorder.bootstrap.min.css',
 			],
@@ -47,8 +47,6 @@ class DataTablesColReorderAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

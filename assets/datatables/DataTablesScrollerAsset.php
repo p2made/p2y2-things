@@ -29,7 +29,7 @@ class DataTablesScrollerAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/Scroller-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/Scroller-##-version-##',
 			'css' => [
 				'css/scroller.bootstrap.min.css',
 			],
@@ -47,7 +47,7 @@ class DataTablesScrollerAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\base\P2JqueryAsset',
+			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);
 

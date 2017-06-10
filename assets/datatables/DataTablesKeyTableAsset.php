@@ -25,11 +25,11 @@ namespace p2m\assets\datatables;
 
 class DataTablesKeyTableAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.2.0';
+	protected $version = '2.2.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/KeyTable-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/KeyTable-##-version-##',
 			'css' => [
 				'css/keyTable.bootstrap.min.css',
 			],
@@ -47,8 +47,6 @@ class DataTablesKeyTableAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

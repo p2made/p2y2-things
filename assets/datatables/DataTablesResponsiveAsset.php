@@ -29,7 +29,7 @@ class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/Responsive-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/Responsive-##-version-##',
 			'css' => [
 				'css/responsive.bootstrap.min.css',
 			],
@@ -49,8 +49,6 @@ class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

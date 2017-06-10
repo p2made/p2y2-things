@@ -25,17 +25,17 @@ namespace p2m\assets\datatables;
 
 class DataTablesButtonsAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.4';
+	protected $version = '1.3.1';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/Buttons-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
 			'css' => [
-				'css/buttons.bootstrap.scss',
+				'css/buttons.bootstrap.min.css',
 			],
 			'js' => [
-				'js/dataTables.buttons.js',
-				'js/buttons.bootstrap.js',
+				'js/dataTables.buttons.min.js',
+				'js/buttons.bootstrap.min.js',
 			],
 		],
 		'static' => [
@@ -49,8 +49,6 @@ class DataTablesButtonsAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

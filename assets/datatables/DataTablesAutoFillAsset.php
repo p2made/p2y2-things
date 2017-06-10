@@ -25,11 +25,11 @@ namespace p2m\assets\datatables; /* edit this if using elsewhere */
 
 class DataTablesAutoFillAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.1.3';
+	protected $version = '2.2.0';
 
 	private $resourceData = array(
 		'published' => [
-			'sourcePath' => '@p2m@/AutoFill-##-version-##',
+			'sourcePath' => '@p2m@/DataTables/AutoFill-##-version-##',
 			'css' => [
 				'css/autoFill.bootstrap.min.css',
 			],
@@ -49,8 +49,6 @@ class DataTablesAutoFillAsset extends \p2m\assets\base\P2AssetBundle
 			],
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
 		],
 	);

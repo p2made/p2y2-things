@@ -12,6 +12,11 @@ P2Y2Things v2.8.0
 
 A collection of resources as Assets, Helpers, & Widgets for Yii2.
 
+v3.0.0
+======
+
+I'm currently working on v3.0.0 with a variety of major changes to be detailed in updates to this file.
+
 ¡¡ IMPORTANT !!
 ===============
 

@@ -37,7 +37,7 @@ class P2FontAwesomeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.7.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/fortawesome/font-awesome',
 			'css' => [

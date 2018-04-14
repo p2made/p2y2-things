@@ -27,7 +27,7 @@ class DataTablesFixedHeaderAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/FixedHeader-##-version-##',
 			'css' => [

@@ -27,7 +27,7 @@ class DataTablesColReorderAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.3.3';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/ColReorder-##-version-##',
 			'css' => [

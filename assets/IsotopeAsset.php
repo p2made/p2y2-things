@@ -27,7 +27,7 @@ class IsotopeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.0.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/isotope-##-version-##/dist',
 			'js' => [

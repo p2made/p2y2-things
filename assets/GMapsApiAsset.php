@@ -26,7 +26,7 @@ namespace p2m\assets;
 
 class GMapsApiAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 		'static' => [
 			'js' => [
 				'http://maps.google.com/maps/api/js?sensor=true',

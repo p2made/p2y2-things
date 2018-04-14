@@ -27,7 +27,7 @@ class PdfMakeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.1.27';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/bpampuch/pdfmake',
 			'js' => [

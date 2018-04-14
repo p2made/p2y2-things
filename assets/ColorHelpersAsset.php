@@ -24,7 +24,7 @@ class ColorHelpersAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1-1';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/jquery-colorhelpers-jquery-colorhelpers-##-version-##',
 			'js' => [

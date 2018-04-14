@@ -27,7 +27,7 @@ class MasonryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.1.1';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/masonry-##-version-##/dist',
 			'js' => [

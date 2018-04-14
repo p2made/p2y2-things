@@ -24,7 +24,7 @@ class FlagIconCssAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.8.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/components/flag-icon-css',
 			'css' => [

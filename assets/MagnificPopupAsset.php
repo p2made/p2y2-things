@@ -27,7 +27,7 @@ class MagnificPopupAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/dimsemenov/magnific-popup/dist',
 			'css' => [

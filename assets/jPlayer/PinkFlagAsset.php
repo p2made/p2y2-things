@@ -24,7 +24,7 @@ class PinkFlagAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.9.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/happyworm/jplayer/dist',
 			'css' => [

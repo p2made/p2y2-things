@@ -23,7 +23,7 @@ namespace p2m\assets\flot;
 
 class FlotTimeAsset extends \p2m\assets\flot\FlotAssetBase
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/flot-##-version-##',
 			'js' => [

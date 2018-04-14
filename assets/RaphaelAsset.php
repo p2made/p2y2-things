@@ -27,7 +27,7 @@ class RaphaelAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.2.7';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/raphael-##-version-##',
 			'js' => [

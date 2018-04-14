@@ -27,7 +27,7 @@ class JSZipAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.3';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/stuk/jszip/dist',
 			'js' => [

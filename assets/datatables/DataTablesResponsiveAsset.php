@@ -27,7 +27,7 @@ class DataTablesResponsiveAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.1.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/Responsive-##-version-##',
 			'css' => [

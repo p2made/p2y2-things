@@ -27,7 +27,7 @@ class AnimateAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.5.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/drmonty/animate.css',
 			'css' => [

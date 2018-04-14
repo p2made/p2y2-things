@@ -27,7 +27,7 @@ class JqueryMigrateAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.0.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/jquery',
 			'js' => [

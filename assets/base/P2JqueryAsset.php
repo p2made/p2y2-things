@@ -37,7 +37,7 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.2.1';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/jquery',
 			'js' => [

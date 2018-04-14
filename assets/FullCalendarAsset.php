@@ -45,7 +45,7 @@ class FullCalendarAsset extends \p2m\assets\base\P2AssetBundle
 	 */
 	public $googleCalendar = false;
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
 			'css' => [

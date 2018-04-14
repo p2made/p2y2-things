@@ -25,7 +25,7 @@ namespace p2m\assets;
 
 class BootstrapSweetalertAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/bootstrap-sweetalert-##-version-##/dist',
 			'css' => [

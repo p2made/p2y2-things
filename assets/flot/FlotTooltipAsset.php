@@ -28,7 +28,7 @@ class FlotTooltipAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.9.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/flot.tooltip-##-version-##',
 			'js' => [

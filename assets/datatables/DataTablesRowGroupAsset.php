@@ -27,7 +27,7 @@ class DataTablesRowGroupAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.0.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/RowGroup-##-version-##',
 			'css' => [

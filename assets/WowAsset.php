@@ -27,7 +27,7 @@ class WowAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.1.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/WOW-##-version-##/dist',
 			'js' => [

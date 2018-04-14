@@ -27,7 +27,7 @@ class DataTablesAutoFillAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.2.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/AutoFill-##-version-##',
 			'css' => [

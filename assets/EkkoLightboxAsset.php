@@ -24,7 +24,7 @@ class EkkoLightboxAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '4.0.1';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/drmonty/ekko-lightbox',
 			'css' => [

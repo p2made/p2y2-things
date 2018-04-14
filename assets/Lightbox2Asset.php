@@ -27,7 +27,7 @@ class Lightbox2Asset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.9.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/lightbox2-##-version-##/dist',
 			'css' => [

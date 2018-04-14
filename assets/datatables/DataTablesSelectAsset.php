@@ -27,7 +27,7 @@ class DataTablesSelectAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.2.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/Select-##-version-##',
 			'css' => [

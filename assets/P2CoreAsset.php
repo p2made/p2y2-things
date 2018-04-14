@@ -22,7 +22,7 @@ namespace p2m\assets;
 
 class P2CoreAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 
 		'published' => [
 			'sourcePath' => '@p2m@/pub',

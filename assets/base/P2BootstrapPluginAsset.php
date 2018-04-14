@@ -37,7 +37,7 @@ class P2BootstrapPluginAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.7';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@bower/bootstrap/dist',
 			'js' => [

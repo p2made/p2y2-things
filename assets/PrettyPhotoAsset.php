@@ -24,7 +24,7 @@ class PrettyPhotoAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.1.6';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/prettyPhoto_##-version-##',
 			'css' => [

@@ -22,7 +22,7 @@ namespace p2m\assets\flot;
 
 class FlotCategoriesAsset extends \p2m\assets\flot\FlotAssetBase
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/flot-##-version-##',
 			'js' => [

@@ -27,7 +27,7 @@ class DataTablesBootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '1.10.15';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@p2m@/DataTables/DataTables-##-version-##/media',
 			'css' => [

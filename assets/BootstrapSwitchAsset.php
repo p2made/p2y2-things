@@ -24,7 +24,7 @@ class BootstrapSwitchAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '3.3.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/nostalgiaz/bootstrap-switch/dist',
 			'css' => [

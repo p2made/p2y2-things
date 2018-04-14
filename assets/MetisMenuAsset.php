@@ -27,7 +27,7 @@ class MetisMenuAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.6.2';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'css' => [

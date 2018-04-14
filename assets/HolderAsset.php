@@ -24,7 +24,7 @@ class HolderAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '2.9.4';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 		'published' => [
 			'sourcePath' => '@vendor/imsky/holderjs',
 			'js' => [

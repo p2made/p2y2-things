@@ -3,14 +3,15 @@
  * JqueryEasingAsset.php
  *
  * Yii2 asset for jQuery Easing
- * http://gsgd.co.uk/sandbox/jquery/easing/
+ * https://github.com/gdsmith/jquery.easing
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\JqueryEasingAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\JqueryEasingAsset
  */
 
 /**
@@ -21,37 +22,34 @@
  *     'p2m\assets\JqueryEasingAsset',
  */
 
-namespace p2m\assets; /* edit this if using elsewhere */
+namespace p2m\assets;
 
 class JqueryEasingAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.4.1';
+	protected $packageName = 'jquery.easing';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/jquery.easing-##-version-##',
-			'css' => [],
-			'js' => [
-				'jquery.easing.min.js',
-				'jquery.easing.compatibility.min.js',
+	protected $packageVersion = '1.4.1';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/jquery.easing@##-version-##',
+		'sourcePath' => '@npm/jquery.easing',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-leGYpHE9Tc4N9OwRd98xg6YFpB9shlc/RkilpFi0ljr3QD4tFoFptZvgnnzzwG4Q',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/##-version-##',
-			'css' => [],
-			'js' => [
-				'jquery.easing.min.js',
-				'jquery.easing.compatibility.min.js',
-			],
+		'js' => [
+			'jquery.easing.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

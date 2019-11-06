@@ -2,15 +2,16 @@
 /**
  * FitvidsAsset.php
  *
- * Yii2 asset for jQuery FitVids
- * http://fitvidsjs.com
+ * Yii2 asset for fitvids
+ * https://github.com/rosszurowski/fitvids
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\FitvidsAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\FitvidsAsset
  */
 
 /**
@@ -25,29 +26,30 @@ namespace p2m\assets;
 
 class FitvidsAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.2.0';
+	protected $packageName = 'fitvids';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/FitVids.js-##-version-##',
-			'js' => [
-				'jquery.fitvids.js',
+	protected $packageVersion = '2.1.1';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/fitvids@##-version-##/dist',
+		'sourcePath' => '@npm/fitvids/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-gv1n+hTwWrE0qXw6bl3Yf+WNM8ffb/60Tstd86MrcYMBv2gNRABDixs9r2jn4f4I',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/##-version-##',
-			'js' => [
-				'jquery.fitvids.min.js',
-			],
+		'js' => [
+			'fitvids.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

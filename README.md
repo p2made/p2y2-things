@@ -1,4 +1,4 @@
-P2Y2Things v2.8.1
+P2Y2Things v4.0.0-rc1
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -6,28 +6,12 @@ P2Y2Things v2.8.1
 [![Monthly Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things)
-[![Dependency Status](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56de5856df573d00352c66c0)
 
 ---
 
 A collection of resources as Assets, Helpers, & Widgets for Yii2.
 
-v3.0.0
-======
-
-I'm currently working on v3.0.0 with a variety of major changes to be detailed in updates to this file.
-
-¡¡ IMPORTANT !!
-===============
-
-Version 2.0.0 & beyond of all my Yii2 add-ons mark a breaking change where I've shortened my namespaces.
-	`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
-
-Version 2.5.1 fixes a serious bug that had `yii.js` loading before jQuery.
-
-Version 2.6.0 is a bigger version bump to more firmly enforce loading of the fix in version 2.5.1.
-
-Version 2.7.0 tweaks all assets to further ensure safe loading order.
+Version 4 is so numbered because I've migrated P2Y2Things to using Bootstrap v4.
 
 Highlights
 ----------
@@ -47,18 +31,6 @@ Credit to @lipis for Bootstrap Social.
 The [flag-icon-css](http://lipis.github.io/flag-icon-css/) asset from P2Y2 Assets, with helpers inspired by @rmrevin's [yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
 
 Credit to @lipis for Bootstrap Social.
-
-### [Font Awesome Asset Bundle & Helpers](docs/FontAwesome.md)
-
-It began as a wrapper on [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome), merely for the convenience of having Font Awesome on the p2made namespace... & then it grew...
-
-I love the elegance & cleverness of the recursive methods in @rmrevin's classes, however the syntax starts beautifully concise for basic icons, but becomes much longer as attributes are added. I've added a few shortcuts that reduce common combinations to method names of 2 or 3 letters.
-
-Credit to @rmrevin for FontAwesome.
-
-### [Glyphicons Asset Bundle & Helpers](docs/Glyphicons.md)
-
-This extension wraps Bootstrap Glyphicons in a manner similar to [rmrevin/yii2-fontawesome](https://github.com/rmrevin/yii2-fontawesome).
 
 ### [IsGd Helper](docs/IsGdHelper.md)
 

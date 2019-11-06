@@ -3,24 +3,15 @@
  * P2BootstrapAsset.php
  *
  * Yii2 asset for Bootstrap
- * http://getbootstrap.com/
+ * https://getbootstrap.com
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapAsset
  * @license MIT
- */
-
-/**
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\base\P2BootstrapAsset
  */
 
 /**
@@ -35,54 +26,37 @@ namespace p2m\assets\base;
 
 class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.7';
+	protected $packageName = 'bootstrap';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-##-version-##-dist',
-			'css' => [
-				'css/bootstrap.min.css',
+	protected $packageVersion = '4.3.1';
+
+	protected $packageData = [
+		'baseUrl' => 'https://stackpath.bootstrapcdn.com/bootstrap/##-version-##',
+		'sourcePath' => '@npm/bootstrap/dist',
+		'static' => [
+			'cssOptions' => [
+				'integrity' => 'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
+				'crossorigin' => 'anonymous',
+			],
+			'jsOptions' => [
+				'integrity' => 'sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/##-version-##',
-			'css' => [
-				'css/bootstrap.min.css',
-			],
+		'css' => [
+			'css/bootstrap.min.css',
+		],
+		'js' => [
+			'js/bootstrap.min.js',
 		],
 		'depends' => [
-			'p2m\assets\base\P2BootstrapPluginAsset',
+			'p2m\assets\base\P2JqueryAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		if(isset(\Yii::$app->params['p2assets']['bootswatchTheme'])) {
-			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
-			$this->resourceData['sourcePath'] = '@vendor/thomaspark/bootswatch/' . $themeName;
-			$this->resourceData['published']['baseUrl'] = [
-				'bootswatch/##-version-##/' . $themeName,
-			];
-			$this->resourceData['published']['css'] = [
-				'bootstrap.min.css',
-			];
-			$this->resourceData['static']['css'] = [
-				'bootstrap.min.css',
-			];
-		}
-
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }
-
-/* params
-	'p2assets' => [
-		'useStatic' => true, // false or not set to use published assets
-		'bootswatchTheme' = 'cerulean', // set to _one_ of:
-			// 'cerulean', 'cosmo', 'cyborg', 'darkly',
-			// 'flatly', 'journal', 'lumen', 'paper',
-			// 'readable', 'sandstone', 'simplex', 'slate',
-			// 'spacelab', 'superhero', 'united', 'yeti',
-	],
-*/

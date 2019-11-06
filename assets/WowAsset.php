@@ -3,14 +3,15 @@
  * WowAsset.php
  *
  * Yii2 asset for WOW
- * https://github.com/matthieua/WOW
+ * https://www.delac.io/wow/
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\WowAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\WowAsset
  */
 
 /**
@@ -25,30 +26,31 @@ namespace p2m\assets;
 
 class WowAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.1.2';
+	protected $packageName = 'wow';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/WOW-##-version-##/dist',
-			'js' => [
-				'wow.min.js',
+	protected $packageVersion = '1.1.2';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
+		'sourcePath' => '@bower/wow/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-V27yAyb3yYhZbiwaK9Sgxh9Cywkf/H2al4wcrcp/hKF9ZYT7d5saGJFoO/0v1Cgs',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
-			'js' => [
-				'wow.min.js',
-			],
+		'js' => [
+			'wow.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 			'p2m\assets\AnimateAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

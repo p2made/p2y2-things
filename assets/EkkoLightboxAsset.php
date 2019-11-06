@@ -2,12 +2,16 @@
 /**
  * EkkoLightboxAsset.php
  *
+ * Yii2 asset for Lightbox for Bootstrap
+ * http://ashleydw.github.io/lightbox
+ *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\EkkoLightboxAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\EkkoLightboxAsset
  */
 
 /**
@@ -22,43 +26,40 @@ namespace p2m\assets;
 
 class EkkoLightboxAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '4.0.1';
+	protected $packageName = 'ekko-lightbox';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/drmonty/ekko-lightbox',
-			'css' => [
-				'css/ekko-lightbox.min.css',
-			],
-			'js' => [
-				'js/ekko-lightbox.min.js',
-			],
-		],
+	protected $packageVersion = '5.3.0';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/ekko-lightbox@##-version-##/dist',
+		'sourcePath' => '@npm/ekko-lightbox/dist',
 		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/##-version-##',
 			'css' => [
 				'ekko-lightbox.min.css',
 			],
-			'js' => [
-				'ekko-lightbox.min.js',
+			'cssOptions' => [
+				'integrity' => 'sha384-Ra8Ik6nG0Uz2AquVG7R7zBuRUY/0u3NjxO8G88yp+z8o1s6+QkHih0Y+q8SdYdim',
+				'crossorigin' => 'anonymous',
 			],
+			'jsOptions' => [
+				'integrity' => 'sha384-bqIl0+8hxcMpOFf8O3ffwAy5qTUbFPyuNFytX/omkD4RDPMOBtt/uV6Lqlw7sljM',
+				'crossorigin' => 'anonymous',
+			],
+		],
+		'css' => [
+			'ekko-lightbox.css',
+		],
+		'js' => [
+			'ekko-lightbox.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }
-
-/*
-	@vendor/bower/ekko-lightbox/dist/ekko-lightbox.min.css
-	@vendor/bower/ekko-lightbox/dist/ekko-lightbox.min.js
-
-	//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css
-	//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js
- */

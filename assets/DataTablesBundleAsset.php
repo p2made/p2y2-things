@@ -3,13 +3,15 @@
  * DataTablesBundleAsset.php
  *
  * Yii2 asset for DataTables
- * https://www.datatables.net
+ * https://datatables.net
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\DataTablesBundleAsset
  */
 
 /**
@@ -22,26 +24,32 @@
 
 namespace p2m\assets;
 
-class DataTablesBundleAsset extends \p2m\assets\base\P2LoaderAssetBundle
+class DataTablesBundleAsset extends \yii\web\AssetBundle
 {
 	public $depends = [
 		'p2m\assets\JSZipAsset',
 		'p2m\assets\PdfMakeAsset',
-		'p2m\assets\datatables\DataTablesBootstrapAsset',
-		'p2m\assets\datatables\DataTablesAutoFillAsset',
-		'p2m\assets\datatables\DataTablesButtonsAsset',
-		'p2m\assets\datatables\DataTablesButtonsColVisAsset',
-		'p2m\assets\datatables\DataTablesButtonsFlashAsset',
-		'p2m\assets\datatables\DataTablesButtonsHTML5Asset',
-		'p2m\assets\datatables\DataTablesButtonsPrintAsset',
-		'p2m\assets\datatables\DataTablesColReorderAsset',
-		'p2m\assets\datatables\DataTablesFixedColumnsAsset',
-		'p2m\assets\datatables\DataTablesFixedHeaderAsset',
-		'p2m\assets\datatables\DataTablesKeyTableAsset',
-		'p2m\assets\datatables\DataTablesResponsiveAsset',
-		'p2m\assets\datatables\DataTablesRowGroupAsset',
-		'p2m\assets\datatables\DataTablesRowReorderAsset',
-		'p2m\assets\datatables\DataTablesScrollerAsset',
-		'p2m\assets\datatables\DataTablesSelectAsset',
+		'p2m\assets\DataTablesAsset',
+		'p2m\assets\DataTablesAutoFillAsset',
+		'p2m\assets\DataTablesButtonsAsset',
+		'p2m\assets\DataTablesButtonsColVisAsset',
+		'p2m\assets\DataTablesButtonsFlashAsset',
+		'p2m\assets\DataTablesButtonsHTML5Asset',
+		'p2m\assets\DataTablesButtonsPrintAsset',
+		'p2m\assets\DataTablesColReorderAsset',
+		'p2m\assets\DataTablesFixedColumnsAsset',
+		'p2m\assets\DataTablesFixedHeaderAsset',
+		'p2m\assets\DataTablesKeyTableAsset',
+		'p2m\assets\DataTablesResponsiveAsset',
+		'p2m\assets\DataTablesRowGroupAsset',
+		'p2m\assets\DataTablesRowReorderAsset',
+		'p2m\assets\DataTablesScrollerAsset',
+		'p2m\assets\DataTablesSelectAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->packageData);
+		parent::init();
+	}
 }

@@ -2,12 +2,16 @@
 /**
  * CircleButtonsAsset.php
  *
+ * Yii2 asset for
+ *
+ *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\CircleButtonsAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\CircleButtonsAsset
  */
 
 /**
@@ -20,23 +24,15 @@
 
 namespace p2m\assets;
 
-class CircleButtonsAsset extends \p2m\assets\base\P2AssetBundle
+class P2YiiAsset extends \yii\web\AssetBundle
 {
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/pub',
-			'css' => [
-				'css/circle-buttons.css',
-			],
-		],
-		'depends' => [
-			'p2m\assets\P2CoreAsset',
-		],
-	);
+	public $sourcePath = '@p2m/lib';
 
-	public function init()
-	{
-		$this->configureAsset($this->resourceData);
-		parent::init();
-	}
+	public $css/circle-buttons.min.css = [
+		'css/circle-buttons.min.css',
+	];
+
+	public $depends = [
+		'p2m\assets\base\P2JqueryAsset',
+	];
 }

@@ -3,14 +3,15 @@
  * IsotopeAsset.php
  *
  * Yii2 asset for Isotope
- * http://isotope.metafizzy.co
+ * https://isotope.metafizzy.co
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\IsotopeAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\IsotopeAsset
  */
 
 /**
@@ -25,29 +26,30 @@ namespace p2m\assets;
 
 class IsotopeAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.0.2';
+	protected $packageName = 'isotope-layout';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/isotope-##-version-##/dist',
-			'js' => [
-				'jquery.isotope.min.js',
+	protected $packageVersion = '3.0.6';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/isotope-layout@##-version-##/dist',
+		'sourcePath' => '@npm/isotope-layout/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-vtH+5pZsjdWxaTWlFSCrWM6i0TIG0HKOqJbPo91LB35dvWpVzuWdJeVoNweP+eoY',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/##-version-##',
-			'js' => [
-				'isotope.pkgd.min.js',
-			],
+		'js' => [
+			'isotope.pkgd.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

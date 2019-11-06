@@ -2,12 +2,16 @@
 /**
  * FlagIconCssAsset.php
  *
+ * Yii2 asset for flag-icon-css
+ * http://flag-icon-css.lip.is
+ *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\FlagIconCssAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\FlagIconCssAsset
  */
 
 /**
@@ -22,29 +26,30 @@ namespace p2m\assets;
 
 class FlagIconCssAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.8.0';
+	protected $packageName = 'flag-icon-css';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/components/flag-icon-css',
-			'css' => [
-				'css/flag-icon.min.css',
+	protected $packageVersion = '3.4.5';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/flag-icon-css@##-version-##/css',
+		'sourcePath' => '@npm/flag-icon-css/css',
+		'static' => [
+			'cssOptions' => [
+				'integrity' => 'sha384-TIJGXlVZjQ+dYPHg+oN3KvSwKHZQ4RYNPfQcWedc6mLkHd/fkZBWaf0h9Jtk022u',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/##-version-##',
-			'css' => [
-				'css/flag-icon.min.css',
-			],
+		'css' => [
+			'flag-icon.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

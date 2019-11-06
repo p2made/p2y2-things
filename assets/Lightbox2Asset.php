@@ -2,15 +2,16 @@
 /**
  * Lightbox2Asset.php
  *
- * Yii2 asset for Lightbox2
- * http://lokeshdhakar.com/projects/lightbox2/
+ * Yii2 asset for LIGHTBOX
+ * https://lokeshdhakar.com/projects/lightbox2/
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\Lightbox2Asset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\Lightbox2Asset
  */
 
 /**
@@ -25,58 +26,37 @@ namespace p2m\assets;
 
 class Lightbox2Asset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '2.9.0';
+	protected $packageName = 'lightbox2';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/lightbox2-##-version-##/dist',
-			'css' => [
-				'css/lightbox.min.css',
+	protected $packageVersion = '2.11.1';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/lightbox2@##-version-##/dist',
+		'sourcePath' => '@npm/lightbox2/dist',
+		'static' => [
+			'cssOptions' => [
+				'integrity' => 'sha384-MzHT0pgTPI8fjMvEz54yA7HmSVjLLsxl+ytGS13+EOr/L5uLaBakmchzKgDYsSQz',
+				'crossorigin' => 'anonymous',
 			],
-			'js' => [
-				'js/lightbox.min.js',
+			'jsOptions' => [
+				'integrity' => 'sha384-iYi/WcdpdDnsQeo7Bv1vEZtM+pjKSYb7Wo8zmDR89W1cOVp8VPi1ovc5dCFfOJml',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/##-version-##',
-			'css' => [
-				'css/lightbox.min.css',
-			],
-			'js' => [
-				'js/lightbox.min.js',
-			],
+		'css' => [
+			'css/lightbox.min.css',
+		],
+		'js' => [
+			'js/lightbox.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }
-
-/*
-	@vendor/bower/lightbox2/dist/css/lightbox.min.css
-
-	@vendor/bower/lightbox2/dist/images/close.png
-	@vendor/bower/lightbox2/dist/images/loading.gif
-	@vendor/bower/lightbox2/dist/images/next.png
-	@vendor/bower/lightbox2/dist/images/prev.png
-
-	@vendor/bower/lightbox2/dist/js/lightbox-plus-jquery.min.js
-	@vendor/bower/lightbox2/dist/js/lightbox.min.js
-
-
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css
-
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/images/close.png
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/images/loading.gif
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/images/next.png
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/images/prev.png
-
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js
-	//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js
- */

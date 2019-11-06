@@ -2,15 +2,16 @@
 /**
  * AnimateAsset.php
  *
- * Yii2 asset for Animate CSS
+ * Yii2 asset for Animate.css
  * https://daneden.github.io/animate.css/
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\AnimateAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\AnimateAsset
  */
 
 /**
@@ -25,29 +26,30 @@ namespace p2m\assets;
 
 class AnimateAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.5.2';
+	protected $packageName = 'animate.css';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/drmonty/animate.css',
-			'css' => [
-				'css/animate.min.css',
+	protected $packageVersion = '3.7.2';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/animate.css@##-version-##',
+		'sourcePath' => '@npm/animate.css',
+		'static' => [
+			'cssOptions' => [
+				'integrity' => 'sha384-7/Tl0k65OTvDSvtuq7aPR7aa0aCz7ZKqHsbMRLxhzueldW+9MZpCe9LB1c5UBuNS',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/animate.css/##-version-##',
-			'css' => [
-				'animate.min.css',
-			],
+		'css' => [
+			'animate.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

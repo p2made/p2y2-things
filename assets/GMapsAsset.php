@@ -2,15 +2,16 @@
 /**
  * GMapsAsset.php
  *
- * Yii2 asset for GMaps.js
- * http://hpneo.github.io/gmaps/
+ * Yii2 asset for gmaps.js
+ * https://hpneo.dev/gmaps/
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\GMapsAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\GMapsAsset
  */
 
 /**
@@ -25,30 +26,31 @@ namespace p2m\assets;
 
 class GMapsAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '0.4.25';
+	protected $packageName = 'gmaps';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/gmaps-##-version-##',
-			'js' => [
-				'gmaps.min.js',
+	protected $packageVersion = '0.4.24';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/gmaps@##-version-##',
+		'sourcePath' => '@npm/gmaps',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-0dtH2vLXnuX/8zr9v+SWIUywQYGezOWhJwjVYIMzJHSk2Zj1+h30lqT63x3EfKko',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/##-version-##',
-			'js' => [
-				'gmaps.min.js',
-			],
+		'js' => [
+			'gmaps.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\GMapsApiAsset',
+			//'p2m\assets\GMapsApiAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

@@ -2,15 +2,16 @@
 /**
  * JSZipAsset.php
  *
- * Yii2 asset for JSZip
- * http://stuk.github.io/jszip/
+ * Yii2 asset for jszip
+ * https://github.com/Stuk/jszip
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\JSZipAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\JSZipAsset
  */
 
 /**
@@ -25,29 +26,30 @@ namespace p2m\assets;
 
 class JSZipAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.1.3';
+	protected $packageName = 'jszip';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/stuk/jszip/dist',
-			'js' => [
-				'jszip.min.js',
+	protected $packageVersion = '3.2.2';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/jszip@##-version-##/dist',
+		'sourcePath' => '@npm/jszip/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-kdlp/eaq4ocpSzG9lDxW0fS3Ed5zL6eVEqOG9E/cDKR2XcXTiXQkRR4WAuQ+6Bt1',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => 'https://cdnjs.cloudflare.com/ajax/libs/jszip/##-version-##',
-			'js' => [
-				'jszip.min.js',
-			],
+		'js' => [
+			'jszip.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

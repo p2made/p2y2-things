@@ -2,15 +2,16 @@
 /**
  * SweetAlertAsset.php
  *
- * Yii2 asset for Sweetalert
- * http://t4t5.github.io/sweetalert/
+ * Yii2 asset for SweetAlert
+ * https://sweetalert.js.org
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\SweetAlertAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\SweetAlertAsset
  */
 
 /**
@@ -25,35 +26,30 @@ namespace p2m\assets;
 
 class SweetAlertAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '1.1.3';
+	protected $packageName = 'sweetalert';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/sweetalert-##-version-##/dist',
-			'css' => [
-				'sweetalert.css',
-			],
-			'js' => [
-				'sweetalert.min.js',
+	protected $packageVersion = '2.1.2';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/sweetalert@##-version-##/dist',
+		'sourcePath' => '@npm/sweetalert/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-RIQuldGV8mnjGdob13cay/K1AJa+LR7VKHqSXrrB5DPGryn4pMUXRLh92Ev8KlGF',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
-			'css' => [
-				'sweet-alert.css',
-			],
-			'js' => [
-				'sweet-alert.min.js',
-			],
+		'js' => [
+			'sweetalert.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

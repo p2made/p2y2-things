@@ -6,11 +6,12 @@
  * https://scrollrevealjs.org
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\ScrollRevealAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\ScrollRevealAsset
  */
 
 /**
@@ -25,31 +26,30 @@ namespace p2m\assets;
 
 class ScrollRevealAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.4';
+	protected $packageName = 'scrollreveal';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/scrollreveal-##-version-##/dist',
-			'css' => [],
-			'js' => [
-				'scrollreveal.min.js',
+	protected $packageVersion = '4.0.5';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/scrollreveal@##-version-##/dist',
+		'sourcePath' => '@npm/scrollreveal/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-plDrqMHgu5akDTXIrAQhPO/4CW+KQgfTc1aXcxU9BFcm2RokcPRlqLWclkVN0tf4',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/##-version-##',
-			'css' => [],
-			'js' => [
-				'scrollreveal.min.js',
-			],
+		'js' => [
+			'scrollreveal.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

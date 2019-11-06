@@ -2,15 +2,16 @@
 /**
  * PdfMakeAsset.php
  *
- * Yii2 asset for PdfMake
- * http://pdfmake.org/
+ * Yii2 asset for pdfmake
+ * http://pdfmake.org
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\PdfMakeAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\PdfMakeAsset
  */
 
 /**
@@ -25,31 +26,30 @@ namespace p2m\assets;
 
 class PdfMakeAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '0.1.27';
+	protected $packageName = 'pdfmake';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/bpampuch/pdfmake',
-			'js' => [
-				'build/pdfmake.min.js',
-				'build/vfs_fonts.js',
+	protected $packageVersion = '0.1.60';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/##-version-##',
+		'sourcePath' => '@bower/pdfmake/build',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-bp4sgoC2kLRngEiDQvdyF2U/YLPD3wgh8pucz+VKwwSZT/F8pYMqC569o6409LKr',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.rawgit.com/bpampuch/pdfmake/##-version-##',
-			'js' => [
-				'build/pdfmake.min.js',
-				'build/vfs_fonts.js',
-			],
+		'js' => [
+			'pdfmake.min.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\VfsFontsAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

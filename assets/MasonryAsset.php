@@ -3,14 +3,15 @@
  * MasonryAsset.php
  *
  * Yii2 asset for Masonry
- * http://masonry.desandro.com
+ * https://masonry.desandro.com
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\MasonryAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\MasonryAsset
  */
 
 /**
@@ -25,29 +26,30 @@ namespace p2m\assets;
 
 class MasonryAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '4.1.1';
+	protected $packageName = 'masonry-layout';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/masonry-##-version-##/dist',
-			'js' => [
-				'masonry.pkgd.min.js',
+	protected $packageVersion = '4.2.2';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/masonry-layout@##-version-##/dist',
+		'sourcePath' => '@npm/masonry-layout/dist',
+		'static' => [
+			'jsOptions' => [
+				'integrity' => 'sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/##-version-##',
-			'js' => [
-				'masonry.pkgd.min.js',
-			],
+		'js' => [
+			'masonry.pkgd.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

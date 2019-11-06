@@ -2,15 +2,16 @@
 /**
  * MorrisAsset.php
  *
- * Yii2 asset for Morris.js
+ * Yii2 asset for morris.js
  * http://morrisjs.github.io/morris.js/
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2019
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\MorrisAsset
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-moment
+ * @class \p2m\assets\MorrisAsset
  */
 
 /**
@@ -25,36 +26,41 @@ namespace p2m\assets;
 
 class MorrisAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '0.5.1';
+	protected $packageName = 'morris.js';
 
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/morris.js-##-version-##',
+	protected $packageVersion = '0.5.0';
+
+	protected $packageData = [
+		'baseUrl' => 'https://cdn.jsdelivr.net/npm/morris.js@##-version-##',
+		'sourcePath' => '@npm/morris.js',
+		'static' => [
 			'css' => [
-				'morris.css',
+				'morris.min.css',
 			],
-			'js' => [
-				'morris.min.js',
+			'cssOptions' => [
+				'integrity' => 'sha384-QtmAcfo2z5YBnthp8cMvCB5AWnYhqjU8Q6loSdnhaL07hTbTyZLGo5/NkmyvcLic',
+				'crossorigin' => 'anonymous',
+			],
+			'jsOptions' => [
+				'integrity' => 'sha384-MrrVsMWyWD/58C8bLi2HA+haFjprTcQgAi/RIkF+Pu93ugZuKEZErN84oJiuRtJa',
+				'crossorigin' => 'anonymous',
 			],
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/##-version-##',
-			'css' => [
-				'morris.css',
-			],
-			'js' => [
-				'morris.min.js',
-			],
+		'css' => [
+			'morris.css',
+		],
+		'js' => [
+			'morris.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 			'p2m\assets\RaphaelAsset',
 		],
-	);
+	];
 
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset($this->packageData);
 		parent::init();
 	}
 }

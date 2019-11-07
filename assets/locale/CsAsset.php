@@ -43,7 +43,7 @@ class CsAsset extends \p2m\assets\base\P2AssetBundle
 			'cs.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

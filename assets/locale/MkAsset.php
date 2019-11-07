@@ -43,7 +43,7 @@ class MkAsset extends \p2m\assets\base\P2AssetBundle
 			'mk.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

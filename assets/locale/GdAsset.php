@@ -43,7 +43,7 @@ class GdAsset extends \p2m\assets\base\P2AssetBundle
 			'gd.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

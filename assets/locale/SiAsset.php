@@ -43,7 +43,7 @@ class SiAsset extends \p2m\assets\base\P2AssetBundle
 			'si.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

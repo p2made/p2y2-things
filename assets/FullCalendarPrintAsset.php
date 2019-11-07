@@ -47,7 +47,7 @@ class FullCalendarPrintAsset extends \p2m\assets\base\P2AssetBundle
 			'media' => 'print'
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\FullCalendarAsset',
 		],
 	];
 

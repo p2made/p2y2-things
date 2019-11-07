@@ -43,7 +43,7 @@ class SrCyrlAsset extends \p2m\assets\base\P2AssetBundle
 			'sr-cyrl.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

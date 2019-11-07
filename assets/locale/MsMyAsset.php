@@ -43,7 +43,7 @@ class MsMyAsset extends \p2m\assets\base\P2AssetBundle
 			'ms-my.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

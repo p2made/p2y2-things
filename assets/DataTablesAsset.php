@@ -50,7 +50,7 @@ class DataTablesAsset extends \p2m\assets\base\P2AssetBundle
 			'js/dataTables.bootstrap4.min.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\DataTablesAutoFillAssetBase',
 		],
 	];
 

@@ -43,7 +43,7 @@ class EnAuAsset extends \p2m\assets\base\P2AssetBundle
 			'en-au.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

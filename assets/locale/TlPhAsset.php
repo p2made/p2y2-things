@@ -43,7 +43,7 @@ class TlPhAsset extends \p2m\assets\base\P2AssetBundle
 			'tl-ph.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

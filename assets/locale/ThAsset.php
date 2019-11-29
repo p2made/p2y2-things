@@ -43,7 +43,7 @@ class ThAsset extends \p2m\assets\base\P2AssetBundle
 			'th.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

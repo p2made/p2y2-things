@@ -43,7 +43,7 @@ class HyAmAsset extends \p2m\assets\base\P2AssetBundle
 			'hy-am.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

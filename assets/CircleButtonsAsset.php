@@ -33,6 +33,6 @@ class P2YiiAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2JqueryAsset',
+		'p2m\assets\P2CoreAsset',
 	];
 }

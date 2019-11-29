@@ -43,7 +43,7 @@ class SsAsset extends \p2m\assets\base\P2AssetBundle
 			'ss.js',
 		],
 		'depends' => [
-			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MomentAsset',
 		],
 	];
 

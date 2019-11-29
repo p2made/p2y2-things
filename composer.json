@@ -31,7 +31,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 	"require": {
-		"p2made/yii2-p2y2-base": "4.0.0-rc1",
+		"p2made/yii2-p2y2-base": "~4.0",
 		"npm-asset/bootstrap": "~4.3",
 		"npm-asset/jquery": "~3.4",
 		"npm-asset/amplitudejs": "~5.0",

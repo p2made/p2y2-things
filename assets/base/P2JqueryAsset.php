@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-moment
+ * @package p2made/yii2-p2y2-things
  * @class \p2m\assets\base\P2JqueryAsset
  */
 
@@ -41,9 +41,6 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 		],
 		'js' => [
 			'jquery.min.js',
-		],
-		'depends' => [
-			'p2m\assets\P2CoreAsset',
 		],
 	];
 

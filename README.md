@@ -52,19 +52,19 @@ The preferred way to install P2Y2Things is through [composer](http://getcomposer
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-	composer require p2made/p2y2-things "^2.8"
+	composer require p2made/p2y2-things "dev-master"
 ```
 
 or
 
 ```
-	php composer.phar require p2made/p2y2-things "^2.8"
+	php composer.phar require p2made/p2y2-things "dev-master"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/p2y2-things": "^2.8"
+	"p2made/p2y2-things": "dev-master"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.

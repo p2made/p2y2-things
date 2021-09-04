@@ -1,4 +1,4 @@
-P2Y2Things v4.0.0-rc1
+P2Y2Things v5.0.0-dev
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
@@ -9,9 +9,15 @@ P2Y2Things v4.0.0-rc1
 
 ---
 
+# ¡¡ Notice !!
+
+After an extented period of life getting in the way I'm back to [Yii2](https://www.yiiframework.com/) development. I'll be rebasing every project as I resume work on it. Projects that use [Bootstrap](https://getbootstrap.com/) will resume as version `5.0.0` for Bootstrap 5.x.
+
+---
+
 A collection of resources as Assets, Helpers, & Widgets for Yii2.
 
-Version 4 is so numbered because I've migrated P2Y2Things to using Bootstrap v4.
+Version 5 is so numbered because I've migrated P2Y2Things to using Bootstrap v5.
 
 Highlights
 ----------

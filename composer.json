@@ -33,7 +33,7 @@
 		"p2made/p2y2-base": "dev-5.0.0-dev",
 		"npm-asset/bootstrap": "~5.1",
 		"npm-asset/jquery": "~3.6",
-		"npm-asset/amplitudejs": "~5.3",
+		"npm-asset/amplitudejs": "~5.2",
 		"npm-asset/animate.css": "~4.1",
 		"npm-asset/bootstrap-switch": "~3.4",
 		"npm-asset/bootswatch": "~5.1",

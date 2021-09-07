@@ -1,4 +1,5 @@
-# P2Y2Things
+P2Y2Things v5.0.0-dev
+==========
 
 [![License](https://poser.pugx.org/p2made/p2y2-things/license)](https://packagist.org/packages/p2made/p2y2-things)
 [![Total Downloads](https://poser.pugx.org/p2made/p2y2-things/downloads)](https://packagist.org/packages/p2made/p2y2-things)
@@ -58,13 +59,13 @@ Depending on your composer installation, run *one* of the following commands:
 or
 
 ```
-	php composer.phar require p2made/p2y2-things "dev-master"
+	php composer.phar require p2made/p2y2-things "dev-5.0.0-dev"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/p2y2-things": "dev-master"
+	"p2made/p2y2-things": "dev-5.0.0-dev"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.

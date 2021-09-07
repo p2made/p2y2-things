@@ -53,7 +53,7 @@ The preferred way to install P2Y2Things is through [composer](http://getcomposer
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-	composer require p2made/p2y2-things "dev-5.0.0-dev"
+	composer require p2made/p2y2-things "dev-master"
 ```
 
 or

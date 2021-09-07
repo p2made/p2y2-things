@@ -1,8 +1,6 @@
+### Yii2 ###
+
 # Mac DS_Store Files
 .DS_Store
 
-# windows thumbnail cache
-Thumbs.db
-
 /z_gitignore
-/z_orig

@@ -30,7 +30,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 	"require": {
-		"p2made/p2y2-base": "dev-master"
+		"p2made/p2y2-base": "dev-temp"
 	},
 	"autoload": {
 		"psr-4": {

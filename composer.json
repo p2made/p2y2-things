@@ -1,5 +1,5 @@
 {
-	"name": "p2made/p2y2-things",
+	"name": "p2made/yii2-p2y2-things",
 	"description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles &/or Widgets.",
 	"type": "yii2-extension",
 	"keywords": [
@@ -24,13 +24,13 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/p2made/p2y2-things/issues?state=open",
-		"source": "https://github.com/p2made/p2y2-things"
+		"issues": "https://github.com/p2made/yii2-p2y2-things/issues?state=open",
+		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 	"require": {
-		"p2made/p2y2-base": "dev-master"
+		"p2made/yii2-p2y2-base": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {

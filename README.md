@@ -64,7 +64,7 @@ or
 Alternatively add:
 
 ```
-	"p2made/p2y2-things": "dev-5.0.0-dev"
+		"p2made/p2y2-things": "dev-5.0.0-dev"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.

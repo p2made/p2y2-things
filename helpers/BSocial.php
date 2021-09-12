@@ -3,7 +3,7 @@
  * BSocial.php
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2019
+ * @copyright Copyright &copy; Pedro Plowman, 2021
  * @link https://github.com/p2made
  * @license MIT
  *

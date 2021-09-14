@@ -30,7 +30,8 @@
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 	"require": {
-		"p2made/p2y2-base": "dev-5.0.0-dev"
+		"p2made/p2y2-base": "^5.0",
+		"rmrevin/yii2-fontawesome": "~3.5"
 	},
 	"autoload": {
 		"psr-4": {

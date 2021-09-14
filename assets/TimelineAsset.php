@@ -25,7 +25,9 @@ class TimelineAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $resourceData = array(
 		'published' => [
-			'sourcePath' => '@vendor/p2y2-things/assets/lib',
+			'sourcePath' => __DIR__ . '/lib',
+//			'sourcePath' => '@vendor/p2y2-things/assets/lib',
+//			'sourcePath' => '@p2m@/pub',
 			'css' => [
 				'css/timeline.min.css',
 			],
@@ -41,3 +43,25 @@ class TimelineAsset extends \p2m\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
+//dirname(__DIR__)
+?>
+
+<?php
+namespace app\assets;
+
+use yii\web\AssetBundle;
+
+class FontAwesomeAsset extends AssetBundle
+{
+	public $sourcePath = '@bower/font-awesome';
+	public $css = [
+		'css/font-awesome.min.css',
+	];
+	public $publishOptions = [
+		'only' => [
+			'fonts/*',
+			'css/*',
+		]
+	];
+}
+

@@ -23,7 +23,7 @@ namespace p2m\assets;
 
 class P2CoreAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '@p2m/p2y2-things/assets/lib';
 
 	public $css = [
 		'css' => ['css/p2additions.css']

@@ -1,6 +1,6 @@
 <?php
 /**
- * P2CoreAsset.php
+ * P2CoreJsAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2021
@@ -8,33 +8,29 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-moment
- * @class \p2m\assets\base\P2CoreAsset
+ * @class \p2m\assets\base\P2CoreJsAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2CoreAsset::register($this);
+ * p2m\assets\base\P2CoreJsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2CoreAsset',
+ *     'p2m\assets\base\P2CoreJsAsset',
  */
 
 namespace p2m\assets;
 
-class P2CoreAsset extends \yii\web\AssetBundle
+class P2CoreJsAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@p2m/assets/lib';
-
-	public $css = [
-		//'css' => ['css/p2additions.css']
-	];
 
 	public $js = [
 		//'js' => ['js/p2additions.js']
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2BootstrapAsset',
+		'p2m\assets\base\P2BootstrapJsAsset',
 		'p2m\assets\base\P2YiiAsset',
 	];
 }

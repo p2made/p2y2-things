@@ -24,11 +24,11 @@
 
 namespace p2m\assets;
 
-class P2YiiAsset extends \yii\web\AssetBundle
+class CircleButtonsAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@p2m/lib';
 
-	public $css/circle-buttons.min.css = [
+	public $css = [
 		'css/circle-buttons.min.css',
 	];
 

@@ -28,14 +28,14 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $packageName = 'jquery';
 
-	protected $packageVersion = '3.4.1';
+	protected $packageVersion = '3.6.0';
 
 	protected $packageData = [
 		'baseUrl' => 'https://cdn.jsdelivr.net/npm/jquery@##-version-##/dist',
 		'sourcePath' => '@npm/jquery/dist',
 		'static' => [
 			'jsOptions' => [
-				'integrity' => 'sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh',
+				'integrity' => 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
 				'crossorigin' => 'anonymous',
 			],
 		],

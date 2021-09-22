@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapAsset.php
+ * P2BootstrapJsAsset.php
  *
  * Yii2 asset for Bootstrap
  * https://getbootstrap.com
@@ -11,20 +11,20 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapAsset
+ * @class \p2m\assets\base\P2BootstrapJsAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapAsset::register($this);
+ * p2m\assets\base\P2BootstrapJsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapAsset',
+ *     'p2m\assets\base\P2BootstrapJsAsset',
  */
 
 namespace p2m\assets\base;
 
-class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
+class P2BootstrapJsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $packageName = 'bootstrap';
 
@@ -34,17 +34,10 @@ class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 		'baseUrl' => 'https://cdn.jsdelivr.net/npm/bootstrap@##-version-##/dist',
 		'sourcePath' => '@npm/bootstrap/dist',
 		'static' => [
-			'cssOptions' => [
-				'integrity' => 'sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU',
-				'crossorigin' => 'anonymous',
-			],
 			'jsOptions' => [
 				'integrity' => 'sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ',
 				'crossorigin' => 'anonymous',
 			],
-		],
-		'css' => [
-			'css/bootstrap.min.css',
 		],
 		'js' => [
 			'js/bootstrap.min.js',

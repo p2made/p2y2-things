@@ -24,6 +24,21 @@
 
 namespace p2m\assets\base;
 
+class P2JqueryAsset extends \yii\web\AssetBundle
+{
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist';
+
+	public $js = [
+		'jquery.min.js',
+	];
+
+	public $jsOptions = [
+		'integrity' => 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
+		'crossorigin' => 'anonymous',
+	];
+}
+
+/**
 class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $packageName = 'jquery';
@@ -50,3 +65,4 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
+ */

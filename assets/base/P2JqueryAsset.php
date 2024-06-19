@@ -26,14 +26,14 @@ namespace p2m\assets\base;
 
 class P2JqueryAsset extends \yii\web\AssetBundle
 {
-	public $baseUrl = 'https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist';
 
 	public $js = [
 		'jquery.min.js',
 	];
 
 	public $jsOptions = [
-		'integrity' => 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
+		'integrity' => 'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=',
 		'crossorigin' => 'anonymous',
 	];
 }

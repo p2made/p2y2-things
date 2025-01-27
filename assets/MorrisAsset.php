@@ -63,3 +63,32 @@ class MorrisAsset extends \p2m\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
+
+
+
+{
+	public $sourcePath = '@frontend/modules/freelancer/lib';
+
+	/**
+	public $css = [
+		'css/freelancer.min.css',
+	];
+
+	public $cssOptions = [
+		'crossorigin' => 'anonymous',
+	];
+	 */
+
+	public $js = [
+		'js/freelancer.min.js',
+	];
+
+	public $jsOptions = [
+		'crossorigin' => 'anonymous',
+	];
+
+	public $depends = [
+		'common\assets\P2BootstrapIconsAsset',
+		'frontend\modules\freelancer\FreelancerFontsAsset',
+	];
+}

@@ -30,7 +30,6 @@
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 	"require": {
-		"p2made/p2y2-base": "dev-5.x-reboot"
 	},
 	"autoload": {
 		"psr-4": {

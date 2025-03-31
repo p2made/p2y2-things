@@ -1,10 +1,5 @@
 # P2Y2 Assets
 
-Resource | Asset Class
--------- | -----------
-[P2BootstrapIconsAsset](https://icons.getbootstrap.com/) | `p2m\assets\P2BootstrapIconsAsset`
-P2CircleButtonsAsset | `p2m\assets\CircleButtonsAsset`
-
 ## Overrides
 
 To override Bootstap & jQuery with CDN versions (which I recommend) include the following in your configuration...
@@ -57,21 +52,31 @@ return [
 ];
 ```
 
+## Notes
+
+For usage of the asset resources see their web pages.
+
+The `register` & `depends` lines for all assets are given as two blocks at the bottom of the page. Copy individual lines as required.
+
+Register assets in views with:
+
+```
+p2m\assets\AssetNameAsset::register($this);
+```
+
+& specify as a dependancy in assets with:
+
+```
+	public $depends = [
+		// ...
+		'p2m\assets\AssetNameAsset',
+		// ...
+	];
+```
+
 ## P2BootstrapIconsAsset
 
 Loads [Bootstrap Icons](https://icons.getbootstrap.com/) with a small additional CSS to provide an icon for BlueSky.
-
-Load with...
-
-```
-p2m\assets\P2BootstrapIconsAsset::register($this);
-```
-
-or specify as a dependency with...
-
-```
-	'p2m\assets\P2BootstrapIconsAsset',
-```
 
 The class for BlueSky is `bi-reddit `. Use it like...
 
@@ -81,19 +86,7 @@ The class for BlueSky is `bi-reddit `. Use it like...
 
 ## P2CircleButtonsAsset
 
-Load with...
-
-```
-p2m\assets\ P2CircleButtonsAsset::register($this);
-```
-
-or specify as a dependency with...
-
-```
-	'p2m\assets\ P2CircleButtonsAsset',
-```
-
-**P2CircleButtonsAsset** provides three additional classes for [Bootstrap](https://getbootstrap.com/docs/5.3/components/buttons/) buttons...
+Provides three additional classes for [Bootstrap](https://getbootstrap.com/docs/5.3/components/buttons/) buttons...
 
 ```
 .btn-circle
@@ -112,4 +105,27 @@ Use them the same way you use other Bootstrap button classes...
 <a class="btn btn-circle btn-lg" href="#" role="button">Link</a>
 <a class="btn btn-circle btn-xl" href="#" role="button">Link</a>
 ```
+
+Circle Button classes can be combined with other Bootstrap buttons.
+
+## P2JqueryEasingAsset
+
+Loads [jquery.easing](https://github.com/gdsmith/jquery.easing/) for use as described in the jquery.easing docs.
+
+## Register Lines
+
+```
+p2m\assets\P2BootstrapIconsAsset::register($this);
+p2m\assets\P2CircleButtonsAsset::register($this);
+p2m\assets\P2JqueryEasingAsset::register($this);
+```
+
+## Depends Lines
+
+```
+		'p2m\assets\P2BootstrapIconsAsset',
+		'p2m\assets\P2CircleButtonsAsset',
+		'p2m\assets\P2JqueryEasingAsset',
+```
+
 

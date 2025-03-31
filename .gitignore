@@ -3,4 +3,9 @@
 # Mac DS_Store Files
 .DS_Store
 
+# Ignore all contents of /vendor but keep the directory
+/vendor/*
+!/vendor/
+
+# Existing ignored directory
 /z_gitignore

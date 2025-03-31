@@ -43,11 +43,11 @@ Alternatively add:
 
 to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.
 
-# Wow 😱 so much empty
+# Highlights
 
-That will change as classes are rebased & reinstated.
+### [P2Y2 Assets](docs/Assets.md)
 
-Stay tuned.
+A kitchen-sink full of CSS & JS resources wrapped as Yii2 AssetBundles. Well it will be a kitchen-sink full when I've reinstated all of them. These are convenient ways to load a bunch of CSS & JS goodies. These assets use official CDNs whenever possible.
 
 --
 

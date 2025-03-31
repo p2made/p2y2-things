@@ -4,7 +4,6 @@
 .DS_Store
 
 # Ignore all contents of /vendor but keep the directory
-/vendor/*
 !/vendor/
 
 # Existing ignored directory

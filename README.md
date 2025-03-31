@@ -20,6 +20,29 @@ A collection of resources as Assets, Helpers, & Widgets for Yii2.
 
 Version 5 is so numbered because I've migrated P2Y2Things to using Bootstrap v5.
 
+# Installation
+
+The preferred way to install P2Y2Things is through [composer](http://getcomposer.org/download/).
+Depending on your composer installation, run *one* of the following commands:
+
+```
+	composer require p2made/p2y2-things "dev-master"
+```
+
+or
+
+```
+	php composer.phar require p2made/p2y2-things "dev-master"
+```
+
+Alternatively add:
+
+```
+	"p2made/p2y2-things": "dev-master"
+```
+
+to the requires section of your `composer.json` file & P2Y2Things will be installed next time you run `composer update`.
+
 # Wow 😱 so much empty
 
 That will change as classes are rebased & reinstated.

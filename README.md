@@ -12,6 +12,8 @@
 
 After an extented period of life getting in the way I'm back to [Yii2](https://www.yiiframework.com/) development. I'll be rebasing every project as I resume work on it. Projects that use [Bootstrap](https://getbootstrap.com/) will resume as version `5.0.0` for Bootstrap 5.x.
 
+2025-03-31 - As part of the rebase I am making a release `5.0-reboot` as soon as I commit this update to the README. I will then set almost all classes aside pending review. If `master`, `dev`, or the most recent release is missing something that you require, use `5.0-reboot` until that part is reinstated.
+
 ---
 
 A collection of resources as Assets, Helpers, & Widgets for Yii2.

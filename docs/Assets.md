@@ -78,10 +78,10 @@ p2m\assets\AssetNameAsset::register($this);
 
 Loads [Bootstrap Icons](https://icons.getbootstrap.com/) with a small additional CSS to provide an icon for BlueSky.
 
-The class for BlueSky is `bi-reddit `. Use it like...
+The class for BlueSky is `bi-bluesky`. Use it like...
 
 ```
-	<i class="bi bi-reddit"></i>
+	<i class="bi bi-bluesky"></i>
 ```
 
 ## P2CircleButtonsAsset

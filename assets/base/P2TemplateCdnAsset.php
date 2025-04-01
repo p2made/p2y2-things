@@ -51,7 +51,7 @@ class P2TemplateCdnAsset extends AssetBundle
 	public $baseUrl = '//_baseurl_';
 
 	public $css = [
-		'_source.min.css_',
+		'_source_min_css_',
 	];
 
 	public $cssOptions = [
@@ -60,7 +60,7 @@ class P2TemplateCdnAsset extends AssetBundle
 	];
 
 	public $js = [
-		'source.min.css',
+		'_source_min_js_',
 	];
 
 	public $jsOptions = [

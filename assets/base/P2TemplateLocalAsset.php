@@ -2,7 +2,7 @@
 /**
  * P2TemplateLocalAsset.php
  *
- * Yii2 asset for Animate.css
+ * Yii2 asset for _ResourceName_
  * https:_resource_website_
  *
  * @author Pedro Plowman

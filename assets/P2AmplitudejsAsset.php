@@ -24,7 +24,9 @@
 
 namespace p2m\assets;
 
-class P2AmplitudejsAsset extends \p2m\assets\base\P2AssetBundle
+use yii\web\AssetBundle;
+
+class P2AmplitudejsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 

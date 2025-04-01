@@ -29,7 +29,7 @@
  * 2. Replace all instances of 'P2TemplateCdnAsset' with the new class name
  * 3. Remove all unused variable blocks
  * 4. Replace all placeholders (wrapped in underscores '_') with values
- * 5. Delete this block
+ * 5. Delete this comment block
  *
  */
 

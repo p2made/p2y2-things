@@ -49,11 +49,11 @@ class P2TemplateLocalAsset extends AssetBundle
 	public $sourcePath = '@p2m/assets/lib';
 
 	public $css = [
-		'css/_source.min.css_',
+		'css/_source_min_css_',
 	];
 
 	public $js = [
-		'js/_source.min.js_',
+		'js/_source_min_js_',
 	];
 
 	public $depends = [

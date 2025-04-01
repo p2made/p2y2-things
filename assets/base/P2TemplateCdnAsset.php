@@ -33,7 +33,6 @@
  *
  */
 
-
 /**
  * Load this asset with...
  * p2m\assets\P2TemplateCdnAsset::register($this);

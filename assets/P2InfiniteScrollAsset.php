@@ -40,4 +40,8 @@ class P2InfiniteScrollAsset extends AssetBundle
 		'integrity' => 'sha256-tOCaIctmk4a/Rfaq6N7+YfBCs9N+SZ00U1XFwOnZzRk=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

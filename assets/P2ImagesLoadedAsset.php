@@ -40,4 +40,8 @@ class P2ImagesLoadedAsset extends AssetBundle
 		'integrity' => 'sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

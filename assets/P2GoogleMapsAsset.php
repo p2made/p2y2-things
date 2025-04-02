@@ -42,6 +42,6 @@ class P2GoogleMapsAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'_dependancy_',
+		'p2m\assets\P2CoreAsset',
 	];
 }

@@ -40,4 +40,8 @@ class P2HolderJsAsset extends AssetBundle
 		'integrity' => 'sha256-nQwLrn6KDmjRvP9frt70dSS7R2ubtjzxRry3Y+K3zKc=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

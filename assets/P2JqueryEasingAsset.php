@@ -40,4 +40,8 @@ class P2JqueryEasingAsset extends AssetBundle
 		'integrity' => 'sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

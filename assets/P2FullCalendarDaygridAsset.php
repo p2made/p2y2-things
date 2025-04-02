@@ -44,4 +44,8 @@ class P2FullCalendarDaygridAsset extends AssetBundle
 	public $depends = [
 		'p2m\assets\P2FullCalendarAsset',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

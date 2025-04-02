@@ -49,5 +49,9 @@ class P2FlickityAsset extends AssetBundle
 		'integrity' => 'sha256-K8XfylopijCrS7K3AJlF3A1fUNnM8a9m0co7Vl6Qkkw=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }
 

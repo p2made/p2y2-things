@@ -40,4 +40,8 @@ class P2FitvidsAsset extends AssetBundle
 		'integrity' => 'sha256-pvPfbSUpzlFoHkZbg7/qApej+2X2J7wWT87ey6rcegw=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

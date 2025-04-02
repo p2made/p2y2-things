@@ -40,4 +40,8 @@ class P2DraggabillyAsset extends AssetBundle
 		'integrity' => 'sha384-4nAiCTVlq93vL1UaXiH8FDlZokfeoYM8mpb9/URzPuIfHvahTs8/gZxUimyaenOc',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

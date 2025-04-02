@@ -40,4 +40,8 @@ class P2ChartJsAsset extends AssetBundle
 		'integrity' => 'sha384-T/4KgSWuZEPozpPz7rnnp/5lDSnpY1VPJCojf1S81uTHS1E38qgLfMgVsAeRCWc4',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

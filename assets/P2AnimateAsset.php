@@ -40,4 +40,8 @@ class P2AnimateAsset extends AssetBundle
 		'integrity' => 'sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

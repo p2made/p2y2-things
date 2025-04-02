@@ -41,4 +41,8 @@ class P2Bs5Lightbox extends AssetBundle
 		'integrity' => 'sha256-wBVT6m5bc14zQfKS8VaFxRBxmovsFNGP3mAxmll9p7Y=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

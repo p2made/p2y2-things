@@ -40,4 +40,8 @@ class P2AmplitudejsAsset extends AssetBundle
 		'integrity' => 'sha256-k9ynzmYzFiZC/rmY0I9VYDWOwFeODdJEzluENN5pLcg=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

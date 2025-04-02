@@ -57,6 +57,6 @@ class P2TemplateLocalAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'_dependancy_',
+		'p2m\assets\P2CoreAsset',
 	];
 }

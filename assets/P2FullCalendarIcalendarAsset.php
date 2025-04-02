@@ -46,6 +46,6 @@ class P2FullCalendarIcalendarAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2FullCalendarBootstrap5Asset',
 	];
 }

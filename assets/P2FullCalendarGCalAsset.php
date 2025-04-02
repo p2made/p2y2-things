@@ -40,4 +40,8 @@ class P2FullCalendarGCalAsset extends AssetBundle
 		'integrity' => 'sha256-Ts9kcB78f6SoaBwxP0P4c6I6lJ7rtGCsKQiPS3ykVGQ=',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2FullCalendarAsset',
+	];
 }

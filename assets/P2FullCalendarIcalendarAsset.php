@@ -1,6 +1,6 @@
 <?php
 /**
- * P2FullCalendarIcalAsset.php
+ * P2FullCalendarIcalendarAsset.php
  *
  * Yii2 asset for FullCalendar/icalendar
  * https://fullcalendar.io
@@ -11,22 +11,22 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\P2FullCalendarIcalAsset
+ * @class \p2m\assets\P2FullCalendarIcalendarAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\P2FullCalendarIcalAsset::register($this);
+ * p2m\assets\P2FullCalendarIcalendarAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\P2FullCalendarIcalAsset',
+ *     'p2m\assets\P2FullCalendarIcalendarAsset',
  */
 
 namespace p2m\assets;
 
 use yii\web\AssetBundle;
 
-class P2FullCalendarIcalAsset extends AssetBundle
+class P2FullCalendarIcalendarAsset extends AssetBundle
 {
 	public $sourcePath = null;
 

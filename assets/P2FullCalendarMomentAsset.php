@@ -2,8 +2,8 @@
 /**
  * P2FullCalendarMomentAsset.php
  *
- * Yii2 asset for _ResourceName_
- * https:_resource_website_
+ * Yii2 asset for FullCalendar/moment
+ * https://fullcalendar.io
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025

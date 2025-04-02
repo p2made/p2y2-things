@@ -15,22 +15,6 @@
  */
 
 /**
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ #####                   USAGE                   ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
- * ##### ^ #####                                           ##### ^ #####
- * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- *
- * 3. Remove all unused variable blocks
- * 4. Replace all placeholders (wrapped in underscores '_') with values
- * 5. Delete this comment block
- */
-
-/**
  * Load this asset with...
  * p2m\assets\P2FullCalendarMomentTimezoneAsset::register($this);
  *

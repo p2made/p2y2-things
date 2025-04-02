@@ -42,7 +42,6 @@ class P2DataTablesSearchBuilderAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2DataTablesBootstrap5Asset',
+		'p2m\assets\base\P2DataTablesSearchBuilderBaseAsset',
 	];
 }
-

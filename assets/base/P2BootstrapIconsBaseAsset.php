@@ -52,6 +52,6 @@ class P2BootstrapIconsBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\base\P2CoreAsset',
 	];
 }

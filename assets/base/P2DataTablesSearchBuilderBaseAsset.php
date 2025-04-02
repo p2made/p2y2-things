@@ -1,9 +1,9 @@
 <?php
 /**
- * base/P2BootstrapIconsBaseAsset.php
+ * P2DataTablesSearchBuilderBaseAsset.php
  *
- * Yii2 asset for Bootstrap Icons
- * https://icons.getbootstrap.com/
+ * Yii2 base asset for DataTables/searchBuilder
+ * https://datatables.net
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapIconsBaseAsset
+ * @class \p2m\assets\base\P2DataTablesSearchBuilderBaseAsset
  */
 
 /**
@@ -26,32 +26,41 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+ * p2m\assets\base\P2DataTablesSearchBuilderBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+ *     'p2m\assets\base\P2DataTablesSearchBuilderBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2BootstrapIconsBaseAsset extends AssetBundle
+class P2DataTablesSearchBuilderBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdn.datatables.net/searchbuilder/1.8.2';
 
 	public $css = [
-		'bootstrap-icons.css',
+		'css/searchBuilder.bootstrap5.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+		'integrity' => 'sha384-c+17EpI1t/ZAjBoElPoW3nsmP/5974nO3qiFjdyE/JLy0pDYToN1xM+cdrRNTcab',
+		'crossorigin' => 'anonymous',
+	];
+
+	public $js = [
+		'js/dataTables.searchBuilder.min.js',
+	];
+
+	public $jsOptions = [
+		'integrity' => 'sha384-SZjRT2FoEIHY6x2Ja59fXuRxb9tFVTEq9iXTHLglPW1ZH8Uel5uyi/grp/MuR32Q',
 		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2DataTablesBootstrap5Asset',
 	];
 }

@@ -1,9 +1,9 @@
 <?php
 /**
- * base/P2BootstrapIconsBaseAsset.php
+ * P2DataTablesPdfmakeBaseAsset.php
  *
- * Yii2 asset for Bootstrap Icons
- * https://icons.getbootstrap.com/
+ * Yii2 base asset for DataTables/pdfmake
+ * https://datatables.net
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapIconsBaseAsset
+ * @class \p2m\assets\base\P2DataTablesPdfmakeBaseAsset
  */
 
 /**
@@ -26,32 +26,32 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+ * p2m\assets\base\P2DataTablesPdfmakeBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+ *     'p2m\assets\base\P2DataTablesPdfmakeBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2BootstrapIconsBaseAsset extends AssetBundle
+class P2DataTablesPdfmakeBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7';
 
-	public $css = [
-		'bootstrap-icons.css',
+	public $js = [
+		'pdfmake.min.js',
 	];
 
-	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+	public $jsOptions = [
+		'integrity' => 'sha384-VFQrHzqBh5qiJIU0uGU5CIW3+OWpdGGJM9LBnGbuIH2mkICcFZ7lPd/AAtI7SNf7',
 		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2DataTablesHtml5ExportAsset',
 	];
 }

@@ -1,9 +1,9 @@
 <?php
 /**
- * base/P2BootstrapIconsBaseAsset.php
+ * P2FullCalendarBaseAsset.php
  *
- * Yii2 asset for Bootstrap Icons
- * https://icons.getbootstrap.com/
+ * Yii2 asset for FullCalendar
+ * https://fullcalendar.io/
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapIconsBaseAsset
+ * @class \p2m\assets\base\P2FullCalendarBaseAsset
  */
 
 /**
@@ -26,28 +26,28 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+ * p2m\assets\base\P2FullCalendarBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+ *     'p2m\assets\base\P2FullCalendarBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2BootstrapIconsBaseAsset extends AssetBundle
+class P2FullCalendarBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/fullcalendar@6.1.15';
 
-	public $css = [
-		'bootstrap-icons.css',
+	public $js = [
+		'index.global.min.js',
 	];
 
-	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+	public $jsOptions = [
+		'integrity' => 'sha256-ZztCtsADLKbUFK/X6nOYnJr0eelmV2X3dhLDB/JK6fM=',
 		'crossorigin' => 'anonymous',
 	];
 

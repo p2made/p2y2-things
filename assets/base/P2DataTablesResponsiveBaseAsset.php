@@ -1,9 +1,9 @@
 <?php
 /**
- * base/P2BootstrapIconsBaseAsset.php
+ * P2DataTablesResponsiveBaseAsset.php
  *
- * Yii2 asset for Bootstrap Icons
- * https://icons.getbootstrap.com/
+ * Yii2 base asset for DataTables/Responsive
+ * https://datatables.net
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapIconsBaseAsset
+ * @class \p2m\assets\base\P2DataTablesResponsiveBaseAsset
  */
 
 /**
@@ -26,32 +26,41 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+ * p2m\assets\base\P2DataTablesResponsiveBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+ *     'p2m\assets\base\P2DataTablesResponsiveBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2BootstrapIconsBaseAsset extends AssetBundle
+class P2DataTablesResponsiveBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdn.datatables.net/responsive/3.0.4';
 
 	public $css = [
-		'bootstrap-icons.css',
+		'css/responsive.bootstrap5.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+		'integrity' => 'sha384-seyUnB//1QOFEqox9uI7YTLBgz9jBwFRqZvsEPFrTw6NAsFEo70nhBWsQfODqiYA',
+		'crossorigin' => 'anonymous',
+	];
+
+	public $js = [
+		'js/dataTables.responsive.min.js',
+	];
+
+	public $jsOptions = [
+		'integrity' => 'sha384-A6In5tKqlvPZKDpH+ei4A3A4TZrEsyvvN2Fe+oCB1IaQfGD5HNqDIxwjztNKSGDd',
 		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2DataTablesBootstrap5Asset',
 	];
 }

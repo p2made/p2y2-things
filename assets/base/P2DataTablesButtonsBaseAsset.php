@@ -1,9 +1,9 @@
 <?php
 /**
- * base/P2BootstrapIconsBaseAsset.php
+ * P2DataTablesButtonsBaseAsset.php
  *
- * Yii2 asset for Bootstrap Icons
- * https://icons.getbootstrap.com/
+ * Yii2 base asset for DataTables/Buttons
+ * https://datatables.net
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2BootstrapIconsBaseAsset
+ * @class \p2m\assets\base\P2DataTablesButtonsBaseAsset
  */
 
 /**
@@ -26,32 +26,41 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+ * p2m\assets\base\P2DataTablesButtonsBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+ *     'p2m\assets\base\P2DataTablesButtonsBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2BootstrapIconsBaseAsset extends AssetBundle
+class P2DataTablesButtonsBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdn.datatables.net/buttons/3.2.2';
 
 	public $css = [
-		'bootstrap-icons.css',
+		'css/buttons.bootstrap5.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+		'integrity' => 'sha384-DJhypeLg79qWALC844KORuTtaJcH45J+36wNgzj4d1Kv1vt2PtRuV2eVmdkVmf/U',
+		'crossorigin' => 'anonymous',
+	];
+
+	public $js = [
+		'js/dataTables.buttons.min.js',
+	];
+
+	public $jsOptions = [
+		'integrity' => 'sha384-DmaAfo+/+UjRKHPidNNswlNqd9ybuE6yx9zKHyMY+vYy9SZhQEu4nauMVgwSx4Z/',
 		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2DataTablesBootstrap5Asset',
 	];
 }

@@ -28,7 +28,7 @@ use yii\web\AssetBundle;
 
 class P2BootstrapIconsAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/lib';
+	public $sourcePath = '@p2m/assets/lib';
 
 	public $css = [
 		'css/bootstrap-icons.min.css',
@@ -36,5 +36,9 @@ class P2BootstrapIconsAsset extends AssetBundle
 
 	public $depends = [
 		'p2m\assets\base\P2BootstrapIconsBaseAsset',
+	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
 	];
 }

@@ -1,9 +1,9 @@
 <?php
 /**
- * P2FullCalendarMomentAsset.php
+ * P2FullCalendarMomentTimezoneAsset.php
  *
- * Yii2 asset for _ResourceName_
- * https:_resource_website_
+ * Yii2 asset for FullCalendar/moment-timezone
+ * https://fullcalendar.io
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\P2FullCalendarMomentAsset
+ * @class \p2m\assets\P2FullCalendarMomentTimezoneAsset
  */
 
 /**
@@ -32,28 +32,28 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2FullCalendarMomentAsset::register($this);
+ * p2m\assets\P2FullCalendarMomentTimezoneAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\P2FullCalendarMomentAsset',
+ *     'p2m\assets\P2FullCalendarMomentTimezoneAsset',
  */
 
 namespace p2m\assets;
 
 use yii\web\AssetBundle;
 
-class P2FullCalendarMomentAsset extends AssetBundle
+class P2FullCalendarMomentTimezoneAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/@fullcalendar/moment@6.1.15';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/@fullcalendar/moment-timezone@6.1.15';
 
 	public $js = [
 		'index.global.min.js',
 	];
 
 	public $jsOptions = [
-		'integrity' => 'sha256-acE4J0fvmgX3F2XJaXkRNZBNau8cXLPgGDE/CjOIbTE=',
+		'integrity' => 'sha256-GBT21tB6Q3amNNQ4DiwZHj9KtNjquAXMELgIMdx8NvA=',
 		'crossorigin' => 'anonymous',
 	];
 

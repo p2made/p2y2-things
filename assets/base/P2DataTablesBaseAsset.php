@@ -52,6 +52,6 @@ class P2DataTablesBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2CoreAsset',
+		'p2m\assets\P2CoreAsset',
 	];
 }

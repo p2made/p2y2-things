@@ -50,4 +50,8 @@ class P2BootstrapIconsBaseAsset extends AssetBundle
 		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
 		'crossorigin' => 'anonymous',
 	];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+	];
 }

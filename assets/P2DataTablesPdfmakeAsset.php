@@ -2,7 +2,7 @@
 /**
  * P2DataTablesPdfmakeAsset.php
  *
- * Yii2 asset for DataTables/_plugin_
+ * Yii2 asset for DataTables/pdfmake
  * https://datatables.net
  *
  * @author Pedro Plowman

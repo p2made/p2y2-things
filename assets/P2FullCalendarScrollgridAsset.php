@@ -51,6 +51,6 @@ class P2FullCalendarScrollgridAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'_dependancy_',
+		'p2m\assets\P2FullCalendarAsset',
 	];
 }

@@ -22,10 +22,6 @@
  * ##### ^ #####                                           ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
- *
- * 3. Remove all unused variable blocks
- * 4. Replace all placeholders (wrapped in underscores '_') with values
- * 5. Delete this comment block
  */
 
 /**
@@ -56,6 +52,6 @@ class P2DataTablesBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'_dependancy_',
+		'p2m\assets\P2CoreAsset',
 	];
 }

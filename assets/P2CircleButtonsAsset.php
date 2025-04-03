@@ -23,7 +23,9 @@
 
 namespace p2m\assets;
 
-class P2YiiAsset extends \yii\web\AssetBundle
+use yii\web\AssetBundle;
+
+class P2YiiAsset extends AssetBundle
 {
 	public $sourcePath = '@p2m/assets/lib';
 

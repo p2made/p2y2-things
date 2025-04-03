@@ -1,6 +1,6 @@
 <?php
 /**
- * QunitAsset.php
+ * P2QunitAsset.php
  *
  * Yii2 asset for QUnit
  * https://qunitjs.com
@@ -11,22 +11,22 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\QunitAsset
+ * @class \p2m\assets\P2QunitAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\QunitAsset::register($this);
+ * p2m\assets\P2QunitAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\QunitAsset',
+ *     'p2m\assets\P2QunitAsset',
  */
 
 namespace p2m\assets;
 
 use yii\web\AssetBundle;
 
-class QunitAsset extends AssetBundle
+class P2QunitAsset extends AssetBundle
 {
 	public $sourcePath = null;
 

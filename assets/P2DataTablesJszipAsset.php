@@ -28,20 +28,8 @@ use yii\web\AssetBundle;
 
 class P2DataTablesJszipAsset extends AssetBundle
 {
-	public $sourcePath = null;
-
-	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1';
-
-	public $js = [
-		'jszip.min.js',
-	];
-
-	public $jsOptions = [
-		'integrity' => 'sha384-+mbV2IY1Zk/X1p/nWllGySJSUN8uMs+gUAN10Or95UBH0fpj6GfKgPmgC5EXieXG',
-		'crossorigin' => 'anonymous',
-	];
-
 	public $depends = [
 		'p2m\assets\P2DataTablesHtml5ExportAsset',
+		'p2m\assets\P2JSZipAsset',
 	];
 }

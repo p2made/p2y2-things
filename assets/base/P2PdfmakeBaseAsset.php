@@ -1,9 +1,9 @@
 <?php
 /**
- * P2DataTablesPdfmakeBaseAsset.php
+ * P2PdfmakeBaseAsset.php
  *
- * Yii2 base asset for DataTables/pdfmake
- * https://datatables.net
+ * Yii2 base asset for pdfmake
+ * http://pdfmake.org
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2DataTablesPdfmakeBaseAsset
+ * @class \p2m\assets\base\P2PdfmakeBaseAsset
  */
 
 /**
@@ -26,17 +26,17 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2DataTablesPdfmakeBaseAsset::register($this);
+ * p2m\assets\base\P2PdfmakeBaseAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\base\P2DataTablesPdfmakeBaseAsset',
+ *     'p2m\assets\base\P2PdfmakeBaseAsset',
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2DataTablesPdfmakeBaseAsset extends AssetBundle
+class P2PdfmakeBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
@@ -52,6 +52,6 @@ class P2DataTablesPdfmakeBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2DataTablesHtml5ExportAsset',
+		'p2m\assets\P2CoreAsset',
 	];
 }

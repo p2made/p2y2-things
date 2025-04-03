@@ -28,20 +28,8 @@ use yii\web\AssetBundle;
 
 class P2DataTablesPdfmakeAsset extends AssetBundle
 {
-	public $sourcePath = null;
-
-	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7';
-
-	public $js = [
-		'vfs_fonts.js',
-	];
-
-	public $jsOptions = [
-		'integrity' => 'sha384-/RlQG9uf0M2vcTw3CX7fbqgbj/h8wKxw7C3zu9/GxcBPRKOEcESxaxufwRXqzq6n',
-		'crossorigin' => 'anonymous',
-	];
-
 	public $depends = [
-		'p2m\assets\base\P2DataTablesPdfmakeBaseAsset',
+		'p2m\assets\P2DataTablesHtml5ExportAsset',
+		'p2m\assets\P2PdfMakeAsset',
 	];
 }

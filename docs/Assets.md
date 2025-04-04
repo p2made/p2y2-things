@@ -127,10 +127,6 @@ P2TimelineJs3Asset | [timelinejs3](https://timeline.knightlab.com/) | P2CoreAsse
 
 
 
-
-
-
-
 ## Notes
 
 For usage of the asset resources see their web pages.

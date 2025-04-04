@@ -1,5 +1,9 @@
 # P2Y2 Assets
 
+## ¡¡ Heads Up !!
+
+This documentation page is skeletal & incomplete (& might not be perfectly accurate).
+
 ## Overrides
 
 To override Bootstap & jQuery with CDN versions (which I recommend) include the following in your configuration...

@@ -1,6 +1,6 @@
 <?php
 /**
- * Lightbox2Asset.php
+ * P2Lightbox2Asset.php
  *
  * Yii2 asset for LIGHTBOX
  * https://lokeshdhakar.com/projects/lightbox2/
@@ -11,22 +11,22 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\Lightbox2Asset
+ * @class \p2m\assets\P2Lightbox2Asset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\Lightbox2Asset::register($this);
+ * p2m\assets\P2Lightbox2Asset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\Lightbox2Asset',
+ *     'p2m\assets\P2Lightbox2Asset',
  */
 
 namespace p2m\assets;
 
 use yii\web\AssetBundle;
 
-class Lightbox2Asset extends AssetBundle
+class P2Lightbox2Asset extends AssetBundle
 {
 	public $sourcePath = null;
 

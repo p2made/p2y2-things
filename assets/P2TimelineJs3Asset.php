@@ -3,7 +3,7 @@
  * P2TimelineJs3Asset.php
  *
  * Yii2 asset for timelinejs3
- * https:_resource_website_
+ * https://timeline.knightlab.com/
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025

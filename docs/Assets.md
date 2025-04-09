@@ -127,10 +127,6 @@ P2TimelineJs3Asset | [timelinejs3](https://timeline.knightlab.com/) | P2CoreAsse
 
 
 
-
-
-
-
 ## Notes
 
 For usage of the asset resources see their web pages.
@@ -244,11 +240,12 @@ p2m\assets\P2InfiniteScrollAsset::register($this);
 p2m\assets\P2IsotopeAsset::register($this);
 p2m\assets\P2JqueryEasingAsset::register($this);
 p2m\assets\P2JSZipAsset::register($this);
-p2m\assets\Lightbox2Asset::register($this);
+p2m\assets\P2Lightbox2Asset::register($this);
 p2m\assets\P2MagnificPopupAsset::register($this);
 p2m\assets\P2MasonryAsset::register($this);
 p2m\assets\P2MathJsAsset::register($this);
 p2m\assets\P2MetisMenuAsset::register($this);
+p2m\assets\P2MorrisAsset::register($this);
 p2m\assets\P2PackeryAsset::register($this);
 p2m\assets\P2PdfMakeAsset::register($this);
 p2m\assets\P2QunitAsset::register($this);
@@ -258,6 +255,7 @@ p2m\assets\P2SimpleLineIconsAsset::register($this);
 p2m\assets\P2SweetAlertAsset::register($this);
 p2m\assets\P2TimelineAsset::register($this);
 p2m\assets\P2TimelineJs3Asset::register($this);
+p2m\assets\P2WowAsset::register($this);
 ```
 
 ## Depends Lines
@@ -313,11 +311,12 @@ p2m\assets\P2TimelineJs3Asset::register($this);
 		'p2m\assets\P2IsotopeAsset',
 		'p2m\assets\P2JqueryEasingAsset',
 		'p2m\assets\P2JSZipAsset',
-		'p2m\assets\Lightbox2Asset',
+		'p2m\assets\P2Lightbox2Asset',
 		'p2m\assets\P2MagnificPopupAsset',
 		'p2m\assets\P2MasonryAsset',
 		'p2m\assets\P2MathJsAsset',
 		'p2m\assets\P2MetisMenuAsset',
+		'p2m\assets\P2MorrisAsset',
 		'p2m\assets\P2PackeryAsset',
 		'p2m\assets\P2PdfMakeAsset',
 		'p2m\assets\P2QunitAsset',
@@ -327,6 +326,5 @@ p2m\assets\P2TimelineJs3Asset::register($this);
 		'p2m\assets\P2SweetAlertAsset',
 		'p2m\assets\P2TimelineAsset',
 		'p2m\assets\P2TimelineJs3Asset',
+		'p2m\assets\P2WowAsset',
 ```
-
-

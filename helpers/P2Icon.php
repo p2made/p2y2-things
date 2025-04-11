@@ -1,6 +1,6 @@
 <?php
 /**
- * P2Flag.php
+ * P2Icon.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,18 +9,18 @@
  */
 
 /**
- * @class \p2m\flags\P2Flag
+ * @class \p2m\helpers\P2Icon
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\flags;
+namespace p2m\helpers;
 
-use p2m\flags\P2FlagIcons;
+use p2m\helpers\P2BootstrapIcons;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
-class P2Flag
+class P2Icon
 {
 	/**
 	 * @var array
@@ -37,7 +37,7 @@ class P2Flag
 		Html::addCssClass($options, $cssPrefix);
 
 		if (!empty($name)) {
-			Html::addCssClass($options, P2FlagIcons::$basePrefix . '-' . $name);
+			Html::addCssClass($options, P2BootstrapIcons::$basePrefix . '-' . $name);
 		}
 
 		$this->options = $options;
@@ -57,36 +57,36 @@ class P2Flag
 
 	/**
 	 * @param string $value
-	 * @return \p2m\flags\P2Flag
+	 * @return \p2m\icons\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 */
 	public function color($value)
 	{
 		$values = [
-			P2FlagIcons::PRIMARY,
-			P2FlagIcons::PRIMARY_EMPHASIS,
-			P2FlagIcons::SECONDARY,
-			P2FlagIcons::SECONDARY_EMPHASIS,
-			P2FlagIcons::SUCCESS,
-			P2FlagIcons::SUCCESS_EMPHASIS,
-			P2FlagIcons::DANGER,
-			P2FlagIcons::DANGER_EMPHASIS,
-			P2FlagIcons::WARNING,
-			P2FlagIcons::WARNING_EMPHASIS,
-			P2FlagIcons::INFO,
-			P2FlagIcons::INFO_EMPHASIS,
-			P2FlagIcons::LIGHT,
-			P2FlagIcons::LIGHT_EMPHASIS,
-			P2FlagIcons::DARK,
-			P2FlagIcons::DARK_EMPHASIS,
+			P2BootstrapIcons::PRIMARY,
+			P2BootstrapIcons::PRIMARY_EMPHASIS,
+			P2BootstrapIcons::SECONDARY,
+			P2BootstrapIcons::SECONDARY_EMPHASIS,
+			P2BootstrapIcons::SUCCESS,
+			P2BootstrapIcons::SUCCESS_EMPHASIS,
+			P2BootstrapIcons::DANGER,
+			P2BootstrapIcons::DANGER_EMPHASIS,
+			P2BootstrapIcons::WARNING,
+			P2BootstrapIcons::WARNING_EMPHASIS,
+			P2BootstrapIcons::INFO,
+			P2BootstrapIcons::INFO_EMPHASIS,
+			P2BootstrapIcons::LIGHT,
+			P2BootstrapIcons::LIGHT_EMPHASIS,
+			P2BootstrapIcons::DARK,
+			P2BootstrapIcons::DARK_EMPHASIS,
 		];
 
 		return $this->addCssClass(
-			P2FlagIcons::$textPrefix . '-' . $value,
+			P2BootstrapIcons::$textPrefix . '-' . $value,
 			in_array((string)$value, $values, true),
 			sprintf(
 				'%s - invalid value. Use one of the constants: %s.',
-				'P2FlagIcons::size()',
+				'P2BootstrapIcons::size()',
 				implode(', ', $values)
 			)
 		);
@@ -96,7 +96,7 @@ class P2Flag
 	 * @param string $class
 	 * @param bool $condition
 	 * @param string|bool $throw
-	 * @return \p2m\flags\P2Flag
+	 * @return \p2m\icons\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 * @codeCoverageIgnore
 	 */

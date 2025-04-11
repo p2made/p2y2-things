@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\flags\FIB
+ * @class \p2m\helpers\FIB
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\flags;
+namespace p2m\helpers;
 
-class FIB extends P2BootstrapIcons
+class FIB extends P2FlagIcons
 {
-	public static $cssPrefix = 'fib';
+	public static $cssPrefix = P2FlagIcons::FLAG_BUTTON;
 }

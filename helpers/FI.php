@@ -1,6 +1,6 @@
 <?php
 /**
- * BIS.php
+ * FI.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\icons\BIS
+ * @class \p2m\helpers\FI
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\icons;
+namespace p2m\helpers;
 
-class BS extends P2BootstrapIcons
+class FI extends P2FlagIcons
 {
-	//public static $cssPrefix = 'bis';
+	public static $cssPrefix = P2FlagIcons::FLAG_ICON;
 }

@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\flags\P2FlagIcons
+ * @class \p2m\helpers\P2FlagIcons
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\flags;
+namespace p2m\helpers;
 
-use p2m\flags\P2Flag;
+use p2m\helpers\P2Flag;
 
 class P2FlagIcons
 {
@@ -23,19 +23,19 @@ class P2FlagIcons
 	 * CSS class prefix
 	 * @var string
 	 */
-	public static $cssPrefix = 'fi';
+	public static $cssPrefix = self::FLAG_ICON;
 
 	/**
 	 * CSS base prefix
 	 * @var string
 	 */
-	public static $basePrefix = 'fi';
+	public static $basePrefix = self::FLAG_ICON;
 
 	/**
 	 * CSS square suffix
 	 * @var string
 	 */
-	public static $basePrefix = 'fis';
+	public static $squarePrefix = self::SQUARE_FLAG;
 
 	/**
 	 * Creates an `Icon` component that can be used to FontAwesome html icon
@@ -64,7 +64,7 @@ class P2FlagIcons
 
 	const FLAG_ICON   = 'fi';  // Flag Icon
 	const FLAG_BUTTON = 'fib'; // Flag Button
-	const SQUARE_ICON = 'fis'; // Flag Icon Square
+	const SQUARE_FLAG = 'fis'; // Flag Icon Square
 
 	/**
 	 * flags name

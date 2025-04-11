@@ -9,11 +9,11 @@
  */
 
 /**
- * @class \p2m\icons\BI
+ * @class \p2m\helpers\BI
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\icons;
+namespace p2m\helpers;
 
 class BI extends P2BootstrapIcons
 {

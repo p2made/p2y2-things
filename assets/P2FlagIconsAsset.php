@@ -28,20 +28,13 @@ use yii\web\AssetBundle;
 
 class P2FlagIconsAsset extends AssetBundle
 {
-	public $sourcePath = null;
-
-	public $baseUrl = '//cdn.jsdelivr.net/npm/flag-icons@7.3.2';
+	public $sourcePath = '@p2m/assets/lib';
 
 	public $css = [
 		'css/flag-icons.min.css',
 	];
 
-	public $cssOptions = [
-		'integrity' => 'sha256-tyPeBlnZW2qWbAF1hQiCt9qo6SOgOSymvJBum+FrrwI=',
-		'crossorigin' => 'anonymous',
-	];
-
 	public $depends = [
-		'p2m\assets\P2CoreAsset',
+		'p2m\assets\base\P2FlagIconsBaseAsset',
 	];
 }

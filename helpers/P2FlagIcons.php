@@ -72,6 +72,44 @@ class P2FlagIcons
 
 	const _UNKNOWN                                  = 'xx'; // Unknown
 
+// Asia
+
+	const _EAST_TURKESTAN = 'cn-et'; // East Turkestan
+
+// Australia
+
+	const _ABORIGINAL_AUSTRALIANS = 'au-aa'; // Aboriginal Australians
+	const _EUREKA_FLAG = 'au-eu'; // Eureka Flag
+	const _TORRES_STRAIT_ISLANDS = 'au-tsi'; // Torres Strait Islands
+
+// Europe
+
+	const _ALTAI_REPUBLIC = 'ru-al'; // Altai Republic
+	const _ASTRAKHAN_OBLAST = 'ru-ast'; // Astrakhan Oblast
+	const _AZORES = 'pt-20'; // Azores
+	const _BALEARIC_ISLANDS = 'es-ib'; // Balearic Islands
+	const _BASHKORTOSTAN = 'ru-ba'; // Bashkortostan
+	const _BURYATIA = 'ru-bu'; // Buryatia
+	const _CHECHNYA = 'ru-ce'; // Chechnya
+	const _CHELYABINSK_OBLAST = 'ru-che'; // Chelyabinsk Oblast
+	const _CHUVASHIA = 'ru-cu'; // Chuvashia
+	const _CRIMEA = 'ua-43'; // Crimea
+	const _CRIMEAN_TATARS = 'ua-ct'; // Crimean Tatars
+	const _DAGESTAN = 'ru-da'; // Dagestan
+	const _KALMYKIA = 'ru-kl'; // Kalmykia
+	const _KARAKALPAKSTAN = 'uz-qr'; // Karakalpakstan
+	const _KURGAN_OBLAST = 'ru-kgn'; // Kurgan Oblast
+	const _MADEIRA = 'pt-30'; // Madeira
+	const _NAVARRA = 'es-na'; // Navarra
+	const _SAKHA_REPUBLIC = 'ru-sa'; // Sakha Republic (Yakutia)
+	const _SVERDLOVSK_OBLAST = 'ru-sve'; // Sverdlovsk Oblast
+	const _TATARSTAN = 'ru-ta'; // Tatarstan
+	const _TUVA = 'ru-ty'; // Tuva
+
+// Organisation
+
+	const _TURKIC_STATES = 'turkic'; // Organisation of Turkic States
+
 // Organisations
 
 	const _ASEAN                                    = 'asean'; // Association of Southeast Asian Nations

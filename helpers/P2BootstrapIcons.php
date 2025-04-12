@@ -15,7 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\helpers\P2Icon;
+use p2m\helpers\components\P2Icon;
 
 class P2BootstrapIcons
 {

@@ -13,7 +13,7 @@
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\helpers;
+namespace p2m\helpers\components;
 
 use p2m\helpers\P2FlagIcons;
 use yii\base\InvalidConfigException;

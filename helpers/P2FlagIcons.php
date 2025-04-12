@@ -15,7 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\helpers\P2Flag;
+use p2m\helpers\components\P2Flag;
 
 class P2FlagIcons
 {
@@ -109,7 +109,7 @@ class P2FlagIcons
 	const _GAMBIA                                   = 'gm'; // Gambia
 	const _GHANA                                    = 'gh'; // Ghana
 	const _GUINEA                                   = 'gn'; // Guinea
-	const _GUINEA-BISSAU                            = 'gw'; // Guinea-Bissau
+	const _GUINEA_BISSAU                            = 'gw'; // Guinea-Bissau
 	const _KENYA                                    = 'ke'; // Kenya
 	const _LESOTHO                                  = 'ls'; // Lesotho
 	const _LIBERIA                                  = 'lr'; // Liberia
@@ -264,7 +264,7 @@ class P2FlagIcons
 	const _TAIWAN                                   = 'tw'; // Taiwan
 	const _TAJIKISTAN                               = 'tj'; // Tajikistan
 	const _THAILAND                                 = 'th'; // Thailand
-	const _TIMOR-LESTE                              = 'tl'; // Timor-Leste
+	const _TIMOR_LESTE                              = 'tl'; // Timor-Leste
 	const _TÜRKIYE                                  = 'tr'; // Türkiye
 	const _TURKMENISTAN                             = 'tm'; // Turkmenistan
 	const _UNITED_ARAB_EMIRATES                     = 'ae'; // United Arab Emirates

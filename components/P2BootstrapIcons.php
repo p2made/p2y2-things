@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\helpers\P2BootstrapIcons
+ * @class \p2m\components\P2BootstrapIcons
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\helpers;
+namespace p2m\components;
 
-use p2m\helpers\components\P2Icon;
+use p2m\components\P2Icon;
 
 class P2BootstrapIcons
 {

@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\helpers\P2Icon
+ * @class \p2m\components\P2Icon
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\helpers\components;
+namespace p2m\components;
 
-use p2m\helpers\P2BootstrapIcons;
+use p2m\components\P2BootstrapIcons;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;

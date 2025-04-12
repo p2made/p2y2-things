@@ -15,6 +15,8 @@
 
 namespace p2m\helpers;
 
+use p2m\components\P2FlagIcons;
+
 class FI extends P2FlagIcons
 {
 	public static $cssPrefix = P2FlagIcons::FLAG_ICON;

@@ -9,13 +9,13 @@
  */
 
 /**
- * @class \p2m\helpers\P2FlagIcons
+ * @class \p2m\components\P2FlagIcons
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\helpers;
+namespace p2m\components;
 
-use p2m\helpers\components\P2Flag;
+use p2m\components\P2Flag;
 
 class P2FlagIcons
 {

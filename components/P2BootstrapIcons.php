@@ -90,16 +90,6 @@ class P2BootstrapIcons
 	const DARK_EMPHASIS = 'dark-emphasis';
 
 	/**
-	 * Size values
-	 * @see P2Icon::size
-	 */
-	const FONT_SIZE_1 = 1;
-	const FONT_SIZE_2 = 2;
-	const FONT_SIZE_3 = 3;
-	const FONT_SIZE_4 = 4;
-	const FONT_SIZE_5 = 5;
-	const FONT_SIZE_6 = 6;
-	/**
 	 * Icons name
 	 */
 

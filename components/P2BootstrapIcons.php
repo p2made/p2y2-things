@@ -38,6 +38,12 @@ class P2BootstrapIcons
 	public static $textPrefix = 'text';
 
 	/**
+	 * CSS size prefix
+	 * @var string
+	 */
+	public static $sizePrefix = 'fs';
+
+	/**
 	 * Creates an `Icon` component that can be used to FontAwesome html icon
 	 *
 	 * @param string $name
@@ -64,7 +70,7 @@ class P2BootstrapIcons
 
 	/**
 	 * Colour values
-	 * @see P2Icon::size
+	 * @see P2Icon::color
 	 */
 	const PRIMARY = 'primary';
 	const PRIMARY_EMPHASIS = 'primary-emphasis';
@@ -83,6 +89,16 @@ class P2BootstrapIcons
 	const DARK = 'dark';
 	const DARK_EMPHASIS = 'dark-emphasis';
 
+	/**
+	 * Size values
+	 * @see P2Icon::size
+	 */
+	const FONT_SIZE_1 = 1;
+	const FONT_SIZE_2 = 2;
+	const FONT_SIZE_3 = 3;
+	const FONT_SIZE_4 = 4;
+	const FONT_SIZE_5 = 5;
+	const FONT_SIZE_6 = 6;
 	/**
 	 * Icons name
 	 */

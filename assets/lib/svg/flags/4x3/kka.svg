@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   id="хакас"
+   width="640"
+   height="480"
+   enable-background="new 0 0 1200 600"
+   version="1.1"
+   viewBox="0 0 640 480"
+   xml:space="preserve"
+   sodipodi:docname="kka.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs662" /><sodipodi:namedview
+   id="namedview660"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.2479167"
+   inkscape:cx="320.13356"
+   inkscape:cy="240"
+   inkscape:window-width="1440"
+   inkscape:window-height="819"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="хакас" />
+
+<rect
+   id="rect1"
+   width="640"
+   height="480"
+   fill="#009847"
+   x="0"
+   y="0"
+   style="stroke-width:1.25" /><g
+   id="grp"
+   style="stroke-width:1.25"
+   transform="matrix(0.8,0,0,0.8,-160,0)">
+<g
+   id="tri"
+   style="stroke-width:1.25">
+<path
+   id="tri2_3"
+   d="M 435,465 715.5,415.5 765,135 484.5,184.5 Z"
+   fill="#ffd700"
+   style="stroke-width:1.5625" />
+<path
+   id="tri1_4"
+   d="M 765,465 484.5,415.5 435,135 715.5,184.5 Z"
+   fill="#ffd700"
+   style="stroke-width:1.5625" />
+</g>
+<circle
+   id="circle5"
+   cx="600"
+   cy="300"
+   r="187.5"
+   fill="#ffd700"
+   style="stroke-width:1.5625" />
+<circle
+   id="circle4"
+   cx="600"
+   cy="300"
+   r="165"
+   fill="#009847"
+   style="stroke-width:1.5625" />
+<circle
+   id="circle3"
+   cx="600"
+   cy="300"
+   r="142.5"
+   fill="#ffd700"
+   style="stroke-width:1.5625" />
+<circle
+   id="circle2"
+   cx="600"
+   cy="300"
+   r="93.75"
+   fill="#009847"
+   style="stroke-width:1.5625" />
+<circle
+   id="circleinner"
+   cx="600"
+   cy="300"
+   r="75"
+   fill="#ffd700"
+   style="stroke-width:1.5625" />
+</g>
+</svg>

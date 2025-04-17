@@ -1,31 +1,3 @@
-.fi-es-ib {
-  background-image: url(../svg/flags/4x3/es-ib.svg);
-}
-.fi-es-ib.fis {
-  background-image: url(../svg/flags/1x1/es-ib.svg);
-}
-
-.fi-es-na {
-  background-image: url(../svg/flags/4x3/es-na.svg);
-}
-.fi-es-na.fis {
-  background-image: url(../svg/flags/1x1/es-na.svg);
-}
-
-.fi-pt-20 {
-  background-image: url(../svg/flags/4x3/pt-20.svg);
-}
-.fi-pt-20.fis {
-  background-image: url(../svg/flags/1x1/pt-20.svg);
-}
-
-.fi-pt-30 {
-  background-image: url(../svg/flags/4x3/pt-30.svg);
-}
-.fi-pt-30.fis {
-  background-image: url(../svg/flags/1x1/pt-30.svg);
-}
-
 .fi-au-aa {
   background-image: url(../svg/flags/4x3/au-aa.svg);
 }
@@ -52,6 +24,69 @@
 }
 .fi-cn-et.fis {
   background-image: url(../svg/flags/1x1/cn-et.svg);
+}
+
+.fi-es-ib {
+  background-image: url(../svg/flags/4x3/es-ib.svg);
+}
+.fi-es-ib.fis {
+  background-image: url(../svg/flags/1x1/es-ib.svg);
+}
+
+.fi-es-na {
+  background-image: url(../svg/flags/4x3/es-na.svg);
+}
+.fi-es-na.fis {
+  background-image: url(../svg/flags/1x1/es-na.svg);
+}
+
+.fi-haz {
+  background-image: url(../svg/flags/4x3/haz.svg);
+}
+.fi-haz.fis {
+  background-image: url(../svg/flags/1x1/haz.svg);
+}
+
+.fi-hazst {
+  background-image: url(../svg/flags/4x3/hazst.svg);
+}
+.fi-hazst.fis {
+  background-image: url(../svg/flags/1x1/hazst.svg);
+}
+
+.fi-kka {
+  background-image: url(../svg/flags/4x3/kka.svg);
+}
+.fi-kka.fis {
+  background-image: url(../svg/flags/1x1/kka.svg);
+}
+
+.fi-kpr {
+  background-image: url(../svg/flags/4x3/kpr.svg);
+}
+.fi-kpr.fis {
+  background-image: url(../svg/flags/1x1/kpr.svg);
+}
+
+.fi-pride {
+  background-image: url(../svg/flags/4x3/pride.svg);
+}
+.fi-pride.fis {
+  background-image: url(../svg/flags/1x1/pride.svg);
+}
+
+.fi-pt-20 {
+  background-image: url(../svg/flags/4x3/pt-20.svg);
+}
+.fi-pt-20.fis {
+  background-image: url(../svg/flags/1x1/pt-20.svg);
+}
+
+.fi-pt-30 {
+  background-image: url(../svg/flags/4x3/pt-30.svg);
+}
+.fi-pt-30.fis {
+  background-image: url(../svg/flags/1x1/pt-30.svg);
 }
 
 .fi-ru-al {
@@ -117,6 +152,13 @@
   background-image: url(../svg/flags/1x1/ru-kgn.svg);
 }
 
+.fi-ru-kk {
+  background-image: url(../svg/flags/4x3/ru-kk.svg);
+}
+.fi-ru-kk.fis {
+  background-image: url(../svg/flags/1x1/ru-kk.svg);
+}
+
 .fi-ru-kl {
   background-image: url(../svg/flags/4x3/ru-kl.svg);
 }
@@ -150,6 +192,13 @@
 }
 .fi-ru-ty.fis {
   background-image: url(../svg/flags/1x1/ru-ty.svg);
+}
+
+.fi-trans {
+  background-image: url(../svg/flags/4x3/trans.svg);
+}
+.fi-trans.fis {
+  background-image: url(../svg/flags/1x1/trans.svg);
 }
 
 .fi-turkic {

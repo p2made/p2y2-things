@@ -86,9 +86,37 @@ class P2Icon
 			in_array((string)$value, $values, true),
 			sprintf(
 				'%s - invalid value. Use one of the constants: %s.',
+				'P2BootstrapIcons::color()',
+				implode(', ', $values)
+			)
+		);
+	}
+
+	public function size($value)
+	{
+		/**
+		$values = [
+			P2BootstrapIcons::FONT_SIZE_1,
+			P2BootstrapIcons::FONT_SIZE_2,
+			P2BootstrapIcons::FONT_SIZE_3,
+			P2BootstrapIcons::FONT_SIZE_4,
+			P2BootstrapIcons::FONT_SIZE_5,
+			P2BootstrapIcons::FONT_SIZE_6,
+		];
+
+		return $this->addCssClass(
+			P2BootstrapIcons::$sizePrefix . '-' . $value,
+			in_array($value, $values, true),
+			sprintf(
+				'%s - invalid value. Use one of the constants: %s.',
 				'P2BootstrapIcons::size()',
 				implode(', ', $values)
 			)
+		);
+		 */
+
+		return $this->addCssClass(
+			'fs-' . $value,
 		);
 	}
 

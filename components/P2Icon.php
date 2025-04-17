@@ -94,29 +94,14 @@ class P2Icon
 
 	public function size($value)
 	{
-		/**
-		$values = [
-			P2BootstrapIcons::FONT_SIZE_1,
-			P2BootstrapIcons::FONT_SIZE_2,
-			P2BootstrapIcons::FONT_SIZE_3,
-			P2BootstrapIcons::FONT_SIZE_4,
-			P2BootstrapIcons::FONT_SIZE_5,
-			P2BootstrapIcons::FONT_SIZE_6,
-		];
-
 		return $this->addCssClass(
 			P2BootstrapIcons::$sizePrefix . '-' . $value,
-			in_array($value, $values, true),
+			in_array($value, range(1, 6), true),
 			sprintf(
-				'%s - invalid value. Use one of the constants: %s.',
+				'%s - invalid value. Use an integer between 1 and 6.',
 				'P2BootstrapIcons::size()',
-				implode(', ', $values)
+				implode(', ', range(1, 6))
 			)
-		);
-		 */
-
-		return $this->addCssClass(
-			'fs-' . $value,
 		);
 	}
 

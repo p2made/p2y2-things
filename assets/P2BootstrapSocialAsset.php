@@ -1,6 +1,6 @@
 <?php
 /**
- * BootstrapSocialAsset.php
+ * P2BootstrapSocialAsset.php
  *
  * Yii2 asset for Bootstrap Buttons
  * https:https://github.com/lipis/bootstrap-social
@@ -11,22 +11,22 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\BootstrapSocialAsset
+ * @class \p2m\assets\P2BootstrapSocialAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\BootstrapSocialAsset::register($this);
+ * p2m\assets\P2BootstrapSocialAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\BootstrapSocialAsset',
+ *     'p2m\assets\P2BootstrapSocialAsset',
  */
 
 namespace p2m\assets;
 
 use yii\web\AssetBundle;
 
-class BootstrapSocialAsset extends AssetBundle
+class P2BootstrapSocialAsset extends AssetBundle
 {
 	public $sourcePath = null;
 

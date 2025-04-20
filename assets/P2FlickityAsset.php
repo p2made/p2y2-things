@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2FlickityAsset::register($this);
- *
+p2m\assets\P2FlickityAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2FlickityAsset',
+		'p2m\assets\P2FlickityAsset',
  */
 
 namespace p2m\assets;

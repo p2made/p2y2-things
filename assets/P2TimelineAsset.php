@@ -15,10 +15,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2TimelineAsset::register($this);
- *
+p2m\assets\P2TimelineAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2TimelineAsset',
+		'p2m\assets\P2TimelineAsset',
  */
 
 namespace p2m\assets;

@@ -34,10 +34,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2TemplateLocalAsset::register($this);
- *
+p2m\assets\P2TemplateLocalAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2TemplateLocalAsset',
+		'p2m\assets\P2TemplateLocalAsset',
  */
 
 namespace p2m\assets;

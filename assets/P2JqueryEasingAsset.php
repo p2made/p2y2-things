@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2JqueryEasingAsset::register($this);
- *
+p2m\assets\P2JqueryEasingAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2JqueryEasingAsset',
+		'p2m\assets\P2JqueryEasingAsset',
  */
 
 namespace p2m\assets;
@@ -32,7 +32,7 @@ class P2JqueryEasingAsset extends AssetBundle
 
 	public $baseUrl = '//cdn.jsdelivr.net/npm/jquery.easing@1.4.1';
 
-	public $css = [
+	public $js = [
 		'jquery.easing.min.js',
 	];
 

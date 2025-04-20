@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2HolderJsAsset::register($this);
- *
+p2m\assets\P2HolderJsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2HolderJsAsset',
+		'p2m\assets\P2HolderJsAsset',
  */
 
 namespace p2m\assets;

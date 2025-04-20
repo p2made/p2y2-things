@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2MorrisAsset::register($this);
- *
+p2m\assets\P2MorrisAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2MorrisAsset',
+		'p2m\assets\P2MorrisAsset',
  */
 
 namespace p2m\assets;

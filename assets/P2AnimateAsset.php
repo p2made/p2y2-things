@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2AnimateAsset::register($this);
- *
+p2m\assets\P2AnimateAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2AnimateAsset',
+		'p2m\assets\P2AnimateAsset',
  */
 
 namespace p2m\assets;

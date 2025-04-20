@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2DataTablesSearchBuilderBaseAsset::register($this);
- *
+p2m\assets\base\P2DataTablesSearchBuilderBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2DataTablesSearchBuilderBaseAsset',
+		'p2m\assets\base\P2DataTablesSearchBuilderBaseAsset',
  */
 
 namespace p2m\assets\base;

@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
- *
+p2m\assets\base\P2BootstrapIconsBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapIconsBaseAsset',
+		'p2m\assets\base\P2BootstrapIconsBaseAsset',
  */
 
 namespace p2m\assets\base;

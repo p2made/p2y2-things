@@ -17,10 +17,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2Bs5Lightbox::register($this);
- *
+p2m\assets\P2Bs5Lightbox::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2Bs5Lightbox',
+		'p2m\assets\P2Bs5Lightbox',
  */
 
 namespace p2m\assets;

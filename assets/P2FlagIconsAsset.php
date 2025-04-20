@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2FlagIconsAsset::register($this);
- *
+p2m\assets\P2FlagIconsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2FlagIconsAsset',
+		'p2m\assets\P2FlagIconsAsset',
  */
 
 namespace p2m\assets;

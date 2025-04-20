@@ -13,10 +13,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2CoreAsset::register($this);
- *
+p2m\assets\P2CoreAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2CoreAsset',
  */
 
 namespace p2m\assets;

@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2MasonryAsset::register($this);
- *
+p2m\assets\P2MasonryAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2MasonryAsset',
+		'p2m\assets\P2MasonryAsset',
  */
 
 namespace p2m\assets;

@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2DraggabillyAsset::register($this);
- *
+p2m\assets\P2DraggabillyAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2DraggabillyAsset',
+		'p2m\assets\P2DraggabillyAsset',
  */
 
 namespace p2m\assets;

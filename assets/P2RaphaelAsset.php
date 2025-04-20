@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2RaphaelAsset::register($this);
- *
+p2m\assets\P2RaphaelAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2RaphaelAsset',
+		'p2m\assets\P2RaphaelAsset',
  */
 
 namespace p2m\assets;

@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2MathJsAsset::register($this);
- *
+p2m\assets\P2MathJsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2MathJsAsset',
+		'p2m\assets\P2MathJsAsset',
  */
 
 namespace p2m\assets;

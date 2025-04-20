@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2GoogleMapsAsset::register($this);
- *
+p2m\assets\P2GoogleMapsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2GoogleMapsAsset',
+		'p2m\assets\P2GoogleMapsAsset',
  */
 
 namespace p2m\assets;

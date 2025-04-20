@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2BootstrapIconsAsset::register($this);
- *
+p2m\assets\P2BootstrapIconsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2BootstrapIconsAsset',
+		'p2m\assets\P2BootstrapIconsAsset',
  */
 
 namespace p2m\assets;

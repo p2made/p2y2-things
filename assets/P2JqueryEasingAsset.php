@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2JqueryEasingAsset::register($this);
- *
+p2m\assets\P2JqueryEasingAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2JqueryEasingAsset',
+		'p2m\assets\P2JqueryEasingAsset',
  */
 
 namespace p2m\assets;

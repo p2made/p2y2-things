@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2BootstrapSocialAsset::register($this);
- *
+p2m\assets\P2BootstrapSocialAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2BootstrapSocialAsset',
+		'p2m\assets\P2BootstrapSocialAsset',
  */
 
 namespace p2m\assets;

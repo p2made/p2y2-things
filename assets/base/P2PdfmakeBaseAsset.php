@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2PdfmakeBaseAsset::register($this);
- *
+p2m\assets\base\P2PdfmakeBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2PdfmakeBaseAsset',
+		'p2m\assets\base\P2PdfmakeBaseAsset',
  */
 
 namespace p2m\assets\base;

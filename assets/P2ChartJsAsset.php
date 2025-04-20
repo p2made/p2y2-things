@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2ChartJsAsset::register($this);
- *
+p2m\assets\P2ChartJsAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2ChartJsAsset',
+		'p2m\assets\P2ChartJsAsset',
  */
 
 namespace p2m\assets;

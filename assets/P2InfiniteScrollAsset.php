@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2InfiniteScrollAsset::register($this);
- *
+p2m\assets\P2InfiniteScrollAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2InfiniteScrollAsset',
+		'p2m\assets\P2InfiniteScrollAsset',
  */
 
 namespace p2m\assets;

@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2SimpleDatatablesAsset::register($this);
- *
+p2m\assets\P2SimpleDatatablesAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2SimpleDatatablesAsset',
+		'p2m\assets\P2SimpleDatatablesAsset',
  */
 
 namespace p2m\assets;

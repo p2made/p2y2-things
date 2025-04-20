@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2PdfMakeAsset::register($this);
- *
+p2m\assets\P2PdfMakeAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2PdfMakeAsset',
+		'p2m\assets\P2PdfMakeAsset',
  */
 
 namespace p2m\assets;

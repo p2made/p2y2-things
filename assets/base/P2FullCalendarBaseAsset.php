@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2FullCalendarBaseAsset::register($this);
- *
+p2m\assets\base\P2FullCalendarBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2FullCalendarBaseAsset',
+		'p2m\assets\base\P2FullCalendarBaseAsset',
  */
 
 namespace p2m\assets\base;

@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2MetisMenuAsset::register($this);
- *
+p2m\assets\P2MetisMenuAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2MetisMenuAsset',
+		'p2m\assets\P2MetisMenuAsset',
  */
 
 namespace p2m\assets;

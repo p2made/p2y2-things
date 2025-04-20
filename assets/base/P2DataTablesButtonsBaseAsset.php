@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2DataTablesButtonsBaseAsset::register($this);
- *
+p2m\assets\base\P2DataTablesButtonsBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2DataTablesButtonsBaseAsset',
+		'p2m\assets\base\P2DataTablesButtonsBaseAsset',
  */
 
 namespace p2m\assets\base;

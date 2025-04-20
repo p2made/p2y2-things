@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2Lightbox2Asset::register($this);
- *
+p2m\assets\P2Lightbox2Asset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2Lightbox2Asset',
+		'p2m\assets\P2Lightbox2Asset',
  */
 
 namespace p2m\assets;

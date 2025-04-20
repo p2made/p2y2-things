@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\P2IsotopeAsset::register($this);
- *
+p2m\assets\P2IsotopeAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\P2IsotopeAsset',
+		'p2m\assets\P2IsotopeAsset',
  */
 
 namespace p2m\assets;

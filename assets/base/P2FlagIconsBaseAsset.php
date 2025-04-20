@@ -26,10 +26,10 @@
 
 /**
  * Load this asset with...
- * p2m\assets\base\P2FlagIconsBaseAsset::register($this);
- *
+p2m\assets\base\P2FlagIconsBaseAsset::register($this);
+
  * or specify as a dependency with...
- *     'p2m\assets\base\P2FlagIconsBaseAsset',
+		'p2m\assets\base\P2FlagIconsBaseAsset',
  */
 
 namespace p2m\assets\base;

@@ -1,6 +1,6 @@
 <?php
 /**
- * P2I.php
+ * FI.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,15 +9,15 @@
  */
 
 /**
- * @class \p2m\helpers\P2I
+ * @class \p2m\helpers\FI
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\helpers;
 
-use p2m\components\P2Icons;
+use p2m\components\P2FlagIcons;
 
-class P2I extends P2Icons
+class FI extends P2FlagIcons
 {
-	public static $cssPrefix = 'bi';
+	protected static string $cssPrefix = 'fi';
 }

@@ -15,105 +15,85 @@
 
 namespace p2m\components;
 
-use p2m\components\P2BootstrapIcon
-use p2m\components\P2EmojiIcon
-use p2m\components\P2Icon;
+use p2m\components\P2BootstrapIcon;
+use p2m\components\P2EmojiIcon;
+use p2m\components\P2FlagIcon;
+
+use yii\base\InvalidConfigException;
 
 class P2Icons
 {
 	/**
-	 * CSS class prefix
+	 * Subclasses must set this to 'bi', 'ec' or 'fi'
 	 * @var string
 	 */
-	public static $cssPrefix = 'bi';
-
-	/**
-	 * CSS base prefix
-	 * @var string
-	 */
-	public static $basePrefix = 'bi';
+	protected static string $cssPrefix;
 
 	/**
 	 * CSS text prefix
 	 * @var string
 	 */
-	public static $textPrefix = 'text';
+	public static string $textPrefix = 'text';
 
 	/**
 	 * CSS size prefix
 	 * @var string
 	 */
-	public static $sizePrefix = 'fs';
+	public static string $sizePrefix = 'fs';
 
 	/**
-	 * Creates a `P2BootstrapIcon` component that can be used to render a Bootstrap Icons HTML icon.
+	 * @param string $iconName  the icon identifier, e.g. 'list', 'smile', 'us'
 	 *
+	 * @param string $name
+	 * @param array $options
+	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
+	 */
+	public static function icon(string $name, $options = [])
+	{
+		switch (static::$cssPrefix) {
+			case 'bi':
+				return new P2BootstrapIcon(static::$cssPrefix, $name, $options);
+			case 'ec':
+				return new P2EmojiIcon(static::$cssPrefix, $name, $options);
+			case 'fi':
+				return new P2FlagIcon(static::$cssPrefix, $name, $options);
+			default:
+				throw new InvalidArgumentException(
+					"Unknown cssPrefix “" . static::$cssPrefix . "”, expected 'bi', 'ec' or 'fi'."
+				);
+		}
+	}
+
+	/**
+	 * Shortcut for `icon()` method
 	 * @param string $name
 	 * @param array $options
 	 * @return P2BootstrapIcon
+	 * @see icon()
 	 */
-	public static function bootstrap($name, $options = [])
+	public static function i($name, $options = [])
 	{
-		return new P2BootstrapIcon(static::$cssPrefix, $name, $options);
+		return static::icon($name, $options);
 	}
 
 	/**
-	 * Shortcut for `bootstrap()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2BootstrapIcon
-	 * @see bootstrap()
+	 * Colour values
+	 * @see P2Icon::color
 	 */
-	public static function b($name, $options = [])
-	{
-		return static::bootstrap($name, $options);
-	}
-
-	/**
-	 * Creates a `P2EmojiIcon` component that can be used to render a Emoji Icons HTML icon.
-	 *
-	 * @param string $name
-	 * @param array $options
-	 * @return P2EmojiIcon
-	 */
-	public static function emoji($name, $options = [])
-	{
-		return new P2EmojiIcon(static::$cssPrefix, $name, $options);
-	}
-
-	/**
-	 * Shortcut for `emoji()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2EmojiIcon
-	 * @see emoji()
-	 */
-	public static function e($name, $options = [])
-	{
-		return static::emoji($name, $options);
-	}
-
-	/**
-	 * Creates a `P2FlagIcon` component that can be used to render a Flag Icons HTML icon.
-	 *
-	 * @param string $name
-	 * @param array $options
-	 * @return P2FlagIcon
-	 */
-	public static function flag($name, $options = [])
-	{
-		return new P2FlagIcon(static::$cssPrefix, $name, $options);
-	}
-
-	/**
-	 * Shortcut for `flag()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2FlagIcon
-	 * @see flag()
-	 */
-	public static function b($name, $options = [])
-	{
-		return static::flag($name, $options);
-	}
+	const PRIMARY = 'primary';
+	const PRIMARY_EMPHASIS = 'primary-emphasis';
+	const SECONDARY = 'secondary';
+	const SECONDARY_EMPHASIS = 'secondary-emphasis';
+	const SUCCESS = 'success';
+	const SUCCESS_EMPHASIS = 'success-emphasis';
+	const DANGER = 'danger';
+	const DANGER_EMPHASIS = 'danger-emphasis';
+	const WARNING = 'warning';
+	const WARNING_EMPHASIS = 'warning-emphasis';
+	const INFO = 'info';
+	const INFO_EMPHASIS = 'info-emphasis';
+	const LIGHT = 'light';
+	const LIGHT_EMPHASIS = 'light-emphasis';
+	const DARK = 'dark';
+	const DARK_EMPHASIS = 'dark-emphasis';
 }

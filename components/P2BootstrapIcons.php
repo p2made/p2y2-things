@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapConstants.php
+ * P2BootstrapIcons.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,35 +9,17 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapConstants
+ * @class \p2m\components\P2BootstrapIcons
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\components;
 
-class P2BootstrapConstants
-{
-	/**
-	 * Colour values
-	 * @see P2Icon::color
-	 */
-	const PRIMARY = 'primary';
-	const PRIMARY_EMPHASIS = 'primary-emphasis';
-	const SECONDARY = 'secondary';
-	const SECONDARY_EMPHASIS = 'secondary-emphasis';
-	const SUCCESS = 'success';
-	const SUCCESS_EMPHASIS = 'success-emphasis';
-	const DANGER = 'danger';
-	const DANGER_EMPHASIS = 'danger-emphasis';
-	const WARNING = 'warning';
-	const WARNING_EMPHASIS = 'warning-emphasis';
-	const INFO = 'info';
-	const INFO_EMPHASIS = 'info-emphasis';
-	const LIGHT = 'light';
-	const LIGHT_EMPHASIS = 'light-emphasis';
-	const DARK = 'dark';
-	const DARK_EMPHASIS = 'dark-emphasis';
 
+use p2m\components\P2Icons;
+
+class P2BootstrapIcons extends P2Icons
+{
 	/**
 	 * Icons name
 	 */

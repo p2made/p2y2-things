@@ -16,13 +16,17 @@
 namespace p2m\components;
 
 use p2m\components\P2Icon;
-use p2m\components\P2EmojiConstants;
-
-use yii\base\InvalidConfigException;
-use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
 
 class P2EmojiIcon extends P2Icon
 {
+	/**
+	 * overrides function in parent to nullify the action
+	 *
+	 * @return $this
+	 */
+	public function color(string $value): self
+	{
+		return $this;
+	}
 
 }

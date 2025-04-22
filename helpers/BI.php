@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapIcon.php
+ * BI.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,15 +9,15 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcon
+ * @class \p2m\helpers\BI
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\components;
+namespace p2m\helpers;
 
-use p2m\components\P2Icon;
+use p2m\components\P2BootstrapIcons;
 
-class P2BootstrapIcon extends P2Icon
+class BI extends P2BootstrapIcons
 {
-
+	protected static string $cssPrefix = 'bi';
 }

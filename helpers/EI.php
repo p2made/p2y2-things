@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapIcon.php
+ * EI.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,15 +9,15 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcon
+ * @class \p2m\helpers\EI
  * @package p2made/yii2-p2y2-things
  */
 
-namespace p2m\components;
+namespace p2m\helpers;
 
-use p2m\components\P2Icon;
+use p2m\components\P2EmojiIcons;
 
-class P2BootstrapIcon extends P2Icon
+class EI extends P2EmojiIcons
 {
-
+	protected static string $cssPrefix = 'ec';
 }

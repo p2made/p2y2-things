@@ -1,6 +1,6 @@
 <?php
 /**
- * P2EmojiConstants.php
+ * P2EmojiIcons.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,14 +9,17 @@
  */
 
 /**
- * @class \p2m\components\P2EmojiConstants
+ * @class \p2m\components\P2EmojiIcons
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\components;
 
-class P2EmojiConstants
+use p2m\components\P2Icons;
+
+class P2EmojiIcons extends P2Icons
 {
+
 	const _100                              = '100'; // 💯
 	const _1234                             = '1234'; // 🔢
 	const _GRINNING                         = 'grinning'; // 😀

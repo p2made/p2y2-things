@@ -1,6 +1,6 @@
 <?php
 /**
- * P2FlagConstants.php
+ * P2FlagIcons.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,17 +9,16 @@
  */
 
 /**
- * @class \p2m\components\P2FlagConstants
+ * @class \p2m\components\P2FlagIcons
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\components;
 
-class P2FlagConstants
+use p2m\components\P2Icons;
+
+class P2FlagIcons extends P2Icons
 {
-	const FLAG_ICON   = 'fi';  // Flag Icon
-	const FLAG_BUTTON = 'fib'; // Flag Button
-	const SQUARE_FLAG = 'fis'; // Flag Icon Square
 
 	/**
 	 * flags name

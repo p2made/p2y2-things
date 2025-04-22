@@ -16,13 +16,19 @@
 namespace p2m\components;
 
 use p2m\components\P2Icon;
-use p2m\components\P2FlagConstants;
-
-use yii\base\InvalidConfigException;
-use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
 
 class P2FlagIcon extends P2Icon
 {
+	const SQUARE_FLAG = 'fis'; // Flag Icon Square
 
+	/**
+	 * If $enable is true, add the “fis” class; otherwise do nothing.
+	 *
+	 * @param bool $enable
+	 * @return $this
+	 */
+	public function square(bool $enable = true): self
+	{
+		return $this->addCssClass(self::SQUARE_FLAG, $enable);
+	}
 }

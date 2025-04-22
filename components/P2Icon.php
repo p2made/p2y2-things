@@ -15,7 +15,9 @@
 
 namespace p2m\components;
 
-use p2m\components\P2BootstrapIcons;
+use p2m\components\P2BootstrapConstants;
+use p2m\components\P2EmojiConstants;
+use p2m\components\P2FlagConstants;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -130,3 +132,42 @@ class P2Icon
 		return $this;
 	}
 }
+
+/**
+P2Icon.php
+Parent for icon objects.
+use p2m\components\P2Icon;
+/p2m/components/P2Icon
+P2BootstrapIcon.php
+Object & logic for Bootstrap Icon.
+use p2m\components\P2BootstrapIcon;
+/p2m/components/P2BootstrapIcon
+P2EmojiIcon.php
+Object & logic for Emoji Icon.
+use p2m\components\P2EmojiIcon;
+/p2m/components/P2EmojiIcon
+P2FlagIcon.php
+Object & logic for Flag Icon.
+use p2m\components\P2FlagIcon;
+/p2m/components/P2FlagIcon
+P2BootstrapConstants.php
+Constants for Bootstrap Icons.
+use p2m\components\P2BootstrapConstants;
+/p2m/components/P2BootstrapConstants
+P2EmojiConstants.php
+Constants for Emoji Icons.
+use p2m\components\P2EmojiConstants;
+/p2m/components/P2EmojiConstants
+P2FlagConstants.php
+Constants for Flag Icons.
+use p2m\components\P2FlagConstants;
+/p2m/components/P2FlagConstants
+P2Icons.php
+Launchpad for Icon objects.
+use p2m\components\P2Icons
+/p2m/components/P2Icons
+P2I.php
+Public class.
+use p2m\helpers\P2I
+/p2m/helpers/P2I
+ */

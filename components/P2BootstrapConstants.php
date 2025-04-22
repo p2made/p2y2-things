@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapIcons.php
+ * P2BootstrapConstants.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,65 +9,14 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcons
+ * @class \p2m\components\P2BootstrapConstants
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\components;
 
-use p2m\components\P2Icon;
-
-class P2BootstrapIcons
+class P2BootstrapConstants
 {
-	/**
-	 * CSS class prefix
-	 * @var string
-	 */
-	public static $cssPrefix = 'bi';
-
-	/**
-	 * CSS base prefix
-	 * @var string
-	 */
-	public static $basePrefix = 'bi';
-
-	/**
-	 * CSS text prefix
-	 * @var string
-	 */
-	public static $textPrefix = 'text';
-
-	/**
-	 * CSS size prefix
-	 * @var string
-	 */
-	public static $sizePrefix = 'fs';
-
-	/**
-	 * Creates an `Icon` component that can be used to FontAwesome html icon
-	 *
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Icon
-	 */
-	public static function icon($name, $options = [])
-	{
-		return new P2Icon(static::$cssPrefix, $name, $options);
-	}
-
-	/**
-	 * Shortcut for `icon()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Icon
-	 * @see icon()
-	 *
-	 */
-	public static function i($name, $options = [])
-	{
-		return static::icon($name, $options);
-	}
-
 	/**
 	 * Colour values
 	 * @see P2Icon::color

@@ -1,6 +1,6 @@
 <?php
 /**
- * P2FlagIcons.php
+ * P2FlagConstants.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,59 +9,14 @@
  */
 
 /**
- * @class \p2m\components\P2FlagIcons
+ * @class \p2m\components\P2FlagConstants
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\components;
 
-use p2m\components\P2Flag;
-
-class P2FlagIcons
+class P2FlagConstants
 {
-	/**
-	 * CSS class prefix
-	 * @var string
-	 */
-	public static $cssPrefix = self::FLAG_ICON;
-
-	/**
-	 * CSS base prefix
-	 * @var string
-	 */
-	public static $basePrefix = self::FLAG_ICON;
-
-	/**
-	 * CSS square suffix
-	 * @var string
-	 */
-	public static $squarePrefix = self::SQUARE_FLAG;
-
-	/**
-	 * Creates an `Icon` component that can be used to FontAwesome html icon
-	 *
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Flag
-	 */
-	public static function icon($name, $options = [])
-	{
-		return new P2Flag(static::$cssPrefix, $name, $options);
-	}
-
-	/**
-	 * Shortcut for `icon()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Flag
-	 * @see icon()
-	 *
-	 */
-	public static function i($name, $options = [])
-	{
-		return static::icon($name, $options);
-	}
-
 	const FLAG_ICON   = 'fi';  // Flag Icon
 	const FLAG_BUTTON = 'fib'; // Flag Button
 	const SQUARE_FLAG = 'fis'; // Flag Icon Square

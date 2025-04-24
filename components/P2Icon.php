@@ -15,7 +15,8 @@
 
 namespace p2m\components;
 
-use p2m\components\P2BootstrapIcons;
+use p2m\components\P2Icons;
+
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -37,7 +38,7 @@ class P2Icon
 		Html::addCssClass($options, $cssPrefix);
 
 		if (!empty($name)) {
-			Html::addCssClass($options, P2BootstrapIcons::$basePrefix . '-' . $name);
+			Html::addCssClass($options, $cssPrefix . '-' . $name);
 		}
 
 		$this->options = $options;
@@ -46,7 +47,7 @@ class P2Icon
 	/**
 	 * @return string
 	 */
-	public function __toString()
+	public function __toString() :string
 	{
 		$options = $this->options;
 
@@ -56,50 +57,18 @@ class P2Icon
 	}
 
 	/**
-	 * @param string $value
-	 * @return \p2m\icons\P2Icon
+	 * @param integer $value range 1 to 6
+	 * @return \p2m\components\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function color($value)
-	{
-		$values = [
-			P2BootstrapIcons::PRIMARY,
-			P2BootstrapIcons::PRIMARY_EMPHASIS,
-			P2BootstrapIcons::SECONDARY,
-			P2BootstrapIcons::SECONDARY_EMPHASIS,
-			P2BootstrapIcons::SUCCESS,
-			P2BootstrapIcons::SUCCESS_EMPHASIS,
-			P2BootstrapIcons::DANGER,
-			P2BootstrapIcons::DANGER_EMPHASIS,
-			P2BootstrapIcons::WARNING,
-			P2BootstrapIcons::WARNING_EMPHASIS,
-			P2BootstrapIcons::INFO,
-			P2BootstrapIcons::INFO_EMPHASIS,
-			P2BootstrapIcons::LIGHT,
-			P2BootstrapIcons::LIGHT_EMPHASIS,
-			P2BootstrapIcons::DARK,
-			P2BootstrapIcons::DARK_EMPHASIS,
-		];
-
-		return $this->addCssClass(
-			P2BootstrapIcons::$textPrefix . '-' . $value,
-			in_array((string)$value, $values, true),
-			sprintf(
-				'%s - invalid value. Use one of the constants: %s.',
-				'P2BootstrapIcons::color()',
-				implode(', ', $values)
-			)
-		);
-	}
-
-	public function size($value)
+	public function size(int $value): self
 	{
 		return $this->addCssClass(
-			P2BootstrapIcons::$sizePrefix . '-' . $value,
+			P2Icons::SIZE_PREFIX . '-' . $value,
 			in_array($value, range(1, 6), true),
 			sprintf(
 				'%s - invalid value. Use an integer between 1 and 6.',
-				'P2BootstrapIcons::size()',
+				'P2Icons::size()',
 				implode(', ', range(1, 6))
 			)
 		);
@@ -113,7 +82,7 @@ class P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 * @codeCoverageIgnore
 	 */
-	public function addCssClass($class, $condition = true, $throw = false)
+	public function addCssClass($class, $condition = true, $throw = false): self
 	{
 		if ($condition === false) {
 			if (!empty($throw)) {

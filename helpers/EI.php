@@ -1,6 +1,6 @@
 <?php
 /**
- * FIB.php
+ * EI.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,15 +9,15 @@
  */
 
 /**
- * @class \p2m\helpers\FIB
+ * @class \p2m\helpers\EI
  * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\helpers;
 
-use p2m\components\P2FlagIcons;
+use p2m\components\P2EmojiIcons;
 
-class FIB extends P2FlagIcons
+class EI extends P2EmojiIcons
 {
-	public static $cssPrefix = P2FlagIcons::FLAG_BUTTON;
+	protected static string $cssPrefix = 'ec';
 }

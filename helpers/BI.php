@@ -19,5 +19,5 @@ use p2m\components\P2BootstrapIcons;
 
 class BI extends P2BootstrapIcons
 {
-	public static $cssPrefix = 'bi';
+	protected static string $cssPrefix = 'bi';
 }

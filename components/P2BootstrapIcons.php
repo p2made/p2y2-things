@@ -15,79 +15,33 @@
 
 namespace p2m\components;
 
-use p2m\components\P2Icon;
 
-class P2BootstrapIcons
+use p2m\components\P2Icons;
+
+class P2BootstrapIcons extends P2Icons
 {
-	/**
-	 * CSS class prefix
-	 * @var string
-	 */
-	public static $cssPrefix = 'bi';
-
-	/**
-	 * CSS base prefix
-	 * @var string
-	 */
-	public static $basePrefix = 'bi';
-
-	/**
-	 * CSS text prefix
-	 * @var string
-	 */
-	public static $textPrefix = 'text';
-
-	/**
-	 * CSS size prefix
-	 * @var string
-	 */
-	public static $sizePrefix = 'fs';
-
-	/**
-	 * Creates an `Icon` component that can be used to FontAwesome html icon
-	 *
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Icon
-	 */
-	public static function icon($name, $options = [])
-	{
-		return new P2Icon(static::$cssPrefix, $name, $options);
-	}
-
-	/**
-	 * Shortcut for `icon()` method
-	 * @param string $name
-	 * @param array $options
-	 * @return P2Icon
-	 * @see icon()
-	 *
-	 */
-	public static function i($name, $options = [])
-	{
-		return static::icon($name, $options);
-	}
+	const TEXT_PREFIX = 'text';
 
 	/**
 	 * Colour values
 	 * @see P2Icon::color
 	 */
-	const PRIMARY = 'primary';
-	const PRIMARY_EMPHASIS = 'primary-emphasis';
-	const SECONDARY = 'secondary';
+	const PRIMARY            = 'primary';
+	const PRIMARY_EMPHASIS   = 'primary-emphasis';
+	const SECONDARY          = 'secondary';
 	const SECONDARY_EMPHASIS = 'secondary-emphasis';
-	const SUCCESS = 'success';
-	const SUCCESS_EMPHASIS = 'success-emphasis';
-	const DANGER = 'danger';
-	const DANGER_EMPHASIS = 'danger-emphasis';
-	const WARNING = 'warning';
-	const WARNING_EMPHASIS = 'warning-emphasis';
-	const INFO = 'info';
-	const INFO_EMPHASIS = 'info-emphasis';
-	const LIGHT = 'light';
-	const LIGHT_EMPHASIS = 'light-emphasis';
-	const DARK = 'dark';
-	const DARK_EMPHASIS = 'dark-emphasis';
+	const SUCCESS            = 'success';
+	const SUCCESS_EMPHASIS   = 'success-emphasis';
+	const DANGER             = 'danger';
+	const DANGER_EMPHASIS    = 'danger-emphasis';
+	const WARNING            = 'warning';
+	const WARNING_EMPHASIS   = 'warning-emphasis';
+	const INFO               = 'info';
+	const INFO_EMPHASIS      = 'info-emphasis';
+	const LIGHT              = 'light';
+	const LIGHT_EMPHASIS     = 'light-emphasis';
+	const DARK               = 'dark';
+	const DARK_EMPHASIS      = 'dark-emphasis';
 
 	/**
 	 * Icons name

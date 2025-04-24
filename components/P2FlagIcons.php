@@ -19,6 +19,7 @@ use p2m\components\P2Icons;
 
 class P2FlagIcons extends P2Icons
 {
+	const SQUARE_FLAG = 'fis'; // Flag Icon Square
 
 	/**
 	 * flags name

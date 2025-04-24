@@ -15,11 +15,25 @@
 
 namespace p2m\components;
 
+use Yii;
 use p2m\components\P2Icon;
+use p2m\assets\P2FlagIconsAsset;
 
 class P2FlagIcon extends P2Icon
 {
-	const SQUARE_FLAG = 'fis'; // Flag Icon Square
+	/**
+	 * @param string $cssPrefix
+	 * @param string $name
+	 * @param array  $options
+	 */
+	public function __construct(string $cssPrefix, string $name, array $options = [])
+	{
+		// register the asset bundle for FI
+		P2FlagIconsAsset::register(Yii::$app->view);
+
+		// call parent with original arguments
+		parent::__construct($cssPrefix, $name, $options);
+	}
 
 	/**
 	 * If $enable is true, add the “fis” class; otherwise do nothing.
@@ -29,6 +43,6 @@ class P2FlagIcon extends P2Icon
 	 */
 	public function square(bool $enable = true): self
 	{
-		return $this->addCssClass(self::SQUARE_FLAG, $enable);
+		return $this->addCssClass(P2Icons::SQUARE_FLAG, $enable);
 	}
 }

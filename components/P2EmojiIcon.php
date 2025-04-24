@@ -15,18 +15,23 @@
 
 namespace p2m\components;
 
+use Yii;
 use p2m\components\P2Icon;
+use p2m\assets\P2EmojiCssAsset;
 
 class P2EmojiIcon extends P2Icon
 {
 	/**
-	 * overrides function in parent to nullify the action
-	 *
-	 * @return $this
+	 * @param string $cssPrefix
+	 * @param string $name
+	 * @param array  $options
 	 */
-	public function color(string $value): self
+	public function __construct(string $cssPrefix, string $name, array $options = [])
 	{
-		return $this;
-	}
+		// register the asset bundle for EC
+		P2EmojiCssAsset::register(Yii::$app->view);
 
+		// call parent with original arguments
+		parent::__construct($cssPrefix, $name, $options);
+	}
 }

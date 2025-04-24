@@ -7,13 +7,13 @@
 ```
 
 ```
-BI::icon(BI::_NAME, $options[]);
+BI::icon(BI::_NAME, $options = []);
 
-BI::i(BI::_NAME, $options[]);
+BI::i(BI::_NAME, $options = []);
 
-BI::i(BI::_NAME, $options[])->color($color);
+BI::i(BI::_NAME, $options = [])->color(string $color);
 
-BI::i(BI::_NAME, $options[])->size($size);
+BI::i(BI::_NAME, $options = [])->size(int $size);
 ```
 
 
@@ -24,13 +24,11 @@ BI::i(BI::_NAME, $options[])->size($size);
 ```
 
 ```
-EI::icon(EI::_NAME, $options[]);
+EI::icon(EI::_NAME, $options = []);
 
-EI::i(EI::_NAME, $options[]);
+EI::i(EI::_NAME, $options = []);
 
-EI::i(EI::_NAME, $options[])->color($color);
-
-EI::i(EI::_NAME, $options[])->size($size);
+EI::i(EI::_NAME, $options = [])->size(int $size);
 ```
 
 
@@ -42,13 +40,13 @@ EI::i(EI::_NAME, $options[])->size($size);
 ```
 
 ```
-FI::icon(FI::_NAME, $options[]);
+FI::icon(FI::_NAME, $options = []);
 
-FI::i(FI::_NAME, $options[]);
+FI::i(FI::_NAME, $options = []);
 
-FI::i(FI::_NAME, $options[])->size($size);
+FI::i(FI::_NAME, $options = [])->size(int $size);
 
-FI::i(FI::_NAME, $options[])->square($square = true);
+FI::i(FI::_NAME, $options = [])->square(bool $square = true);
 ```
 
 --

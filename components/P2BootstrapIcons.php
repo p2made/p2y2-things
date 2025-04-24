@@ -20,6 +20,29 @@ use p2m\components\P2Icons;
 
 class P2BootstrapIcons extends P2Icons
 {
+	const TEXT_PREFIX = 'text';
+
+	/**
+	 * Colour values
+	 * @see P2Icon::color
+	 */
+	const PRIMARY            = 'primary';
+	const PRIMARY_EMPHASIS   = 'primary-emphasis';
+	const SECONDARY          = 'secondary';
+	const SECONDARY_EMPHASIS = 'secondary-emphasis';
+	const SUCCESS            = 'success';
+	const SUCCESS_EMPHASIS   = 'success-emphasis';
+	const DANGER             = 'danger';
+	const DANGER_EMPHASIS    = 'danger-emphasis';
+	const WARNING            = 'warning';
+	const WARNING_EMPHASIS   = 'warning-emphasis';
+	const INFO               = 'info';
+	const INFO_EMPHASIS      = 'info-emphasis';
+	const LIGHT              = 'light';
+	const LIGHT_EMPHASIS     = 'light-emphasis';
+	const DARK               = 'dark';
+	const DARK_EMPHASIS      = 'dark-emphasis';
+
 	/**
 	 * Icons name
 	 */

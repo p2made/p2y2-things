@@ -23,6 +23,8 @@ use yii\base\InvalidConfigException;
 
 class P2Icons
 {
+	const SIZE_PREFIX = 'fs';
+
 	/**
 	 * Subclasses must set this to 'bi', 'ec' or 'fi'
 	 * @var string
@@ -34,12 +36,6 @@ class P2Icons
 	 * @var string
 	 */
 	public static string $textPrefix = 'text';
-
-	/**
-	 * CSS size prefix
-	 * @var string
-	 */
-	public static string $sizePrefix = 'fs';
 
 	/**
 	 * @param string $iconName  the icon identifier, e.g. 'list', 'smile', 'us'
@@ -75,25 +71,4 @@ class P2Icons
 	{
 		return static::icon($name, $options);
 	}
-
-	/**
-	 * Colour values
-	 * @see P2Icon::color
-	 */
-	const PRIMARY = 'primary';
-	const PRIMARY_EMPHASIS = 'primary-emphasis';
-	const SECONDARY = 'secondary';
-	const SECONDARY_EMPHASIS = 'secondary-emphasis';
-	const SUCCESS = 'success';
-	const SUCCESS_EMPHASIS = 'success-emphasis';
-	const DANGER = 'danger';
-	const DANGER_EMPHASIS = 'danger-emphasis';
-	const WARNING = 'warning';
-	const WARNING_EMPHASIS = 'warning-emphasis';
-	const INFO = 'info';
-	const INFO_EMPHASIS = 'info-emphasis';
-	const LIGHT = 'light';
-	const LIGHT_EMPHASIS = 'light-emphasis';
-	const DARK = 'dark';
-	const DARK_EMPHASIS = 'dark-emphasis';
 }

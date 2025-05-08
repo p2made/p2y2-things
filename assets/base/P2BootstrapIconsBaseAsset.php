@@ -40,14 +40,14 @@ class P2BootstrapIconsBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font';
 
 	public $css = [
 		'bootstrap-icons.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD',
+		'integrity' => 'sha384-V4f0OfYdUplbh1+0ObFR+1En9r32Yp/jhE5YVVuoDXuJuxokZSgagEVJAlvTH1LW',
 		'crossorigin' => 'anonymous',
 	];
 

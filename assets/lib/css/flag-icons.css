@@ -1,3 +1,9 @@
+.fi-asy {
+  background-image: url(../svg/flags/4x3/asy.svg);
+}
+.fi-asy.fis {
+  background-image: url(../svg/flags/1x1/asy.svg);
+}
 .fi-au-aa {
   background-image: url(../svg/flags/4x3/au-aa.svg);
 }
@@ -93,6 +99,12 @@
 }
 .fi-pride.fis {
   background-image: url(../svg/flags/1x1/pride.svg);
+}
+.fi-ps {
+  background-image: url(../svg/flags/4x3/ps.svg);
+}
+.fi-ps.fis {
+  background-image: url(../svg/flags/1x1/ps.svg);
 }
 .fi-pt-20 {
   background-image: url(../svg/flags/4x3/pt-20.svg);

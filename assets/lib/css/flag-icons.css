@@ -100,6 +100,12 @@
 .fi-pride.fis {
   background-image: url(../svg/flags/1x1/pride.svg);
 }
+.fi-pam {
+  background-image: url(../svg/flags/4x3/pam.svg);
+}
+.fi-pam.fis {
+  background-image: url(../svg/flags/1x1/pam.svg);
+}
 .fi-ps {
   background-image: url(../svg/flags/4x3/ps.svg);
 }

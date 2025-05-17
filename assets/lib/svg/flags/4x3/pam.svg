@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="640"
+   height="480"
+   viewBox="0 0 169.33333 127"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="pam.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:lockguides="false"
+     inkscape:zoom="1.2479167"
+     inkscape:cx="320.13356"
+     inkscape:cy="240"
+     inkscape:window-width="1440"
+     inkscape:window-height="819"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false">
+    <sodipodi:guide
+       position="25.785664,170.05085"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline;stroke-width:0.883964"
+     transform="matrix(1.0665764,0,0,1.1998827,0,6.1029192e-6)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.233882"
+       id="rect1"
+       width="158.75"
+       height="105.83334"
+       x="-2.4202862e-14"
+       y="-5.0862632e-06" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.165531"
+       d="M 2.165e-6,52.916671 V 2.770625e-6 H 79.375003 158.75 V 52.916671 105.83333 H 79.375003 2.165e-6 Z"
+       id="path2"
+       inkscape:transform-center-x="-1.5875"
+       inkscape:transform-center-y="0.79375001" />
+    <path
+       style="fill:#d7251a;fill-opacity:1;stroke-width:0.233882"
+       d="M 0.01136881,0.01033529 V 26.467635 L 158.76343,105.84367 V 79.385336 Z"
+       id="path4" />
+    <path
+       style="fill:#03913e;fill-opacity:1;stroke-width:0.233882"
+       d="M 0.00103353,0.00103353 V 13.189751 L 158.75,92.606232 V 79.376034 Z"
+       id="path5" />
+  </g>
+</svg>

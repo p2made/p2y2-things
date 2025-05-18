@@ -3,17 +3,17 @@
    version="1.1"
    width="640"
    height="480"
-   id="svg112611"
-   sodipodi:docname="ru-ta-4x3.svg"
+   id="Flag_of_Shetland"
+   sodipodi:docname="gb-zet.svg"
    inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs112615" />
+     id="defs141" />
   <sodipodi:namedview
-     id="namedview112613"
+     id="namedview139"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -30,34 +30,29 @@
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg112611" />
-  <g
-     id="g113112"
-     transform="scale(0.17777778,0.26666667)"
-     style="stroke-width:4.59278">
-    <rect
-       fill="#008000"
-       width="3600"
-       height="900"
-       id="rect112605"
-       x="0"
-       y="0"
-       style="stroke-width:4.59278" />
-    <rect
-       fill="#ff0000"
-       width="3600"
-       height="900"
-       y="900"
-       id="rect112609"
-       x="0"
-       style="stroke-width:4.59278" />
-    <rect
-       fill="#ffffff"
-       width="3600"
-       height="120"
-       y="840"
-       id="rect112607"
-       x="0"
-       style="stroke-width:4.59278" />
-  </g>
+     inkscape:current-layer="Flag_of_Shetland" />
+  <rect
+     width="640"
+     height="480"
+     fill="#0065cc"
+     id="rect132"
+     x="0"
+     y="0"
+     style="stroke-width:8.33333" />
+  <rect
+     width="93.599998"
+     height="480"
+     x="208.13333"
+     fill="#ffffff"
+     id="rect134"
+     y="0"
+     style="stroke-width:8.33333" />
+  <rect
+     width="640"
+     height="93.599998"
+     y="192"
+     fill="#ffffff"
+     id="rect136"
+     x="0"
+     style="stroke-width:8.33333" />
 </svg>

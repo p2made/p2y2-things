@@ -28,13 +28,20 @@ use yii\web\AssetBundle;
 
 class P2BootstrapIconsAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = null;
+
+	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font';
 
 	public $css = [
-		'css/bootstrap-icons.min.css',
+		'bootstrap-icons.css',
+	];
+
+	public $cssOptions = [
+		'integrity' => 'sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk',
+		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2BootstrapIconsBaseAsset',
+		'p2m\assets\P2CoreAsset',
 	];
 }

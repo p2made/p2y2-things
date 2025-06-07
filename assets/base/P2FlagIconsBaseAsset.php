@@ -40,14 +40,14 @@ class P2FlagIconsBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/flag-icons@7.3.2';
+	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/flag-icons/7.5.0';
 
 	public $css = [
 		'css/flag-icons.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha256-tyPeBlnZW2qWbAF1hQiCt9qo6SOgOSymvJBum+FrrwI=',
+		'integrity' => 'sha512-+WVTaUIzUw5LFzqIqXOT3JVAc5SrMuvHm230I9QAZa6s+QRk8NDPswbHo2miIZj3yiFyV9lAgzO1wVrjdoO4tw==',
 		'crossorigin' => 'anonymous',
 	];
 

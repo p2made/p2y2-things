@@ -1,68 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   version="1.1"
-   height="512"
-   width="512"
-   id="svg133770"
-   sodipodi:docname="ru-ud-1x1.svg"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs133774" />
-  <sodipodi:namedview
-     id="namedview133772"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.1699219"
-     inkscape:cx="243.17863"
-     inkscape:cy="256"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg133770" />
-  <g
-     id="g134276"
-     transform="scale(0.14222222,0.28444444)"
-     style="stroke-width:4.97185">
-    <rect
-       width="1200"
-       height="1800"
-       id="rect133762"
-       x="0"
-       y="0"
-       style="stroke-width:4.97185" />
-    <rect
-       width="1200"
-       height="1800"
-       x="1200"
-       fill="#ffffff"
-       id="rect133764"
-       y="0"
-       style="stroke-width:0.745777" />
-    <rect
-       width="1200"
-       height="1800"
-       x="2400"
-       fill="#dd2211"
-       id="rect133766"
-       y="0"
-       style="stroke-width:0.745777" />
+<svg id="flag-icons-ru-ud" class="fi fi-ru-ud" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Udmurtia</name>
+    <code>ru-ud</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Izhevsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:4.97185">
+    <path d="M0 0h1200v1800H0z" style="stroke-width:4.97185" transform="scale(.14222 .28444)"/>
+    <path fill="#fff" d="M1200 0h1200v1800H1200z" style="stroke-width:.745777" transform="scale(.14222 .28444)"/>
+    <path fill="#d21" d="M2400 0h1200v1800H2400z" style="stroke-width:.745777" transform="scale(.14222 .28444)"/>
   </g>
-  <polygon
-     fill="#dd2211"
-     points="295,210 195,110 345,110 245,210 245,60 345,160 195,160 295,60 "
-     id="polygon133768"
-     style="stroke-width:0.158203"
-     transform="matrix(0.94814815,0,0,0.94814815,0,128)" />
+  <path fill="#d21" d="M295 210 195 110h150L245 210V60l100 100H195L295 60z" style="stroke-width:.158203" transform="translate(0 128)scale(.94815)"/>
 </svg>

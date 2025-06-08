@@ -1,55 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 640 480"
-   version="1.1"
-   id="svg152054"
-   sodipodi:docname="ru-zab-4x3.svg"
-   width="640"
-   height="480"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs152058" />
-  <sodipodi:namedview
-     id="namedview152056"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.2479167"
-     inkscape:cx="319.73289"
-     inkscape:cy="240"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg152054" />
-  <g
-     id="g154726"
-     transform="scale(0.23703704,0.26666667)"
-     style="stroke-width:3.97747">
-    <path
-       d="M 0,0 H 2700 V 900 H 0"
-       fill="#00923f"
-       id="path152048"
-       style="stroke-width:3.97747" />
-    <path
-       d="m 0,900 h 2700 v 900 H 0"
-       fill="#d81e05"
-       id="path152050"
-       style="stroke-width:3.97747" />
+<svg id="flag-icons-ru-zab" class="fi fi-ru-zab" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Zabaykalsky Krai</name>
+    <code>ru-zab</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Chita</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:3.97747">
+    <path fill="#00923f" d="M0 0h2700v900H0" style="stroke-width:3.97747" transform="scale(.23704 .26667)"/>
+    <path fill="#d81e05" d="M0 900h2700v900H0" style="stroke-width:3.97747" transform="scale(.23704 .26667)"/>
   </g>
-  <path
-     d="M 0,0 415.69334,240 0,480.00001"
-     fill="#ffd700"
-     id="path152052"
-     style="stroke-width:1" />
+  <path fill="gold" d="m0 0 415.693 240L0 480" style="stroke-width:1"/>
 </svg>

@@ -1,109 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="512"
-   height="512"
-   version="1.1"
-   id="svg24668"
-   sodipodi:docname="ua-14-1x1.svg"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs24672">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath27457">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999996"
-         id="rect27459"
-         width="1800"
-         height="1800"
-         x="450"
-         y="0" />
+<svg id="flag-icons-ua-14" class="fi fi-ua-14" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Donetsk Oblast</name>
+    <code>ua-14</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Donetsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M450 0h1800v1800H450z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.999996"/>
     </clipPath>
   </defs>
-  <sodipodi:namedview
-     id="namedview24670"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.1699219"
-     inkscape:cx="256"
-     inkscape:cy="256"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg24668" />
-  <g
-     id="g25688"
-     clip-path="url(#clipPath27457)"
-     transform="matrix(0.28444444,0,0,0.28444444,-128,0)"
-     style="stroke-width:3.51562">
-    <rect
-       style="fill:#73b1ff;fill-opacity:1;fill-rule:evenodd;stroke-width:3.51561"
-       id="rect25538"
-       width="2700"
-       height="900"
-       x="0"
-       y="0" />
-    <polygon
-       id="R"
-       points="450,300 302.056,0 348.164,0 450,300 390.326,0 430.337,0 450,300 0,270.505 0,210.489 450,300 0,147.246 0,78.085 450,300 0,0 107.916,0 450,300 186.907,0 249.546,0 "
-       style="fill:#ffcc33;stroke-width:1.17187"
-       transform="scale(3)" />
-    <polygon
-       id="polygon25526"
-       points="348.164,0 450,300 390.326,0 430.337,0 450,300 0,270.505 0,210.489 450,300 0,147.246 0,78.085 450,300 0,0 107.916,0 450,300 186.907,0 249.546,0 450,300 302.056,0 "
-       style="fill:#ffcc33;stroke-width:1.17187"
-       inkscape:label="L"
-       transform="matrix(-3,0,0,3,2700,0)" />
-    <circle
-       cx="1350"
-       cy="900"
-       r="540"
-       id="circle24653"
-       style="fill:#ffcc33;stroke-width:3.51562" />
-    <rect
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:3.51562"
-       id="rect25529"
-       width="2700"
-       height="900"
-       x="0"
-       y="900.00006" />
-    <use
-       transform="matrix(0.461622,0,0,0.44944,726.813,935.826)"
-       xlink:href="#L"
-       id="use24657"
-       style="fill:#ffcc33;stroke-width:1.17187" />
-    <use
-       transform="matrix(0.669496,0,0,0.617812,446.184,693.924)"
-       xlink:href="#L"
-       id="use24659"
-       style="fill:#ffcc33;stroke-width:1.17187" />
-    <use
-       transform="matrix(0.824162,0,0,0.808906,237.3861,413.808)"
-       xlink:href="#L"
-       id="use24661"
-       style="fill:#ffcc33;stroke-width:1.17187" />
-    <use
-       transform="matrix(0.934276,0,0,0.942686,88.7289,176.7714)"
-       xlink:href="#L"
-       id="use24663"
-       style="fill:#ffcc33;stroke-width:1.17187" />
-    <path
-       id="L"
-       d="M 1882.422,990.219 C 1772.823,970.959 1570.095,959.088 1350,959.028 c -219.591,0.057 -422.637,12 -532.422,31.191 109.599,19.26 312.327,31.131 532.422,31.191 219.591,-0.057 422.637,-12 532.422,-31.191 z"
-       style="fill:#ffcc33;stroke-width:3.51562"
-       inkscape:label="1" />
+  <g clip-path="url(#a)" style="stroke-width:3.51562" transform="translate(-128)scale(.28444)">
+    <path d="M0 0h2700v900H0z" style="fill:#73b1ff;fill-opacity:1;fill-rule:evenodd;stroke-width:3.51561"/>
+    <path d="M450 300 302.056 0h46.108zL390.326 0h40.011zL0 270.505v-60.016zL0 147.246V78.085zL0 0h107.916zL186.907 0h62.639z" style="fill:#fc3;stroke-width:1.17187" transform="scale(3)"/>
+    <path d="M348.164 0 450 300 390.326 0h40.011L450 300 0 270.505v-60.016L450 300 0 147.246V78.085L450 300 0 0h107.916L450 300 186.907 0h62.639L450 300 302.056 0z" style="fill:#fc3;stroke-width:1.17187" transform="matrix(-3 0 0 3 2700 0)"/>
+    <circle cx="1350" cy="900" r="540" style="fill:#fc3;stroke-width:3.51562"/>
+    <path d="M0 900h2700v900H0z" style="fill:#000;fill-opacity:1;fill-rule:evenodd;stroke-width:3.51562"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.17187" transform="matrix(.46162 0 0 .44944 726.813 935.826)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.17187" transform="matrix(.6695 0 0 .61781 446.184 693.924)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.17187" transform="matrix(.82416 0 0 .8089 237.386 413.808)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.17187" transform="matrix(.93428 0 0 .94269 88.729 176.771)"/>
+    <path id="b" d="M1882.422 990.219c-109.599-19.26-312.327-31.131-532.422-31.191-219.591.057-422.637 12-532.422 31.191 109.599 19.26 312.327 31.131 532.422 31.191 219.591-.057 422.637-12 532.422-31.191" style="fill:#fc3;stroke-width:3.51562"/>
   </g>
 </svg>

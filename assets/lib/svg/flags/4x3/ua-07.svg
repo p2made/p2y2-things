@@ -1,62 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="640"
-   height="480"
-   viewBox="0 0 96 72"
-   version="1.1"
-   id="svg183301"
-   sodipodi:docname="ua-07-4x3.svg"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs183305" />
-  <sodipodi:namedview
-     id="namedview183303"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.2479167"
-     inkscape:cx="319.73289"
-     inkscape:cy="240"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg183301" />
-  <rect
-     fill="#f01414"
-     width="96"
-     height="72"
-     id="rect183295"
-     x="0"
-     y="2.5263742e-14"
-     style="stroke-width:1" />
-  <path
-     fill="#ffffff"
-     d="M 26.8,12.273684 16.510526,14.089474 18.326315,3.8 H 12.273684 L 14.089474,14.089474 3.8,12.273684 v 6.052631 L 14.089474,16.510526 12.273684,26.8 h 6.052631 L 16.510526,16.510526 26.8,18.326315 Z"
-     id="path183299"
-     style="stroke-width:1" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.15"
-     id="rect184525"
-     width="96"
-     height="10.8"
-     x="0"
-     y="30.6" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.15"
-     id="rect184525-3"
-     width="10.8"
-     height="72"
-     x="30.6"
-     y="0" />
+<svg id="flag-icons-ua-07" class="fi fi-ua-07" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Volyn Oblast</name>
+    <code>ua-07</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Lutsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <path fill="#f01414" d="M0 0h640v480H0Z" style="stroke-width:.999999"/>
+  <path fill="#fff" d="m178.667 81.827-68.6 12.1 12.113-68.594H81.833l12.1 68.6-68.6-12.113v40.347l68.6-12.1-12.113 68.6h40.347l-12.1-68.6 68.6 12.113z" style="stroke-width:.999999"/>
+  <path d="M0 204h640v72H0Z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.15"/>
+  <path d="M204 0h72v480h-72z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.15"/>
 </svg>

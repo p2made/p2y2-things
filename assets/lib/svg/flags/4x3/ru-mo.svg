@@ -1,100 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="Capa_1"
-   data-name="Capa 1"
-   viewBox="0 0 640 480"
-   version="1.1"
-   sodipodi:docname="ru-mo.svg"
-   width="640"
-   height="480"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview80127"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.2479167"
-     inkscape:cx="320.13356"
-     inkscape:cy="240"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Capa_1" />
-  <defs
-     id="defs80114">
-    <style
-       id="style80112">
-      .cls-1 {
-        stroke: #fff;
-        stroke-miterlimit: 40;
-        stroke-width: 10px;
-      }
-
-      .cls-2 {
-        fill: #28166f;
-      }
-
-      .cls-2, .cls-3, .cls-4 {
-        stroke-width: 0px;
-      }
-
-      .cls-3 {
-        fill: #d20000;
-      }
-
-      .cls-4 {
-        fill: #fff;
-      }
+<svg id="flag-icons-ru-mo" class="fi fi-ru-mo" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480" data-name="Capa 1" version="1.1">
+  <metadata id="flag-icons">
+    <name>Mordovia</name>
+    <code>ru-mo</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Saransk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs id="defs80114">
+    <style id="style80112">
+      .cls-3{stroke-width:0;fill:#d20000}
     </style>
   </defs>
-  <g
-     id="g81342"
-     transform="scale(0.53333333,0.6)"
-     style="stroke-width:1.76776">
-    <rect
-       class="cls-2"
-       width="1200"
-       height="800"
-       id="rect80116"
-       x="0"
-       y="0" />
-    <rect
-       class="cls-4"
-       width="1200"
-       height="600"
-       id="rect80118"
-       x="0"
-       y="0" />
-    <rect
-       class="cls-3"
-       width="1200"
-       height="200"
-       id="rect80120"
-       x="0"
-       y="0" />
+  <g id="g81342" style="stroke-width:1.76776" transform="scale(.53333 .6)">
+    <path id="rect80116" d="M0 0h1200v800H0z" style="fill:#28166f;stroke-width:0"/>
+    <path id="rect80118" d="M0 0h1200v600H0z" style="stroke-width:0;fill:#fff"/>
+    <path id="rect80120" d="M0 0h1200v200H0z" class="cls-3"/>
   </g>
-  <g
-     id="g80611"
-     transform="matrix(0.6,0,0,0.6,-40,0)"
-     style="stroke-width:1.66666">
-    <polygon
-       class="cls-3"
-       points="650,250 650,550 450,350 750,350 550,550 550,250 750,450 450,450 "
-       id="polygon80122" />
-    <path
-       class="cls-1"
-       d="M 540,340 660,460 M 540,460 660,340"
-       id="path80124" />
+  <g id="g80611" style="stroke-width:1.66666" transform="translate(-40)scale(.6)">
+    <path id="polygon80122" d="M650 250v300L450 350h300L550 550V250l200 200H450z" class="cls-3"/>
+    <path id="path80124" d="m540 340 120 120m-120 0 120-120" style="stroke:#fff;stroke-miterlimit:40;stroke-width:10px"/>
   </g>
 </svg>

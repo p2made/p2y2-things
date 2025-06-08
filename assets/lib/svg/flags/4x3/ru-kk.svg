@@ -1,118 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="640"
-   height="480"
-   viewBox="0 0 192 144"
-   version="1.1"
-   id="svg156"
-   sodipodi:docname="ru-kk.svg"
-   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs160" />
-  <sodipodi:namedview
-     id="namedview158"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.2479167"
-     inkscape:cx="320.13356"
-     inkscape:cy="240"
-     inkscape:window-width="1440"
-     inkscape:window-height="819"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg156" />
-  <g
-     id="g466"
-     transform="scale(0.66666667,1)"
-     style="stroke-width:1.22474">
-    <rect
-       fill="#d81e05"
-       width="288"
-       height="144"
-       id="rect132"
-       x="0"
-       y="0"
-       style="stroke-width:1.53093" />
-    <rect
-       fill="#ffffff"
-       width="288"
-       height="96"
-       id="rect134"
-       x="0"
-       y="0"
-       style="stroke-width:1.53093" />
-    <rect
-       fill="#0051ba"
-       width="288"
-       height="48"
-       id="rect136"
-       x="0"
-       y="0"
-       style="stroke-width:1.53093" />
+<svg id="flag-icons-ru-kk" class="fi fi-ru-kk" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Khakassia</name>
+    <code>ru-kk</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Abakan</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.36742">
+    <path fill="#d81e05" d="M0 0h288v144H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
+    <path fill="#fff" d="M0 0h288v96H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
+    <path fill="#0051ba" d="M0 0h288v48H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
   </g>
-  <rect
-     fill="#009847"
-     width="48"
-     height="144"
-     id="rect138"
-     x="0"
-     y="0"
-     style="stroke-width:1.25" />
-  <g
-     fill="#ffd700"
-     transform="matrix(0.56568542,0.56568542,-0.56568542,0.56568542,57.941125,4.117749)"
-     id="g154"
-     style="stroke-width:1.5625">
-    <path
-       d="M 30,120 51,90 30,60 9,90 Z"
-       id="path140"
-       style="stroke-width:1.25" />
-    <path
-       d="M 60,90 30,111 0,90 30,69 Z"
-       id="path142"
-       style="stroke-width:1.25" />
-    <circle
-       cx="30"
-       cy="90"
-       r="24"
-       id="circle144"
-       style="stroke-width:1.25" />
-    <circle
-       fill="#009847"
-       cx="30"
-       cy="90"
-       r="21"
-       id="circle146"
-       style="stroke-width:1.95312" />
-    <circle
-       cx="30"
-       cy="90"
-       r="18"
-       id="circle148"
-       style="stroke-width:1.25" />
-    <circle
-       fill="#009847"
-       cx="30"
-       cy="90"
-       r="12"
-       id="circle150"
-       style="stroke-width:1.95312" />
-    <circle
-       cx="30"
-       cy="90"
-       r="10"
-       id="circle152"
-       style="stroke-width:1.25" />
+  <path fill="#009847" d="M0 0h160v479.998H0Z" style="stroke-width:1.24999"/>
+  <g fill="gold" style="stroke-width:.46875" transform="scale(2.66665 2.66668)rotate(45 30 90)">
+    <path d="m30 120 21-30-21-30L9 90Z" style="stroke-width:.375"/>
+    <path d="m60 90-30 21L0 90l30-21Z" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="24" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="21" fill="#009847" style="stroke-width:.585937"/>
+    <circle cx="30" cy="90" r="18" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="12" fill="#009847" style="stroke-width:.585937"/>
+    <circle cx="30" cy="90" r="10" style="stroke-width:.375"/>
   </g>
 </svg>

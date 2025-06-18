@@ -1,5 +1,5 @@
 <?php
-namespace common\components;
+namespace p2m\components;
 
 use Yii;
 use yii\base\BootstrapInterface;
@@ -11,6 +11,6 @@ class P2UrlManagerBootstrap implements BootstrapInterface
 		$scheme = Yii::$app->request->isSecureConnection ? 'https' : 'http';
 		$host = Yii::$app->request->hostName;
 
-		Yii::$app->homeUrl = $scheme . '://' . $host;
+		Yii::$app->homeUrl = $scheme . '://' . $host . '/';
 	}
 }

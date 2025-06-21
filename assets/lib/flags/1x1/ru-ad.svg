@@ -1,0 +1,25 @@
+<svg id="flag-icons-ru-ad" class="fi fi-ru-ad" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Adygea</name>
+    <code>ru-ad</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Maykop</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <path fill="#296912" d="M0 0h512v512H0Z" style="stroke-width:6.14376"/>
+  <g fill="#fdfc02" style="stroke-width:47.1821" transform="translate(256 128.39)scale(.13021)">
+    <path id="a" d="m0 488 22.96 70.67h74.3l-60.11 43.67L60.11 673 0 629.33-60.11 673l22.96-70.66-60.11-43.67h74.3z" style="stroke-width:7.67969"/>
+    <path id="b" d="m0 781 32 182-21 20v687l22 23v171l-33-33-33 33v-171l22-23V983l-21-20z" style="stroke-width:7.67969"/>
+    <use xlink:href="#a" y="-392" style="stroke-width:7.67969"/>
+    <g id="c" style="stroke-width:7.67969">
+      <use xlink:href="#a" x="486" style="stroke-width:7.67969"/>
+      <use xlink:href="#a" x="486" y="-314" style="stroke-width:7.67969"/>
+      <use xlink:href="#a" x="923" y="-93" style="stroke-width:7.67969"/>
+      <use xlink:href="#a" x="1271" y="255" style="stroke-width:7.67969"/>
+      <use xlink:href="#a" x="1494" y="693" style="stroke-width:7.67969"/>
+      <use xlink:href="#b" style="stroke-width:7.67969" transform="rotate(40 0 1326)"/>
+    </g>
+    <use xlink:href="#c" style="stroke-width:7.67969" transform="scale(-1 1)"/>
+  </g>
+</svg>

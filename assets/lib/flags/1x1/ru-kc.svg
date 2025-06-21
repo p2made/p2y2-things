@@ -1,0 +1,38 @@
+<svg id="flag-icons-ru-kc" class="fi fi-ru-kc" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Karachay-Cherkessia</name>
+    <code>ru-kc</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Cherkessk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs>
+    <path id="c" fill="#ffb000" d="M0-23c2-14 3-21 0-21s-2 7 0 21"/>
+    <path id="b" fill="#ffb000" d="M0-23c1-10 1.5-14 0-14s-1 4 0 14"/>
+  </defs>
+  <clipPath id="a">
+    <circle cx="300" cy="150" r="49"/>
+  </clipPath>
+  <g style="stroke-width:.828642">
+    <path fill="#e02010" d="M0 0h600v300H0Z" style="stroke-width:1.0358" transform="scale(.85333 1.70667)"/>
+    <path fill="#007030" d="M0 0h600v200H0Z" style="stroke-width:1.0358" transform="scale(.85333 1.70667)"/>
+    <path fill="#0090d0" d="M0 0h600v100H0Z" style="stroke-width:1.0358" transform="scale(.85333 1.70667)"/>
+  </g>
+  <g style="stroke-width:.585941" transform="matrix(1.70665 0 0 1.70667 -255.998 0)">
+    <circle cx="300" cy="150" r="20" fill="#ffb000" style="stroke-width:.732421"/>
+    <path fill="#fff" d="M300 145c-15-15-78 40-78 40l169 4s-68-62-90-44z" clip-path="url(#a)" style="stroke-width:.732421"/>
+    <path fill="#007030" d="M301 162c-20-18-38 16-60 4 11 50 125 55 115-2-18 2-35-25-55-2" clip-path="url(#a)" style="stroke-width:.732421"/>
+    <circle cx="300" cy="150" r="48" fill="none" stroke="#ffb000" stroke-width="2.344"/>
+    <g id="d" style="stroke-width:.585941">
+      <use xlink:href="#b" style="stroke-width:.585941" transform="rotate(-75 247.742 -120.484)"/>
+      <use xlink:href="#c" style="stroke-width:.585941" transform="rotate(-64 270.025 -165.05)"/>
+      <use xlink:href="#c" style="stroke-width:.585941" transform="rotate(-56 291.054 -207.109)"/>
+    </g>
+    <use xlink:href="#d" style="stroke-width:.585941" transform="rotate(30 300 150)"/>
+    <use xlink:href="#d" style="stroke-width:.585941" transform="rotate(60 300 150)"/>
+    <use xlink:href="#d" style="stroke-width:.585941" transform="rotate(90 300 150)"/>
+    <use xlink:href="#d" style="stroke-width:.585941" transform="rotate(120 300 150)"/>
+    <use xlink:href="#b" style="stroke-width:.585941" transform="rotate(75 52.258 270.484)"/>
+  </g>
+</svg>

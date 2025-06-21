@@ -1,0 +1,23 @@
+<svg id="flag-icons-ru-kb" class="fi fi-ru-kb" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Kabardino-Balkaria</name>
+    <code>ru-kb</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Nalchik</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <clipPath id="a">
+    <circle cx="225" cy="150" r="50"/>
+  </clipPath>
+  <g style="stroke-width:.717627">
+    <path fill="#39f" d="M0 .187h450v100H0Z" style="stroke-width:1.19604" transform="matrix(1.13778 0 0 1.70666 0 -.32)"/>
+    <path fill="#fff" d="M0 100.188h450v100H0Z" style="stroke-width:1.19604" transform="matrix(1.13778 0 0 1.70666 0 -.32)"/>
+    <path fill="#00923f" d="M0 200.188h450v100H0Z" style="stroke-width:1.19604" transform="matrix(1.13778 0 0 1.70666 0 -.32)"/>
+  </g>
+  <g style="stroke-width:.58594" transform="matrix(1.70665 0 0 1.70666 -127.999 -.32)">
+    <circle cx="225" cy="150.188" r="50" fill="#39f" style="stroke-width:.976569"/>
+    <path fill="#fff" stroke="#39f" stroke-linejoin="round" stroke-width=".586" d="M276 151s-25-29-36-29c-9 0-14 10-14 10l3 3c-5-4-10-11-18-11-12 0-37 27-37 27z" clip-path="url(#a)" transform="translate(0 .188)"/>
+    <path fill="#00923f" d="M175 150h100v50H175Z" clip-path="url(#a)" style="stroke-width:.976569" transform="translate(0 .188)"/>
+  </g>
+</svg>

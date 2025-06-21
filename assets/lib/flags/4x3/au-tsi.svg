@@ -1,0 +1,19 @@
+<svg id="flag-icons-au-tsi" class="fi fi-au-tsi" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="640" height="480" version="1.2">
+  <metadata id="flag-icons">
+    <name>Torres Strait Islands</name>
+    <code>au-tsi</code>
+    <iso>false</iso>
+    <type>People</type>
+    <capital>Thursday Island</capital>
+    <continent>Australia</continent>
+  </metadata>
+  <g style="stroke-width:.110486">
+    <path fill="#098843" d="M12 41.25h75V50H12ZM12 0h75v8.75H12Z" style="stroke-width:.0115089" transform="matrix(8.53333 0 0 9.6 -102.4 0)"/>
+    <path d="M12 8.75h75v2.5H12Zm0 30h75v2.5H12Z" style="stroke-width:.110486" transform="matrix(8.53333 0 0 9.6 -102.4 0)"/>
+    <path fill="#3d58a6" d="M12 11.25h75v27.5H12Z" style="stroke-width:.0115089" transform="matrix(8.53333 0 0 9.6 -102.4 0)"/>
+  </g>
+  <g fill="#fff" style="display:inline;stroke-width:.104167">
+    <path d="M48.25 11.875c-12.5 3.75-11.875 13.125-7.875 21.75l-4.75 4.5L44.25 35V23.5c2.75-4.125 7.75-4.125 10.5 0V35l8.625 3.125-4.75-4.5c4-8.625 4.625-18-7.875-21.75L49.5 17.25Z" style="stroke-width:.0108507" transform="translate(-155.2)scale(9.6)"/>
+    <path d="m54.25 24.631-2.918 2.246 1.107 3.623-2.938-2.227-2.934 2.223 1.102-3.621-2.92-2.25 3.618-.014L49.497 21l1.133 3.614z" style="stroke-width:.0108507" transform="translate(-155.2)scale(9.6)"/>
+  </g>
+</svg>

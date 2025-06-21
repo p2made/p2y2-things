@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-kha" class="fi fi-ru-kha" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Khabarovsk Krai</name>
+    <code>ru-kha</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Khabarovsk</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:1.32583">
+    <path fill="#fff" d="M0 0h900v300H0Z" style="stroke-width:1.65728" transform="scale(.71111 .8)"/>
+    <path fill="#09f" d="M0 300h900v300H0Z" style="stroke-width:1.65728" transform="scale(.71111 .8)"/>
+  </g>
+  <path fill="green" d="M0 0v480l240-240Z" style="stroke-width:1"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="flag-icons-ru-sa" class="fi fi-ru-sa" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Sakha Republic (Yakutia)</name>
+    <code>ru-sa</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Yakutsk</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:1.08253">
+    <path d="M0 0h640v480H0z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:1.08253" transform="scale(.8 1.06667)"/>
+    <path d="M0 0h640v360H0z" style="fill:#089aff;fill-opacity:1;fill-rule:evenodd;stroke-width:1.08253" transform="scale(.8 1.06667)"/>
+    <path d="M0 390h640v30H0z" style="fill:#ff1c00;fill-opacity:1;fill-rule:evenodd;stroke-width:1.08253" transform="scale(.8 1.06667)"/>
+    <path d="M0 420h640v60H0z" style="fill:#009a00;fill-opacity:1;fill-rule:evenodd;stroke-width:1.08253" transform="scale(.8 1.06667)"/>
+  </g>
+  <circle cx="256" cy="192" r="102.4" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.999999"/>
+</svg>

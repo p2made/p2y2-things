@@ -1,0 +1,18 @@
+<svg id="flag-icons-pt-30" class="fi fi-pt-30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Madeira</name>
+    <code>pt-30</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Funchal</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.297619">
+    <path fill="#263e78" d="M0 0h180v129H0" style="stroke-width:.558036" transform="scale(2.84444 3.96897)"/>
+    <path fill="gold" d="M60 0h60v129H60" style="stroke-width:.558036" transform="scale(2.84444 3.96897)"/>
+  </g>
+  <g style="stroke-width:.351563">
+    <path fill="#da291c" d="m90 48 12-12H78m0 48h24L90 72m12-12 12 12V48m-48 0v24l12-12m-6 6h36V54H72m12-12v36h12V42" style="stroke-width:.659179" transform="matrix(2.84444 0 0 2.84438 0 85.333)"/>
+    <path stroke="#fff" stroke-width="4" d="M255.998 204.798v102.4m51.2-51.2h-102.4"/>
+  </g>
+</svg>

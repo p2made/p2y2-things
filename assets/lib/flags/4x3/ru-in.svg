@@ -1,0 +1,18 @@
+<svg id="flag-icons-ru-in" class="fi fi-ru-in" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Ingushetia</name>
+    <code>ru-in</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Magas</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.883883">
+    <path fill="#00923f" d="M0 0h600v400H0z" style="stroke-width:.736569" transform="scale(1.06667 1.2)"/>
+    <path fill="#fff" d="M0 67h600v267H0z" style="stroke-width:.736569" transform="scale(1.06667 1.2)"/>
+  </g>
+  <g fill="none" stroke="#d81e05" style="stroke-width:.833333" transform="translate(-40.406)scale(1.2)">
+    <circle cx="300" cy="220" r="55" stroke-width="25"/>
+    <path stroke-linecap="round" stroke-width="16.667" d="M300 166a26 26 0 1 0-20.5-42m-27.29 123.1a26 26 0 1 0-26.15 38.86m122.31-41.94a26 26 0 1 0 46.51 3.18"/>
+  </g>
+</svg>

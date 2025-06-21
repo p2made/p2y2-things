@@ -1,0 +1,24 @@
+<svg id="flag-icons-ru-mo" class="fi fi-ru-mo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512" data-name="Capa 1" version="1.1">
+  <metadata id="flag-icons">
+    <name>Mordovia</name>
+    <code>ru-mo</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Saransk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs id="defs80114">
+    <style id="style80112">
+      .cls-3{stroke-width:0;fill:#d20000}
+    </style>
+  </defs>
+  <g id="g81342" style="stroke-width:1.91365" transform="scale(.42667 .64)">
+    <path id="rect80116" d="M0 0h1200v800H0z" style="fill:#28166f;stroke-width:0"/>
+    <path id="rect80118" d="M0 0h1200v600H0z" style="stroke-width:0;fill:#fff"/>
+    <path id="rect80120" d="M0 0h1200v200H0z" class="cls-3"/>
+  </g>
+  <g id="g80611" style="stroke-width:1.56249" transform="translate(-128)scale(.64)">
+    <path id="polygon80122" d="M650 250v300L450 350h300L550 550V250l200 200H450z" class="cls-3"/>
+    <path id="path80124" d="m540 340 120 120m-120 0 120-120" style="stroke:#fff;stroke-miterlimit:40;stroke-width:10px"/>
+  </g>
+</svg>

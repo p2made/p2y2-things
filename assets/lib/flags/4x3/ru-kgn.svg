@@ -1,0 +1,18 @@
+<svg id="flag-icons-ru-kgn" class="fi fi-ru-kgn" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Kurgan Oblast</name>
+    <code>ru-kgn</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Kurgan</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.765466">
+    <path fill="#fff" d="M0 0h600v300H0z" style="stroke-width:.478416" transform="scale(1.06667 1.6)"/>
+    <path fill="#008040" d="M0 100h600v100H0z" style="stroke-width:.478416" transform="scale(1.06667 1.6)"/>
+  </g>
+  <g fill="#fff" style="stroke-width:.625">
+    <path d="M331 119c16 1 19 21 27 35 8 15 12 16 12 19s-10 5-21 5c-18 0-54-12-54-12s20-48 36-47" style="stroke-width:.390625" transform="translate(-166.084)scale(1.6)"/>
+    <path stroke="#008040" stroke-width="2" d="M216.316 286.4c36.8-1.6 62.4 19.2 102.4 20.8 41.6 0 46.4-19.2 46.4-24-11.2-4.8-14.4-19.2-19.2-28.8-11.2-24-20.8-78.4-54.4-80-38.4-1.6-49.6 81.6-75.2 112z"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg id="flag-icons-cr-tat" class="fi fi-cr-tat" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Crimean Tatars</name>
+    <code>cr-tat</code>
+    <iso>false</iso>
+    <type>People</type>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.234376">
+    <path fill="#00a3dd" d="M0 0h120v120H0Z" style="stroke-width:.380861" transform="scale(4.26667)"/>
+    <path d="M24.615 18.462v18.461h-6.153v6.154h12.307V24.615h12.308v18.462h-6.154v6.154h18.462v-6.154H49.23V24.615h12.307v18.462h12.308v-6.154h-6.154V18.462Z" style="fill:#f8d80e;stroke-width:.234376" transform="scale(4.26667)"/>
+  </g>
+</svg>

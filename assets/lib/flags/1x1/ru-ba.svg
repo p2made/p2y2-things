@@ -1,0 +1,48 @@
+<svg id="flag-icons-ru-ba" class="fi fi-ru-ba" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Bashkortostan</name>
+    <code>ru-ba</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Ufa</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="display:inline;stroke-width:1.43525">
+    <path fill="#007000" d="M0 256h512v256H0Z"/>
+    <path fill="#0070ff" d="M0 0h512v256H0Z"/>
+    <path fill="#fff" d="M0 170.667h512v170.666H0Z"/>
+  </g>
+  <g style="display:inline;stroke-width:1.17188" transform="translate(-128)scale(.85333)">
+    <circle cx="450" cy="300" r="75" fill="none" stroke="gold" stroke-width="11.719"/>
+    <circle cx="450" cy="300" r="16" fill="gold"/>
+    <g style="stroke-width:1.17188" transform="matrix(2 0 0 2 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(1.7321 -1 1 1.7321 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(1 -1.7321 1.7321 1 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(0 -2 2 0 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(-1 -1.7321 1.7321 -1 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(-1.7321 -1 1 -1.7321 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <g style="stroke-width:1.17188" transform="matrix(-2 0 0 -2 450 300)">
+      <path stroke="gold" stroke-width="2.344" d="M0 0h25"/>
+      <circle cx="25" r="5" fill="gold" style="stroke-width:1.46484"/>
+    </g>
+    <path stroke="gold" stroke-width="4.688" d="M450 300v50"/>
+  </g>
+</svg>

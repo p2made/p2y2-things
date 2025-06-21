@@ -1,0 +1,15 @@
+<svg id="flag-icons-ua-43" class="fi fi-ua-43" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Autonomous Republic of Crimea</name>
+    <code>ua-43</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Simferopol</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.016573">
+    <path fill="#da251d" d="M0 0h12v6H0Z" style="stroke-width:.0226934" transform="scale(42.66667 85.33333)"/>
+    <path fill="#fff" d="M0 0h12v5H0Z" style="stroke-width:.0226934" transform="scale(42.66667 85.33333)"/>
+    <path fill="#006fb0" d="M0 0h12v1H0Z" style="stroke-width:.0226934" transform="scale(42.66667 85.33333)"/>
+  </g>
+</svg>

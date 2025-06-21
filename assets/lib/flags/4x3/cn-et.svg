@@ -1,0 +1,12 @@
+<svg id="flag-icons-cn-et" class="fi fi-cn-et" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>East Turkestan</name>
+    <code>cn-et</code>
+    <iso>false</iso>
+    <type>Place</type>
+    <capital>Urumqi</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <path fill="#559ee2" d="M0 0h640v480H0" style="stroke-width:1.25"/>
+  <path fill="#fff" d="m294.003 240 108.544-35.264-67.089 92.328V182.936l67.088 92.328zm7.4 64.168a120 120 0 1 1 0-128.336 96 96 0 1 0 0 128.336" style="stroke-width:1.25"/>
+</svg>

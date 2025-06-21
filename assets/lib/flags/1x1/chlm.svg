@@ -1,0 +1,41 @@
+<svg id="flag-icons-chlm" class="fi fi-chlm" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512" style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+  <metadata id="flag-icons">
+    <name>Chulym</name>
+    <code>chlm</code>
+    <iso>false</iso>
+    <type>People</type>
+  </metadata>
+  <g style="stroke-width:.9375">
+    <g style="stroke-width:3.27287">
+      <g style="stroke-width:3.27287">
+        <path fill="#0093ff" d="M644.5-.5h1755v734h-1755z" style="opacity:1;stroke-width:10.9095" transform="matrix(.29174 0 0 .32 -188.025 .16)"/>
+      </g>
+      <g style="stroke-width:3.27287">
+        <path fill="#fefffe" d="M644.5 733.5h1755v130h-1755z" style="opacity:1;stroke-width:10.9095" transform="matrix(.29174 0 0 .32 -188.025 .16)"/>
+      </g>
+      <g style="stroke-width:3.27287">
+        <path fill="#00990e" d="M644.5 863.5h1755v736h-1755z" style="opacity:1;stroke-width:10.9095" transform="matrix(.29174 0 0 .32 -188.025 .16)"/>
+      </g>
+    </g>
+    <g style="stroke-width:3.125">
+      <path fill="#e10000" d="M-.5-.5h645v1600H-.5z" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+    </g>
+    <g style="stroke-width:3.125">
+      <g style="stroke-width:3.125">
+        <path fill="#fec80d" d="M310.5 591.5q112.879-2.188 180.5 87 60.582 90.78 24 194-38.979 95.117-137.5 124.5c-80.555 19.08-149.722-.757-207.5-59.5q-69.205-80.303-49-185Q152.564 633.438 270.5 598q19.947-4.955 40-6.5" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+      </g>
+      <g style="stroke-width:3.125">
+        <path fill="#e10e00" d="M322.5 618.5a359 359 0 0 1 25 32.5Q448.405 673.404 470 774.5q10.587 97.554-70.5 151.5-22.073 12.789-47 18a866 866 0 0 1-29.5 38.5 774 774 0 0 1-28.5-37.5Q199.244 921.744 176 826.5 161.628 726.025 245.5 670q24.842-14.447 53-20 12.195-15.66 24-31.5" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+      </g>
+      <g style="stroke-width:3.125">
+        <path fill="#fec80d" d="M289.5 662.5q2.951-.359 5.5 1a752 752 0 0 0 28 37 10285 10285 0 0 1 30-38q67.786 16.64 97 80 27.245 69.532-12 133-33.049 46.775-89 59l-26-34a947 947 0 0 0-25 33 4.93 4.93 0 0 1-2.5 1q-69.684-16.439-100.5-81-34.872-94.253 38.5-162.5 24.972-20.236 56-28.5" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+      </g>
+      <g style="stroke-width:3.125">
+        <path fill="#e10b00" d="M312.5 710.5q64.715-2.461 91.5 56 20.277 66.675-36.5 106.5-64.501 32.375-113.5-20.5-30.482-42.357-11-91 21.894-43.161 69.5-51" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+      </g>
+      <g style="stroke-width:3.125">
+        <path fill="#fec80d" d="M314.5 725.5q50.034-1.624 73.5 42 18.82 48.954-18.5 85.5-54.806 38.579-102.5-8.5-32.946-46.523 0-93 19.426-21.084 47.5-26" style="opacity:1;stroke-width:10.4167" transform="matrix(.32 0 0 .32 .16 .16)"/>
+      </g>
+    </g>
+  </g>
+</svg>

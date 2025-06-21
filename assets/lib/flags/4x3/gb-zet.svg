@@ -1,0 +1,13 @@
+<svg id="flag-icons-gb-zet" class="fi fi-gb-zet" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Shetland</name>
+    <code>gb-zet</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Lerwick</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <path fill="#0065cc" d="M0 0h640v480H0z" style="stroke-width:8.33333"/>
+  <path fill="#fff" d="M208.133 0h93.6v480h-93.6z" style="stroke-width:8.33333"/>
+  <path fill="#fff" d="M0 192h640v93.6H0z" style="stroke-width:8.33333"/>
+</svg>

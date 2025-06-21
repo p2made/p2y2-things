@@ -1,0 +1,14 @@
+<svg id="flag-icons-ua-07" class="fi fi-ua-07" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Volyn Oblast</name>
+    <code>ua-07</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Lutsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <path fill="#f01414" d="M0 0h512v512H0Z" style="stroke-width:.999997"/>
+  <path fill="#fff" d="m190.58 87.28-73.18 12.913 12.913-73.173h-43.04l12.914 73.173L27.013 87.28v43.04l73.174-12.913-12.914 73.173h43.04l-12.906-73.18 73.173 12.913Z" style="stroke-width:.999999"/>
+  <path d="M0 217.6h512v76.8H0Z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.15"/>
+  <path d="M217.6 0h76.8v512h-76.8z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.15"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg id="flag-icons-kka" class="fi fi-kka" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Khakas</name>
+    <code>kka</code>
+    <iso>false</iso>
+    <type>People</type>
+  </metadata>
+  <path fill="#009847" d="M0 0h512v512H0z" style="stroke-width:1.25001"/>
+  <g style="stroke-width:1.17188" transform="translate(-256)scale(.85333)">
+    <g fill="gold" style="stroke-width:1.17188">
+      <path d="m435 465 280.5-49.5L765 135l-280.5 49.5Z" style="stroke-width:1.46484"/>
+      <path d="m765 465-280.5-49.5L435 135l280.5 49.5Z" style="stroke-width:1.46484"/>
+    </g>
+    <circle cx="600" cy="300" r="187.5" fill="gold" style="stroke-width:1.46484"/>
+    <circle cx="600" cy="300" r="165" fill="#009847" style="stroke-width:1.46484"/>
+    <circle cx="600" cy="300" r="142.5" fill="gold" style="stroke-width:1.46484"/>
+    <circle cx="600" cy="300" r="93.75" fill="#009847" style="stroke-width:1.46484"/>
+    <circle cx="600" cy="300" r="75" fill="gold" style="stroke-width:1.46484"/>
+  </g>
+</svg>

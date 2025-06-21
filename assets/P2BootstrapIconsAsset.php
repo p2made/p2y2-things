@@ -37,7 +37,7 @@ class P2BootstrapIconsAsset extends AssetBundle
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk',
+		//'integrity' => 'sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk',
 		'crossorigin' => 'anonymous',
 	];
 

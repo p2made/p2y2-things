@@ -45,3 +45,4 @@ class P2BootstrapIconsAsset extends AssetBundle
 		'p2m\assets\P2CoreAsset',
 	];
 }
+

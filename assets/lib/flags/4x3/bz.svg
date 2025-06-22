@@ -1,12 +1,4 @@
-<svg id="flag-icons-bz" class="fi fi-bz" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480" version="1.1">
-  <metadata id="flag-icons">
-    <name>Belize</name>
-    <code>bz</code>
-    <iso>true</iso>
-    <type>Place</type>
-    <capital>Belmopan</capital>
-    <continent>North America</continent>
-  </metadata>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg57831" width="640" height="480" version="1.1">
   <style id="style132">
     .B{stroke:#000}.C{fill:none}.D{stroke-width:.475}.E{fill:#d67c59}.F{fill:#fff}.G{stroke-linejoin:round}.H{fill:#e8e8e6}.I{fill:#653024}.J{stroke-width:.285}.K{stroke-linecap:round}.L{fill:#ad7d5a}.M{stroke-width:.665}.N{stroke-width:.855}
   </style>

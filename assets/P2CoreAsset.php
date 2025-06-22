@@ -31,9 +31,11 @@ class P2CoreAsset extends AssetBundle
 		'css/p2additions.min.css',
 	];
 
+	/**
 	public $js = [
 		'js/p2additions.min.js',
 	];
+	 */
 
 	public $depends = [
 		'yii\web\YiiAsset',

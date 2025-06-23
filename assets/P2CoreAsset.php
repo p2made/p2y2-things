@@ -28,12 +28,14 @@ class P2CoreAsset extends AssetBundle
 	public $sourcePath = '@p2m/assets/lib';
 
 	public $css = [
-		'css/p2additions.css',
+		'css/p2additions.min.css',
 	];
 
+	/**
 	public $js = [
-		'js/p2additions.js',
+		'js/p2additions.min.js',
 	];
+	 */
 
 	public $depends = [
 		'yii\web\YiiAsset',

@@ -30,14 +30,14 @@ class P2SimpleDatatablesAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/simple-datatables@10.0.0/dist';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/simple-datatables@10.2.0/dist';
 
 	public $css = [
 		'style.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha256-QDiWEIOYivjFEI0WQwdwihzwG9nJGKFWXiRh4dr5ito=',
+		'integrity' => 'sha384-/vCCPNOCJILinbC5hd0Ww13KYuzYJdExP9j0KhBy0WirQXLPiYxhW85UH1A1rVSN',
 		'crossorigin' => 'anonymous',
 	];
 
@@ -46,7 +46,7 @@ class P2SimpleDatatablesAsset extends AssetBundle
 	];
 
 	public $jsOptions = [
-		'integrity' => 'sha256-XMVx+UH21h8TkoCUMPmVwxu0IxIlINjmJu7j/itA8jI=',
+		'integrity' => 'sha384-c4va+H5QpEtz9vxARkshzuk7Nr/xvTpPs05Ai22ehEScV0gsEG2L58nJnPk8U9ke',
 		'crossorigin' => 'anonymous',
 	];
 

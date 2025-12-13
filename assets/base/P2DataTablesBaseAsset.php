@@ -40,14 +40,14 @@ class P2DataTablesBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.2.2';
+	public $baseUrl = '//cdn.datatables.net/2.3.5';
 
 	public $js = [
 		'js/dataTables.min.js',
 	];
 
 	public $jsOptions = [
-		'integrity' => 'sha384-AenwROccLjIcbIsJuEZmrLlBzwrhvO94q+wm9RwETq4Kkqv9npFR2qbpdMhsehX3',
+		'integrity' => 'sha384-VQb2IR8f6y3bNbMe6kK6H+edzCXdt7Z/3GtWA7zYzXcvfwYRR5rHGl46q28FbtsY',
 		'crossorigin' => 'anonymous',
 	];
 

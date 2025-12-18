@@ -1,9 +1,9 @@
 <?php
 /**
- * P2DataTablesBaseAsset.php
+ * P2BootstrapCdnAsset.php
  *
- * Yii2 base asset for DataTables
- * https://datatables.net
+ * Yii2 asset with additions for Bootstrap
+ * https://getbootstrap.com/
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -11,7 +11,7 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things
- * @class \p2m\assets\base\P2DataTablesBaseAsset
+ * @class \p2m\assets\base\P2BootstrapCdnAsset
  */
 
 /**
@@ -19,39 +19,49 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ #####                                           ##### ^ #####
  * ##### ^ #####      DO NOT USE THIS CLASS DIRECTLY!      ##### ^ #####
+ * ##### ^ #####      IT IS REGISTERED FOR YOU BY...       ##### ^ #####
+ * ##### ^ #####      p2m\assets\P2CoreAsset               ##### ^ #####
  * ##### ^ #####                                           ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
 /**
- * Load this asset with...
-p2m\assets\base\P2DataTablesBaseAsset::register($this);
+ * In app config set...
 
- * or specify as a dependency with...
-		'p2m\assets\base\P2DataTablesBaseAsset',
+	'components' => [
+		'assetManager' => [
+			...
+			'bundles' => [
+				'yii\bootstrap5\BootstrapAsset' => [
+					'class' => 'p2m\assets\base\P2BootstrapCdnAsset',
+				],
+				...
+			],
+		],
+		...
+	],
+
  */
 
 namespace p2m\assets\base;
 
 use yii\web\AssetBundle;
 
-class P2DataTablesBaseAsset extends AssetBundle
+class P2BootstrapCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.3.5';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist';
 
-	public $js = [
-		'js/dataTables.min.js',
+	public $css = [
+		'css/bootstrap.min.css',
 	];
 
-	public $jsOptions = [
-		'integrity' => 'sha384-VQb2IR8f6y3bNbMe6kK6H+edzCXdt7Z/3GtWA7zYzXcvfwYRR5rHGl46q28FbtsY',
+	public $cssOptions = [
+		'integrity' => 'sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB',
 		'crossorigin' => 'anonymous',
 	];
 
-	public $depends = [
-		'p2m\assets\P2CoreAsset',
-	];
+	public $depends = [];
 }

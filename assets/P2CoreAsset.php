@@ -38,7 +38,7 @@ class P2CoreAsset extends AssetBundle
 	 */
 
 	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap5\BootstrapAsset',
+		'p2m\assets\base\P2JqueryCdnAsset',
+		'p2m\assets\base\P2BootstrapIconsCdnAsset',
 	];
 }

@@ -46,14 +46,22 @@ use yii\web\AssetBundle;
 
 class P2TemplateLocalAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '_source_path_';
 
 	public $css = [
-		'css/_source_min_css_',
+		'_source_min_css_',
+	];
+
+	public $cssOptions = [
+		'crossorigin' => 'anonymous',
 	];
 
 	public $js = [
-		'js/_source_min_js_',
+		'_source_min_js_',
+	];
+
+	public $jsOptions = [
+		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [

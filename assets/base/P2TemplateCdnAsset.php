@@ -46,16 +46,20 @@ use yii\web\AssetBundle;
 
 class P2TemplateCdnAsset extends AssetBundle
 {
+	private $version = '';
+	private $cssIntegrity = '';
+	private $jsIntegrity = '';
+
 	public $sourcePath = null;
 
-	public $baseUrl = '//_baseurl_';
+	public $baseUrl = '//_baseurl_' . $this->version . '_tail_';
 
 	public $css = [
 		'_source_min_css_',
 	];
 
 	public $cssOptions = [
-		'integrity' => '_hash_',
+		'integrity' => $this->cssIntegrity,
 		'crossorigin' => 'anonymous',
 	];
 
@@ -64,11 +68,22 @@ class P2TemplateCdnAsset extends AssetBundle
 	];
 
 	public $jsOptions = [
-		'integrity' => '_hash_',
+		//'integrity' => $this->jsIntegrity,
 		'crossorigin' => 'anonymous',
 	];
 
 	public $depends = [
 		'p2m\assets\P2CoreAsset',
 	];
+
+	public function init()
+	{
+		// Inject the integrity value at runtime
+		if ($this->cssIntegrity) {
+			$this->cssOptions['integrity'] = $this->cssIntegrity;
+			$this->jsOptions['integrity'] = $this->jsIntegrity;
+		}
+
+		parent::init();
+	}
 }

@@ -30,14 +30,14 @@ class P2DataTablesBootstrap5Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.2.2';
+	public $baseUrl = '//cdn.datatables.net/2.3.5';
 
 	public $css = [
 		'css/dataTables.bootstrap5.min.css',
 	];
 
 	public $cssOptions = [
-		'integrity' => 'sha384-BDXgFqzL/EpYeT/J5XTrxR+qDB4ft42notjpwhZDEjDIzutqmXeImvKS3YPH/WJX',
+		'integrity' => 'sha384-zmMNeKbOwzvUmxN8Z/VoYM+i+cwyC14+U9lq4+ZL0Ro7p1GMoh8uq8/HvIBgnh9+',
 		'crossorigin' => 'anonymous',
 	];
 
@@ -46,7 +46,7 @@ class P2DataTablesBootstrap5Asset extends AssetBundle
 	];
 
 	public $jsOptions = [
-		'integrity' => 'sha384-G85lmdZCo2WkHaZ8U1ZceHekzKcg37sFrs4St2+u/r2UtfvSDQmQrkMsEx4Cgv/W',
+		'integrity' => 'sha384-3BApNGXgbm9rg2kjIbaEVprAGb2B0n9QyLjBrH090WdkzZ3IiUv8RZoTh5uP8oWH',
 		'crossorigin' => 'anonymous',
 	];
 

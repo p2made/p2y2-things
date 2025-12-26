@@ -30,7 +30,7 @@ class P2AnimateAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/animate.css@4.1.1/';
+	public $baseUrl = '//cdn.jsdelivr.net/npm/animate.css@4.1.1';
 
 	public $css = [
 		'animate.min.css',

@@ -63,7 +63,5 @@ class P2BootstrapIconsCdnAsset extends AssetBundle
 		'crossorigin' => 'anonymous',
 	];
 
-	public $depends = [
-		'p2m\assets\base\P2BootstrapCdnAsset',
-	];
+	public $depends = [];
 }

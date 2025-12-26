@@ -39,6 +39,7 @@ class P2CoreAsset extends AssetBundle
 
 	public $depends = [
 		'p2m\assets\base\P2JqueryCdnAsset',
+		'p2m\assets\base\P2BootstrapCdnAsset',
 		'p2m\assets\base\P2BootstrapIconsCdnAsset',
 	];
 }

@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesRowGroupAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesRowGroupAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 

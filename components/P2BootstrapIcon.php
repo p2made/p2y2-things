@@ -17,7 +17,7 @@ namespace p2m\components;
 
 use Yii;
 use p2m\components\P2Icon;
-use p2m\assets\P2BootstrapIconsAsset;
+use p2m\assets\base\P2BootstrapIconsCdnAsset;
 
 class P2BootstrapIcon extends P2Icon
 {
@@ -29,7 +29,7 @@ class P2BootstrapIcon extends P2Icon
 	public function __construct(string $cssPrefix, string $name, array $options = [])
 	{
 		// register the asset bundle for BI
-		P2BootstrapIconsAsset::register(Yii::$app->view);
+		P2BootstrapIconsCdnAsset::register(Yii::$app->view);
 
 		// call parent with original arguments
 		parent::__construct($cssPrefix, $name, $options);

@@ -228,6 +228,7 @@ class P2BootstrapIcons extends P2Icons
 	const _SKYPE = 'skype';
 	const _SLACK = 'slack';
 	const _SNAPCHAT = 'snapchat';
+	const _SUBSTACK = 'substack';
 	const _TENCENT_QQ = 'tencent-qq';
 	const _TIKTOK = 'tiktok';
 	const _TWITTER = 'twitter';
@@ -1925,7 +1926,6 @@ class P2BootstrapIcons extends P2Icons
 	const _STRAVA = 'strava';
 	const _STRIPE = 'stripe';
 	const _SUBSCRIPT = 'subscript';
-	const _SUBSTACK = 'substack';
 	const _SUBTRACT = 'subtract';
 	const _SUIT_CLUB = 'suit-club';
 	const _SUIT_CLUB_FILL = 'suit-club-fill';

@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesButtonsAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesButtonsAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 

@@ -41,7 +41,12 @@ class P2Icon
 			Html::addCssClass($options, $cssPrefix . '-' . $name);
 		}
 
-		$this->options = $options;
+		$ariaDefaults = [
+			'aria-hidden' => 'true',
+			'focusable'   => 'false',
+		];
+
+		$this->options = array_merge($ariaDefaults, $options);
 	}
 
 	/**
@@ -75,6 +80,47 @@ class P2Icon
 	}
 
 	/**
+	 * @param string $label
+	 * @return \p2m\components\P2Icon
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function ariaLabel(string $label): self
+	{
+		$label = trim($label);
+
+		if ($label === '')
+		{
+			throw new InvalidConfigException(sprintf(
+				'%s - invalid value. Label must be a non-empty string.',
+				'P2Icon::ariaLabel()'
+			));
+		}
+
+		$this->options['aria-label'] = $label;
+
+		// If the icon has a label, it should not be hidden from assistive tech.
+		$this->options['aria-hidden'] = 'false';
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $focusable = true
+	 * @return \p2m\components\P2Icon
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function focusable(bool $focusable = true): self
+	{
+		$this->options['focusable'] = $focusable ? 'true' : 'false';
+
+		if ($focusable) {
+			$this->options['aria-hidden'] = 'false';
+		}
+
+		return $this;
+	}
+
+	/**
 	 * @param string $class
 	 * @param bool $condition
 	 * @param string|bool $throw
@@ -95,6 +141,35 @@ class P2Icon
 		} else {
 			Html::addCssClass($this->options, $class);
 		}
+
+		return $this;
+	}
+
+	/**
+	 * Add or overwrite an HTML attribute.
+	 *
+	 * @param string      $name
+	 * @param string      $value
+	 * @param bool        $condition
+	 * @param string|bool $throw
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function addAttribute(string $name, string $value, bool $condition = true, $throw = false): self
+	{
+		if ($condition === false) {
+			if (!empty($throw)) {
+				$message = !is_string($throw)
+					? 'Condition is false'
+					: $throw;
+
+				throw new InvalidConfigException($message);
+			}
+
+			return $this;
+		}
+
+		$this->options[$name] = $value;
 
 		return $this;
 	}

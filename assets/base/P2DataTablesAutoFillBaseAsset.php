@@ -61,6 +61,6 @@ class P2DataTablesAutoFillBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2DataTablesBootstrap5Asset',
+		'p2m\assets\datatables\P2DataTablesBootstrap5Asset',
 	];
 }

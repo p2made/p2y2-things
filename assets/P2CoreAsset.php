@@ -25,7 +25,7 @@ use yii\web\AssetBundle;
 
 class P2CoreAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '@p2m/assets/lib/p2additions';
 
 	public $css = [
 		'css/p2additions.min.css',

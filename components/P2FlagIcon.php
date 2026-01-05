@@ -45,4 +45,9 @@ class P2FlagIcon extends P2Icon
 	{
 		return $this->addCssClass(P2Icons::SQUARE_FLAG, $enable);
 	}
+
+	public function sq(bool $enable = true): self
+	{
+		return $this->square($enable);
+	}
 }

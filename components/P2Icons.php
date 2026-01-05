@@ -25,6 +25,15 @@ class P2Icons
 {
 	const SIZE_PREFIX = 'fs';
 
+	const IMG = 'img';
+	const PRESENTATION = 'presentation';
+	const NONE = 'none';
+	const BUTTON = 'button';
+	const LINK = 'link';
+	const STATUS = 'status';
+	const ALERT = 'alert';
+	const NOTE = 'note';
+
 	/**
 	 * Subclasses must set this to 'bi', 'ec' or 'fi'
 	 * @var string

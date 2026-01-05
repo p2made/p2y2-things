@@ -36,13 +36,15 @@ class P2BootstrapIcon extends P2Icon
 	}
 
 	/**
-	 * @param string $value
+	 * @param string $color
 	 * @return \p2m\components\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function color(string $value): self
+	public function color(string $color): self
 	{
-		$values = [
+		$color = trim($color);
+
+		$colors = [
 			P2Icons::PRIMARY,
 			P2Icons::PRIMARY_EMPHASIS,
 			P2Icons::SECONDARY,
@@ -62,13 +64,21 @@ class P2BootstrapIcon extends P2Icon
 		];
 
 		return $this->addCssClass(
-			self::TEXT_PREFIX . '-' . $value,
-			in_array((string)$value, $values, true),
+			self::TEXT_PREFIX . '-' . $color,
+			in_array($color, $colors, true),
 			sprintf(
 				'%s - invalid value. Use one of the constants: %s.',
 				'P2Icons::color()',
-				implode(', ', $values)
+				implode(', ', $colors)
 			)
 		);
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function c(string $color): self
+	{
+		return $this->color($color);
 	}
 }

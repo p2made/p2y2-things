@@ -80,11 +80,20 @@ class P2Icon
 	}
 
 	/**
+	 * Convenience alias.
+	 */
+	public function s(int $value): self
+	{
+		return $this->size($value);
+	}
+
+	/**
 	 * @param string $label
-	 * @return \p2m\components\P2Icon
+	 * @param string|null $role Default P2Icons::IMG. Use '' or null to not set role.
+	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function ariaLabel(string $label): self
+	public function ariaLabel(string $label, ?string $role = P2Icons::IMG): self
 	{
 		$label = trim($label);
 
@@ -96,12 +105,102 @@ class P2Icon
 			));
 		}
 
-		$this->options['aria-label'] = $label;
+		$this->addAttribute('aria-label', $label)
+			->addAttribute('aria-hidden', 'false');
 
-		// If the icon has a label, it should not be hidden from assistive tech.
-		$this->options['aria-hidden'] = 'false';
+		if ($role !== null && $role !== '')
+		{
+			$this->ariaRole($role);
+		}
 
 		return $this;
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function l(string $label, ?string $role = P2Icons::IMG): self
+	{
+		return $this->ariaLabel($label, $role);
+	}
+
+	/**
+	 * @param string $role
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function ariaRole(string $role): self
+	{
+		$role = strtolower(trim($role));
+
+		$roles = [
+			P2Icons::IMG,
+			P2Icons::PRESENTATION,
+			P2Icons::NONE,
+			P2Icons::BUTTON,
+			P2Icons::LINK,
+			P2Icons::STATUS,
+			P2Icons::ALERT,
+			P2Icons::NOTE,
+		];
+
+		return $this->addAttribute(
+			'role', $role,
+			in_array($role, $roles, true),
+			sprintf(
+				'%s - invalid value. Use one of: %s.',
+				'P2Icon::ariaRole()',
+				implode(', ', $roles)
+			)
+		);
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function r(string $role): self
+	{
+		return $this->ariaRole($role);
+	}
+
+	/**
+	 * @param string $title
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function title(string $title): self
+	{
+		$title = trim($title);
+
+		return $this->addAttribute(
+			'title', $title, $title !== '',
+			sprintf('%s - invalid value. Title must be a non-empty string.', 'P2Icon::title()')
+		);
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function t(string $title): self
+	{
+		return $this->title($title);
+	}
+
+	/**
+	 * @param int $index
+	 * @return self
+	 */
+	public function tabIndex(int $index): self
+	{
+		return $this->addAttribute('tabindex', (string)$index);
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function i(int $index): self
+	{
+		return $this->tabIndex($index);
 	}
 
 	/**
@@ -113,11 +212,71 @@ class P2Icon
 	{
 		$this->options['focusable'] = $focusable ? 'true' : 'false';
 
-		if ($focusable) {
-			$this->options['aria-hidden'] = 'false';
-		}
+		$hasLabel = !empty($this->options['aria-label']);
+		$this->options['aria-hidden'] = ($hasLabel || $focusable) ? 'false' : 'true';
 
 		return $this;
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function f(bool $focusable = true): self
+	{
+		return $this->focusable($focusable);
+	}
+
+	/**
+	 * Force aria-hidden state.
+	 *
+	 * @param bool $hidden
+	 * @return self
+	 */
+	public function ariaHidden(bool $hidden = true): self
+	{
+		$this->options['aria-hidden'] = $hidden ? 'true' : 'false';
+
+		return $this;
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function h(bool $hidden = true): self
+	{
+		return $this->ariaHidden($hidden);
+	}
+
+	/**
+	 * @param string $id
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function id(string $id): self
+	{
+		$id = trim($id);
+
+		return $this->addAttribute(
+			'id', $id, $id !== '',
+			sprintf('%s - invalid value. ID must be a non-empty string.', 'P2Icon::id()')
+		);
+	}
+
+	/**
+	 * @param string $name
+	 * @param string $value
+	 * @return self
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function data(string $name, string $value): self
+	{
+		$name = trim($name);
+
+		return $this->addAttribute(
+			'data-' . $name, $value,
+			$name !== '' && preg_match('/^[A-Za-z0-9][A-Za-z0-9\-_:.]*$/', $name),
+			sprintf('%s - invalid value. Data attribute name is invalid.', 'P2Icon::data()')
+		);
 	}
 
 	/**
@@ -143,6 +302,14 @@ class P2Icon
 		}
 
 		return $this;
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function css($class, $condition = true, $throw = false): self
+	{
+		return $this->addCssClass($class, $condition, $throw);
 	}
 
 	/**
@@ -172,5 +339,13 @@ class P2Icon
 		$this->options[$name] = $value;
 
 		return $this;
+	}
+
+	/**
+	 * Convenience alias.
+	 */
+	public function att(string $name, string $value, bool $condition = true, $throw = false): self
+	{
+		return $this->addAttribute($name, $value, $condition, $throw);
 	}
 }

@@ -40,7 +40,7 @@ class P2FlagIconsBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/flag-icons/7.5.0';
+	public $baseUrl = 'https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.5.0';
 
 	public $css = [
 		'css/flag-icons.min.css',

@@ -30,7 +30,7 @@ class P2FullCalendarScrollgridAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/@fullcalendar/scrollgrid@6.1.15';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/@fullcalendar/scrollgrid@6.1.15';
 
 	public $css = [
 		'index.global.min.js',

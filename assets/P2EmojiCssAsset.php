@@ -30,7 +30,7 @@ class P2EmojiCssAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/emoji.css@1.0.6';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/emoji.css@1.0.6';
 
 	public $css = [
 		'dist/emoji.min.css',

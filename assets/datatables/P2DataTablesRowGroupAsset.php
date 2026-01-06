@@ -30,7 +30,7 @@ class P2DataTablesRowGroupAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/rowgroup/1.5.1';
+	public $baseUrl = 'https://cdn.datatables.net/rowgroup/1.5.1';
 
 	public $css = [
 		'css/rowGroup.bootstrap5.min.css',

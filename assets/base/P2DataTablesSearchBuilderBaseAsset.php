@@ -40,7 +40,7 @@ class P2DataTablesSearchBuilderBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/searchbuilder/1.8.2';
+	public $baseUrl = 'https://cdn.datatables.net/searchbuilder/1.8.2';
 
 	public $css = [
 		'css/searchBuilder.bootstrap5.min.css',

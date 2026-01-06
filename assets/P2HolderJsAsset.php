@@ -30,7 +30,7 @@ class P2HolderJsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/holderjs@2.9.9';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/holderjs@2.9.9';
 
 	public $js = [
 		'holder.min.j',

@@ -30,7 +30,7 @@ class P2DataTablesKeyTableAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/keytable/2.12.1';
+	public $baseUrl = 'https://cdn.datatables.net/keytable/2.12.1';
 
 	public $css = [
 		'css/keyTable.bootstrap5.min.css',

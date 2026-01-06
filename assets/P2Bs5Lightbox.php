@@ -31,7 +31,7 @@ class P2Bs5Lightbox extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist';
 
 	public $js = [
 		'index.bundle.min.js',

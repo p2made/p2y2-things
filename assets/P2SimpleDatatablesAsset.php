@@ -30,7 +30,7 @@ class P2SimpleDatatablesAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/simple-datatables@10.2.0/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/simple-datatables@10.2.0/dist';
 
 	public $css = [
 		'style.min.css',

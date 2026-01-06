@@ -52,7 +52,7 @@ class P2BootstrapIconsCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
 
 	public $css = [
 		'bootstrap-icons.css',

@@ -30,7 +30,7 @@ class P2Lightbox2Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist';
 
 	public $css = [
 		'css/lightbox.min.css',

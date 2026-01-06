@@ -30,7 +30,7 @@ class P2MorrisAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/morris.js@0.5.0';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/morris.js@0.5.0';
 
 	public $css = [
 		'morris.min.css',

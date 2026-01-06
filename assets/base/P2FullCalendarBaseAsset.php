@@ -40,7 +40,7 @@ class P2FullCalendarBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/fullcalendar@6.1.15';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15';
 
 	public $js = [
 		'index.global.min.js',

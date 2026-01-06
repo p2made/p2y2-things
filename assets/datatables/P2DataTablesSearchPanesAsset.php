@@ -30,7 +30,7 @@ class P2DataTablesSearchPanesAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/searchpanes/2.3.3';
+	public $baseUrl = 'https://cdn.datatables.net/searchpanes/2.3.3';
 
 	public $js = [
 		'js/searchPanes.bootstrap5.min.js',

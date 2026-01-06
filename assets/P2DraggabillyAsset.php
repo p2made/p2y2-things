@@ -30,7 +30,7 @@ class P2DraggabillyAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/draggabilly@3.0.0/';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/draggabilly@3.0.0/';
 
 	public $js = [
 		'draggabilly.min.js',

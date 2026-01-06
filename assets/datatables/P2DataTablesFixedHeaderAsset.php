@@ -30,7 +30,7 @@ class P2DataTablesFixedHeaderAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/fixedheader/4.0.1';
+	public $baseUrl = 'https://cdn.datatables.net/fixedheader/4.0.1';
 
 	public $css = [
 		'css/fixedHeader.bootstrap5.min.css',

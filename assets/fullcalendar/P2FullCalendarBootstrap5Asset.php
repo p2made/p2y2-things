@@ -30,7 +30,7 @@ class P2FullCalendarBootstrap5Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.15';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.15';
 
 	public $js = [
 		'index.global.min.js',

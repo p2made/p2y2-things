@@ -106,10 +106,9 @@ class P2Icon
 		}
 
 		$this->addAttribute('aria-label', $label)
-			->addAttribute('aria-hidden', 'false');
+			->exposeToAT();
 
-		if ($role !== null && $role !== '')
-		{
+		if ($role !== null && $role !== '') {
 			$this->ariaRole($role);
 		}
 
@@ -211,10 +210,6 @@ class P2Icon
 	public function focusable(bool $focusable = true): self
 	{
 		$this->options['focusable'] = $focusable ? 'true' : 'false';
-
-		$hasLabel = !empty($this->options['aria-label']);
-		$this->options['aria-hidden'] = ($hasLabel || $focusable) ? 'false' : 'true';
-
 		return $this;
 	}
 
@@ -234,8 +229,25 @@ class P2Icon
 	 */
 	public function ariaHidden(bool $hidden = true): self
 	{
-		$this->options['aria-hidden'] = $hidden ? 'true' : 'false';
+		if ($hidden) {
+			$this->hideFromAT();
+		}
+		else {
+			$this->exposeToAT();
+		}
 
+		return $this;
+	}
+
+	public function hideFromAT(): self
+	{
+		$this->options['aria-hidden'] = 'true';
+		return $this;
+	}
+
+	public function exposeToAT(): self
+	{
+		unset($this->options['aria-hidden']);
 		return $this;
 	}
 

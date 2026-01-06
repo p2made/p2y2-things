@@ -30,7 +30,7 @@ class P2QunitAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/qunit@2.24.1/qunit';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/qunit@2.24.1/qunit';
 
 	public $css = [
 		'qunit.min.css',

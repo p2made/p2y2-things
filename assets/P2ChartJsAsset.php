@@ -30,7 +30,7 @@ class P2ChartJsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/chart.js@2.9.4';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/chart.js@2.9.4';
 
 	public $css = [
 		'dist/Chart.min.css',

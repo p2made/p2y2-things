@@ -30,7 +30,7 @@ class P2SimpleLineIconsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/simple-line-icons@2.5.5';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/simple-line-icons@2.5.5';
 
 	public $css = [
 		'css/simple-line-icons.min.css',

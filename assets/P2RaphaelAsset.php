@@ -30,7 +30,7 @@ class P2RaphaelAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/raphael@2.3.0';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/raphael@2.3.0';
 
 	public $js = [
 		'raphael.min.js',

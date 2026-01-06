@@ -30,7 +30,7 @@ class P2DataTablesPrintAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/buttons/3.2.2';
+	public $baseUrl = 'https://cdn.datatables.net/buttons/3.2.2';
 
 	public $js = [
 		'js/buttons.print.min.js',

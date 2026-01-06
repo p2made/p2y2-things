@@ -52,7 +52,7 @@ class P2JqueryCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//code.jquery.com/';
+	public $baseUrl = 'https://code.jquery.com/';
 
 	public $js = [
 		'jquery-3.7.1.min.js',

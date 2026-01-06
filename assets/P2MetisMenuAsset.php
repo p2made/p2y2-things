@@ -30,7 +30,7 @@ class P2MetisMenuAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/metismenu@3.0.7/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/metismenu@3.0.7/dist';
 
 	public $css = [
 		'metisMenu.min.css',

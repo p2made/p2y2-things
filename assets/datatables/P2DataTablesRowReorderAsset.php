@@ -30,7 +30,7 @@ class P2DataTablesRowReorderAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/rowreorder/1.5.0';
+	public $baseUrl = 'https://cdn.datatables.net/rowreorder/1.5.0';
 
 	public $css = [
 		'css/rowReorder.bootstrap5.min.css',

@@ -30,7 +30,7 @@ class P2FlickityAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/flickity@3.0.0';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/flickity@3.0.0';
 
 	public $css = [
 		'css/flickity.min.css',

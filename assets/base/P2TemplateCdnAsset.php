@@ -52,7 +52,7 @@ class P2TemplateCdnAsset extends AssetBundle
 
 	public $sourcePath = null;
 
-	public $baseUrl = '//_baseurl_' . $this->version . '_tail_';
+	public $baseUrl = 'https://_baseurl_' . $this->version . '_tail_';
 
 	public $css = [
 		'_source_min_css_',

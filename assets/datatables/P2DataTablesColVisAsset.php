@@ -30,7 +30,7 @@ class P2DataTablesColVisAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.2.2';
+	public $baseUrl = 'https://cdn.datatables.net/2.2.2';
 
 	public $js = [
 		'js/buttons.colVis.min.js',

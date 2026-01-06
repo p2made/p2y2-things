@@ -30,7 +30,7 @@ class P2IsotopeAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//unpkg.com/isotope-layout@3/dist';
+	public $baseUrl = 'https://unpkg.com/isotope-layout@3/dist';
 
 	public $js = [
 		'isotope.pkgd.min.js',

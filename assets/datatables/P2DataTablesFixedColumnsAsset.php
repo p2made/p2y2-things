@@ -30,7 +30,7 @@ class P2DataTablesFixedColumnsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/fixedcolumns/5.0.4';
+	public $baseUrl = 'https://cdn.datatables.net/fixedcolumns/5.0.4';
 
 	public $css = [
 		'css/fixedColumns.bootstrap5.min.css',

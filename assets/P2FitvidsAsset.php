@@ -30,7 +30,7 @@ class P2FitvidsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/fitvids@2.1.1/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/fitvids@2.1.1/dist';
 
 	public $js = [
 		'fitvids.min.js',

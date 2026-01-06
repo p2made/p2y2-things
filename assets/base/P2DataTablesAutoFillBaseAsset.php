@@ -40,7 +40,7 @@ class P2DataTablesAutoFillBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/autofill/2.7.0';
+	public $baseUrl = 'https://cdn.datatables.net/autofill/2.7.0';
 
 	public $css = [
 		'css/autoFill.bootstrap5.min.css',

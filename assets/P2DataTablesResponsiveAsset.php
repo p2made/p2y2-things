@@ -41,7 +41,7 @@ class P2DataTablesResponsiveAsset extends AssetBundle
 
 	// @var array
 	public $js = [
-		'js/datatables-init.js',
+		'js/p2-datatables.min.js',
 	];
 
 	public $depends = [

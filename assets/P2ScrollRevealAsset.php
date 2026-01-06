@@ -30,7 +30,7 @@ class P2ScrollRevealAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist';
 
 	public $js = [
 		'scrollreveal.min.js',

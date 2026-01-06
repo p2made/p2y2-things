@@ -30,7 +30,7 @@ class P2ImagesLoadedAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/imagesloaded@5.0.0';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0';
 
 	public $js = [
 		'imagesloaded.pkgd.min.js',

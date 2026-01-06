@@ -30,7 +30,7 @@ class P2TimelineJs3Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/timelinejs3@3.4.0/compiled';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/timelinejs3@3.4.0/compiled';
 
 	public $css = [
 		'css/timeline.min.css',

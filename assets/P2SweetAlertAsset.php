@@ -30,7 +30,7 @@ class P2SweetAlertAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist';
 
 	public $js = [
 		'sweetalert.min.js',

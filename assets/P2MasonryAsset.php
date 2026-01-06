@@ -30,7 +30,7 @@ class P2MasonryAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist';
 
 	public $js = [
 		'masonry.pkgd.min.js',

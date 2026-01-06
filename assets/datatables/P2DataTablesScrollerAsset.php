@@ -30,7 +30,7 @@ class P2DataTablesScrollerAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/scroller/2.4.3';
+	public $baseUrl = 'https://cdn.datatables.net/scroller/2.4.3';
 
 	public $css = [
 		'css/scroller.bootstrap5.min.css',

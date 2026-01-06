@@ -30,7 +30,7 @@ class P2DataTablesResponsiveAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/responsive/3.0.4';
+	public $baseUrl = 'https://cdn.datatables.net/responsive/3.0.4';
 
 	public $js = [
 		'js/responsive.bootstrap5.js',

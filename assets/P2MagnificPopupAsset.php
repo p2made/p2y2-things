@@ -30,7 +30,7 @@ class P2MagnificPopupAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/magnific-popup@1.2.0/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/magnific-popup@1.2.0/dist';
 
 	public $css = [
 		'magnific-popup.min.css',

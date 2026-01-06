@@ -30,7 +30,7 @@ class P2DataTablesSelectAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/select/3.0.0';
+	public $baseUrl = 'https://cdn.datatables.net/select/3.0.0';
 
 	public $css = [
 		'css/select.bootstrap5.min.css',

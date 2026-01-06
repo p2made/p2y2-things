@@ -40,7 +40,7 @@ class P2DataTablesBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.3.5';
+	public $baseUrl = 'https://cdn.datatables.net/2.3.5';
 
 	public $js = [
 		'js/dataTables.min.js',

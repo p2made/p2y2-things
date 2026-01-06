@@ -30,7 +30,7 @@ class P2DataTablesBootstrap5Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.3.5';
+	public $baseUrl = 'https://cdn.datatables.net/2.3.5';
 
 	public $css = [
 		'css/dataTables.bootstrap5.min.css',

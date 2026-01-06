@@ -40,7 +40,7 @@ class P2PdfmakeBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7';
+	public $baseUrl = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7';
 
 	public $js = [
 		'pdfmake.min.js',

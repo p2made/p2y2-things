@@ -34,7 +34,7 @@ class P2LuxAsset extends AssetBundle
 
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootswatch@' . $version . '/dist/' . $theme;
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootswatch@' . $version . '/dist/' . $theme;
 
 	public $css = [
 		'bootstrap.min.css',

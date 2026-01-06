@@ -30,7 +30,7 @@ class P2MathJsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/mathjs@14.4.0/lib/browser';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/mathjs@14.4.0/lib/browser';
 
 	public $js = [
 		'math.min.js',

@@ -30,7 +30,7 @@ class P2DataTablesButtonsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/buttons/3.2.2';
+	public $baseUrl = 'https://cdn.datatables.net/buttons/3.2.2';
 
 	public $js = [
 		'js/buttons.bootstrap5.min.js',

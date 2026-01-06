@@ -52,7 +52,7 @@ class P2BootstrapPluginCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist';
 
 	public $js = [
 		'js/bootstrap.bundle.min.js',

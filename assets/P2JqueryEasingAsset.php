@@ -30,7 +30,7 @@ class P2JqueryEasingAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/jquery.easing@1.4.1';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1';
 
 	public $js = [
 		'jquery.easing.min.js',

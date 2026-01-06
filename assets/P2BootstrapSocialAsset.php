@@ -30,7 +30,7 @@ class P2BootstrapSocialAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-social@5.1.1';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootstrap-social@5.1.1';
 
 	public $css = [
 		'bootstrap-social.min.css',

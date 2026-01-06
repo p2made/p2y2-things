@@ -30,7 +30,7 @@ class P2DataTablesDateTimeAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/datetime/1.5.5';
+	public $baseUrl = 'https://cdn.datatables.net/datetime/1.5.5';
 
 	public $css = [
 		'css/dataTables.dateTime.min.css',

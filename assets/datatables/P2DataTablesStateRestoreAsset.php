@@ -30,7 +30,7 @@ class P2DataTablesStateRestoreAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/staterestore/1.4.1';
+	public $baseUrl = 'https://cdn.datatables.net/staterestore/1.4.1';
 
 	public $js = [
 		'js/stateRestore.bootstrap5.min.js',

@@ -30,7 +30,7 @@ class P2PackeryAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/packery@3.0.0/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/packery@3.0.0/dist';
 
 	public $js = [
 		'packery.pkgd.min.js',

@@ -30,7 +30,7 @@ class P2GoogleMapsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/google-maps@4.3.3/lib/cjs';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/google-maps@4.3.3/lib/cjs';
 
 	public $js = [
 		'index.min.js',

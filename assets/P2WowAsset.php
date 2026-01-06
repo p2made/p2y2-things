@@ -30,7 +30,7 @@ class P2WowAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/wowjs@1.1.3';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/wowjs@1.1.3';
 
 	public $css = [
 		'css/libs/animate.min.css',

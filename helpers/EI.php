@@ -10,7 +10,7 @@
 
 /**
  * @class \p2m\helpers\EI
- * @package p2made/yii2-p2y2-things
+ * @package p2made/yii2-p2y2
  */
 
 namespace p2m\helpers;

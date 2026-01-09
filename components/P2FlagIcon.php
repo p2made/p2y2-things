@@ -10,7 +10,7 @@
 
 /**
  * @class \p2m\components\P2FlagIcon
- * @package p2made/yii2-p2y2-things
+ * @package p2made/yii2-p2y2
  */
 
 namespace p2m\components;

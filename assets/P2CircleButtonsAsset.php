@@ -9,7 +9,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2CircleButtonsAsset
  */
 
@@ -29,7 +29,7 @@ class P2YiiAsset extends AssetBundle
 {
 	public $sourcePath = '@p2m/assets/lib';
 
-	public $css/circle-buttons.min.css = [
+	public $css = [
 		'css/circle-buttons.min.css',
 	];
 

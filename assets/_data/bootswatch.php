@@ -12,7 +12,7 @@ P2BriteAsset.php:
  * @link https://github.com/P2madeAsset
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2BriteAsset
  */
 
@@ -65,7 +65,7 @@ P2CeruleanAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2CeruleanAsset
  */
 
@@ -118,7 +118,7 @@ P2CosmoAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2CosmoAsset
  */
 
@@ -171,7 +171,7 @@ P2CyborgAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2CyborgAsset
  */
 
@@ -224,7 +224,7 @@ P2DarklyAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2DarklyAsset
  */
 
@@ -277,7 +277,7 @@ P2FlatlyAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2FlatlyAsset
  */
 
@@ -330,7 +330,7 @@ P2JournalAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2JournalAsset
  */
 
@@ -383,7 +383,7 @@ P2LiteraAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2LiteraAsset
  */
 
@@ -436,7 +436,7 @@ P2LumenAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2LumenAsset
  */
 
@@ -489,7 +489,7 @@ P2LuxAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2LuxAsset
  */
 
@@ -542,7 +542,7 @@ P2MateriaAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2MateriaAsset
  */
 
@@ -595,7 +595,7 @@ P2MintyAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2MintyAsset
  */
 
@@ -648,7 +648,7 @@ P2MorphAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2MorphAsset
  */
 
@@ -701,7 +701,7 @@ P2PulseAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2PulseAsset
  */
 
@@ -754,7 +754,7 @@ P2QuartzAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2QuartzAsset
  */
 
@@ -807,7 +807,7 @@ P2SandstoneAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SandstoneAsset
  */
 
@@ -860,7 +860,7 @@ P2SimplexAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SimplexAsset
  */
 
@@ -913,7 +913,7 @@ P2SketchyAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SketchyAsset
  */
 
@@ -966,7 +966,7 @@ P2SlateAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SlateAsset
  */
 
@@ -1019,7 +1019,7 @@ P2SolarAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SolarAsset
  */
 
@@ -1072,7 +1072,7 @@ P2SpacelabAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SpacelabAsset
  */
 
@@ -1125,7 +1125,7 @@ P2SuperheroAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2SuperheroAsset
  */
 
@@ -1178,7 +1178,7 @@ P2UnitedAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2UnitedAsset
  */
 
@@ -1231,7 +1231,7 @@ P2VaporAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2VaporAsset
  */
 
@@ -1284,7 +1284,7 @@ P2YetiAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2YetiAsset
  */
 
@@ -1337,7 +1337,7 @@ P2ZephyrAsset.php:
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2ZephyrAsset
  */
 

@@ -15,9 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\components\P2PicsumImage;
-use yii\base\InvalidArgumentException;
+use p2m\components\P2PicsumImages;
 
-class Picsum extends P2PicsumImage
-{
-}
+class Picsum extends P2PicsumImages
+{}

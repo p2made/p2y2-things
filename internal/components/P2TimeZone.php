@@ -9,11 +9,16 @@
  */
 
 /**
- * @class \p2m\components\P2TimeZone
+ * @class \p2m\internal\components\P2TimeZone
  * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
+
+namespace p2m\internal\components;
 
 use DateTime;
 use DateTimeZone;

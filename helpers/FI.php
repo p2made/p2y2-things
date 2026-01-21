@@ -15,9 +15,9 @@
 
 namespace p2m\helpers;
 
-use p2m\components\P2FlagIcons;
+use p2m\internal\components\P2FlagIcons;
 
-class FI extends P2FlagIcons
+final class FI extends P2FlagIcons
 {
 	protected static string $cssPrefix = 'fi';
 }

@@ -15,9 +15,9 @@
 
 namespace p2m\helpers;
 
-use p2m\components\P2BootstrapIcons;
+use p2m\internal\components\P2BootstrapIcons;
 
-class BI extends P2BootstrapIcons
+final class BI extends P2BootstrapIcons
 {
 	protected static string $cssPrefix = 'bi';
 }

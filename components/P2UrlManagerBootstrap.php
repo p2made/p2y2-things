@@ -1,4 +1,18 @@
 <?php
+/**
+ * P2UrlManagerBootstrap.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2026
+ * @link https://github.com/p2made
+ * @license MIT
+ */
+
+/**
+ * @package p2made/p2y2-things
+ * @class \p2m\components\P2UrlManagerBootstrap
+ */
+
 namespace p2m\components;
 
 use Yii;

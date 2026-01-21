@@ -9,14 +9,16 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcons
+ * @class \p2m\internal\components\P2BootstrapIcons
  * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
 
-
-use p2m\components\P2Icons;
+namespace p2m\internal\components;
 
 class P2BootstrapIcons extends P2Icons
 {

@@ -15,9 +15,9 @@
 
 namespace p2m\helpers;
 
-use p2m\components\P2EmojiIcons;
+use p2m\internal\components\P2EmojiIcons;
 
-class EI extends P2EmojiIcons
+final class EI extends P2EmojiIcons
 {
 	protected static string $cssPrefix = 'ec';
 }

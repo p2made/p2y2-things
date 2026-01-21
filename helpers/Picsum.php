@@ -9,13 +9,16 @@
  */
 
 /**
+ * Public interface for Picsum helpers.
+ *
  * @package p2made/p2y2-things
  * @class \p2m\helpers\Picsum
  */
 
 namespace p2m\helpers;
 
-use p2m\components\P2PicsumImages;
+use p2m\internal\components\P2PicsumImages;
 
-class Picsum extends P2PicsumImages
-{}
+final class Picsum extends P2PicsumImages
+{
+}

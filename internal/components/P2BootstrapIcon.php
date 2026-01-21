@@ -9,14 +9,18 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcon
+ * @class \p2m\internal\components\P2BootstrapIcon
  * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
+
+namespace p2m\internal\components;
 
 use Yii;
-use p2m\components\P2Icon;
 use p2m\assets\base\P2BootstrapIconsCdnAsset;
 
 class P2BootstrapIcon extends P2Icon

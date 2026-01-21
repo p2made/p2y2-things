@@ -18,7 +18,7 @@ namespace p2m\icons;
 use p2m\icons\P2BootstrapIcons;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 class P2Icon
 {

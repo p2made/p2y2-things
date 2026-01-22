@@ -49,30 +49,30 @@ class P2BootstrapIcon extends P2Icon
 		$color = trim($color);
 
 		$colors = [
-			P2BootstrapIcons::PRIMARY,
-			P2BootstrapIcons::PRIMARY_EMPHASIS,
-			P2BootstrapIcons::SECONDARY,
-			P2BootstrapIcons::SECONDARY_EMPHASIS,
-			P2BootstrapIcons::SUCCESS,
-			P2BootstrapIcons::SUCCESS_EMPHASIS,
-			P2BootstrapIcons::DANGER,
-			P2BootstrapIcons::DANGER_EMPHASIS,
-			P2BootstrapIcons::WARNING,
-			P2BootstrapIcons::WARNING_EMPHASIS,
-			P2BootstrapIcons::INFO,
-			P2BootstrapIcons::INFO_EMPHASIS,
-			P2BootstrapIcons::LIGHT,
-			P2BootstrapIcons::LIGHT_EMPHASIS,
-			P2BootstrapIcons::DARK,
-			P2BootstrapIcons::DARK_EMPHASIS,
+			P2BootstrapIconFactory::PRIMARY,
+			P2BootstrapIconFactory::PRIMARY_EMPHASIS,
+			P2BootstrapIconFactory::SECONDARY,
+			P2BootstrapIconFactory::SECONDARY_EMPHASIS,
+			P2BootstrapIconFactory::SUCCESS,
+			P2BootstrapIconFactory::SUCCESS_EMPHASIS,
+			P2BootstrapIconFactory::DANGER,
+			P2BootstrapIconFactory::DANGER_EMPHASIS,
+			P2BootstrapIconFactory::WARNING,
+			P2BootstrapIconFactory::WARNING_EMPHASIS,
+			P2BootstrapIconFactory::INFO,
+			P2BootstrapIconFactory::INFO_EMPHASIS,
+			P2BootstrapIconFactory::LIGHT,
+			P2BootstrapIconFactory::LIGHT_EMPHASIS,
+			P2BootstrapIconFactory::DARK,
+			P2BootstrapIconFactory::DARK_EMPHASIS,
 		];
 
 		return $this->addCssClass(
-			P2BootstrapIcons::TEXT_PREFIX . '-' . $color,
+			P2BootstrapIconFactory::TEXT_PREFIX . '-' . $color,
 			in_array($color, $colors, true),
 			sprintf(
 				'%s - invalid value. Use one of the constants: %s.',
-				'P2BootstrapIcons::color()',
+				'P2BootstrapIconFactory::color()',
 				implode(', ', $colors)
 			)
 		);

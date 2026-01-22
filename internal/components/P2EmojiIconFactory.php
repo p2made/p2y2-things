@@ -1,6 +1,6 @@
 <?php
 /**
- * P2EmojiIcons.php
+ * P2EmojiIconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2EmojiIcons
+ * @class \p2m\internal\components\P2EmojiIconFactory
  * @package p2made/p2y2-things
  */
 
@@ -20,7 +20,7 @@
 
 namespace p2m\internal\components;
 
-class P2EmojiIcons extends P2Icons
+class P2EmojiIconFactory extends P2IconFactory
 {
 
 	const _100                              = '100'; // 💯
@@ -31,9 +31,9 @@ class P2EmojiIcons extends P2Icons
 	const _JOY                              = 'joy'; // 😂
 	const _ROFL                             = 'rofl'; // 🤣
 	const _SMILEY                           = 'smiley'; // 😃
-	const _SMILE = 'smile'; // 😄
-	const _SWEAT_SMILE = 'sweat-smile'; // 😅
-	const _LAUGHING = 'laughing'; // 😆
+	const _SMILE                            = 'smile'; // 😄
+	const _SWEAT_SMILE                      = 'sweat-smile'; // 😅
+	const _LAUGHING                         = 'laughing'; // 😆
 	const _INNOCENT = 'innocent'; // 😇
 	const _WINK = 'wink'; // 😉
 	const _BLUSH = 'blush'; // 😊
@@ -143,15 +143,15 @@ class P2EmojiIcons extends P2Icons
 	const _POINT_RIGHT                      = 'point-right';                      // 👉
 	const _FU                               = 'fu';                               // 🖕
 	const _RAISED_HAND_WITH_FINGERS_SPLAYED = 'raised-hand-with-fingers-splayed'; // 🖐
-	const _METAL = 'metal'; // 🤘
-	const _CROSSED_FINGERS = 'crossed-fingers'; // 🤞
-	const _VULCAN_SALUTE = 'vulcan-salute'; // 🖖
-	const _WRITING_HAND = 'writing-hand'; // ✍
-	const _SELFIE = 'selfie'; // 🤳
-	const _NAIL_CARE = 'nail-care'; // 💅
-	const _LIPS = 'lips'; // 👄
-	const _TONGUE = 'tongue'; // 👅
-	const _EAR = 'ear'; // 👂
+	const _METAL                            = 'metal'; // 🤘
+	const _CROSSED_FINGERS                  = 'crossed-fingers'; // 🤞
+	const _VULCAN_SALUTE                    = 'vulcan-salute'; // 🖖
+	const _WRITING_HAND                     = 'writing-hand'; // ✍
+	const _SELFIE                           = 'selfie'; // 🤳
+	const _NAIL_CARE                        = 'nail-care'; // 💅
+	const _LIPS                             = 'lips'; // 👄
+	const _TONGUE                           = 'tongue'; // 👅
+	const _EAR                              = 'ear'; // 👂
 	const _NOSE = 'nose'; // 👃
 	const _EYE = 'eye'; // 👁
 	const _EYES = 'eyes'; // 👀

@@ -72,11 +72,11 @@ class P2Icon
 	public function size(int $value): self
 	{
 		return $this->addCssClass(
-			P2Icons::SIZE_PREFIX . '-' . $value,
+			P2IconFactory::SIZE_PREFIX . '-' . $value,
 			in_array($value, range(1, 6), true),
 			sprintf(
 				'%s - invalid value. Use an integer between 1 and 6.',
-				'P2Icons::size()',
+				'P2IconFactory::size()',
 				implode(', ', range(1, 6))
 			)
 		);
@@ -92,11 +92,11 @@ class P2Icon
 
 	/**
 	 * @param string $label
-	 * @param string|null $role Default P2Icons::IMG. Use '' or null to not set role.
+	 * @param string|null $role Default P2IconFactory::IMG. Use '' or null to not set role.
 	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function ariaLabel(string $label, ?string $role = P2Icons::IMG): self
+	public function ariaLabel(string $label, ?string $role = P2IconFactory::IMG): self
 	{
 		$label = trim($label);
 
@@ -121,7 +121,7 @@ class P2Icon
 	/**
 	 * Convenience alias.
 	 */
-	public function l(string $label, ?string $role = P2Icons::IMG): self
+	public function l(string $label, ?string $role = P2IconFactory::IMG): self
 	{
 		return $this->ariaLabel($label, $role);
 	}
@@ -136,14 +136,14 @@ class P2Icon
 		$role = strtolower(trim($role));
 
 		$roles = [
-			P2Icons::IMG,
-			P2Icons::PRESENTATION,
-			P2Icons::NONE,
-			P2Icons::BUTTON,
-			P2Icons::LINK,
-			P2Icons::STATUS,
-			P2Icons::ALERT,
-			P2Icons::NOTE,
+			P2IconFactory::IMG,
+			P2IconFactory::PRESENTATION,
+			P2IconFactory::NONE,
+			P2IconFactory::BUTTON,
+			P2IconFactory::LINK,
+			P2IconFactory::STATUS,
+			P2IconFactory::ALERT,
+			P2IconFactory::NOTE,
 		];
 
 		return $this->addAttribute(

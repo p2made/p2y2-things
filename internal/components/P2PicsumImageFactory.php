@@ -1,6 +1,6 @@
 <?php
 /**
- * P2PicsumImages.php
+ * P2PicsumImageFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2026
@@ -12,7 +12,7 @@
  * Factory for creating Picsum image objects and collections.
  *
  * @package p2made/p2y2-things
- * @class \p2m\internal\components\P2PicsumImages
+ * @class \p2m\internal\components\P2PicsumImageFactory
  */
 
 /**
@@ -24,7 +24,7 @@ namespace p2m\internal\components;
 
 use yii\base\InvalidArgumentException;
 
-class P2PicsumImages
+class P2PicsumImageFactory
 {
 	/**
 	 * Create a new Picsum image.
@@ -63,7 +63,7 @@ class P2PicsumImages
 	public static function random(int $max, int $width, ?int $height = null, ?array $options = null): P2PicsumImageCollection
 	{
 		if ($max < 1) {
-			throw new InvalidArgumentException('P2PicsumImages::random() requires $max to be >= 1.');
+			throw new InvalidArgumentException('P2PicsumImageFactory::random() requires $max to be >= 1.');
 		}
 
 		$images = [];

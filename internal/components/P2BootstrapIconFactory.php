@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapIcons.php
+ * P2BootstrapIconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2BootstrapIcons
+ * @class \p2m\internal\components\P2BootstrapIconFactory
  * @package p2made/p2y2-things
  */
 
@@ -20,7 +20,7 @@
 
 namespace p2m\internal\components;
 
-class P2BootstrapIcons extends P2Icons
+class P2BootstrapIconFactory extends P2IconFactory
 {
 	const TEXT_PREFIX = 'text';
 

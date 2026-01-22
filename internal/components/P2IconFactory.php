@@ -1,6 +1,6 @@
 <?php
 /**
- * P2Icons.php
+ * P2IconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2Icons
+ * @class \p2m\internal\components\P2IconFactory
  * @package p2made/p2y2-things
  */
 
@@ -22,7 +22,7 @@ namespace p2m\internal\components;
 
 use yii\base\InvalidConfigException;
 
-class P2Icons
+class P2IconFactory
 {
 	const SIZE_PREFIX = 'fs';
 

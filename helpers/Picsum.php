@@ -17,8 +17,8 @@
 
 namespace p2m\helpers;
 
-use p2m\internal\components\P2PicsumImages;
+use p2m\internal\components\P2PicsumImageFactory;
 
-final class Picsum extends P2PicsumImages
+final class Picsum extends P2PicsumImageFactory
 {
 }

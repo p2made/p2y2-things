@@ -78,7 +78,7 @@ class P2PicsumImage
 	{
 		if (!$this->allowRandom) {
 			throw new InvalidArgumentException(
-				'P2PicsumImage::__randomFromFactory() is internal; use P2PicsumImages::random()/r().'
+				'P2PicsumImage::__randomFromFactory() is internal; use P2PicsumImageFactory::random()/r().'
 			);
 		}
 

@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesDateTimeAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesDateTimeAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesDateTimeAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesDateTimeAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/datetime/1.5.5';
+	public $baseUrl = 'https://cdn.datatables.net/datetime/1.5.5';
 
 	public $css = [
 		'css/dataTables.dateTime.min.css',

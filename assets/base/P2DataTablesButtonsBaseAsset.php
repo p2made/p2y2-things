@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\base\P2DataTablesButtonsBaseAsset
  */
 
@@ -40,7 +40,7 @@ class P2DataTablesButtonsBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/buttons/3.2.2';
+	public $baseUrl = 'https://cdn.datatables.net/buttons/3.2.2';
 
 	public $css = [
 		'css/buttons.bootstrap5.min.css',
@@ -61,6 +61,6 @@ class P2DataTablesButtonsBaseAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\P2DataTablesBootstrap5Asset',
+		'p2m\assets\datatables\P2DataTablesBootstrap5Asset',
 	];
 }

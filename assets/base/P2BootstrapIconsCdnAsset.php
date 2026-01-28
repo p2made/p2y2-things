@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\base\P2BootstrapIconsCdnAsset
  */
 
@@ -52,7 +52,7 @@ class P2BootstrapIconsCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font';
 
 	public $css = [
 		'bootstrap-icons.css',
@@ -63,7 +63,5 @@ class P2BootstrapIconsCdnAsset extends AssetBundle
 		'crossorigin' => 'anonymous',
 	];
 
-	public $depends = [
-		'p2m\assets\base\P2BootstrapCdnAsset',
-	];
+	public $depends = [];
 }

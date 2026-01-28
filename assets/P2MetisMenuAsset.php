@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2MetisMenuAsset
  */
 
@@ -30,7 +30,7 @@ class P2MetisMenuAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/metismenu@3.0.7/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/metismenu@3.0.7/dist';
 
 	public $css = [
 		'metisMenu.min.css',

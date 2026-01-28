@@ -9,14 +9,18 @@
  */
 
 /**
- * @class \p2m\components\P2EmojiIcon
- * @package p2made/yii2-p2y2-things
+ * @class \p2m\internal\components\P2EmojiIcon
+ * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
+
+namespace p2m\internal\components;
 
 use Yii;
-use p2m\components\P2Icon;
 use p2m\assets\P2EmojiCssAsset;
 
 class P2EmojiIcon extends P2Icon

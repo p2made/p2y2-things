@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesColReorderAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesColReorderAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesColReorderAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesColReorderAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/colreorder/2.0.4';
+	public $baseUrl = 'https://cdn.datatables.net/colreorder/2.0.4';
 
 	public $css = [
 		'css/colReorder.bootstrap5.min.css',

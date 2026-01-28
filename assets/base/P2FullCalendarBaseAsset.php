@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\base\P2FullCalendarBaseAsset
  */
 
@@ -40,7 +40,7 @@ class P2FullCalendarBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/fullcalendar@6.1.15';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15';
 
 	public $js = [
 		'index.global.min.js',

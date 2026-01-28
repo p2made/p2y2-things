@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesColVisAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesColVisAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesColVisAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesColVisAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.2.2';
+	public $baseUrl = 'https://cdn.datatables.net/2.2.2';
 
 	public $js = [
 		'js/buttons.colVis.min.js',

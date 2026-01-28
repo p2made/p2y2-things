@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2InfiniteScrollAsset
  */
 
@@ -30,7 +30,7 @@ class P2InfiniteScrollAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/infinite-scroll@5.0.0/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/infinite-scroll@5.0.0/dist';
 
 	public $js = [
 		'infinite-scroll.pkgd.min.js',

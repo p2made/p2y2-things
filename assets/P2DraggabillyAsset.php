@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2DraggabillyAsset
  */
 
@@ -30,7 +30,7 @@ class P2DraggabillyAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/draggabilly@3.0.0/';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/draggabilly@3.0.0/';
 
 	public $js = [
 		'draggabilly.min.js',

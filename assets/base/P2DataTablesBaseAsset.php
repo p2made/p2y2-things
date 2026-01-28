@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\base\P2DataTablesBaseAsset
  */
 
@@ -40,7 +40,7 @@ class P2DataTablesBaseAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/2.3.5';
+	public $baseUrl = 'https://cdn.datatables.net/2.3.5';
 
 	public $js = [
 		'js/dataTables.min.js',

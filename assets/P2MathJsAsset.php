@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2MathJsAsset
  */
 
@@ -30,7 +30,7 @@ class P2MathJsAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/mathjs@14.4.0/lib/browser';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/mathjs@14.4.0/lib/browser';
 
 	public $js = [
 		'math.min.js',

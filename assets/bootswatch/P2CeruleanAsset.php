@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\bootswatch\P2CeruleanAsset
  */
 
@@ -34,7 +34,7 @@ class P2CeruleanAsset extends AssetBundle
 
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootswatch@' . $version . '/dist/' . $theme;
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootswatch@' . $version . '/dist/' . $theme;
 
 	public $css = [
 		'bootstrap.min.css',

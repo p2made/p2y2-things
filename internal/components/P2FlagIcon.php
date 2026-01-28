@@ -9,14 +9,18 @@
  */
 
 /**
- * @class \p2m\components\P2FlagIcon
- * @package p2made/yii2-p2y2-things
+ * @class \p2m\internal\components\P2FlagIcon
+ * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
+
+namespace p2m\internal\components;
 
 use Yii;
-use p2m\components\P2Icon;
 use p2m\assets\P2FlagIconsAsset;
 
 class P2FlagIcon extends P2Icon
@@ -43,6 +47,11 @@ class P2FlagIcon extends P2Icon
 	 */
 	public function square(bool $enable = true): self
 	{
-		return $this->addCssClass(P2Icons::SQUARE_FLAG, $enable);
+		return $this->addCssClass(P2IconFactory::SQUARE_FLAG, $enable);
+	}
+
+	public function sq(bool $enable = true): self
+	{
+		return $this->square($enable);
 	}
 }

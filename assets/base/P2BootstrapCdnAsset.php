@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\base\P2BootstrapCdnAsset
  */
 
@@ -52,7 +52,7 @@ class P2BootstrapCdnAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist';
 
 	public $css = [
 		'css/bootstrap.min.css',
@@ -63,5 +63,7 @@ class P2BootstrapCdnAsset extends AssetBundle
 		'crossorigin' => 'anonymous',
 	];
 
-	public $depends = [];
+	public $depends = [
+		'p2m\assets\base\P2BootstrapPluginCdnAsset',
+	];
 }

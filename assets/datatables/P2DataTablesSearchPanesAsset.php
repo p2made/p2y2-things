@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesSearchPanesAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesSearchPanesAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesSearchPanesAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesSearchPanesAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/searchpanes/2.3.3';
+	public $baseUrl = 'https://cdn.datatables.net/searchpanes/2.3.3';
 
 	public $js = [
 		'js/searchPanes.bootstrap5.min.js',

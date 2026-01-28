@@ -9,15 +9,15 @@
  */
 
 /**
+ * @package p2made/p2y2-things
  * @class \p2m\helpers\EI
- * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\helpers;
 
-use p2m\components\P2EmojiIcons;
+use p2m\internal\components\P2EmojiIconFactory;
 
-class EI extends P2EmojiIcons
+final class EI extends P2EmojiIconFactory
 {
 	protected static string $cssPrefix = 'ec';
 }

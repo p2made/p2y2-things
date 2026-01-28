@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesRowGroupAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesRowGroupAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesRowGroupAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesRowGroupAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/rowgroup/1.5.1';
+	public $baseUrl = 'https://cdn.datatables.net/rowgroup/1.5.1';
 
 	public $css = [
 		'css/rowGroup.bootstrap5.min.css',

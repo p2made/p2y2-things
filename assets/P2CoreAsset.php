@@ -7,7 +7,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2CoreAsset
  */
 
@@ -25,7 +25,7 @@ use yii\web\AssetBundle;
 
 class P2CoreAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '@p2m/assets/lib/p2additions';
 
 	public $css = [
 		'css/p2additions.min.css',
@@ -39,6 +39,7 @@ class P2CoreAsset extends AssetBundle
 
 	public $depends = [
 		'p2m\assets\base\P2JqueryCdnAsset',
+		'p2m\assets\base\P2BootstrapCdnAsset',
 		'p2m\assets\base\P2BootstrapIconsCdnAsset',
 	];
 }

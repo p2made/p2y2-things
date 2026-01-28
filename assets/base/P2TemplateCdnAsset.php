@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2TemplateCdnAsset
  */
 
@@ -52,7 +52,7 @@ class P2TemplateCdnAsset extends AssetBundle
 
 	public $sourcePath = null;
 
-	public $baseUrl = '//_baseurl_' . $this->version . '_tail_';
+	public $baseUrl = 'https://_baseurl_' . $this->version . '_tail_';
 
 	public $css = [
 		'_source_min_css_',

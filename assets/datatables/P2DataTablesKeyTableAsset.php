@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesKeyTableAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesKeyTableAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesKeyTableAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesKeyTableAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/keytable/2.12.1';
+	public $baseUrl = 'https://cdn.datatables.net/keytable/2.12.1';
 
 	public $css = [
 		'css/keyTable.bootstrap5.min.css',

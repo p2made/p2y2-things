@@ -9,15 +9,15 @@
  */
 
 /**
+ * @package p2made/p2y2-things
  * @class \p2m\helpers\FI
- * @package p2made/yii2-p2y2-things
  */
 
 namespace p2m\helpers;
 
-use p2m\components\P2FlagIcons;
+use p2m\internal\components\P2FlagIconFactory;
 
-class FI extends P2FlagIcons
+final class FI extends P2FlagIconFactory
 {
 	protected static string $cssPrefix = 'fi';
 }

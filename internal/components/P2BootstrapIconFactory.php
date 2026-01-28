@@ -1,6 +1,6 @@
 <?php
 /**
- * P2BootstrapIcons.php
+ * P2BootstrapIconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,16 +9,18 @@
  */
 
 /**
- * @class \p2m\components\P2BootstrapIcons
- * @package p2made/yii2-p2y2-things
+ * @class \p2m\internal\components\P2BootstrapIconFactory
+ * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
 
+namespace p2m\internal\components;
 
-use p2m\components\P2Icons;
-
-class P2BootstrapIcons extends P2Icons
+class P2BootstrapIconFactory extends P2IconFactory
 {
 	const TEXT_PREFIX = 'text';
 
@@ -228,6 +230,7 @@ class P2BootstrapIcons extends P2Icons
 	const _SKYPE = 'skype';
 	const _SLACK = 'slack';
 	const _SNAPCHAT = 'snapchat';
+	const _SUBSTACK = 'substack';
 	const _TENCENT_QQ = 'tencent-qq';
 	const _TIKTOK = 'tiktok';
 	const _TWITTER = 'twitter';
@@ -1925,7 +1928,6 @@ class P2BootstrapIcons extends P2Icons
 	const _STRAVA = 'strava';
 	const _STRIPE = 'stripe';
 	const _SUBSCRIPT = 'subscript';
-	const _SUBSTACK = 'substack';
 	const _SUBTRACT = 'subtract';
 	const _SUIT_CLUB = 'suit-club';
 	const _SUIT_CLUB_FILL = 'suit-club-fill';

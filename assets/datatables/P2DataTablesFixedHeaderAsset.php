@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\datatables\P2DataTablesFixedHeaderAsset
  */
 
@@ -22,7 +22,7 @@ p2m\assets\datatables\P2DataTablesFixedHeaderAsset::register($this);
 		'p2m\assets\datatables\P2DataTablesFixedHeaderAsset',
  */
 
-namespace p2m\assets;
+namespace p2m\assets\datatables;
 
 use yii\web\AssetBundle;
 
@@ -30,7 +30,7 @@ class P2DataTablesFixedHeaderAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.datatables.net/fixedheader/4.0.1';
+	public $baseUrl = 'https://cdn.datatables.net/fixedheader/4.0.1';
 
 	public $css = [
 		'css/fixedHeader.bootstrap5.min.css',

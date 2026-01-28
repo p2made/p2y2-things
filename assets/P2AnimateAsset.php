@@ -10,13 +10,17 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2AnimateAsset
  */
 
 /**
  * Load this asset with...
+
 p2m\assets\P2AnimateAsset::register($this);
+
+use p2m\assets\P2AnimateAsset;
+P2AnimateAsset::register($this);
 
  * or specify as a dependency with...
 		'p2m\assets\P2AnimateAsset',
@@ -30,7 +34,7 @@ class P2AnimateAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/animate.css@4.1.1/';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/animate.css@4.1.1';
 
 	public $css = [
 		'animate.min.css',

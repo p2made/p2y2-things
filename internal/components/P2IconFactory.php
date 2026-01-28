@@ -1,6 +1,6 @@
 <?php
 /**
- * P2Icons.php
+ * P2IconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,21 +9,31 @@
  */
 
 /**
- * @class \p2m\components\P2Icons
- * @package p2made/yii2-p2y2-things
+ * @class \p2m\internal\components\P2IconFactory
+ * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
 
-use p2m\components\P2BootstrapIcon;
-use p2m\components\P2EmojiIcon;
-use p2m\components\P2FlagIcon;
+namespace p2m\internal\components;
 
 use yii\base\InvalidConfigException;
 
-class P2Icons
+class P2IconFactory
 {
 	const SIZE_PREFIX = 'fs';
+
+	const IMG = 'img';
+	const PRESENTATION = 'presentation';
+	const NONE = 'none';
+	const BUTTON = 'button';
+	const LINK = 'link';
+	const STATUS = 'status';
+	const ALERT = 'alert';
+	const NOTE = 'note';
 
 	/**
 	 * Subclasses must set this to 'bi', 'ec' or 'fi'

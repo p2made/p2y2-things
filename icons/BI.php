@@ -10,7 +10,7 @@
 
 /**
  * @class \p2m\icons\BI
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  */
 
 namespace p2m\icons;

@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2TimelineJs3Asset
  */
 
@@ -30,7 +30,7 @@ class P2TimelineJs3Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/timelinejs3@3.4.0/compiled';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/timelinejs3@3.4.0/compiled';
 
 	public $css = [
 		'css/timeline.min.css',

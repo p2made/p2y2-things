@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2ScrollRevealAsset
  */
 
@@ -30,7 +30,7 @@ class P2ScrollRevealAsset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist';
 
 	public $js = [
 		'scrollreveal.min.js',

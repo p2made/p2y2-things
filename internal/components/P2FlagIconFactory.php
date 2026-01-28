@@ -1,6 +1,6 @@
 <?php
 /**
- * P2FlagIcons.php
+ * P2FlagIconFactory.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -9,15 +9,18 @@
  */
 
 /**
- * @class \p2m\components\P2FlagIcons
- * @package p2made/yii2-p2y2-things
+ * @class \p2m\internal\components\P2FlagIconFactory
+ * @package p2made/p2y2-things
  */
 
-namespace p2m\components;
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
 
-use p2m\components\P2Icons;
+namespace p2m\internal\components;
 
-class P2FlagIcons extends P2Icons
+class P2FlagIconFactory extends P2IconFactory
 {
 	const SQUARE_FLAG = 'fis'; // Flag Icon Square
 

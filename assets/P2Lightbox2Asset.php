@@ -10,7 +10,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things
+ * @package p2made/p2y2-things
  * @class \p2m\assets\P2Lightbox2Asset
  */
 
@@ -30,7 +30,7 @@ class P2Lightbox2Asset extends AssetBundle
 {
 	public $sourcePath = null;
 
-	public $baseUrl = '//cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist';
+	public $baseUrl = 'https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist';
 
 	public $css = [
 		'css/lightbox.min.css',

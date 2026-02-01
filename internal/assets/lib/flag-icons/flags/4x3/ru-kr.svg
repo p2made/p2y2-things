@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-kr" class="fi fi-ru-kr" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Republic of Karelia</name>
+    <code>ru-kr</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Petrozavodsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:1.32583">
+    <path fill="green" d="M0 0h900v600H0" style="stroke-width:1.65728" transform="scale(.71111 .8)"/>
+    <path fill="#0af" d="M0 0h900v400H0" style="stroke-width:1.65728" transform="scale(.71111 .8)"/>
+    <path fill="#d50000" d="M0 0h900v200H0" style="stroke-width:1.65728" transform="scale(.71111 .8)"/>
+  </g>
+</svg>

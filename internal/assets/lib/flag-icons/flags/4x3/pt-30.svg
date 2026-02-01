@@ -1,0 +1,26 @@
+<svg id="flag-icons-pt-30" class="fi fi-pt-30" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Madeira</name>
+    <code>pt-30</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Funchal</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs>
+    <clipPath id="b" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h95.999v72H0z" style="fill:#00f;fill-rule:evenodd;stroke-width:.999999"/>
+    </clipPath>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h95.999v72H0z" style="fill:#00f;fill-rule:evenodd;stroke-width:.999999"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" style="stroke-width:.274921" transform="scale(6.6667)">
+    <path fill="#263e78" d="M0 0h180v129H0" style="stroke-width:.515482" transform="scale(.53333 .55814)"/>
+    <path fill="gold" d="M60 0h60v129H60" style="stroke-width:.515482" transform="scale(.53333 .55814)"/>
+  </g>
+  <g clip-path="url(#b)" style="stroke-width:.281242" transform="scale(6.6667)">
+    <path fill="#da291c" d="m90 48 12-12H78m0 48h24L90 72m12-12 12 12V48m-48 0v24l12-12m-6 6h36V54H72m12-12v36h12V42" style="stroke-width:.527333" transform="translate(0 4)scale(.53333)"/>
+    <path stroke="#fff" stroke-width=".6" d="M48 26.4v19.2m9.6-9.6H38.4"/>
+  </g>
+</svg>

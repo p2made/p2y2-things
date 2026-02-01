@@ -1,0 +1,29 @@
+.fa-p2m-aud::before,
+.fa-p2m-cad::before,
+.fa-p2m-nzd::before,
+.fa-p2m-usd::before {
+	font-family: Arial,​sans-serif;
+}
+
+.fa-p2m-aud::before {
+	content: "A";
+}
+
+.fa-p2m-cad::before {
+	content: "CA";
+}
+
+.fa-p2m-nzd::before {
+	content: "NZ";
+}
+
+.fa-p2m-usd::before {
+	content: "US";
+}
+
+.fa-p2m-aud::after,
+.fa-p2m-cad::after,
+.fa-p2m-nzd::after,
+.fa-p2m-usd::after {
+	content: "\f155";
+}

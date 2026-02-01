@@ -1,0 +1,27 @@
+<svg id="flag-icons-ua-14" class="fi fi-ua-14" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Donetsk Oblast</name>
+    <code>ua-14</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Donetsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M150 0h2400v1800H150z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:1"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" style="stroke-width:3.75" transform="translate(-40)scale(.26667)">
+    <path d="M0 0h2700v900H0z" style="fill:#73b1ff;fill-opacity:1;fill-rule:evenodd;stroke-width:3.74999"/>
+    <path d="M390.326 0h40.011L450 300 0 270.505v-60.016L450 300 0 147.246V78.085L450 300 0 0h107.916L450 300 186.907 0h62.639L450 300 302.056 0h46.108L450 300z" style="fill:#fc3;stroke-width:1.25" transform="scale(3)"/>
+    <path d="M450 300 0 270.505v-60.016zL0 147.246V78.085zL0 0h107.916zL186.907 0h62.639zL302.056 0h46.108zL390.326 0h40.011z" style="fill:#fc3;stroke-width:1.25" transform="matrix(-3 0 0 3 2700 0)"/>
+    <circle cx="1350" cy="900" r="540" style="fill:#fc3;stroke-width:3.75"/>
+    <path d="M0 900h2700v900H0z" style="fill:#000;fill-opacity:1;fill-rule:evenodd;stroke-width:3.75"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.25" transform="matrix(.46162 0 0 .44944 726.813 935.826)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.25" transform="matrix(.6695 0 0 .61781 446.184 693.924)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.25" transform="matrix(.82416 0 0 .8089 237.386 413.808)"/>
+    <use xlink:href="#b" style="fill:#fc3;stroke-width:1.25" transform="matrix(.93428 0 0 .94269 88.729 176.771)"/>
+    <path id="b" d="M1882.422 990.219c-109.599-19.26-312.327-31.131-532.422-31.191-219.591.057-422.637 12-532.422 31.191 109.599 19.26 312.327 31.131 532.422 31.191 219.591-.057 422.637-12 532.422-31.191" style="fill:#fc3;stroke-width:3.75"/>
+  </g>
+</svg>

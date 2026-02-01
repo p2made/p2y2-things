@@ -1,0 +1,15 @@
+<svg id="flag-icons-kpr" class="fi fi-kpr" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Kuban People's Republic</name>
+    <code>kpr</code>
+    <iso>false</iso>
+    <type>Place</type>
+    <capital>Yekaterinodar</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.00883887">
+    <path fill="#096" d="M0 0h6v4H0Z" style="stroke-width:.0110485" transform="scale(106.66666 120.00018)"/>
+    <path fill="#f06" d="M0 0h6v3H0Z" style="stroke-width:.0110485" transform="scale(106.66666 120.00018)"/>
+    <path fill="#06c" d="M0 0h6v1H0Z" style="stroke-width:.0110485" transform="scale(106.66666 120.00018)"/>
+  </g>
+</svg>

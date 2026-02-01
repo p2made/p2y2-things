@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
-p2m\assets\P2EmojiCssAsset::register($this);
-
+ * p2m\assets\P2EmojiCssAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\P2EmojiCssAsset',
+ *      'p2m\assets\P2EmojiCssAsset',
  */
 
 namespace p2m\assets;

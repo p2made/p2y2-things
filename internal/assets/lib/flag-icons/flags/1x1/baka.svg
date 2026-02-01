@@ -1,0 +1,11 @@
+<svg id="flag-icons-baka" class="fi fi-baka" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Balkars</name>
+    <code>baka</code>
+    <iso>false</iso>
+    <type>People</type>
+  </metadata>
+  <path d="M0 0h512v512H0Z" style="fill:#73c5f5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:.999996"/>
+  <path d="M0 51.2h512v65.422H0Zm0 344.178h512V460.8H0Z" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:.999996"/>
+  <path d="M192.47 230.007c4.7-3.002 9.166-8.184 15.135-7.932 15.97 8.715 28.48 22.428 43.807 32.116q4.668 3.518 9.498.292c16.277-9.418 29.71-22.995 46.006-32.355 32.714 22.918 66.003 45.156 97.81 69.365 11.355 8 23.423 15.272 32.95 25.543-121.095.684-242.258.666-363.353.003 12.947-13.827 30.174-22.354 44.659-34.33 23.863-18.437 49.862-33.926 73.487-52.7zm0 0" style="fill:#fff;fill-rule:nonzero;stroke:none;stroke-width:.999996"/>
+</svg>

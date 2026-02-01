@@ -1,0 +1,16 @@
+<svg id="flag-icons-ru-ros" class="fi fi-ru-ros" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Rostov Oblast</name>
+    <code>ru-ros</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Rostov-on-Don</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.032293">
+    <path fill="#b52315" d="M0 0h20.25v13.5H0Z" style="stroke-width:.032293" transform="scale(25.28395 37.92526)"/>
+    <path fill="gold" d="M0 0h20.25v9H0Z" style="stroke-width:.032293" transform="scale(25.28395 37.92526)"/>
+    <path fill="#0057b7" d="M0 0h20.25v4.5H0Z" style="stroke-width:.032293" transform="scale(25.28395 37.92526)"/>
+  </g>
+  <path fill="#fff" d="M0 0h102.4v512H0Z" style="stroke-width:.999996"/>
+</svg>

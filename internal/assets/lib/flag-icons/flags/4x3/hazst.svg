@@ -1,0 +1,14 @@
+<svg id="flag-icons-hazst" class="fi fi-hazst" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Hazaristan</name>
+    <code>hazst</code>
+    <iso>false</iso>
+    <type>Place</type>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.0132582">
+    <path fill="#f4ff01" d="M0 0h9v6H0Z" style="stroke-width:.0157224" transform="scale(71.11111 80.00013)"/>
+    <path fill="#fff" d="M0 0h9v4H0Z" style="stroke-width:.0157224" transform="scale(71.11111 80.00013)"/>
+    <path fill="#4254b3" d="M0 0h9v2H0Z" style="stroke-width:.0157224" transform="scale(71.11111 80.00013)"/>
+  </g>
+</svg>

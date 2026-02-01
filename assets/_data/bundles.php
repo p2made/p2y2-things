@@ -9,7 +9,7 @@ return [
 	 *        Base assets - only used as dependancies of other assets
 	 * -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- --
 	 */
-	\p2m\assets\base\P2DataTablesAutoFillBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesAutoFillBaseAsset::class => [
 		'name'       => 'P2DataTablesAutoFillBase',
 		'type'       => 'cdn',
 		'version'    => '2.7.0',
@@ -19,7 +19,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesAutoFillAsset',
 	],
-	\p2m\assets\base\P2DataTablesBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesBaseAsset::class => [
 		'name'       => 'P2DataTablesBase',
 		'type'       => 'cdn',
 		'version'    => '2.3.5',
@@ -29,7 +29,7 @@ return [
 		'deps'       => [\p2m\assets\P2CoreAsset::class],
 		'notes'      => 'Base for P2DataTablesAsset',
 	],
-	\p2m\assets\base\P2DataTablesButtonsBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesButtonsBaseAsset::class => [
 		'name'       => 'P2DataTablesButtonsBase',
 		'type'       => 'cdn',
 		'version'    => '3.2.2',
@@ -39,7 +39,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesButtonsAsset',
 	],
-	\p2m\assets\base\P2DataTablesResponsiveBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesResponsiveBaseAsset::class => [
 		'name'       => 'P2DataTablesResponsiveBase',
 		'type'       => 'cdn',
 		'version'    => '3.0.4',
@@ -49,7 +49,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesResponsiveAsset',
 	],
-	\p2m\assets\base\P2DataTablesSearchBuilderBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesSearchBuilderBaseAsset::class => [
 		'name'       => 'P2DataTablesSearchBuilderBase',
 		'type'       => 'cdn',
 		'version'    => '1.8.2',
@@ -59,7 +59,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesSearchBuilderAsset',
 	],
-	\p2m\assets\base\P2DataTablesSearchPanesBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesSearchPanesBaseAsset::class => [
 		'name'       => 'P2DataTablesSearchPanesBase',
 		'type'       => 'cdn',
 		'version'    => '2.3.3',
@@ -69,7 +69,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesSearchPanesAsset',
 	],
-	\p2m\assets\base\P2DataTablesStateRestoreBaseAsset::class => [
+	\p2m\internal\assets\P2DataTablesStateRestoreBaseAsset::class => [
 		'name'       => 'P2DataTablesStateRestoreBase',
 		'type'       => 'cdn',
 		'version'    => '1.4.1',
@@ -79,7 +79,7 @@ return [
 		'deps'       => [\p2m\assets\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Base for P2DataTablesStateRestoreAsset',
 	],
-	\p2m\assets\base\P2FlagIconsBaseAsset::class => [
+	\p2m\internal\assets\P2FlagIconsBaseAsset::class => [
 		'name'       => 'P2FlagIconsBase',
 		'type'       => 'cdn',
 		'version'    => '7.5.0',
@@ -89,7 +89,7 @@ return [
 		'deps'       => [\p2m\assets\P2CoreAsset::class],
 		'notes'      => 'Base for P2FlagIconsAsset',
 	],
-	\p2m\assets\base\P2FullCalendarBaseAsset::class => [
+	\p2m\internal\assets\P2FullCalendarBaseAsset::class => [
 		'name'       => 'P2FullCalendarBase',
 		'type'       => 'cdn',
 		'version'    => '6.1.15',
@@ -99,7 +99,7 @@ return [
 		'deps'       => [\p2m\assets\P2CoreAsset::class],
 		'notes'      => 'Base for P2FullCalendarAsset',
 	],
-	\p2m\assets\base\P2PdfmakeBaseAsset::class => [
+	\p2m\internal\assets\P2PdfmakeBaseAsset::class => [
 		'name'       => 'P2PdfmakeBase',
 		'type'       => 'cdn',
 		'version'    => '0.2.7',
@@ -141,7 +141,7 @@ return [
 		'sourcePath' => '@p2m/assets/lib/flag-icons',
 		'css'        => ['css/flag-icons.min.css'],
 		'js'         => [],
-		'deps'       => [\p2m\assets\base\P2FlagIconsBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2FlagIconsBaseAsset::class],
 		'notes'      => 'Asset for FlagIcons - extends https://flagicons.lipis.dev/',
 	],
 	\p2m\assets\P2TimelineAsset::class => [
@@ -425,7 +425,7 @@ return [
 		'baseUrl'    => 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/{version}',
 		'css'        => [],
 		'js'         => ['vfs_fonts.js'],
-		'deps'       => [\p2m\assets\base\P2PdfmakeBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2PdfmakeBaseAsset::class],
 		'notes'      => 'Asset for PdfMake',
 	],
 	\p2m\assets\P2QunitAsset::class => [
@@ -513,194 +513,194 @@ return [
 	 *                       DataTables assets
 	 * -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- --
 	 */
-	\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class => [
 		'name'       => 'P2DataTablesBootstrap5',
 		'type'       => 'cdn',
 		'version'    => '2.3.5',
 		'baseUrl'    => 'https://cdn.datatables.net/{version}',
 		'css'        => ['css/dataTables.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesBaseAsset::class],
 		'notes'      => 'Asset for DataTables Bootstrap5',
 	],
-	\p2m\assets\datatables\P2DataTablesAutoFillAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesAutoFillAsset::class => [
 		'name'       => 'P2DataTablesAutoFill',
 		'type'       => 'cdn',
 		'version'    => '2.7.0',
 		'baseUrl'    => 'https://cdn.datatables.net/autofill/{version}',
 		'css'        => [],
 		'js'         => ['js/autoFill.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesAutoFillBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesAutoFillBaseAsset::class],
 		'notes'      => 'Asset for DataTables AutoFill',
 	],
-	\p2m\assets\datatables\P2DataTablesButtonsAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesButtonsAsset::class => [
 		'name'       => 'P2DataTablesButtons',
 		'type'       => 'cdn',
 		'version'    => '3.2.2',
 		'baseUrl'    => 'https://cdn.datatables.net/buttons/{version}',
 		'css'        => [],
 		'js'         => ['js/buttons.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesButtonsBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesButtonsBaseAsset::class],
 		'notes'      => 'Asset for DataTables Buttons',
 	],
-	\p2m\assets\datatables\P2DataTablesColReorderAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesColReorderAsset::class => [
 		'name'       => 'P2DataTablesColReorder',
 		'type'       => 'cdn',
 		'version'    => '2.0.4',
 		'baseUrl'    => 'https://cdn.datatables.net/colreorder/{version}',
 		'css'        => ['css/colReorder.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.colReorder.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables ColReorder',
 	],
-	\p2m\assets\datatables\P2DataTablesColVisAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesColVisAsset::class => [
 		'name'       => 'P2DataTablesColVis',
 		'type'       => 'cdn',
 		'version'    => '2.2.2',
 		'baseUrl'    => 'https://cdn.datatables.net/{version}',
 		'css'        => [],
 		'js'         => ['js/buttons.colVis.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesButtonsAsset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesButtonsAsset::class],
 		'notes'      => 'Asset for DataTables ColVis',
 	],
-	\p2m\assets\datatables\P2DataTablesDateTimeAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesDateTimeAsset::class => [
 		'name'       => 'P2DataTablesDateTime',
 		'type'       => 'cdn',
 		'version'    => '1.5.5',
 		'baseUrl'    => 'https://cdn.datatables.net/datetime/{version}',
 		'css'        => ['css/dataTables.dateTime.min.css'],
 		'js'         => ['js/dataTables.dateTime.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables DateTime',
 	],
-	\p2m\assets\datatables\P2DataTablesFixedColumnsAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesFixedColumnsAsset::class => [
 		'name'       => 'P2DataTablesFixedColumns',
 		'type'       => 'cdn',
 		'version'    => '5.0.4',
 		'baseUrl'    => 'https://cdn.datatables.net/fixedcolumns/{version}',
 		'css'        => ['css/fixedColumns.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.fixedColumns.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables FixedColumns',
 	],
-	\p2m\assets\datatables\P2DataTablesFixedHeaderAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesFixedHeaderAsset::class => [
 		'name'       => 'P2DataTablesFixedHeader',
 		'type'       => 'cdn',
 		'version'    => '4.0.1',
 		'baseUrl'    => 'https://cdn.datatables.net/fixedheader/{version}',
 		'css'        => ['css/fixedHeader.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.fixedHeader.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables FixedHeader',
 	],
-	\p2m\assets\datatables\P2DataTablesHtml5ExportAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesHtml5ExportAsset::class => [
 		'name'       => 'P2DataTablesHtml5Export',
 		'type'       => 'cdn',
 		'version'    => '3.2.2',
 		'baseUrl'    => 'https://cdn.datatables.net/buttons/{version}',
 		'css'        => [],
 		'js'         => ['js/buttons.html5.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesButtonsAsset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesButtonsAsset::class],
 		'notes'      => 'Asset for DataTables Html5Export',
 	],
-	\p2m\assets\datatables\P2DataTablesKeyTableAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesKeyTableAsset::class => [
 		'name'       => 'P2DataTablesKeyTable',
 		'type'       => 'cdn',
 		'version'    => '2.12.1',
 		'baseUrl'    => 'https://cdn.datatables.net/keytable/{version}',
 		'css'        => ['css/keyTable.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.keyTable.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables KeyTable',
 	],
-	\p2m\assets\datatables\P2DataTablesPrintAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesPrintAsset::class => [
 		'name'       => 'P2DataTablesPrint',
 		'type'       => 'cdn',
 		'version'    => '3.2.2',
 		'baseUrl'    => 'https://cdn.datatables.net/buttons/{version}',
 		'css'        => [],
 		'js'         => ['js/buttons.print.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesButtonsAsset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesButtonsAsset::class],
 		'notes'      => 'Asset for DataTables Print',
 	],
-	\p2m\assets\datatables\P2DataTablesResponsiveAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesResponsiveAsset::class => [
 		'name'       => 'P2DataTablesResponsive',
 		'type'       => 'cdn',
 		'version'    => '3.0.4',
 		'baseUrl'    => 'https://cdn.datatables.net/responsive/{version}',
 		'css'        => [],
 		'js'         => ['js/responsive.bootstrap5.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesResponsiveBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesResponsiveBaseAsset::class],
 		'notes'      => 'Asset for DataTables Responsive',
 	],
-	\p2m\assets\datatables\P2DataTablesRowGroupAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesRowGroupAsset::class => [
 		'name'       => 'P2DataTablesRowGroup',
 		'type'       => 'cdn',
 		'version'    => '1.5.1',
 		'baseUrl'    => 'https://cdn.datatables.net/rowgroup/{version}',
 		'css'        => ['css/rowGroup.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.rowGroup.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables RowGroup',
 	],
-	\p2m\assets\datatables\P2DataTablesRowReorderAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesRowReorderAsset::class => [
 		'name'       => 'P2DataTablesRowReorder',
 		'type'       => 'cdn',
 		'version'    => '1.5.0',
 		'baseUrl'    => 'https://cdn.datatables.net/rowreorder/{version}',
 		'css'        => ['css/rowReorder.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.rowReorder.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables RowReorder',
 	],
-	\p2m\assets\datatables\P2DataTablesScrollerAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesScrollerAsset::class => [
 		'name'       => 'P2DataTablesScroller',
 		'type'       => 'cdn',
 		'version'    => '2.4.3',
 		'baseUrl'    => 'https://cdn.datatables.net/scroller/{version}',
 		'css'        => ['css/scroller.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.scroller.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables Scroller',
 	],
-	\p2m\assets\datatables\P2DataTablesSearchBuilderAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesSearchBuilderAsset::class => [
 		'name'       => 'P2DataTablesSearchBuilder',
 		'type'       => 'cdn',
 		'version'    => '1.8.2',
 		'baseUrl'    => 'https://cdn.datatables.net/searchbuilder/{version}',
 		'css'        => [],
 		'js'         => ['js/searchBuilder.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesSearchBuilderBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesSearchBuilderBaseAsset::class],
 		'notes'      => 'Asset for DataTables SearchBuilder',
 	],
-	\p2m\assets\datatables\P2DataTablesSearchPanesAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesSearchPanesAsset::class => [
 		'name'       => 'P2DataTablesSearchPanes',
 		'type'       => 'cdn',
 		'version'    => '2.3.3',
 		'baseUrl'    => 'https://cdn.datatables.net/searchpanes/{version}',
 		'css'        => [],
 		'js'         => ['js/searchPanes.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesSearchPanesBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesSearchPanesBaseAsset::class],
 		'notes'      => 'Asset for DataTables SearchPanes',
 	],
-	\p2m\assets\datatables\P2DataTablesSelectAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesSelectAsset::class => [
 		'name'       => 'P2DataTablesSelect',
 		'type'       => 'cdn',
 		'version'    => '3.0.0',
 		'baseUrl'    => 'https://cdn.datatables.net/select/{version}',
 		'css'        => ['css/select.bootstrap5.min.css'],
 		'js'         => ['js/dataTables.select.min.js'],
-		'deps'       => [\p2m\assets\datatables\P2DataTablesBootstrap5Asset::class],
+		'deps'       => [\p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset::class],
 		'notes'      => 'Asset for DataTables Select',
 	],
-	\p2m\assets\datatables\P2DataTablesStateRestoreAsset::class => [
+	\p2m\internal\assets\datatables\P2DataTablesStateRestoreAsset::class => [
 		'name'       => 'P2DataTablesStateRestore',
 		'type'       => 'cdn',
 		'version'    => '1.4.1',
 		'baseUrl'    => 'https://cdn.datatables.net/staterestore/{version}',
 		'css'        => [],
 		'js'         => ['js/stateRestore.bootstrap5.min.js'],
-		'deps'       => [\p2m\assets\base\P2DataTablesStateRestoreBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2DataTablesStateRestoreBaseAsset::class],
 		'notes'      => 'Asset for DataTables StateRestore',
 	],
 	/**
@@ -715,7 +715,7 @@ return [
 		'baseUrl'    => 'https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@{version}',
 		'css'        => [],
 		'js'         => ['index.global.min.js'],
-		'deps'       => [\p2m\assets\base\P2FullCalendarBaseAsset::class],
+		'deps'       => [\p2m\internal\assets\P2FullCalendarBaseAsset::class],
 		'notes'      => 'Asset for FullCalendar Bootstrap5',
 	],
 	\p2m\assets\fullcalendar\P2FullCalendarDaygridAsset::class => [

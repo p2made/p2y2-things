@@ -1,0 +1,27 @@
+<svg id="flag-icons-ru-ty" class="fi fi-ru-ty" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none">
+  <metadata id="flag-icons">
+    <name>Tuva</name>
+    <code>ru-ty</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Kyzyl</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <defs>
+    <clipPath id="c" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h900v600H0z" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke-width:1"/>
+    </clipPath>
+    <clipPath id="b" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h900v600H0z" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke-width:1"/>
+    </clipPath>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h600v600H0z" style="fill:#00f;fill-rule:evenodd;stroke-width:1"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" style="stroke-width:1.17188" transform="scale(.85333)">
+    <path fill="#63b1e5" d="M0 0h900v600H0" style="display:inline;stroke-width:1.46484"/>
+    <path fill="#fff" stroke="#fff" stroke-width="117.188" d="M370 300 35-35v670l335-335h530" clip-path="url(#b)"/>
+    <path stroke="#63b1e5" stroke-width="39.023" d="m35-35 335 335M35 635l335-335h530" clip-path="url(#c)"/>
+    <path fill="#fecb00" d="M0 0v600l300-300" style="display:inline;stroke-width:1.46484"/>
+  </g>
+</svg>

@@ -21,7 +21,7 @@
 namespace p2m\internal\components;
 
 use Yii;
-use p2m\assets\base\P2BootstrapIconsCdnAsset;
+use p2m\internal\assets\P2BootstrapIconsCdnAsset;
 
 class P2BootstrapIcon extends P2Icon
 {

@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-zab" class="fi fi-ru-zab" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Zabaykalsky Krai</name>
+    <code>ru-zab</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Chita</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:3.97747">
+    <path fill="#00923f" d="M0 0h2700v900H0" style="stroke-width:3.97747" transform="scale(.23704 .26667)"/>
+    <path fill="#d81e05" d="M0 900h2700v900H0" style="stroke-width:3.97747" transform="scale(.23704 .26667)"/>
+  </g>
+  <path fill="gold" d="m0 0 415.693 240L0 480" style="stroke-width:1"/>
+</svg>

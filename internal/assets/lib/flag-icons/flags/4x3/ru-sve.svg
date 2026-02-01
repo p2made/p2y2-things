@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-sve" class="fi fi-ru-sve" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Sverdlovsk Oblast</name>
+    <code>ru-sve</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Yekaterinburg</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.883883">
+    <path fill="#fff" d="M0 0h600v400H0z" style="stroke-width:.736569" transform="scale(1.06667 1.2)"/>
+    <path fill="#187bbf" d="M0 140h600v180H0z" style="stroke-width:.736569" transform="scale(1.06667 1.2)"/>
+    <path fill="#15913d" d="M0 340h600v60H0z" style="stroke-width:.736569" transform="scale(1.06667 1.2)"/>
+  </g>
+</svg>

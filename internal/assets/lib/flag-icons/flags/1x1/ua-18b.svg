@@ -1,0 +1,17 @@
+<svg id="flag-icons-ua-18b" class="fi fi-ua-18b" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Zhytomyr Oblast (2002-2003)</name>
+    <code>ua-18b</code>
+    <iso>false</iso>
+    <type>Historic</type>
+    <capital>Zhytomyr</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:4.30573">
+    <path fill="#0057b7" d="M0 0h2700v900H0z" style="stroke-width:3.22931" transform="scale(.18963 .28444)"/>
+    <path fill="gold" d="M0 900h2700v900H0z" style="stroke-width:3.22931" transform="scale(.18963 .28444)"/>
+    <g style="fill:#26813c;fill-opacity:1;stroke-width:1.43525">
+      <path d="M3.74 2.806h1.378v.306H3.74z" style="fill:#008720;fill-opacity:1;stroke-width:.219768" transform="matrix(371.5258 0 0 417.9665 -1389.539 -980.79)"/>
+    </g>
+  </g>
+</svg>

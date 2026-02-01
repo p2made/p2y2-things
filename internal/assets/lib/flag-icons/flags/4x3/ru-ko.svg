@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-ko" class="fi fi-ru-ko" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Komi Republic</name>
+    <code>ru-ko</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Syktyvkar</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.0132584">
+    <path fill="#fff" d="M0 0h9v6H0Z" style="stroke-width:.0220973" transform="scale(71.11111 80.0005)"/>
+    <path fill="#009b3a" d="M0 0h9v4H0Z" style="stroke-width:.0220973" transform="scale(71.11111 80.0005)"/>
+    <path fill="#0039a6" d="M0 0h9v2H0Z" style="stroke-width:.0220973" transform="scale(71.11111 80.0005)"/>
+  </g>
+</svg>

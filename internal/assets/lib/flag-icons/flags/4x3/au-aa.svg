@@ -1,0 +1,14 @@
+<svg id="flag-icons-au-aa" class="fi fi-au-aa" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="640" height="480" version="1.2">
+  <metadata id="flag-icons">
+    <name>Aboriginal Australians</name>
+    <code>au-aa</code>
+    <iso>false</iso>
+    <type>People</type>
+    <continent>Australia</continent>
+  </metadata>
+  <g style="stroke-width:.110486">
+    <path fill="#221f1f" d="M12 0v25h75V0Z" style="stroke-width:.0115089" transform="matrix(8.53333 0 0 9.6 -102.4 0)"/>
+    <path fill="#ea2127" d="M12 25v25h75V25Z" style="stroke-width:.0115089" transform="matrix(8.53333 0 0 9.6 -102.4 0)"/>
+  </g>
+  <path fill="#fbed1f" d="M320 120c66.26 0 120 53.74 120 120s-53.74 120-120 120-120-53.74-120-120 53.74-120 120-120" style="stroke-width:.104167"/>
+</svg>

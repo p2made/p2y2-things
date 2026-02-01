@@ -1,0 +1,19 @@
+<svg id="flag-icons-ru-chu" class="fi fi-ru-chu" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="#fff">
+  <metadata id="flag-icons">
+    <name>Chukotka Autonomous Okrug</name>
+    <code>ru-chu</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Anadyr</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <path fill="#0039a6" d="M0 0h512v512H0Z" style="stroke-width:1"/>
+  <g style="stroke-width:1.17188" transform="scale(.85333)">
+    <path d="M0 0v600l200-300Z" style="stroke-width:1.17188"/>
+    <path d="M0 0v600l-200-300Z" style="stroke-width:1.17188" transform="rotate(-60)"/>
+    <path d="M0 0v600l-200-300Z" style="stroke-width:1.17188" transform="rotate(60 0 600)"/>
+    <path fill="#d52b1e" d="M90 300h170v80H90Z" style="stroke-width:1.46484"/>
+    <path fill="#0039a6" d="M90 275.256h170v49.488H90Z" style="stroke-width:1.46484"/>
+    <circle cx="173.205" cy="300" r="98.974" fill="none" stroke="gold" stroke-width="57.993"/>
+  </g>
+</svg>

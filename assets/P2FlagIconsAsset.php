@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
-p2m\assets\P2FlagIconsAsset::register($this);
-
+ * p2m\assets\P2FlagIconsAsset::register($this);
+ *
  * or specify as a dependency with...
-		'p2m\assets\P2FlagIconsAsset',
+ *      'p2m\assets\P2FlagIconsAsset',
  */
 
 namespace p2m\assets;
@@ -28,13 +28,13 @@ use yii\web\AssetBundle;
 
 class P2FlagIconsAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '@p2m/assets/lib/flag-icons';
 
 	public $css = [
 		'css/flag-icons.min.css',
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2FlagIconsBaseAsset',
+		'p2m\internal\assets\P2FlagIconsBaseAsset',
 	];
 }

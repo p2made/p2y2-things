@@ -1,0 +1,20 @@
+<svg id="flag-icons-ru-yev" class="fi fi-ru-yev" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Jewish Autonomous Oblast</name>
+    <code>ru-yev</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Birobidzhan</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <path fill="#fff" d="M0 0h512v512H0z" style="stroke-width:.133334"/>
+  <g style="stroke-width:4.30573">
+    <path d="M0 697.5h2700v45H0z" style="fill:red;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 757.5h2700v45H0z" style="fill:#f90;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 817.5h2700v45H0z" style="fill:#fc0;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 877.5h2700v45H0z" style="fill:#6c3;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 937.5h2700v45H0z" style="fill:#39f;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 997.5h2700v45H0z" style="fill:#00c;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+    <path d="M0 1057.5h2700v45H0z" style="fill:#609;fill-opacity:1;fill-rule:evenodd;stroke-width:4.30573" transform="scale(.18963 .28444)"/>
+  </g>
+</svg>

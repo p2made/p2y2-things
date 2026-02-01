@@ -1,0 +1,15 @@
+<svg id="flag-icons-ru-da" class="fi fi-ru-da" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Dagestan</name>
+    <code>ru-da</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Makhachkala</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:.0132582">
+    <path fill="#d81e05" d="M0 0h9v6H0Z" style="stroke-width:.0186444" transform="scale(71.11111 80.00013)"/>
+    <path fill="#0039a6" d="M0 0h9v4H0Z" style="stroke-width:.0186444" transform="scale(71.11111 80.00013)"/>
+    <path fill="#00923f" d="M0 0h9v2H0Z" style="stroke-width:.0186444" transform="scale(71.11111 80.00013)"/>
+  </g>
+</svg>

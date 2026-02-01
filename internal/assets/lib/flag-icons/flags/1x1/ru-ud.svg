@@ -1,0 +1,16 @@
+<svg id="flag-icons-ru-ud" class="fi fi-ru-ud" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata id="flag-icons">
+    <name>Udmurtia</name>
+    <code>ru-ud</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Izhevsk</capital>
+    <continent>Europe</continent>
+  </metadata>
+  <g style="stroke-width:4.97185">
+    <path d="M0 0h1200v1800H0z" style="stroke-width:4.97185" transform="scale(.14222 .28444)"/>
+    <path fill="#fff" d="M1200 0h1200v1800H1200z" style="stroke-width:.745777" transform="scale(.14222 .28444)"/>
+    <path fill="#d21" d="M2400 0h1200v1800H2400z" style="stroke-width:.745777" transform="scale(.14222 .28444)"/>
+  </g>
+  <path fill="#d21" d="M295 210 195 110h150L245 210V60l100 100H195L295 60z" style="stroke-width:.158203" transform="translate(0 128)scale(.94815)"/>
+</svg>

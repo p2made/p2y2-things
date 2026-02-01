@@ -1,0 +1,15 @@
+<svg id="flag-icons-pam" class="fi fi-pam" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Pamiris</name>
+    <code>pam</code>
+    <iso>false</iso>
+    <type>People</type>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="display:inline;stroke-width:.233882">
+    <path d="M0 0h158.75v105.833H0Z" style="fill:#fff;fill-opacity:1;stroke-width:.0618813" transform="scale(4.03117 4.53498)"/>
+    <path d="M0 52.917V0h158.75v105.833H0Z" style="fill:#fff;fill-opacity:1;stroke-width:.0437968" transform="scale(4.03117 4.53498)"/>
+    <path d="M.011.01v26.458l158.752 79.376V79.385Z" style="fill:#d7251a;fill-opacity:1;stroke-width:.0618813" transform="scale(4.03117 4.53498)"/>
+    <path d="M.001.001V13.19L158.75 92.606v-13.23z" style="fill:#03913e;fill-opacity:1;stroke-width:.0618813" transform="scale(4.03117 4.53498)"/>
+  </g>
+</svg>

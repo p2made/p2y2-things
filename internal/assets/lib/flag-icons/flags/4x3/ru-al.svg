@@ -1,0 +1,14 @@
+<svg id="flag-icons-ru-al" class="fi fi-ru-al" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Altai Republic</name>
+    <code>ru-al</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Gorno-Altaysk</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.220972">
+    <path fill="#fff" d="M0 0h150v100H0Z" style="stroke-width:.368288" transform="scale(4.26667 4.80003)"/>
+    <path fill="#39f" d="M0 67h150v4H0Zm0 8h150v25H0Z" style="stroke-width:.368288" transform="scale(4.26667 4.80003)"/>
+  </g>
+</svg>

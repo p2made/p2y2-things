@@ -1,0 +1,25 @@
+<svg id="flag-icons-ru-kk" class="fi fi-ru-kk" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <metadata id="flag-icons">
+    <name>Khakassia</name>
+    <code>ru-kk</code>
+    <iso>true</iso>
+    <type>Place</type>
+    <capital>Abakan</capital>
+    <continent>Asia</continent>
+  </metadata>
+  <g style="stroke-width:.36742">
+    <path fill="#d81e05" d="M0 0h288v144H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
+    <path fill="#fff" d="M0 0h288v96H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
+    <path fill="#0051ba" d="M0 0h288v48H0Z" style="stroke-width:.459277" transform="scale(2.22222 3.33332)"/>
+  </g>
+  <path fill="#009847" d="M0 0h160v479.998H0Z" style="stroke-width:1.24999"/>
+  <g fill="gold" style="stroke-width:.46875" transform="scale(2.66665 2.66668)rotate(45 30 90)">
+    <path d="m30 120 21-30-21-30L9 90Z" style="stroke-width:.375"/>
+    <path d="m60 90-30 21L0 90l30-21Z" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="24" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="21" fill="#009847" style="stroke-width:.585937"/>
+    <circle cx="30" cy="90" r="18" style="stroke-width:.375"/>
+    <circle cx="30" cy="90" r="12" fill="#009847" style="stroke-width:.585937"/>
+    <circle cx="30" cy="90" r="10" style="stroke-width:.375"/>
+  </g>
+</svg>

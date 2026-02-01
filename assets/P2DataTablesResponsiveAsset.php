@@ -45,7 +45,7 @@ class P2DataTablesResponsiveAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\datatables\P2DataTablesBootstrap5Asset',
-		'p2m\assets\datatables\P2DataTablesResponsiveAsset',
+		'p2m\internal\assets\datatables\P2DataTablesBootstrap5Asset',
+		'p2m\internal\assets\datatables\P2DataTablesResponsiveAsset',
 	];
 }

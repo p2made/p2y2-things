@@ -12,7 +12,7 @@
  * Factory for creating P2Copyright objects.
  *
  * @package p2made/p2y2-things
- * @class \p2m\internal\components\P2CopyrightFactory
+ * @class \p2m\internal\helpers\P2CopyrightFactory
  */
 
 /**
@@ -20,12 +20,12 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use Yii;
 use yii\base\InvalidArgumentException;
 
-class P2CopyrightFactory
+abstract class P2CopyrightFactory
 {
 	protected static function __readFromParams(): array
 	{

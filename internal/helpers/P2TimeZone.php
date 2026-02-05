@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2TimeZone
+ * @class \p2m\internal\helpers\P2TimeZone
  * @package p2made/p2y2-things
  */
 
@@ -18,7 +18,7 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use DateTime;
 use DateTimeZone;

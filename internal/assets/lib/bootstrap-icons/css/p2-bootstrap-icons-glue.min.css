@@ -1,0 +1,31 @@
+/* p2-bootstrap-icons-glue.min.css */
+/* Font Awesome-ish sizing (for Bootstrap Icons) */
+.p2-icon-multiply-1x  { font-size: 1em;  }
+.p2-icon-multiply-2x  { font-size: 2em;  }
+.p2-icon-multiply-3x  { font-size: 3em;  }
+.p2-icon-multiply-4x  { font-size: 4em;  }
+.p2-icon-multiply-5x  { font-size: 5em;  }
+.p2-icon-multiply-6x  { font-size: 6em;  }
+.p2-icon-multiply-7x  { font-size: 7em;  }
+.p2-icon-multiply-8x  { font-size: 8em;  }
+.p2-icon-multiply-9x  { font-size: 9em;  }
+.p2-icon-multiply-10x { font-size: 10em; }
+
+/* Generic icon-in-block wrapper */
+.p2-icon-block {
+	width: var(--p2-block, 5rem);
+	height: var(--p2-block, 5rem);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	flex: 0 0 auto;
+	line-height: 1;
+
+	border-radius: var(--p2-radius, 0.75rem);
+
+	background: var(--p2-bg, var(--bs-primary));
+	background-image: var(--p2-bg-gradient, none);
+
+	color: var(--p2-fg, #fff);
+}

@@ -12,7 +12,7 @@
  * Collection of Picsum images with bulk-transform helpers.
  *
  * @package p2made/p2y2-things
- * @class \p2m\internal\components\P2PicsumImageCollection
+ * @class \p2m\internal\helpers\P2PicsumImageCollection
  */
 
 /**
@@ -20,7 +20,7 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use IteratorAggregate;
 use ArrayIterator;

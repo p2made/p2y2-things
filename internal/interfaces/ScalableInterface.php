@@ -1,0 +1,23 @@
+<?php
+/**
+ * ScalableInterface.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2025
+ * @link https://github.com/p2made
+ * @license MIT
+ */
+
+/**
+ * @interface \p2m\internal\interfaces\ScalableInterface
+ * @package p2made/p2y2-things
+ */
+
+/**
+ * @internal
+ * Not part of the public API. Subject to change without notice.
+ */
+
+interface ScalableInterface extends \Stringable
+{
+}

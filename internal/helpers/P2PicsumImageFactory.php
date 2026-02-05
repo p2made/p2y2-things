@@ -12,7 +12,7 @@
  * Factory for creating Picsum image objects and collections.
  *
  * @package p2made/p2y2-things
- * @class \p2m\internal\components\P2PicsumImageFactory
+ * @class \p2m\internal\helpers\P2PicsumImageFactory
  */
 
 /**
@@ -20,11 +20,11 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use yii\base\InvalidArgumentException;
 
-class P2PicsumImageFactory
+abstract class P2PicsumImageFactory
 {
 	/**
 	 * Create a new Picsum image.

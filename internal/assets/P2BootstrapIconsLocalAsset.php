@@ -49,7 +49,7 @@ class P2BootstrapIconsLocalAsset extends AssetBundle
 	public $sourcePath = '@p2m/internal/assets/lib/bootstrap-icons';
 
 	public $css = [
-		'css/p2-bootstrap-icons.min.css',
+		'css/p2-bootstrap-icons-glue.min.css',
 	];
 
 	public $depends = [

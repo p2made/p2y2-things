@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2IconFactory
+ * @class \p2m\internal\helpers\P2IconFactory
  * @package p2made/p2y2-things
  */
 
@@ -18,11 +18,11 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use yii\base\InvalidConfigException;
 
-class P2IconFactory
+abstract class P2IconFactory
 {
 	const SIZE_PREFIX = 'fs';
 
@@ -80,5 +80,42 @@ class P2IconFactory
 	public static function i($name, $options = [])
 	{
 		return static::icon($name, $options);
+	}
+
+	/**
+	 * Shortcut for `icon()` method
+	 * @param string $name
+	 * @param array $options
+	 * @return P2BootstrapIcon
+	 * @see icon()
+	 */
+	public static function i($name, $options = [])
+	{
+		return static::icon($name, $options);
+	}
+
+	/**
+	 * @param string $iconName  the icon identifier, e.g. 'list', 'smile', 'us'
+	 *
+	 * @param P2Icon $icon
+	 * @param string $label
+	 * @param array $options = []
+	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
+	 */
+	public static function circle(P2Icon $icon, string $label, array $options = [])
+	{
+		return new P2IconCircle($icon, $label, $options);
+	}
+
+	/**
+	 * Shortcut for `circle()` method
+	 * @param string $name
+	 * @param array $options
+	 * @return P2BootstrapIcon
+	 * @see icon()
+	 */
+	public static function c(P2Icon $icon, string $label, array $options = [])
+	{
+		return static::circle($icon, $label, $options);
 	}
 }

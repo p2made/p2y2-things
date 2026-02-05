@@ -9,7 +9,7 @@
  */
 
 /**
- * @class \p2m\internal\components\P2FlagIcon
+ * @class \p2m\internal\helpers\P2FlagIcon
  * @package p2made/p2y2-things
  */
 
@@ -18,12 +18,12 @@
  * Not part of the public API. Subject to change without notice.
  */
 
-namespace p2m\internal\components;
+namespace p2m\internal\helpers;
 
 use Yii;
 use p2m\assets\P2FlagIconsAsset;
 
-class P2FlagIcon extends P2Icon
+final class P2FlagIcon extends P2Icon
 {
 	/**
 	 * @param string $cssPrefix

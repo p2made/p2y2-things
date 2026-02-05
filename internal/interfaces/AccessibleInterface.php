@@ -20,17 +20,6 @@
 
 interface AccessibleInterface extends \Stringable
 {
-	public function id(string $id): static;
-	public function title(string $title): static;
-	public function t(string $title): static;
-
-	public function size(int $value): static;
-	public function s(int $value): static;
-	public function multiply(int $x = 1): static;
-	public function x(int $x = 1): static;
-
-	public function tabIndex(int $index): static;
-	public function i(int $index): static;
 	public function focusable(bool $focusable = true): static;
 	public function f(bool $focusable = true): static;
 	public function ariaLabel(string $label, ?string $role = null): static;
@@ -39,6 +28,4 @@ interface AccessibleInterface extends \Stringable
 	public function r(string $role): static;
 	public function ariaHidden(bool $hidden = true): static;
 	public function h(bool $hidden = true): static;
-
-	public function data(string $name, string $value): static;
 }

@@ -17,7 +17,7 @@ namespace p2m\helpers;
 
 use p2m\internal\helpers\P2IconFactory;
 
-final class EI extends P2IconFactory
+final class EI extends P2EmojiIconFactory
 {
 	protected static string $cssPrefix = 'ec';
 }

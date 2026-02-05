@@ -17,7 +17,7 @@ namespace p2m\helpers;
 
 use p2m\internal\helpers\P2IconFactory;
 
-final class FI extends P2IconFactory
+final class FI extends P2FlagIconFactory
 {
 	protected static string $cssPrefix = 'fi';
 }

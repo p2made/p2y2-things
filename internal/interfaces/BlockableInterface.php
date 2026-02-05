@@ -20,4 +20,8 @@
 
 interface BlockableInterface extends \Stringable
 {
+	public function circle(): static;
+	public function block(string $size): static;
+	public function radius(string $radius): static;
+	public function square(): static;
 }

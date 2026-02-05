@@ -20,4 +20,8 @@
 
 interface ScalableInterface extends \Stringable
 {
+	public function size(int $value): static;
+	public function s(int $value): static;
+	public function multiply(int $x = 1): static;
+	public function x(int $x = 1): static;
 }

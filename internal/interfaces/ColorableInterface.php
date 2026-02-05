@@ -20,4 +20,9 @@
 
 interface ColorableInterface extends \Stringable
 {
+	public function color(string $color): self;
+	public function c(string $color): self;
+	public function primary(): static;
+	public function dark(): static;
+	// further color presets
 }

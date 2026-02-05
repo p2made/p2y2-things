@@ -17,7 +17,7 @@ namespace p2m\helpers;
 
 use p2m\internal\helpers\P2IconFactory;
 
-final class BI extends P2IconFactory
+final class BI extends P2BootstrapIconFactory
 {
 	protected static string $cssPrefix = 'bi';
 }

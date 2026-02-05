@@ -23,6 +23,8 @@ interface IconInterface extends \Stringable
 	public function id(string $id): static;
 	public function title(string $title): static;
 	public function t(string $title): static;
+	public function focusable(bool $focusable = true): static;
+	public function f(bool $focusable = true): static;
 	public function tabIndex(int $index): static;
 	public function i(int $index): static;
 	public function data(string $name, string $value): static;

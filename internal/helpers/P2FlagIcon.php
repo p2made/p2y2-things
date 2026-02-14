@@ -26,6 +26,11 @@ use p2m\assets\P2FlagIconsAsset;
 final class P2FlagIcon extends P2Icon
 {
 	/**
+	 * @var array
+	 * protected array $options = [];
+	 */
+
+	/**
 	 * @param string $cssPrefix
 	 * @param string $name
 	 * @param array  $options
@@ -47,7 +52,7 @@ final class P2FlagIcon extends P2Icon
 	 */
 	public function square(bool $enable = true): self
 	{
-		return $this->addCssClass(P2IconFactory::SQUARE_FLAG, $enable);
+		return $this->addCssClass('fis', $enable);
 	}
 
 	public function sq(bool $enable = true): self

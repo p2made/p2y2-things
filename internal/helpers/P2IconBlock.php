@@ -22,27 +22,54 @@ namespace p2m\internal\helpers;
 
 use yii\bootstrap5\Html;
 
+use p2m\internal\interfaces\IconInterface;
+use p2m\internal\interfaces\AccessibleInterface;
+use p2m\internal\interfaces\ColorableInterface;
+use p2m\internal\interfaces\ScalableInterface;
+
 final class P2IconBlock extends P2IconBase
+	implements IconInterface, AccessibleInterface, ColorableInterface, ScalableInterface
 {
+	private const BOOTSTRAP_COLOR_PREFIX = 'bg';
+	private const BOOTSTRAP_BG_COLORS = [
+		'primary',   'primary-emphasis',
+		'secondary', 'secondary-emphasis',
+		'success',   'success-emphasis',
+		'danger',    'danger-emphasis',
+		'warning',   'warning-emphasis',
+		'info',      'info-emphasis',
+		'light',     'light-emphasis',
+		'dark',      'dark-emphasis',
+		'black',     'black-50',
+		'white',     'white-50',
+		'body',      'body-emphasis',
+		'body-secondary',
+		'body-tertiary',
+	];
+
 	/**
 	 * @var array
+	 * protected array $options = [];
 	 */
-	//protected array $options = [];
+
 	private P2Icon $icon;
 
 	/**
 	 * @param P2Icon $icon
 	 * @param array $options = []
 	 */
-	public function __construct(P2Icon $icon, array $options = [])
+	public function __construct(bool $circle, P2Icon $icon, array $options = [])
 	{
 		$this->icon = $icon;
-		$this->options = $options;
+		$this->options = array_merge($this->ariaDefaults, $options);
+
+		// Create block with a sane default size - explicit size by chaining `s()` or `x()`
+		// Radius 0 if $circle = false
+		// Radius for a circle if $circle = true
+
+		// Existing code below
 
 		Html::addCssClass($this->options, 'p2-icon-block');
-
-		// Default: wrapper is decorative.
-		$this->options['aria-hidden'] ??= 'true';
 
 		// Default size only if caller didn’t set it.
 		$style = (string)($this->options['style'] ?? '');
@@ -68,7 +95,16 @@ final class P2IconBlock extends P2IconBase
 		}
 	}
 
-	// Icon-only proxies (fine)
+	/**
+	 * IconInterface functions - act on enclosed icon
+	 *
+	 * @see \p2m\internal\interfaces\IconInterface
+	 *
+	 * public function id(string $id): static;
+	 * public function title(string $title): static;
+	 * public function t(string $title): static;
+	 * public function data(string $name, string $value): static;
+	 */
 
 	/**
 	 * @param string $id
@@ -93,82 +129,42 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `title()` function
+	 * @see title()
 	 */
 	public function t(string $title): static
 	{
 		return $this->title($title);
 	}
 
-	// Wrapper or icon
-
 	/**
-	 * @param integer $value range 1 to 6
-	 * @param bool $onIcon = false
-	 * @return \p2m\components\P2Icon
+	 * @param string $name
+	 * @param string $value
+	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function size(int $value, bool $onIcon = false): static
+	public function data(string $name, string $value): static
 	{
-		if ($onIcon) {
-			$this->icon->size($value);
-			return $this;
-		}
-
-		// For block “size” you probably *don’t* want 1..6; you want rem/px.
-		// So I'd *not* overload size(). Use block() for wrapper size.
-		return $this->applySizeCss($value);
-	}
-
-	/**
-	 * Convenience alias.
-	 */
-	public function s(int $value, bool $onIcon = false): static
-	{
-		return $this->size($value, $onIcon);
-	}
-
-	/**
-	 * @param int $x = 1
-	 * @return self
-	 */
-	public function multiply(int $x = 1, bool $onIcon = false): static
-	{
-		if ($onIcon) {
-			$this->icon->multiply($x);
-			return $this;
-		}
-		return $this->applyMultiplyCss($x);
-	}
-
-	/**
-	 * Convenience alias.
-	 */
-	public function x(int $x = 1, bool $onIcon = false): static
-	{
-		return $this->multiply($x, $onIcon);
-	}
-
-	// Semantics proxies: unhide wrapper so they can actually take effect
-
-	/**
-	 * @param int $index
-	 * @return self
-	 */
-	public function tabIndex(int $index): static
-	{
-		$this->unhideWrapper();
-		$this->icon->tabIndex($index);
+		$this->icon->data($name, $value);
 		return $this;
 	}
 
 	/**
-	 * Convenience alias.
+	 * AccessibleInterface functions - act on enclosed icon
+	 *
+	 * @see \p2m\internal\interfaces\AccessibleInterface
+	 *
+	 * public function focusable(bool $focusable = true): static;
+	 * public function f(bool $focusable = true): static;
+	 * public function tabIndex(int $index): static;
+	 * public function i(int $index): static;
+	 * public function ariaLabel(string $label, ?string $role = null): static;
+	 * public function l(string $label, ?string $role = null): static;
+	 * public function ariaRole(string $role): static;
+	 * public function r(string $role): static;
+	 * public function ariaHidden(bool $hidden = true): static;
+	 * public function h(bool $hidden = true): static;
 	 */
-	public function i(int $index): static
-	{
-		return $this->tabIndex($index);
-	}
 
 	/**
 	 * @param bool $focusable = true
@@ -183,11 +179,32 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `focusable()` function
+	 * @see focusable()
 	 */
 	public function f(bool $focusable = true): static
 	{
 		return $this->focusable($focusable);
+	}
+
+	/**
+	 * @param int $index
+	 * @return self
+	 */
+	public function tabIndex(int $index): static
+	{
+		$this->unhideWrapper();
+		$this->icon->tabIndex($index);
+		return $this;
+	}
+
+	/**
+	 * Shortcut for `tabIndex()` function
+	 * @see tabIndex()
+	 */
+	public function i(int $index): static
+	{
+		return $this->tabIndex($index);
 	}
 
 	/**
@@ -204,7 +221,8 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaLabel()` function
+	 * @see ariaLabel()
 	 */
 	public function l(string $label, ?string $role = P2IconFactory::IMG): static
 	{
@@ -224,7 +242,8 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaRole()` function
+	 * @see ariaRole()
 	 */
 	public function r(string $role): static
 	{
@@ -251,7 +270,8 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaHidden()` function
+	 * @see ariaHidden()
 	 */
 	public function h(bool $hidden = true): static
 	{
@@ -259,49 +279,118 @@ final class P2IconBlock extends P2IconBase
 	}
 
 	/**
-	 * @param string $name
-	 * @param string $value
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
+	 * ColorableInterface functions - act on block
+	 *
+	 * @see \p2m\internal\interfaces\ColorableInterface
+	 *
+	 * public function color(string $color): static;
+	 * public function c(string $color): static;
+	 * public function namedColor(string $color): static;
+	 * public function n(string $color): static;
 	 */
-	public function data(string $name, string $value): static
-	{
-		$this->icon->data($name, $value);
-		return $this;
-	}
 
-	// Circle-specific styling helpers
+	use \p2m\internal\traits\BootstrapColorsTrait;
 
 	/**
-	 * Convenience: perfect circle/pill.
+	 * @param string $color
+	 * @return \p2m\components\P2Icon
+	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function circle(): static
+	public function color(string $color): static
 	{
-		return $this->att('style', trim(rtrim((string)($this->options['style'] ?? ''), ';') . '; --p2-radius: 9999px;'), true);
-		//return $this->radius('9999px');
+		return $this->applyBootstrapColorCss(
+			self::BOOTSTRAP_COLOR_PREFIX,
+			$color,
+			self::BOOTSTRAP_TEXT_COLORS
+		);
 	}
 
-	public function primary(): static
+	/**
+	 * Shortcut for `color()` function
+	 * @see color()
+	 */
+	public function c(string $color): static
 	{
-		$style = (string)($this->options['style'] ?? '');
-		$style = rtrim($style, ';') . '; --p2-bg: var(--bs-primary); --p2-fg: #fff;';
-		$this->options['style'] = trim($style);
-		//$this->removeCssClass('is-dark');
-		//$this->addCssClass('is-primary');
-		return $this;
+		return $this->color($color);
 	}
 
-	public function dark(): static
+	use \p2m\internal\traits\NamedColorsTrait;
+
+	/**
+	 * @param string $color
+	 * @return \p2m\components\P2Icon
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function namedColor(string $color): static
 	{
-		$style = (string)($this->options['style'] ?? '');
-		$style = rtrim($style, ';') . '; --p2-bg: var(--bs-dark); --p2-fg: #fff;';
-		$this->options['style'] = trim($style);
-		//$this->removeCssClass('is-primary');
-		//$this->addCssClass('is-dark');
-		return $this;
+		return $this->applyNamedColorCss(self::BOOTSTRAP_COLOR_PREFIX, $color);
 	}
 
-	// ---- shape helpers ----
+	/**
+	 * Shortcut for `namedColor()` function
+	 * @see namedColor()
+	 */
+	public function n(string $color): static
+	{
+		return $this->namedColor($color);
+	}
+
+	/**
+	 * ScalableInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\ScalableInterface
+	 *
+	 * public function size(int $value): static;
+	 * public function s(int $value): static;
+	 * public function multiply(int $x = 1): static;
+	 * public function x(int $x = 1): static;
+	 */
+
+	/**
+	 * @param integer $value range 1 to 6
+	 * @return \p2m\components\P2Icon
+	 * @throws \yii\base\InvalidConfigException
+	 */
+	public function size(int $value): static
+	{
+		return $this->applySizeCss($value);
+	}
+
+	/**
+	 * Shortcut for `size()` function
+	 * @see size()
+	 */
+	public function s(int $value): static
+	{
+		return $this->size($value);
+	}
+
+	/**
+	 * @param int $x = 1
+	 * @return self
+	 */
+	public function multiply(int $x = 1): static
+	{
+		return $this->applyMultiplyCss($x);
+	}
+
+	/**
+	 * Shortcut for `multiply()` function
+	 * @see multiply()
+	 */
+	public function x(int $x = 1): static
+	{
+		return $this->multiply($x);
+	}
+
+	/**
+	 * Blockable functions - only act on block
+	 *
+	 * public function radius(int $string): static
+	 * public function d(string $radius): static
+	 * public function gradient(string $from, string $to): static
+	 * public function g(string $from, string $to): static
+	 */
 
 	/**
 	 * Set block size (e.g. '5rem', '64px'). This is the wrapper size, not icon size.
@@ -316,26 +405,67 @@ final class P2IconBlock extends P2IconBase
 		return $this;
 	}
 
+
+
+
+
+
 	/**
+	 * Changes radius on a block to give a rounded rectangle.
 	 * Border radius (e.g. '0', '.5rem', '12px', '9999px').
+	 *
+	 * @param string $radius
+	 * @return static
 	 */
 	public function radius(string $radius): static
 	{
 		$radius = trim($radius);
+
 		if ($radius !== '') {
 			$opts =& $this->optionsRef();
 			$opts['style'] = $this->setCssVarInStyle($opts['style'] ?? '', '--p2-radius', $radius);
 		}
+
 		return $this;
 	}
 
 	/**
-	 * Convenience: sharp corners.
+	 * Shortcut for `radius()` function
+	 * @see radius()
 	 */
-	public function square(): static
+	public function d(string $radius): static
 	{
-		return $this->radius('0');
+		return $this->radius($radius);
 	}
+
+	/**
+	 * Colorable functions only appliciable to blocks
+	 *
+	 * @param string $from
+	 * @param string $to
+	 * @return static
+	 */
+	public function gradient(string $from, string $to): static
+	{
+		$from = trim($from);
+		$to   = trim($to);
+
+		// Set Bootstrap gradient
+
+		return $this;
+	}
+
+	/**
+	 * Shortcut for `gradient()` function
+	 * @see gradient()
+	 */
+	public function g(string $from, string $to): static
+	{
+		return $this->gradient($from, $to);
+	}
+
+
+
 
 	public function options(array $options): static
 	{
@@ -362,7 +492,12 @@ final class P2IconBlock extends P2IconBase
 
 	public function icon(): P2Icon
 	{
-		return $this->icon;
+		return $this-icon;
+	}
+
+	public function i(): P2Icon
+	{
+		return $this-icon();
 	}
 
 	/*
@@ -372,4 +507,25 @@ final class P2IconBlock extends P2IconBase
 		return $this->options;
 	}
 	 */
+
+
+
+
+
+	/**
+	 * Convenience: sharp corners.
+	 */
+	public function square(): static
+	{
+		return $this->radius('0');
+	}
+
+	/**
+	 * Convenience: perfect circle/pill.
+	 */
+	public function circle(): static
+	{
+		return $this->att('style', trim(rtrim((string)($this->options['style'] ?? ''), ';') . '; --p2-radius: 9999px;'), true);
+		//return $this->radius('9999px');
+	}
 }

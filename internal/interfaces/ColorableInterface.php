@@ -18,11 +18,35 @@
  * Not part of the public API. Subject to change without notice.
  */
 
+namespace p2m\internal\interfaces;
+
 interface ColorableInterface extends \Stringable
 {
-	public function color(string $color): self;
-	public function c(string $color): self;
-	public function primary(): static;
-	public function dark(): static;
-	// further color presets
+	/**
+	 * ColorableInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\ColorableInterface
+	 *
+	 * public function color(string $color): static
+	 * public function c(string $color): static
+	 * public function namedColor(string $color): static;
+	 * public function n(string $color): static;
+	 */
+
+	/**
+	 * @param string $color
+	 * @param bool $option = false
+	 * @return static
+	 *
+	 * $option = true adds '-emphasis' or '-50' to Bootstrap colors that accept them
+	 */
+	public function color(string $color): static;
+	public function c(string $color): static;
+
+	/**
+	 * @param string $color
+	 * @return static
+	 */
+	public function namedColor(string $color): static;
+	public function n(string $color): static;
 }

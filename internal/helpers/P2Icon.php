@@ -23,12 +23,17 @@ namespace p2m\internal\helpers;
 use yii\bootstrap5\Html;
 use yii\helpers\ArrayHelper;
 
+use p2m\internal\interfaces\IconInterface;
+use p2m\internal\interfaces\AccessibleInterface;
+use p2m\internal\interfaces\ScalableInterface;
+
 abstract class P2Icon extends P2IconBase
+	implements IconInterface, AccessibleInterface, ScalableInterface
 {
 	/**
 	 * @var array
+	 * protected array $options = [];
 	 */
-	//protected array $options = [];
 
 	/**
 	 * @param string $cssPrefix
@@ -37,18 +42,13 @@ abstract class P2Icon extends P2IconBase
 	 */
 	public function __construct(string $cssPrefix, ?string $name = null, array $options = [])
 	{
+		$this->options = array_merge($this->ariaDefaults, $options);
+
 		Html::addCssClass($options, $cssPrefix);
 
 		if (!empty($name)) {
 			Html::addCssClass($options, $cssPrefix . '-' . $name);
 		}
-
-		$ariaDefaults = [
-			'aria-hidden' => 'true',
-			'focusable'   => 'false',
-		];
-
-		$this->options = array_merge($ariaDefaults, $options);
 	}
 
 	/**
@@ -63,11 +63,22 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
+	 * IconInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\IconInterface
+	 *
+	 * public function id(string $id): static;
+	 * public function title(string $title): static;
+	 * public function t(string $title): static;
+	 * public function data(string $name, string $value): static;
+	 */
+
+	/**
 	 * @param string $id
 	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function id(string $id, bool $throw = true): static
+	public function id(string $id): static
 	{
 		$id = trim($id);
 
@@ -98,7 +109,8 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `title()` function
+	 * @see title()
 	 */
 	public function t(string $title): static
 	{
@@ -106,56 +118,38 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * @param integer $value range 1 to 6
-	 * @return \p2m\components\P2Icon
+	 * @param string $name
+	 * @param string $value
+	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function size(int $value): static
+	public function data(string $name, string $value): static
 	{
-		return $this->applySizeCss($value);
+		$name = trim($name);
+
+		return $this->addAttribute(
+			'data-' . $name, $value,
+			$name !== '' && preg_match('/^[A-Za-z0-9][A-Za-z0-9\-_:.]*$/', $name),
+			sprintf('%s - invalid value. Data attribute name is invalid.', 'P2Icon::data()')
+		);
 	}
 
 	/**
-	 * Convenience alias.
+	 * AccessibleInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\AccessibleInterface
+	 *
+	 * public function focusable(bool $focusable = true): static;
+	 * public function f(bool $focusable = true): static;
+	 * public function tabIndex(int $index): static;
+	 * public function i(int $index): static;
+	 * public function ariaLabel(string $label, ?string $role = null): static;
+	 * public function l(string $label, ?string $role = null): static;
+	 * public function ariaRole(string $role): static;
+	 * public function r(string $role): static;
+	 * public function ariaHidden(bool $hidden = true): static;
+	 * public function h(bool $hidden = true): static;
 	 */
-	public function s(int $value): static
-	{
-		return $this->size($value);
-	}
-
-	/**
-	 * @param int $x = 1
-	 * @return self
-	 */
-	public function multiply(int $x = 1): static
-	{
-		return $this->applyMultiplyCss($x);
-	}
-
-	/**
-	 * Convenience alias.
-	 */
-	public function x(int $x = 1): static
-	{
-		return $this->multiply($x);
-	}
-
-	/**
-	 * @param int $index
-	 * @return self
-	 */
-	public function tabIndex(int $index): static
-	{
-		return $this->addAttribute('tabindex', (string)$index);
-	}
-
-	/**
-	 * Convenience alias.
-	 */
-	public function i(int $index): static
-	{
-		return $this->tabIndex($index);
-	}
 
 	/**
 	 * @param bool $focusable = true
@@ -169,11 +163,30 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `focusable()` function
+	 * @see focusable()
 	 */
 	public function f(bool $focusable = true): static
 	{
 		return $this->focusable($focusable);
+	}
+
+	/**
+	 * @param int $index
+	 * @return self
+	 */
+	public function tabIndex(int $index): static
+	{
+		return $this->addAttribute('tabindex', (string)$index);
+	}
+
+	/**
+	 * Shortcut for `tabIndex()` function
+	 * @see tabIndex()
+	 */
+	public function i(int $index): static
+	{
+		return $this->tabIndex($index);
 	}
 
 	/**
@@ -205,7 +218,8 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaLabel()` function
+	 * @see ariaLabel()
 	 */
 	public function l(string $label, ?string $role = P2IconFactory::IMG): static
 	{
@@ -244,7 +258,8 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaRole()` function
+	 * @see ariaRole()
 	 */
 	public function r(string $role): static
 	{
@@ -270,7 +285,8 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `ariaHidden()` function
+	 * @see ariaHidden()
 	 */
 	public function h(bool $hidden = true): static
 	{
@@ -278,19 +294,50 @@ abstract class P2Icon extends P2IconBase
 	}
 
 	/**
-	 * @param string $name
-	 * @param string $value
-	 * @return self
+	 * ScalableInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\ScalableInterface
+	 *
+	 * public function size(int $value): static;
+	 * public function s(int $value): static;
+	 * public function multiply(int $x = 1): static;
+	 * public function x(int $x = 1): static;
+	 */
+
+	/**
+	 * @param integer $value range 1 to 6
+	 * @return \p2m\components\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function data(string $name, string $value): static
+	public function size(int $value): static
 	{
-		$name = trim($name);
+		return $this->applySizeCss($value);
+	}
 
-		return $this->addAttribute(
-			'data-' . $name, $value,
-			$name !== '' && preg_match('/^[A-Za-z0-9][A-Za-z0-9\-_:.]*$/', $name),
-			sprintf('%s - invalid value. Data attribute name is invalid.', 'P2Icon::data()')
-		);
+	/**
+	 * Shortcut for `size()` function
+	 * @see size()
+	 */
+	public function s(int $value): static
+	{
+		return $this->size($value);
+	}
+
+	/**
+	 * @param int $x = 1
+	 * @return self
+	 */
+	public function multiply(int $x = 1): static
+	{
+		return $this->applyMultiplyCss($x);
+	}
+
+	/**
+	 * Shortcut for `multiply()` function
+	 * @see multiply()
+	 */
+	public function x(int $x = 1): static
+	{
+		return $this->multiply($x);
 	}
 }

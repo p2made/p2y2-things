@@ -23,8 +23,30 @@ namespace p2m\internal\helpers;
 use Yii;
 use p2m\internal\assets\P2BootstrapIconsCdnAsset;
 
+use p2m\internal\interfaces\ColorableInterface;
+
 final class P2BootstrapIcon extends P2Icon
+	implements ColorableInterface
 {
+	private const BOOTSTRAP_COLOR_PREFIX = 'text';
+	private const BOOTSTRAP_TEXT_COLORS = [
+		'primary',   'primary-emphasis',
+		'secondary', 'secondary-emphasis',
+		'success',   'success-emphasis',
+		'danger',    'danger-emphasis',
+		'warning',   'warning-emphasis',
+		'info',      'info-emphasis',
+		'light',     'light-emphasis',
+		'dark',      'dark-emphasis',
+		'black',     'black-50',
+		'white',     'white-50',
+	];
+
+	/**
+	 * @var array
+	 * protected array $options = [];
+	 */
+
 	/**
 	 * @param string $cssPrefix
 	 * @param string $name
@@ -40,181 +62,59 @@ final class P2BootstrapIcon extends P2Icon
 	}
 
 	/**
+	 * ColorableInterface functions
+	 *
+	 * @see \p2m\internal\interfaces\ColorableInterface
+	 *
+	 * public function color(string $color): static;
+	 * public function c(string $color): static;
+	 * public function namedColor(string $color): static;
+	 * public function n(string $color): static;
+	 */
+
+	use \p2m\internal\traits\BootstrapColorsTrait;
+
+	/**
 	 * @param string $color
 	 * @return \p2m\components\P2Icon
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function color(string $color): self
+	public function color(string $color): static
 	{
-		$color = trim($color);
-
-		$colors = [
-			P2BootstrapIconFactory::PRIMARY,
-			P2BootstrapIconFactory::PRIMARY_EMPHASIS,
-			P2BootstrapIconFactory::SECONDARY,
-			P2BootstrapIconFactory::SECONDARY_EMPHASIS,
-			P2BootstrapIconFactory::SUCCESS,
-			P2BootstrapIconFactory::SUCCESS_EMPHASIS,
-			P2BootstrapIconFactory::DANGER,
-			P2BootstrapIconFactory::DANGER_EMPHASIS,
-			P2BootstrapIconFactory::WARNING,
-			P2BootstrapIconFactory::WARNING_EMPHASIS,
-			P2BootstrapIconFactory::INFO,
-			P2BootstrapIconFactory::INFO_EMPHASIS,
-			P2BootstrapIconFactory::LIGHT,
-			P2BootstrapIconFactory::LIGHT_EMPHASIS,
-			P2BootstrapIconFactory::DARK,
-			P2BootstrapIconFactory::DARK_EMPHASIS,
-		];
-
-		return $this->addCssClass(
-			P2BootstrapIconFactory::TEXT_PREFIX . '-' . $color,
-			in_array($color, $colors, true),
-			sprintf(
-				'%s - invalid value. Use one of the constants: %s.',
-				'P2BootstrapIconFactory::color()',
-				implode(', ', $colors)
-			)
+		return $this->applyBootstrapColorCss(
+			self::BOOTSTRAP_COLOR_PREFIX,
+			$color,
+			self::BOOTSTRAP_TEXT_COLORS
 		);
 	}
 
 	/**
-	 * Convenience alias.
+	 * Shortcut for `color()` function
+	 * @see color()
 	 */
-	public function c(string $color): self
+	public function c(string $color): static
 	{
 		return $this->color($color);
 	}
 
-	/**
-	 * @param string $id
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function id(string $id): self
-	 */
+	use \p2m\internal\traits\NamedColorsTrait;
 
 	/**
-	 * @param integer $value range 1 to 6
+	 * @param string $color
 	 * @return \p2m\components\P2Icon
 	 * @throws \yii\base\InvalidConfigException
-	public function size(int $value): self
 	 */
+	public function namedColor(string $color): static
+	{
+		return $this->applyNamedColorCss(self::BOOTSTRAP_COLOR_PREFIX, $color);
+	}
 
 	/**
-	 * Convenience alias.
-	public function s(int $value): self
+	 * Shortcut for `namedColor()` function
+	 * @see namedColor()
 	 */
-
-	/**
-	 * @param string $title
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function title(string $title): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function t(string $title): self
-	 */
-
-	/**
-	 * @param int $index
-	 * @return self
-	public function tabIndex(int $index): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function i(int $index): self
-	 */
-
-	/**
-	 * @param bool $focusable = true
-	 * @return \p2m\components\P2Icon
-	 * @throws \yii\base\InvalidConfigException
-	public function focusable(bool $focusable = true): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function f(bool $focusable = true): self
-	 */
-
-	/**
-	 * @param string $label
-	 * @param string|null $role Default P2IconFactory::IMG. Use '' or null to not set role.
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function ariaLabel(string $label, ?string $role = P2IconFactory::IMG): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function l(string $label, ?string $role = P2IconFactory::IMG): self
-	 */
-
-	/**
-	 * @param string $role
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function ariaRole(string $role): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function r(string $role): self
-	 */
-
-	/**
-	 * Force aria-hidden state.
-	 *
-	 * @param bool $hidden
-	 * @return self
-	public function ariaHidden(bool $hidden = true): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function h(bool $hidden = true): self
-	 */
-
-	/**
-	 * @param string $name
-	 * @param string $value
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function data(string $name, string $value): self
-	 */
-
-	/**
-	 * @param string $class
-	 * @param bool $condition
-	 * @param string|bool $throw
-	 * @return \p2m\icons\P2Icon
-	 * @throws \yii\base\InvalidConfigException
-	 * @codeCoverageIgnore
-	public function addCssClass($class, $condition = true, $throw = false): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function css($class, $condition = true, $throw = false): self
-	 */
-
-	/**
-	 * Add or overwrite an HTML attribute.
-	 *
-	 * @param string      $name
-	 * @param string      $value
-	 * @param bool        $condition
-	 * @param string|bool $throw
-	 * @return self
-	 * @throws \yii\base\InvalidConfigException
-	public function addAttribute(string $name, string $value, bool $condition = true, $throw = false): self
-	 */
-
-	/**
-	 * Convenience alias.
-	public function att(string $name, string $value, bool $condition = true, $throw = false): self
-	 */
+	public function n(string $color): static
+	{
+		return $this->namedColor($color);
+	}
 }

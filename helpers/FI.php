@@ -15,7 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\internal\components\P2FlagIconFactory;
+use p2m\internal\helpers\P2FlagIconFactory;
 
 final class FI extends P2FlagIconFactory
 {

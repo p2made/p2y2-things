@@ -16,10 +16,10 @@
 
 /**
  * Load this asset with...
-p2m\assets\P2PdfMakeAsset::register($this);
-
+ * p2m\assets\P2PdfMakeAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\P2PdfMakeAsset',
+ *      'p2m\assets\P2PdfMakeAsset',
  */
 
 namespace p2m\assets;
@@ -42,6 +42,6 @@ class P2PdfMakeAsset extends AssetBundle
 	];
 
 	public $depends = [
-		'p2m\assets\base\P2PdfmakeBaseAsset',
+		'p2m\internal\assets\P2PdfmakeBaseAsset',
 	];
 }

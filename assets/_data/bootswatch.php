@@ -18,10 +18,10 @@ P2BriteAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2BriteAsset::register($this);
-
+ * p2m\assets\bootswatch\P2BriteAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2BriteAsset',
+ *      'p2m\assets\bootswatch\P2BriteAsset',
  */
 
 namespace p2m\assets;
@@ -71,10 +71,10 @@ P2CeruleanAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2CeruleanAsset::register($this);
-
+ * p2m\assets\bootswatch\P2CeruleanAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2CeruleanAsset',
+ *      'p2m\assets\bootswatch\P2CeruleanAsset',
  */
 
 namespace p2m\assets;
@@ -124,10 +124,10 @@ P2CosmoAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2CosmoAsset::register($this);
-
+ * p2m\assets\bootswatch\P2CosmoAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2CosmoAsset',
+ *      'p2m\assets\bootswatch\P2CosmoAsset',
  */
 
 namespace p2m\assets;
@@ -177,10 +177,10 @@ P2CyborgAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2CyborgAsset::register($this);
-
+ * p2m\assets\bootswatch\P2CyborgAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2CyborgAsset',
+ *      'p2m\assets\bootswatch\P2CyborgAsset',
  */
 
 namespace p2m\assets;
@@ -230,10 +230,10 @@ P2DarklyAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2DarklyAsset::register($this);
-
+ * p2m\assets\bootswatch\P2DarklyAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2DarklyAsset',
+ *      'p2m\assets\bootswatch\P2DarklyAsset',
  */
 
 namespace p2m\assets;
@@ -283,10 +283,10 @@ P2FlatlyAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2FlatlyAsset::register($this);
-
+ * p2m\assets\bootswatch\P2FlatlyAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2FlatlyAsset',
+ *      'p2m\assets\bootswatch\P2FlatlyAsset',
  */
 
 namespace p2m\assets;
@@ -336,10 +336,10 @@ P2JournalAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2JournalAsset::register($this);
-
+ * p2m\assets\bootswatch\P2JournalAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2JournalAsset',
+ *      'p2m\assets\bootswatch\P2JournalAsset',
  */
 
 namespace p2m\assets;
@@ -389,10 +389,10 @@ P2LiteraAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2LiteraAsset::register($this);
-
+ * p2m\assets\bootswatch\P2LiteraAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2LiteraAsset',
+ *      'p2m\assets\bootswatch\P2LiteraAsset',
  */
 
 namespace p2m\assets;
@@ -442,10 +442,10 @@ P2LumenAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2LumenAsset::register($this);
-
+ * p2m\assets\bootswatch\P2LumenAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2LumenAsset',
+ *      'p2m\assets\bootswatch\P2LumenAsset',
  */
 
 namespace p2m\assets;
@@ -495,10 +495,10 @@ P2LuxAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2LuxAsset::register($this);
-
+ * p2m\assets\bootswatch\P2LuxAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2LuxAsset',
+ *      'p2m\assets\bootswatch\P2LuxAsset',
  */
 
 namespace p2m\assets;
@@ -548,10 +548,10 @@ P2MateriaAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2MateriaAsset::register($this);
-
+ * p2m\assets\bootswatch\P2MateriaAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2MateriaAsset',
+ *      'p2m\assets\bootswatch\P2MateriaAsset',
  */
 
 namespace p2m\assets;
@@ -601,10 +601,10 @@ P2MintyAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2MintyAsset::register($this);
-
+ * p2m\assets\bootswatch\P2MintyAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2MintyAsset',
+ *      'p2m\assets\bootswatch\P2MintyAsset',
  */
 
 namespace p2m\assets;
@@ -654,10 +654,10 @@ P2MorphAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2MorphAsset::register($this);
-
+ * p2m\assets\bootswatch\P2MorphAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2MorphAsset',
+ *      'p2m\assets\bootswatch\P2MorphAsset',
  */
 
 namespace p2m\assets;
@@ -707,10 +707,10 @@ P2PulseAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2PulseAsset::register($this);
-
+ * p2m\assets\bootswatch\P2PulseAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2PulseAsset',
+ *      'p2m\assets\bootswatch\P2PulseAsset',
  */
 
 namespace p2m\assets;
@@ -760,10 +760,10 @@ P2QuartzAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2QuartzAsset::register($this);
-
+ * p2m\assets\bootswatch\P2QuartzAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2QuartzAsset',
+ *      'p2m\assets\bootswatch\P2QuartzAsset',
  */
 
 namespace p2m\assets;
@@ -813,10 +813,10 @@ P2SandstoneAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SandstoneAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SandstoneAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SandstoneAsset',
+ *      'p2m\assets\bootswatch\P2SandstoneAsset',
  */
 
 namespace p2m\assets;
@@ -866,10 +866,10 @@ P2SimplexAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SimplexAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SimplexAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SimplexAsset',
+ *      'p2m\assets\bootswatch\P2SimplexAsset',
  */
 
 namespace p2m\assets;
@@ -919,10 +919,10 @@ P2SketchyAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SketchyAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SketchyAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SketchyAsset',
+ *      'p2m\assets\bootswatch\P2SketchyAsset',
  */
 
 namespace p2m\assets;
@@ -972,10 +972,10 @@ P2SlateAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SlateAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SlateAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SlateAsset',
+ *      'p2m\assets\bootswatch\P2SlateAsset',
  */
 
 namespace p2m\assets;
@@ -1025,10 +1025,10 @@ P2SolarAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SolarAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SolarAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SolarAsset',
+ *      'p2m\assets\bootswatch\P2SolarAsset',
  */
 
 namespace p2m\assets;
@@ -1078,10 +1078,10 @@ P2SpacelabAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SpacelabAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SpacelabAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SpacelabAsset',
+ *      'p2m\assets\bootswatch\P2SpacelabAsset',
  */
 
 namespace p2m\assets;
@@ -1131,10 +1131,10 @@ P2SuperheroAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2SuperheroAsset::register($this);
-
+ * p2m\assets\bootswatch\P2SuperheroAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2SuperheroAsset',
+ *      'p2m\assets\bootswatch\P2SuperheroAsset',
  */
 
 namespace p2m\assets;
@@ -1184,10 +1184,10 @@ P2UnitedAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2UnitedAsset::register($this);
-
+ * p2m\assets\bootswatch\P2UnitedAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2UnitedAsset',
+ *      'p2m\assets\bootswatch\P2UnitedAsset',
  */
 
 namespace p2m\assets;
@@ -1237,10 +1237,10 @@ P2VaporAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2VaporAsset::register($this);
-
+ * p2m\assets\bootswatch\P2VaporAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2VaporAsset',
+ *      'p2m\assets\bootswatch\P2VaporAsset',
  */
 
 namespace p2m\assets;
@@ -1290,10 +1290,10 @@ P2YetiAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2YetiAsset::register($this);
-
+ * p2m\assets\bootswatch\P2YetiAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2YetiAsset',
+ *      'p2m\assets\bootswatch\P2YetiAsset',
  */
 
 namespace p2m\assets;
@@ -1343,10 +1343,10 @@ P2ZephyrAsset.php:
 
 /**
  * Load this asset with...
-p2m\assets\bootswatch\P2ZephyrAsset::register($this);
-
+ * p2m\assets\bootswatch\P2ZephyrAsset::register($this);
+ * 
  * or specify as a dependency with...
-		'p2m\assets\bootswatch\P2ZephyrAsset',
+ *      'p2m\assets\bootswatch\P2ZephyrAsset',
  */
 
 namespace p2m\assets;

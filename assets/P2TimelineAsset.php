@@ -15,10 +15,10 @@
 
 /**
  * Load this asset with...
-p2m\assets\P2TimelineAsset::register($this);
-
+ * p2m\assets\P2TimelineAsset::register($this);
+ *
  * or specify as a dependency with...
-		'p2m\assets\P2TimelineAsset',
+ *      'p2m\assets\P2TimelineAsset',
  */
 
 namespace p2m\assets;
@@ -27,7 +27,7 @@ use yii\web\AssetBundle;
 
 class P2TimelineAsset extends AssetBundle
 {
-	public $sourcePath = '@p2m/assets/lib';
+	public $sourcePath = '@p2m/assets/lib/timeline';
 
 	public $css = [
 		'css/timeline.min.css',

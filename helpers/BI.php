@@ -15,7 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\internal\components\P2BootstrapIconFactory;
+use p2m\internal\helpers\P2BootstrapIconFactory;
 
 final class BI extends P2BootstrapIconFactory
 {

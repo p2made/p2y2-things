@@ -15,7 +15,7 @@
 
 namespace p2m\helpers;
 
-use p2m\internal\components\P2TimeZone;
+use p2m\internal\helpers\P2TimeZone;
 
 final class TZ extends P2TimeZone
 {

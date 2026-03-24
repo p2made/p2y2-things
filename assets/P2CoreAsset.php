@@ -13,10 +13,10 @@
 
 /**
  * Load this asset with...
-p2m\assets\P2CoreAsset::register($this);
-
+ * p2m\assets\P2CoreAsset::register($this);
+ *
  * or specify as a dependency with...
-		'p2m\assets\P2CoreAsset',
+ *      'p2m\assets\P2CoreAsset',
  */
 
 namespace p2m\assets;
@@ -38,8 +38,8 @@ class P2CoreAsset extends AssetBundle
 	 */
 
 	public $depends = [
-		'p2m\assets\base\P2JqueryCdnAsset',
-		'p2m\assets\base\P2BootstrapCdnAsset',
-		'p2m\assets\base\P2BootstrapIconsCdnAsset',
+		'p2m\internal\assets\P2JqueryCdnAsset',
+		'p2m\internal\assets\P2BootstrapCdnAsset',
+		'p2m\internal\assets\P2BootstrapIconsLocalAsset',
 	];
 }

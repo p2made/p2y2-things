@@ -17,7 +17,7 @@
 
 namespace p2m\helpers;
 
-use p2m\internal\components\P2CopyrightFactory;
+use p2m\internal\helpers\P2CopyrightFactory;
 
 final class Copyright extends P2CopyrightFactory
 {

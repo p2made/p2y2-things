@@ -405,11 +405,6 @@ final class P2IconBlock extends P2IconBase
 		return $this;
 	}
 
-
-
-
-
-
 	/**
 	 * Changes radius on a block to give a rounded rectangle.
 	 * Border radius (e.g. '0', '.5rem', '12px', '9999px').
@@ -464,8 +459,7 @@ final class P2IconBlock extends P2IconBase
 		return $this->gradient($from, $to);
 	}
 
-
-
+// -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ --
 
 	public function options(array $options): static
 	{
@@ -507,10 +501,6 @@ final class P2IconBlock extends P2IconBase
 		return $this->options;
 	}
 	 */
-
-
-
-
 
 	/**
 	 * Convenience: sharp corners.

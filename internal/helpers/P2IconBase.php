@@ -181,7 +181,7 @@ abstract class P2IconBase
 	 */
 	protected function applySizeCss(int $value): static
 	{
-		$valid = ($x >= 1 && $x <= 6);
+		$valid = ($value >= 1 && $value <= 6);
 
 		return $this->addCssClass(
 			P2IconFactory::SIZE_PREFIX . '-' . $value,

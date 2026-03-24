@@ -42,7 +42,7 @@ abstract class P2Icon extends P2IconBase
 	 */
 	public function __construct(string $cssPrefix, ?string $name = null, array $options = [])
 	{
-		$this->options = array_merge($this->ariaDefaults, $options);
+		$this->options = array_merge(self::ARIA_DEFAULTS, $options);
 
 		Html::addCssClass($options, $cssPrefix);
 

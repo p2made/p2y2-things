@@ -238,7 +238,7 @@ abstract class P2IconFactory
 	 * @param array $options
 	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
 	 */
-	public static function icon(string $name, $options = [])
+	public static function icon(string $name, $options = []): P2Icon
 	{
 		switch (static::$cssPrefix) {
 			case 'bi':
@@ -258,7 +258,7 @@ abstract class P2IconFactory
 	 * Shortcut for `icon()` function
 	 * @see icon()
 	 */
-	public static function i($name, $options = [])
+	public static function i(string $name, $options = []): P2Icon
 	{
 		return static::icon($name, $options);
 	}
@@ -270,9 +270,9 @@ abstract class P2IconFactory
 	 * @param array $options = []
 	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
 	 */
-	public static function block(P2Icon $icon, string $size, bool $circle = true, array $options = []): P2IconBlock
+	public static function block(P2Icon $icon, bool $circle = true, array $options = []): P2IconBlock
 	{
-		return new P2IconBlock($icon, $size, $circle, $options);
+		return new P2IconBlock($circle, $icon, $options);
 	}
 
 	/**
@@ -282,18 +282,18 @@ abstract class P2IconFactory
 	 * @param array $options = []
 	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
 	 */
-	public static function circle(P2Icon $icon, string $size = {sane_default}, array $options = []): P2IconBlock
+	public static function circle(P2Icon $icon, array $options = []): P2IconBlock
 	{
-		return new P2IconBlock($icon, $size, true, $options);
+		return new P2IconBlock($icon, true, $options);
 	}
 
 	/**
 	 * Shortcut for `circle()` function
 	 * @see circle()
 	 */
-	public static function c(P2Icon $icon, string $size = {sane_default}, array $options = []): P2IconBlock
+	public static function c(P2Icon $icon, array $options = []): P2IconBlock
 	{
-		return static::circle($icon, $size, $options);
+		return static::circle($icon, $options);
 	}
 
 	/**
@@ -305,7 +305,7 @@ abstract class P2IconFactory
 	 */
 	public static function square(P2Icon $icon, array $options = []): P2IconBlock
 	{
-		return new P2IconBlock(false, $icon, $options);
+		return new P2IconBlock($icon, true, $options);
 	}
 
 	/**

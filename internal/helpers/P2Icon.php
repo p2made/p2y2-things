@@ -44,10 +44,10 @@ abstract class P2Icon extends P2IconBase
 	{
 		$this->options = array_merge(self::ARIA_DEFAULTS, $options);
 
-		Html::addCssClass($options, $cssPrefix);
+		Html::addCssClass($this->options, $cssPrefix);
 
 		if (!empty($name)) {
-			Html::addCssClass($options, $cssPrefix . '-' . $name);
+			Html::addCssClass($this->options, $cssPrefix . '-' . $name);
 		}
 	}
 

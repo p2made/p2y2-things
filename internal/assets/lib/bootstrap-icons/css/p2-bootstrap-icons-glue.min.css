@@ -16,9 +16,6 @@
 .p2-color-text { color: var(--p2-color); }
 .p2-color-bg   { background-color: var(--p2-color); }
 
-
-
-
 /* Generic icon-in-block wrapper */
 .p2-icon-block {
 	width: var(--p2-block, 5rem);

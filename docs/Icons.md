@@ -1,53 +1,24 @@
 # P2Icons
 
-## Bootstrap Icon Syntax
+The 3 icon classes are...
 
-For...
+* `BI` - Bootstrap icons
+* `EI` - Emoji icons
+* `FI` - Flag icons
+
+Here `IC` (for Icon Class) means any of those. For functions that only apply to one icon type, that class name is used.
+
+## Basic Icons
 
 ```
-<i class="bi bi-icon"></i>
-```
+IC::icon(IC::_NAME, $options = []);
 
-Use...
-
-```
-BI::icon(BI::_NAME, $options = []);
 shortcut alias
-BI::i(BI::_NAME, $options = []);
+
+IC::i(IC::_NAME, $options = []);
 ```
 
-## Emoji CSS Syntax
-
-For...
-
-```
-<i class='ec ec-emoji'></i>
-```
-
-Use...
-
-```
-EI::icon(EI::_NAME, $options = []);
-shortcut alias
-EI::i(EI::_NAME, $options = []);
-```
-
-
-## Flag Icon Syntax
-
-For...
-
-```
-<i class="fi fi-flag"></i>
-```
-
-Use...
-
-```
-FI::icon(FI::_NAME, $options = []);
-shortcut alias
-FI::i(FI::_NAME, $options = []);
-```
+Gives an `<i>` tag with `$options` handled as Yii2 options.
 
 ## Chain Functions
 
@@ -56,37 +27,42 @@ All of these functions chain to the constructor.
 #### `ariaLabel()`
 
 ```
-ariaLabel(string $label, ?string $role = P2Icons::IMG)
+IC::i(IC::_NAME, $options)->ariaLabel(string $label, ?string $role = P2Icons::ROLE_IMG)
+
 shortcut alias
-l(string $label, ?string $role = P2Icons::IMG)
+
+IC::i(IC::_NAME, $options)->l(string $label, ?string $role = P2Icons::ROLE_IMG)
 ```
 
 * Sets `ariaLabel` to the passed string.
 * Sets `ariaHidden` to `false`.
 * Sets `role` to the passed string.
-	* If no string is passed `role` is set to 'img'.
-	* If an empty strilg or `null` is passed role is left unset.
+	* To the passed string if one is passed.
+	* To 'img' if no string is passed.
+	* Left unset if an empty string or `null` is passed.
 
 #### `ariaRole()`
 
 ```
-ariaRole(string $role)
+IC::i(IC::_NAME, $options)->ariaRole(string $role)
+
 shortcut alias
-r(string $role)
+
+IC::i(IC::_NAME, $options)->r(string $role)
 ```
 
 * Sets `role` to the passed string.
 * Valid values are...
 
 ```
-P2Icons::IMG          = 'img';
-P2Icons::PRESENTATION = 'presentation';
-P2Icons::NONE         = 'none';
-P2Icons::BUTTON       = 'button';
-P2Icons::LINK         = 'link';
-P2Icons::STATUS       = 'status';
-P2Icons::ALERT        = 'alert';
-P2Icons::NOTE         = 'note';
+P2Icons::ROLE_IMG          = 'img';
+P2Icons::ROLE_PRESENTATION = 'presentation';
+P2Icons::ROLE_NONE         = 'none';
+P2Icons::ROLE_BUTTON       = 'button';
+P2Icons::ROLE_LINK         = 'link';
+P2Icons::ROLE_STATUS       = 'status';
+P2Icons::ROLE_ALERT        = 'alert';
+P2Icons::ROLE_NOTE         = 'note';
 ```
 
 #### `color()`
@@ -94,9 +70,11 @@ P2Icons::NOTE         = 'note';
 **Bootstrap Icons `BI::i()` only**
 
 ```
-color(string $color)
+BI::i(BI::_NAME, $options)->color(string $color)
+
 shortcut alias
-c(string $color)
+
+BI::i(BI::_NAME, $options)->c(string $color)
 ```
 
 * Sets Bootstrap color to the passed string.
@@ -121,21 +99,17 @@ P2Icons::DARK               = 'dark';
 P2Icons::DARK_EMPHASIS      = 'dark-emphasis';
 ```
 
-Example...
-
-```
-BI::i(BI::_NAME, $options = [])->c(string $color);
-```
-
 #### `focusable()`
 
 ```
-focusable(bool $focusable = true)
+IC::i(IC::_NAME, $options)->focusable(bool $focusable = true)
+
 shortcut alias
-f(bool $focusable = true)
+
+IC::i(IC::_NAME, $options)->f(bool $focusable = true)
 ```
 
-* Sets `focusable` to the `true`.
+* Sets `focusable` to the `true` or the passed boolean.
 
 #### `size()`
 

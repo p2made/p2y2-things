@@ -29,14 +29,14 @@ abstract class P2IconFactory
 	/*
 	 * Role constants
 	 */
-	public const IMG                   = 'img';
-	public const PRESENTATION          = 'presentation';
-	public const NONE                  = 'none';
-	public const BUTTON                = 'button';
-	public const LINK                  = 'link';
-	public const STATUS                = 'status';
-	public const ALERT                 = 'alert';
-	public const NOTE                  = 'note';
+	public const ROLE_IMG                   = 'img';
+	public const ROLE_PRESENTATION          = 'presentation';
+	public const ROLE_NONE                  = 'none';
+	public const ROLE_BUTTON                = 'button';
+	public const ROLE_LINK                  = 'link';
+	public const ROLE_STATUS                = 'status';
+	public const ROLE_ALERT                 = 'alert';
+	public const ROLE_NOTE                  = 'note';
 
 	/*
 	 * Boostrap primary colour constants
@@ -270,21 +270,9 @@ abstract class P2IconFactory
 	 * @param array $options = []
 	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
 	 */
-	public static function block(P2Icon $icon, bool $circle = true, array $options = []): P2IconBlock
-	{
-		return new P2IconBlock($circle, $icon, $options);
-	}
-
-	/**
-	 * Creates a new P2IconBlock as a circle containing a P2Icon
-	 *
-	 * @param P2Icon $icon
-	 * @param array $options = []
-	 * @return P2BootstrapIcon|P2EmojiIcon|P2FlagIcon
-	 */
 	public static function circle(P2Icon $icon, array $options = []): P2IconBlock
 	{
-		return new P2IconBlock($icon, true, $options);
+		return new P2IconBlock(true, $icon, $options);
 	}
 
 	/**
@@ -305,7 +293,7 @@ abstract class P2IconFactory
 	 */
 	public static function square(P2Icon $icon, array $options = []): P2IconBlock
 	{
-		return new P2IconBlock($icon, true, $options);
+		return new P2IconBlock(false, $icon, $options);
 	}
 
 	/**

@@ -191,11 +191,11 @@ abstract class P2Icon extends P2IconBase
 
 	/**
 	 * @param string $label
-	 * @param string|null $role Default P2IconFactory::IMG. Use '' or null to not set role.
+	 * @param string|null $role Default P2IconFactory::ROLE_IMG. Use '' or null to not set role.
 	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function ariaLabel(string $label, ?string $role = P2IconFactory::IMG): static
+	public function ariaLabel(string $label, ?string $role = P2IconFactory::ROLE_IMG): static
 	{
 		$label = trim($label);
 
@@ -207,8 +207,7 @@ abstract class P2Icon extends P2IconBase
 			));
 		}
 
-		$this->addAttribute('aria-label', $label)
-			->exposeToAT();
+		$this->addAttribute('aria-label', $label);
 
 		if ($role !== null && $role !== '') {
 			$this->ariaRole($role);
@@ -221,7 +220,7 @@ abstract class P2Icon extends P2IconBase
 	 * Shortcut for `ariaLabel()` function
 	 * @see ariaLabel()
 	 */
-	public function l(string $label, ?string $role = P2IconFactory::IMG): static
+	public function l(string $label, ?string $role = P2IconFactory::ROLE_IMG): static
 	{
 		return $this->ariaLabel($label, $role);
 	}
@@ -236,14 +235,14 @@ abstract class P2Icon extends P2IconBase
 		$role = strtolower(trim($role));
 
 		$roles = [
-			P2IconFactory::IMG,
-			P2IconFactory::PRESENTATION,
-			P2IconFactory::NONE,
-			P2IconFactory::BUTTON,
-			P2IconFactory::LINK,
-			P2IconFactory::STATUS,
-			P2IconFactory::ALERT,
-			P2IconFactory::NOTE,
+			P2IconFactory::ROLE_IMG,
+			P2IconFactory::ROLE_PRESENTATION,
+			P2IconFactory::ROLE_NONE,
+			P2IconFactory::ROLE_BUTTON,
+			P2IconFactory::ROLE_LINK,
+			P2IconFactory::ROLE_STATUS,
+			P2IconFactory::ROLE_ALERT,
+			P2IconFactory::ROLE_NOTE,
 		];
 
 		return $this->addAttribute(

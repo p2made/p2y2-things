@@ -61,30 +61,31 @@ final class P2IconBlock extends P2IconBase
 	public function __construct(bool $circle, P2Icon $icon, array $options = [])
 	{
 		$this->icon = $icon;
-		$this->options = array_merge($this->ariaDefaults, $options);
 
-		// Create block with a sane default size - explicit size by chaining `s()` or `x()`
-		// Radius 0 if $circle = false
-		// Radius for a circle if $circle = true
-
-		// Existing code below
-
+		$this->options = array_merge(self::ARIA_DEFAULTS, $options);
 		Html::addCssClass($this->options, 'p2-icon-block');
 
-		// Default size only if caller didn’t set it.
 		$style = (string)($this->options['style'] ?? '');
+
 		if (stripos($style, '--p2-block:') === false) {
-			$this->options['style'] = trim(rtrim($style, ';') . '; --p2-block: 5rem;');
+			$style = rtrim($style, ';');
+			$style .= ($style === '' ? '' : '; ') . '--p2-block: 5rem';
 		}
 
-		/*
 		if (stripos($style, '--p2-radius:') === false) {
-			$style = $this->setCssVarInStyle($style, '--p2-radius', '0.75rem');
+			$style = rtrim($style, ';');
+			$style .= ($style === '' ? '' : '; ') . (
+				$circle
+					? '--p2-radius: 9999px'
+					: '--p2-radius: calc(var(--p2-block) * 0.1)'
+			);
 		}
 
-		$this->options['style'] = $style;
-		*/
+		$this->options['style'] = $style . ';';
 	}
+
+
+
 
 	public function __toString(): string
 	{
@@ -209,11 +210,11 @@ final class P2IconBlock extends P2IconBase
 
 	/**
 	 * @param string $label
-	 * @param string|null $role Default P2IconFactory::IMG. Use '' or null to not set role.
+	 * @param string|null $role Default P2IconFactory::ROLE_IMG. Use '' or null to not set role.
 	 * @return self
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	public function ariaLabel(string $label, ?string $role = P2IconFactory::IMG): static
+	public function ariaLabel(string $label, ?string $role = P2IconFactory::ROLE_IMG): static
 	{
 		$this->unhideWrapper();
 		$this->icon->ariaLabel($label, $role);
@@ -224,7 +225,7 @@ final class P2IconBlock extends P2IconBase
 	 * Shortcut for `ariaLabel()` function
 	 * @see ariaLabel()
 	 */
-	public function l(string $label, ?string $role = P2IconFactory::IMG): static
+	public function l(string $label, ?string $role = P2IconFactory::ROLE_IMG): static
 	{
 		return $this->ariaLabel($label, $role);
 	}
@@ -484,38 +485,4 @@ final class P2IconBlock extends P2IconBase
 		}
 	}
 
-	public function icon(): P2Icon
-	{
-		return $this-icon;
-	}
-
-	public function i(): P2Icon
-	{
-		return $this-icon();
-	}
-
-	/*
-	 * still needed?
-	protected function &optionsRef(): array
-	{
-		return $this->options;
-	}
-	 */
-
-	/**
-	 * Convenience: sharp corners.
-	 */
-	public function square(): static
-	{
-		return $this->radius('0');
-	}
-
-	/**
-	 * Convenience: perfect circle/pill.
-	 */
-	public function circle(): static
-	{
-		return $this->att('style', trim(rtrim((string)($this->options['style'] ?? ''), ';') . '; --p2-radius: 9999px;'), true);
-		//return $this->radius('9999px');
-	}
 }

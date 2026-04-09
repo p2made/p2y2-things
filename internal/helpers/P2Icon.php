@@ -82,15 +82,13 @@ abstract class P2Icon extends P2IconBase
 	{
 		$id = trim($id);
 
-		if ($id === '') {
-			if ($throw) {
-				throw new InvalidArgumentException('ID must be a non-empty string.');
-			}
-			return $this;
-		}
-
-		$this->options['id'] = $id;
-		return $this;
+		return $this->addAttribute(
+			'id', $id, $id !== '',
+			sprintf(
+				'%s - invalid value. ID must be a non-empty string.',
+				static::class . '::id()'
+			)
+		);
 	}
 
 	/**
@@ -104,7 +102,10 @@ abstract class P2Icon extends P2IconBase
 
 		return $this->addAttribute(
 			'title', $title, $title !== '',
-			sprintf('%s - invalid value. Title must be a non-empty string.', 'P2Icon::title()')
+			sprintf(
+				'%s - invalid value. Title must be a non-empty string.',
+				static::class . '::title()'
+			)
 		);
 	}
 
@@ -125,12 +126,18 @@ abstract class P2Icon extends P2IconBase
 	 */
 	public function data(string $name, string $value): static
 	{
-		$name = trim($name);
+		$name  = trim($name);
+		$value = trim($value);
+
+		$validName = preg_match('/^[A-Za-z0-9][A-Za-z0-9\-_:.]*$/', $name);
 
 		return $this->addAttribute(
 			'data-' . $name, $value,
-			$name !== '' && preg_match('/^[A-Za-z0-9][A-Za-z0-9\-_:.]*$/', $name),
-			sprintf('%s - invalid value. Data attribute name is invalid.', 'P2Icon::data()')
+			$name !== '' && $validName === 1,
+			sprintf(
+				'%s - invalid value. Data name and value must be non-empty strings.',
+				static::class . '::data()'
+			)
 		);
 	}
 

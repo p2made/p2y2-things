@@ -29,12 +29,15 @@ abstract class P2IconBase
 	 * Yii tag options.
 	 * Children may add more state, but this is the shared target for css()/att().
 	 */
-	protected array $options      = [];
+	protected array  $options    = [];
+	protected string $sizePrefix = 'fs';
 
 	protected const ARIA_DEFAULTS = [
 		'aria-hidden' => 'true',
 		'focusable'   => 'false',
 	];
+
+	protected static array $ariaDefaults = [];
 
 	private const CSS_NAMED_COLORS = [
 		'silver', 'gray', 'maroon', 'red', 'purple', 'fuchsia', 'green', 'lime',
@@ -184,8 +187,9 @@ abstract class P2IconBase
 		$valid = ($value >= 1 && $value <= 6);
 
 		return $this->addCssClass(
-			P2IconFactory::SIZE_PREFIX . '-' . $value,
-			$valid, sprintf(
+			$this->sizePrefix . '-' . $value,
+			$valid,
+			sprintf(
 				'%s - invalid value. Use an integer between 1 and 6.',
 				static::class . '::size()'
 			)

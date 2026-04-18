@@ -35,14 +35,20 @@ abstract class P2Icon extends P2IconBase
 	 * protected array $options = [];
 	 */
 
+	protected static array $ariaDefaults = [
+		'aria-hidden' => 'true',
+		'focusable'   => 'false',
+	];
+
 	/**
 	 * @param string $cssPrefix
 	 * @param string $name
 	 * @param array $options
 	 */
-	public function __construct(string $cssPrefix, ?string $name = null, array $options = [])
+	public function __construct(string $cssPrefix, string $sizePrefix, ?string $name = null, array $options = [])
 	{
-		$this->options = array_merge(self::ARIA_DEFAULTS, $options);
+		$this->sizePrefix = $sizePrefix;
+		$this->options = array_merge(static::$ariaDefaults, $options);
 
 		Html::addCssClass($this->options, $cssPrefix);
 

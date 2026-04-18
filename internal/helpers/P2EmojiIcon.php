@@ -21,7 +21,6 @@
 namespace p2m\internal\helpers;
 
 use Yii;
-use p2m\assets\P2EmojiCssAsset;
 
 final class P2EmojiIcon extends P2Icon
 {
@@ -29,18 +28,4 @@ final class P2EmojiIcon extends P2Icon
 	 * @var array
 	 * protected array $options = [];
 	 */
-
-	/**
-	 * @param string $cssPrefix
-	 * @param string $name
-	 * @param array  $options
-	 */
-	public function __construct(string $cssPrefix, string $name, array $options = [])
-	{
-		// register the asset bundle for EC
-		P2EmojiCssAsset::register(Yii::$app->view);
-
-		// call parent with original arguments
-		parent::__construct($cssPrefix, $name, $options);
-	}
 }

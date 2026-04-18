@@ -20,6 +20,8 @@
 
 namespace p2m\internal\helpers;
 
+use p2m\internal\assets\P2BootstrapIconsCdnAsset;
+
 class P2BootstrapIconFactory extends P2IconFactory
 {
 	/**
@@ -2137,4 +2139,14 @@ class P2BootstrapIconFactory extends P2IconFactory
 	public const _YIN_YANG = 'yin-yang';
 	public const _ZOOM_IN = 'zoom-in';
 	public const _ZOOM_OUT = 'zoom-out';
+
+	protected static function iconClass(): string
+	{
+		return P2BootstrapIcon::class;
+	}
+
+	protected static function assetClass(): string
+	{
+		return P2BootstrapIconsCdnAsset::class;
+	}
 }

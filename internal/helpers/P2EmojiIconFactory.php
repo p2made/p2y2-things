@@ -20,6 +20,8 @@
 
 namespace p2m\internal\helpers;
 
+use p2m\assets\P2EmojiCssAsset;
+
 class P2EmojiIconFactory extends P2IconFactory
 {
 
@@ -1040,4 +1042,14 @@ class P2EmojiIconFactory extends P2IconFactory
 	public const _FLAG_BLACK = 'flag-black'; // 🏴
 	public const _FLAG_RALLY = 'flag-rally'; // 🏁
 	public const _FLAG_RED = 'flag-red'; // 🚩
+
+	protected static function iconClass(): string
+	{
+		return P2EmojiIcon::class;
+	}
+
+	protected static function assetClass(): string
+	{
+		return P2EmojiCssAsset::class;
+	}
 }

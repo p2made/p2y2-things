@@ -20,6 +20,8 @@
 
 namespace p2m\internal\helpers;
 
+use p2m\assets\P2FlagIconsAsset;
+
 class P2FlagIconFactory extends P2IconFactory
 {
 	/**
@@ -809,4 +811,14 @@ class P2FlagIconFactory extends P2IconFactory
 	public const _EUREKA_FLAG = 'au-eu';
 	public const _UA_18B = 'ua-18b';          // Zhytomyr Oblast (2002-2003)
 	public const _ZHYTOMYR_OBLAST_2002_2003 = 'ua-18b';
+
+	protected static function iconClass(): string
+	{
+		return P2FlagIcon::class;
+	}
+
+	protected static function assetClass(): string
+	{
+		return P2FlagIconsAsset::class;
+	}
 }

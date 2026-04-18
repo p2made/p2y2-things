@@ -21,7 +21,6 @@
 namespace p2m\internal\helpers;
 
 use Yii;
-use p2m\assets\P2FlagIconsAsset;
 
 final class P2FlagIcon extends P2Icon
 {
@@ -29,20 +28,6 @@ final class P2FlagIcon extends P2Icon
 	 * @var array
 	 * protected array $options = [];
 	 */
-
-	/**
-	 * @param string $cssPrefix
-	 * @param string $name
-	 * @param array  $options
-	 */
-	public function __construct(string $cssPrefix, string $name, array $options = [])
-	{
-		// register the asset bundle for FI
-		P2FlagIconsAsset::register(Yii::$app->view);
-
-		// call parent with original arguments
-		parent::__construct($cssPrefix, $name, $options);
-	}
 
 	/**
 	 * If $enable is true, add the “fis” class; otherwise do nothing.

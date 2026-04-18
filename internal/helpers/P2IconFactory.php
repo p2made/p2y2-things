@@ -20,23 +20,32 @@
 
 namespace p2m\internal\helpers;
 
-use yii\base\InvalidConfigException;
+use Yii;
 
 abstract class P2IconFactory
 {
-	public const SIZE_PREFIX = 'fs';
+	/**
+	 * Subclasses must set this to 'bi', 'ec' or 'fi'
+	 * @var string
+	 */
+	protected static string $cssPrefix;
+	protected static string $sizePrefix = 'fs';
+	protected static ?int $defaultSize  = null;
+
+	abstract protected static function iconClass(): string;
+	abstract protected static function assetClass(): string;
 
 	/*
 	 * Role constants
 	 */
-	public const ROLE_IMG                   = 'img';
-	public const ROLE_PRESENTATION          = 'presentation';
-	public const ROLE_NONE                  = 'none';
-	public const ROLE_BUTTON                = 'button';
-	public const ROLE_LINK                  = 'link';
-	public const ROLE_STATUS                = 'status';
-	public const ROLE_ALERT                 = 'alert';
-	public const ROLE_NOTE                  = 'note';
+	public const ROLE_IMG              = 'img';
+	public const ROLE_PRESENTATION     = 'presentation';
+	public const ROLE_NONE             = 'none';
+	public const ROLE_BUTTON           = 'button';
+	public const ROLE_LINK             = 'link';
+	public const ROLE_STATUS           = 'status';
+	public const ROLE_ALERT            = 'alert';
+	public const ROLE_NOTE             = 'note';
 
 	/*
 	 * Boostrap primary colour constants
@@ -225,11 +234,10 @@ abstract class P2IconFactory
 	public const WHITESMOKE            = 'whitesmoke';
 	public const YELLOWGREEN           = 'yellowgreen';
 
-	/**
-	 * Subclasses must set this to 'bi', 'ec' or 'fi'
-	 * @var string
-	 */
-	protected static string $cssPrefix;
+	protected static function buildSizeClass(int $size): string
+	{
+		return static::$sizePrefix . '-' . $size;
+	}
 
 	/**
 	 * Creates a new P2Icon
@@ -240,18 +248,24 @@ abstract class P2IconFactory
 	 */
 	public static function icon(string $name, $options = []): P2Icon
 	{
-		switch (static::$cssPrefix) {
-			case 'bi':
-				return new P2BootstrapIcon(static::$cssPrefix, $name, $options);
-			case 'ec':
-				return new P2EmojiIcon(static::$cssPrefix, $name, $options);
-			case 'fi':
-				return new P2FlagIcon(static::$cssPrefix, $name, $options);
-			default:
-				throw new InvalidArgumentException(
-					"Unknown cssPrefix Ò" . static::$cssPrefix . "Ó, expected 'bi', 'ec' or 'fi'."
-				);
+		$assetClass = static::assetClass();
+		$assetClass::register(Yii::$app->view);
+
+		$iconClass = static::iconClass();
+
+		$icon = new $iconClass(
+			static::$cssPrefix,
+			static::$sizePrefix,
+			$name, $options
+		);
+
+		$size = static::$defaultSize;
+
+		if ($size !== null && $size >= 1 && $size <= 6) {
+			$icon->size($size);
 		}
+
+		return $icon;
 	}
 
 	/**
@@ -304,4 +318,8 @@ abstract class P2IconFactory
 	{
 		return static::square($icon, $options);
 	}
+
+
+
+
 }

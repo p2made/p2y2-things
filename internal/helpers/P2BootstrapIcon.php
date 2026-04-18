@@ -21,8 +21,6 @@
 namespace p2m\internal\helpers;
 
 use Yii;
-use p2m\internal\assets\P2BootstrapIconsCdnAsset;
-
 use p2m\internal\interfaces\ColorableInterface;
 
 final class P2BootstrapIcon extends P2Icon
@@ -46,20 +44,6 @@ final class P2BootstrapIcon extends P2Icon
 	 * @var array
 	 * protected array $options = [];
 	 */
-
-	/**
-	 * @param string $cssPrefix
-	 * @param string $name
-	 * @param array  $options
-	 */
-	public function __construct(string $cssPrefix, string $name, array $options = [])
-	{
-		// register the asset bundle for BI
-		P2BootstrapIconsCdnAsset::register(Yii::$app->view);
-
-		// call parent with original arguments
-		parent::__construct($cssPrefix, $name, $options);
-	}
 
 	/**
 	 * ColorableInterface functions
